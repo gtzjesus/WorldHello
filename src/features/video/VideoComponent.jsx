@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import worldhellovideo from '/videos/worldhello.mp4';
+import Intro from '../../ui/navigation/intro/Intro';
 
 const StyledVideo = styled.div`
   display: flex;
@@ -26,6 +27,7 @@ function VideoComponent() {
       <video autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={worldhellovideo} type="video/mp4" />
       </video>
+      <Intro />
     </StyledVideo>
   );
 }

@@ -60,7 +60,7 @@ const GlobalStyles = createGlobalStyle`
     --padding-header:0.5rem 1rem;
 
     /* Gap */
-    --gap-small: 1rem;
+    --gap-small: .25rem;
     --gap-medium: 2rem;
 
     /* Image Sizes */

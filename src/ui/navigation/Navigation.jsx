@@ -6,9 +6,7 @@ const StyledNav = styled.nav`
   z-index: var(--z-top);
   margin: var(--margin-small) 0 0 0;
   // FONTS
-  font-family: 'League Gothic', sans-serif;
   font-size: var(--font-xsmall);
-  color: var(--color-white);
   // ARRANGE CHILDREN
   display: flex;
   align-items: center;
@@ -16,10 +14,11 @@ const StyledNav = styled.nav`
 `;
 
 const Brand = styled.span`
+  // ARRANGE CHILDREN
   display: flex;
   align-items: center;
   padding: 0 0 0 var(--padding-small);
-  gap: var(--gap-xsmall);
+  gap: var(--gap-small);
 `;
 
 const Menu = styled.div`
@@ -29,7 +28,7 @@ function Navigation() {
   return (
     <StyledNav>
       <Brand>
-        <img src="/logos/worldhello.png" />
+        <img src="/logos/worldhello.png" alt="globe" />
         WorldHello
       </Brand>
       <Menu>Menu</Menu>
