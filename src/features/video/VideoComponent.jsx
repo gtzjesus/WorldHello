@@ -3,8 +3,6 @@ import worldhellovideo from '/videos/worldhello.mp4';
 
 const StyledVideo = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
@@ -12,7 +10,7 @@ const StyledVideo = styled.div`
   overflow-x: hidden;
   max-width: 100vw;
   max-height: 100vh;
-  object-fit: cover;
+  object-fit: contain;
   z-index: 0;
 
   // REMOVE CONTROLS DISPLAY AT BEGINNING OF video
