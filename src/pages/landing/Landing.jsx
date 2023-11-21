@@ -1,4 +1,5 @@
 import VideoComponent from '../../features/video/VideoComponent';
+
 function Landing() {
   return (
     <>
