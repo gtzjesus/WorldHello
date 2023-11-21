@@ -5,6 +5,7 @@ const StyledButton = styled.button`
   background: none;
   padding: var(--padding-xxsmall);
   border: 0.15rem solid var(--color-white);
+  width: fit-content;
 `;
 function Button() {
   return <StyledButton>learn about WorldHello</StyledButton>;

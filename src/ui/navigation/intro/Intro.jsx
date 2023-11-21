@@ -7,6 +7,10 @@ const StyledIntro = styled.div`
   // FONTS
   font-size: var(--font-medium);
   padding: var(--padding-small);
+  // ARRANGE CHILDREN
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
 `;
 function Intro() {
   return (
