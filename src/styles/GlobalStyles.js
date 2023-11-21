@@ -8,11 +8,9 @@ const GlobalStyles = createGlobalStyle`
     --width-full-window: 100%;
     --width-half-window: 45vw;
     --width-filled-window: 100vw;
-    --width-filled-window: 100vw;
 
 
-    --height-full-window: 80vh;
-    --height-filled-window: 100vh;
+    --height-full-window: 100vh;
     --height-percentage-window: 100%;
 
     --height-row: 10rem;
@@ -32,14 +30,14 @@ const GlobalStyles = createGlobalStyle`
   --color-tan: #f7ead9;
 
   /* Text Size */
-  --font-xsmall: 1.25rem;
+  --font-xsmall: 1.5rem;
   --font-small: 2rem;
   --font-medium: 3rem;
   --font-large: 4rem;
 
 
       /* Margin */
-    --margin-xsmall: 0.5rem;
+    --margin-xsmall: 0.75rem;
     --margin-small: 1rem;
     --margin-medium: 2rem;
     --margin-large: 3rem;
@@ -50,7 +48,7 @@ const GlobalStyles = createGlobalStyle`
 
 
     /* Padding */
-    --padding-xxsmall: 0.25rem;
+    --padding-xxsmall: 0.30rem;
     --padding-xsmall: 0.75rem;
     --padding-small: 1.25rem;
     --padding-medium: 2rem;
