@@ -13,7 +13,12 @@ const StyledVideo = styled.div`
   max-height: 100vh;
   object-fit: contain;
   z-index: 0;
-
+  // BLURRY
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  // BLACK AND WHITE
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   // REMOVE CONTROLS DISPLAY AT BEGINNING OF video
   video::-webkit-media-controls-panel {
     display: none !important;
