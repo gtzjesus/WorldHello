@@ -15,7 +15,7 @@ const StyledIntro = styled.div`
 function Intro() {
   return (
     <StyledIntro>
-      Creating digital footprints that thrive in the world wide web
+      Creating digital footprints for our world wide web
       <Button />
     </StyledIntro>
   );
