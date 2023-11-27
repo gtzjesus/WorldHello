@@ -2,6 +2,14 @@ import { useContext } from 'react';
 import { DesignsContext } from '../../context/DesignsContext';
 import Spinner from '../../ui/spinners/Spinner';
 import Design from '../../ui/designs/Design';
+import styled from 'styled-components';
+
+const CarouselArea = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--background-primary);
+`;
 
 function Carousel() {
   // GRAB designs WITH CONTEXT API
@@ -12,11 +20,11 @@ function Carousel() {
   if (error) throw new Error('Failed to grab designs');
 
   return (
-    <div>
+    <CarouselArea>
       {designs.map((design) => (
         <Design design={design} key={design.id} />
       ))}
-    </div>
+    </CarouselArea>
   );
 }
 

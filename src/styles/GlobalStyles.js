@@ -9,15 +9,13 @@ const GlobalStyles = createGlobalStyle`
     --width-half-window: 45vw;
     --width-filled-window: 100vw;
 
-
     --height-full-window: 100vh;
     --height-percentage-window: 100%;
-
     --height-row: 10rem;
 
 
   /* Backrounds */
-  --background-primary: #ebdac4;
+  --background-primary: #019FD1;
   --background-secondary: #f7ead9;
   --background-tile: #fff5e8;
 
@@ -61,7 +59,7 @@ const GlobalStyles = createGlobalStyle`
 
     /* Gap */
     --gap-small: .25rem;
-    --gap-medium: 2rem;
+    --gap-medium: 1rem;
 
     /* Image Sizes */
     --image-small: 8rem;
