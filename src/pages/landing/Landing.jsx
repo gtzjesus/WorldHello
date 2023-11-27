@@ -1,11 +1,9 @@
-import VideoComponent from '../../../video/VideoComponent';
-import Carousell from '../../features/carousell/Carousell';
+import VideoComponent from '../../features/video/VideoComponent';
 
 function Landing() {
   return (
     <>
       <VideoComponent />
-      <Carousell />
     </>
   );
 }

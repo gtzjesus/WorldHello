@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import worldhellovideo from '/videos/worldhello.mp4';
-import Intro from '../src/ui/intro/Intro';
+import Intro from '../../ui/intro/Intro';
 
 const StyledVideo = styled.div`
   display: flex;
