@@ -11,7 +11,6 @@ const CarouselArea = styled.div`
   display: flex;
   gap: var(--gap-medium);
   padding: var(--margin-xlarge);
-
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: scroll;

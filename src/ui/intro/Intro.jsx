@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import Button from '../buttons/Button';
 
 const StyledIntro = styled.div`
-  position: fixed;
-  bottom: 0;
   // FONTS
   font-size: var(--font-medium);
   padding: var(--padding-small);
