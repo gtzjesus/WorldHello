@@ -6,8 +6,6 @@ const StyledDesign = styled.div`
   border: 0.15rem solid var(--color-black);
 `;
 
-const Img = styled.img``;
-
 const Creator = styled.span``;
 const Title = styled.span``;
 const Description = styled.span``;
@@ -21,12 +19,15 @@ function Design({ design }) {
     title: design.title,
     description: design.description,
     category: design.category,
-    image: design.image,
+    video: design.video,
   };
+
   console.log(finalDesign);
   return (
     <StyledDesign>
-      <Img src={finalDesign.image} />
+      <video autoPlay="autoPlay " loop muted playsInline={true}>
+        <source src={finalDesign.video} type="video/mp4" />
+      </video>
 
       <Creator>{finalDesign.creator}</Creator>
       <Title>{finalDesign.title}</Title>
