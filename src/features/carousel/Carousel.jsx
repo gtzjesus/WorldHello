@@ -4,11 +4,18 @@ import Spinner from '../../ui/spinners/Spinner';
 import Design from '../../ui/designs/Design';
 import styled from 'styled-components';
 
+const StyledCarousel = styled.div`
+  background-color: var(--background-tile);
+`;
 const CarouselArea = styled.div`
   display: flex;
-  justify-content: space-between;
+  gap: var(--gap-medium);
+  padding: var(--margin-xlarge);
 
-  background-color: var(--background-primary);
+  // COVER THE FULL SCREEN OF EVERY DEVICE
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: scroll;
+  object-fit: cover;
 `;
 
 function Carousel() {
@@ -20,11 +27,13 @@ function Carousel() {
   if (error) throw new Error('Failed to grab designs');
 
   return (
-    <CarouselArea>
-      {designs.map((design) => (
-        <Design design={design} key={design.id} />
-      ))}
-    </CarouselArea>
+    <StyledCarousel>
+      <CarouselArea>
+        {designs.map((design) => (
+          <Design design={design} key={design.id} />
+        ))}
+      </CarouselArea>
+    </StyledCarousel>
   );
 }
 
