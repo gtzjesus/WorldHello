@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import worldhellovideo from '/videos/worldhello.mp4';
-import Intro from '../../ui/intro/Intro';
 
 const StyledVideo = styled.div`
   display: flex;
@@ -9,16 +8,12 @@ const StyledVideo = styled.div`
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden;
-  max-width: 100vw;
+
   max-height: 100vh;
+  max-width: 100vw;
+
   object-fit: contain;
   z-index: 0;
-  // BLURRY
-  -webkit-filter: blur(5px);
-  filter: blur(5px);
-  // BLACK AND WHITE
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
   // REMOVE CONTROLS DISPLAY AT BEGINNING OF video
   video::-webkit-media-controls-panel {
     display: none !important;
@@ -32,7 +27,6 @@ function VideoComponent() {
       <video autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={worldhellovideo} type="video/mp4" />
       </video>
-      <Intro />
     </StyledVideo>
   );
 }
