@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 const StyledCarousel = styled.div`
   background-color: var(--background-primary);
+  overflow: hidden;
 `;
 const CarouselArea = styled.div`
   display: flex;

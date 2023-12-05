@@ -4,7 +4,7 @@ const StyledDesign = styled.div`
   display: flex;
   flex-direction: column;
   border: 0.15rem solid var(--color-black);
-  max-width: 30vh;
+  max-width: 35vh;
 `;
 
 const Creator = styled.span``;
