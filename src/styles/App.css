@@ -7,4 +7,5 @@
   margin: 0;
   padding: 0;
   color: var(--color-white);
+  letter-spacing: 0.05rem;
 }
