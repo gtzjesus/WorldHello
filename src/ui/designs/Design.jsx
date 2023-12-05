@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { useNavigate } from 'react-router';
 
 const StyledDesign = styled.div`
   display: flex;
@@ -14,8 +13,6 @@ const Description = styled.span``;
 const Category = styled.span``;
 
 function Design({ design }) {
-  // GRAB NAVIGATION HOOK
-  const navigate = useNavigate();
   // CREATE design OBJECT to start displaying
   const finalDesign = {
     id: design.id,
@@ -24,11 +21,12 @@ function Design({ design }) {
     description: design.description,
     category: design.category,
     video: design.video,
+    link: design.link,
   };
 
   // FUNCTION TO NAVIGATE TO design's link
   function handleNavigation() {
-    navigate(finalDesign.link);
+    window.location.href = finalDesign.link;
   }
 
   return (
