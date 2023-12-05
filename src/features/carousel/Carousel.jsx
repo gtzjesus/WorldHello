@@ -18,6 +18,24 @@ const CarouselArea = styled.div`
   object-fit: cover;
 `;
 
+const Hook = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-medium);
+  gap: var(--gap-medium);
+`;
+
+const Title = styled.span`
+  color: var(--color-black);
+  font-size: var(--font-medium);
+`;
+const SubTitle = styled.span`
+  color: var(--color-black);
+  font-size: var(--font-small);
+`;
+
 function Carousel() {
   // GRAB designs WITH CONTEXT API
   const { designs, isLoading, error } = useContext(DesignsContext);
@@ -28,6 +46,13 @@ function Carousel() {
 
   return (
     <StyledCarousel>
+      <Hook>
+        <Title>Say hello to the world!</Title>
+        <SubTitle>
+          We specialise in crafting strategic user experiences that precisely
+          target your ideal customers
+        </SubTitle>
+      </Hook>
       <CarouselArea>
         {designs.map((design) => (
           <Design design={design} key={design.id} />
