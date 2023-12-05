@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useNavigate } from 'react-router';
 
 const StyledDesign = styled.div`
   display: flex;
@@ -13,6 +14,8 @@ const Description = styled.span``;
 const Category = styled.span``;
 
 function Design({ design }) {
+  // GRAB NAVIGATION HOOK
+  const navigate = useNavigate();
   // CREATE design OBJECT to start displaying
   const finalDesign = {
     id: design.id,
@@ -23,9 +26,13 @@ function Design({ design }) {
     video: design.video,
   };
 
-  console.log(finalDesign);
+  // FUNCTION TO NAVIGATE TO design's link
+  function handleNavigation() {
+    navigate(finalDesign.link);
+  }
+
   return (
-    <StyledDesign>
+    <StyledDesign onClick={handleNavigation}>
       <video autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={finalDesign.video} type="video/mp4" />
       </video>

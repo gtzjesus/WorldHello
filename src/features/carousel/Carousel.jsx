@@ -68,7 +68,9 @@ function Carousel() {
         ))}
       </CarouselArea>
       <Hook>
-        <SubTitle>transforming them into loyal and paying clients.</SubTitle>
+        <SubTitle>
+          transforming your niche into loyal and paying clients.
+        </SubTitle>
       </Hook>
     </StyledCarousel>
   );
