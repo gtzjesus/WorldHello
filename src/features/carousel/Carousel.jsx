@@ -7,6 +7,7 @@ import styled from 'styled-components';
 const StyledCarousel = styled.div`
   background-color: var(--background-primary);
   overflow: hidden;
+  padding: var(--padding-medium);
 `;
 const CarouselArea = styled.div`
   display: flex;
@@ -23,13 +24,22 @@ const Hook = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: var(--padding-medium);
   gap: var(--gap-medium);
+`;
+
+const End = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap-small);
 `;
 
 const Title = styled.span`
   align-items: center;
   font-size: var(--font-medium);
+  border-bottom: 0.25rem solid var(--color-yellow);
+  width: fit-content;
 `;
 
 const SubTitle = styled.span`
@@ -42,6 +52,15 @@ const Caption = styled.span`
   text-transform: uppercase;
   float: left;
   gap: var(--gap-medium);
+`;
+
+const Special = styled.span`
+  color: var(--color-yellow);
+`;
+
+const Img = styled.img`
+  color: var(--color-yellow);
+  height: 3vh;
 `;
 
 function Carousel() {
@@ -57,21 +76,22 @@ function Carousel() {
       <Hook>
         <Title>Say hello to the world!</Title>
         <SubTitle>
-          We specialise in implementing strategic user experiences that
-          precisely target your ideal customers,
+          We specialize in crafting & implementing strategic user experiences
+          that precisely target your ideal audience,
         </SubTitle>
-        <Caption>What weve done,</Caption>
+        <Caption>
+          <Special>[ </Special>What we have done <Special>]</Special>
+        </Caption>
       </Hook>
       <CarouselArea>
         {designs.map((design) => (
           <Design design={design} key={design.id} />
         ))}
       </CarouselArea>
-      <Hook>
-        <SubTitle>
-          transforming your niche into loyal and paying clients.
-        </SubTitle>
-      </Hook>
+      <End>
+        <Img src="/extras/arrow.png" alt="globe" />
+        <SubTitle>transforming them into loyal and paying clients.</SubTitle>
+      </End>
     </StyledCarousel>
   );
 }

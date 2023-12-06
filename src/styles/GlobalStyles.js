@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
     --width-full-window: 100%;
     --width-half-window: 45vw;
     --width-filled-window: 100vw;
+    --width-design-video: 35vh;
 
     --height-full-window: 100vh;
     --height-percentage-window: 100%;
@@ -24,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
   /* Colors */
   --color-red: #991b1b;
   --color-black: #070606;
-  --color-gray: #070606;
+  --color-yellow: #e7e167;
   --color-white: #ffff;
   --color-tan: #f7ead9;
 
