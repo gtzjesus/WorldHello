@@ -9,6 +9,7 @@ const StyledCarousel = styled.div`
   overflow: hidden;
 `;
 const CarouselArea = styled.div`
+  position: relative;
   display: flex;
   gap: var(--gap-medium);
   padding: var(--margin-xlarge);
@@ -84,11 +85,13 @@ function Carousel() {
           <Special>[ </Special>What we have done <Special>]</Special>
         </Caption>
       </Hook>
+
       <CarouselArea>
         {designs.map((design) => (
           <Design design={design} key={design.id} />
         ))}
       </CarouselArea>
+
       <End>
         <Img src="/extras/arrow.png" alt="globe" />
         <SubTitle>transforming them into loyal and paying clients.</SubTitle>

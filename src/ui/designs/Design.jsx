@@ -7,6 +7,12 @@ const StyledDesign = styled.div`
   max-width: var(--width-design-video);
 `;
 
+const Information = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+`;
+
 const Creator = styled.span``;
 const Title = styled.span``;
 const Description = styled.span``;
@@ -34,10 +40,12 @@ function Design({ design }) {
       <video autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={finalDesign.video} type="video/mp4" />
       </video>
-      <Creator>{finalDesign.creator}</Creator>
-      <Title>{finalDesign.title}</Title>
-      <Category>{finalDesign.category}</Category>
-      <Description>{finalDesign.description}</Description>
+      <Information>
+        <Creator>{finalDesign.creator}</Creator>
+        <Title>{finalDesign.title}</Title>
+        <Category>{finalDesign.category}</Category>
+        <Description>{finalDesign.description}</Description>
+      </Information>
     </StyledDesign>
   );
 }
