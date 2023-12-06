@@ -7,7 +7,6 @@ import styled from 'styled-components';
 const StyledCarousel = styled.div`
   background-color: var(--background-primary);
   overflow: hidden;
-  padding: var(--padding-medium);
 `;
 const CarouselArea = styled.div`
   display: flex;
@@ -25,6 +24,7 @@ const Hook = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: var(--gap-medium);
+  padding: var(--padding-medium);
 `;
 
 const End = styled.div`
@@ -32,7 +32,8 @@ const End = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: var(--gap-small);
+  gap: var(--gap-medium);
+  padding: var(--padding-medium);
 `;
 
 const Title = styled.span`
@@ -76,8 +77,8 @@ function Carousel() {
       <Hook>
         <Title>Say hello to the world!</Title>
         <SubTitle>
-          We specialize in crafting & implementing strategic user experiences
-          that precisely target your ideal audience,
+          We specialize in designing & crafting strategic user experiences that
+          precisely target your ideal audience,
         </SubTitle>
         <Caption>
           <Special>[ </Special>What we have done <Special>]</Special>
