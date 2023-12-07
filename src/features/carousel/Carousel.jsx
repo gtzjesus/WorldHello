@@ -77,7 +77,7 @@ function Carousel() {
   return (
     <StyledCarousel>
       <Hook>
-        <Title>Say hello to the world!</Title>
+        <Title>Say HELLO to the world!</Title>
         <SubTitle>
           We specialize in designing & crafting strategic user experiences that
           precisely target your ideal audience,

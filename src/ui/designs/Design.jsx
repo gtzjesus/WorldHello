@@ -11,6 +11,7 @@ const Information = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 `;
 
 const Creator = styled.span``;
