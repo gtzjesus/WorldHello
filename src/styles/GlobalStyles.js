@@ -13,14 +13,12 @@ const GlobalStyles = createGlobalStyle`
     --height-full-window: 100vh;
     --height-percentage-window: 100%;
     --height-row: 10rem;
+    --height-arrow: 3.5vh;
 
 
   /* Backrounds */
   --background-primary: #070606;
   --background-secondary: #f7ead9;
-  --background-tile: #fff5e8;
-
-
 
   /* Colors */
   --color-red: #991b1b;
@@ -34,7 +32,6 @@ const GlobalStyles = createGlobalStyle`
   --font-small: 2rem;
   --font-medium: 3rem;
   --font-large: 4rem;
-
 
       /* Margin */
     --margin-xsmall: 0.75rem;

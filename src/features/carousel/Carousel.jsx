@@ -13,7 +13,7 @@ const CarouselArea = styled.div`
   position: relative;
   display: flex;
   gap: var(--gap-medium);
-  padding: var(--margin-xlarge);
+  padding: var(--margin-medium) var(--margin-xlarge);
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden;
@@ -63,7 +63,7 @@ const Special = styled.span`
 
 const Img = styled.img`
   color: var(--color-yellow);
-  height: 3vh;
+  height: var(--height-arrow);
 `;
 
 function Carousel() {
@@ -79,8 +79,8 @@ function Carousel() {
       <Hook>
         <Title>Say HELLO to the world!</Title>
         <SubTitle>
-          We specialize in designing & crafting strategic user experiences that
-          precisely target your ideal audience,
+          We specialize in crafting strategic user experiences that precisely
+          target your ideal audience,
         </SubTitle>
         <Caption>
           <Special>[ </Special>What we have done <Special>]</Special>
@@ -95,7 +95,9 @@ function Carousel() {
 
       <End>
         <Img src="/extras/arrow.png" alt="globe" />
-        <SubTitle>transforming them into loyal and paying clients.</SubTitle>
+        <SubTitle>
+          transforming your visitors into loyal and paying customers.
+        </SubTitle>
       </End>
     </StyledCarousel>
   );
