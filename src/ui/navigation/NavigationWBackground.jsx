@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const StyledNav = styled.header`
   position: fixed;
-  background: transparent;
+  background: pink;
   top: 0;
   width: 100vw;
   z-index: var(--z-top);
@@ -26,7 +26,7 @@ const Brand = styled.span`
 const Menu = styled.div`
   padding: 0 var(--padding-small) 0 0;
 `;
-function Navigation() {
+function NavigationWBackground() {
   return (
     <StyledNav>
       <Brand>
@@ -38,4 +38,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default NavigationWBackground;
