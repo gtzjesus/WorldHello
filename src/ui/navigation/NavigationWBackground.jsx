@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
-const StyledNav = styled.header`
+const StyledNav = styled.nav`
   position: fixed;
-  background: pink;
+  background: var(--color-white);
   top: 0;
   width: 100vw;
   z-index: var(--z-top);
-  margin: var(--margin-small) 0 0 0;
+  padding: var(--margin-small) 0;
+
   // FONTS
   font-size: var(--font-xsmall);
   // ARRANGE CHILDREN
