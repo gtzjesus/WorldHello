@@ -7,6 +7,7 @@ import styled from 'styled-components';
 const StyledCarousel = styled.div`
   background-color: var(--background-primary);
   overflow: hidden;
+  color: var(--color-white);
 `;
 const CarouselArea = styled.div`
   position: relative;
