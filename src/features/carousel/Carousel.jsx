@@ -41,7 +41,7 @@ const End = styled.div`
 const Title = styled.span`
   align-items: center;
   font-size: var(--font-medium);
-  border-bottom: 0.25rem solid var(--color-yellow);
+  border-bottom: 0.25rem solid var(--color-blue);
   width: fit-content;
 `;
 
@@ -58,11 +58,10 @@ const Caption = styled.span`
 `;
 
 const Special = styled.span`
-  color: var(--color-yellow);
+  color: var(--color-blue);
 `;
 
 const Img = styled.img`
-  color: var(--color-yellow);
   height: var(--height-arrow);
 `;
 

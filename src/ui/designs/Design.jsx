@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledDesign = styled.div`
   display: flex;
   flex-direction: column;
-  border: 0.05rem solid var(--color-yellow);
+  border: 0.15rem solid var(--color-blue);
   max-width: var(--width-design-video);
 `;
 
