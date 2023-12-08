@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledDesign = styled.div`
   display: flex;
   flex-direction: column;
-  border: 0.15rem solid var(--color-black);
+  border: 0.05rem solid var(--color-yellow);
   max-width: var(--width-design-video);
 `;
 
@@ -11,7 +11,7 @@ const Information = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 `;
 
 const Creator = styled.span``;

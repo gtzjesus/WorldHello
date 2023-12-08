@@ -13,7 +13,7 @@ const CarouselArea = styled.div`
   position: relative;
   display: flex;
   gap: var(--gap-medium);
-  padding: var(--margin-medium) var(--margin-xlarge);
+  padding: var(--margin-small) var(--margin-xlarge);
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden;
