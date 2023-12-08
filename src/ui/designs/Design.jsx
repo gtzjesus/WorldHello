@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import Button from '../buttons/Button';
 
 const StyledDesign = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: var(--width-design-video);
@@ -16,7 +18,7 @@ const Information = styled.div`
   width: var(--width-design-video);
 
   padding: var(--padding-medium) 0 0 0;
-  gap: var(--gap-large);
+  gap: var(--gap-medium);
 `;
 
 const Creator = styled.span`
@@ -31,6 +33,17 @@ const Title = styled.span`
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
+`;
+
+const End = styled.div`
+  position: absolute;
+  width: var(--width-design-video);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+
+  padding: 0 0 var(--padding-medium) 0;
 `;
 
 function Design({ design }) {
@@ -63,6 +76,11 @@ function Design({ design }) {
 
         <Description>{finalDesign.description}</Description>
       </Information>
+      <End>
+        <Button variation="primary" size="small">
+          visit website
+        </Button>
+      </End>
     </StyledDesign>
   );
 }

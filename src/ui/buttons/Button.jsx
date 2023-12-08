@@ -1,14 +1,36 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const StyledButton = styled.button`
-  font-size: var(--font-xsmall);
-  background: none;
-  padding: var(--padding-xxsmall);
-  border: 0.15rem solid var(--color-white);
-  width: fit-content;
+const sizes = {
+  small: css`
+    font-size: var(--font-xsmall);
+    padding: 1.2rem 1.6rem;
+  `,
+};
+
+const variations = {
+  primary: css`
+    color: var(--color-blue);
+    background-color: var(--background-secondary);
+
+    &:hover {
+      background-color: #ede1d1;
+    }
+  `,
+};
+
+const Button = styled.button`
+  font-family: 'Bebas Neue', sans-serif;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  ${(props) => sizes[props.size]}
+  ${(props) => variations[props.variation]};
 `;
-function Button() {
-  return <StyledButton>learn about WorldHello</StyledButton>;
-}
+
+Button.defaultProps = {
+  variation: 'primary',
+  size: 'small',
+};
 
 export default Button;
