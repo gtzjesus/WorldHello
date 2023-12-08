@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const StyledDesign = styled.div`
   display: flex;
   flex-direction: column;
-  border: 0.15rem solid var(--color-blue);
   max-width: var(--width-design-video);
 `;
 
@@ -12,12 +11,25 @@ const Information = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  padding: var(--padding-medium) 0 0 0;
+  width: 100%;
+  gap: var(--gap-large);
 `;
 
-const Creator = styled.span``;
-const Title = styled.span``;
-const Description = styled.span``;
-const Category = styled.span``;
+const Creator = styled.span`
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small);
+  font-size: var(--font-xsmall);
+`;
+
+const Title = styled.span`
+  font-size: var(--font-medium);
+`;
+const Description = styled.span`
+  font-size: var(--font-xsmall);
+`;
 
 function Design({ design }) {
   // CREATE design OBJECT to start displaying
@@ -26,7 +38,6 @@ function Design({ design }) {
     creator: design.creator,
     title: design.title,
     description: design.description,
-    category: design.category,
     video: design.video,
     link: design.link,
   };
@@ -42,9 +53,12 @@ function Design({ design }) {
         <source src={finalDesign.video} type="video/mp4" />
       </video>
       <Information>
-        <Creator>{finalDesign.creator}</Creator>
+        <Creator>
+          <img src="/logos/worldhello.png" alt="globe" />
+          {finalDesign.creator}
+        </Creator>
         <Title>{finalDesign.title}</Title>
-        <Category>{finalDesign.category}</Category>
+
         <Description>{finalDesign.description}</Description>
       </Information>
     </StyledDesign>

@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --height-full-window: 100vh;
     --height-percentage-window: 100%;
     --height-row: 10rem;
-    --height-arrow: 3.5vh;
+    --height-arrow: 2.5vh;
 
 
   /* Backrounds */
@@ -47,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
 
     /* Padding */
     --padding-xxsmall: 0.30rem;
-    --padding-xsmall: 0.75rem;
+    --padding-xsmall: 0.95rem;
     --padding-small: 1.25rem;
     --padding-medium: 2rem;
     --padding-large: 3rem;
@@ -60,6 +60,8 @@ const GlobalStyles = createGlobalStyle`
     /* Gap */
     --gap-small: .25rem;
     --gap-medium: 1rem;
+    --gap-large: 2rem;
+
 
     /* Image Sizes */
     --image-small: 8rem;
