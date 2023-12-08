@@ -15,6 +15,10 @@ const StyledVideo = styled.div`
   object-fit: contain;
   z-index: 0;
   // REMOVE CONTROLS DISPLAY AT BEGINNING OF video
+
+  // BLACK AND WHITE
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
   video::-webkit-media-controls-panel {
     display: none !important;
     opacity: 1 !important;
