@@ -11,9 +11,11 @@ const Information = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  // ALIGN div MIDDLE
   box-sizing: border-box;
+  width: var(--width-design-video);
+
   padding: var(--padding-medium) 0 0 0;
-  width: 100%;
   gap: var(--gap-large);
 `;
 
