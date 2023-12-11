@@ -12,9 +12,9 @@ const variations = {
     color: var(--color-blue);
     background-color: var(--background-secondary);
 
-    &:hover {
+    /* &:hover {
       background-color: #ede1d1;
-    }
+    } */
   `,
 };
 

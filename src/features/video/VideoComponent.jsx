@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import worldhellovideo from '/videos/worldhello.mp4';
+import Button from '../../ui/buttons/Button';
 
 const StyledVideo = styled.div`
   display: flex;
   justify-content: center;
+
+  color: var(--color-white);
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden; /* Hide vertical scrollbar */
@@ -25,12 +28,38 @@ const StyledVideo = styled.div`
   }
 `;
 
+const Introduction = styled.div`
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: var(--margin-medium);
+  gap: var(--gap-large);
+`;
+
+const Title = styled.span`
+  font-size: var(--font-medium);
+`;
+
+const Description = styled.span`
+  font-size: var(--font-small);
+`;
+
 function VideoComponent() {
   return (
     <StyledVideo>
       <video autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={worldhellovideo} type="video/mp4" />
       </video>
+      <Introduction>
+        <Title>Websites that turn visitors into customers</Title>
+        <Description>Websites that turn visitors into customers</Description>
+        <Button variation="primary" size="small">
+          Start your website
+        </Button>
+      </Introduction>
     </StyledVideo>
   );
 }
