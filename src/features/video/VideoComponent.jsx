@@ -5,7 +5,6 @@ import Button from '../../ui/buttons/Button';
 const StyledVideo = styled.div`
   display: flex;
   justify-content: center;
-
   color: var(--color-white);
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
@@ -36,7 +35,7 @@ const Introduction = styled.div`
   flex-direction: column;
 
   padding: var(--margin-medium);
-  gap: var(--gap-large);
+  gap: var(--gap-medium);
 `;
 
 const Title = styled.span`
@@ -44,7 +43,7 @@ const Title = styled.span`
 `;
 
 const Description = styled.span`
-  font-size: var(--font-small);
+  font-size: 2rem;
 `;
 
 function VideoComponent() {
@@ -54,8 +53,8 @@ function VideoComponent() {
         <source src={worldhellovideo} type="video/mp4" />
       </video>
       <Introduction>
-        <Title>Websites that turn visitors into customers</Title>
-        <Description>Websites that turn visitors into customers</Description>
+        <Title>Websites that turn your visitors into customers</Title>
+        <Description>A valuable investment to grow your business</Description>
         <Button variation="primary" size="small">
           Start your website
         </Button>

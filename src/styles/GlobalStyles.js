@@ -19,6 +19,8 @@ const GlobalStyles = createGlobalStyle`
   /* Backrounds */
   --background-primary: #070606;
   --background-secondary: #ffff;
+  --background-third: #e7e167;
+
 
   /* Colors */
   --color-red: #991b1b;
@@ -29,7 +31,7 @@ const GlobalStyles = createGlobalStyle`
   --color-green: #3DA40D
 
   /* Text Size */
-  --font-xsmall: 1.5rem;
+  --font-xsmall: 1.95rem;
   --font-small: 2rem;
   --font-medium: 3rem;
   --font-large: 4rem;
