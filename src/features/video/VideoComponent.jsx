@@ -42,10 +42,6 @@ const Title = styled.span`
   font-size: var(--font-medium);
 `;
 
-const Description = styled.span`
-  font-size: 2rem;
-`;
-
 function VideoComponent() {
   return (
     <StyledVideo>
@@ -54,7 +50,7 @@ function VideoComponent() {
       </video>
       <Introduction>
         <Title>Websites that turn your visitors into customers</Title>
-        <Description>A valuable investment to grow your business</Description>
+
         <Button variation="primary" size="small">
           Start your website
         </Button>
