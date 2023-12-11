@@ -34,7 +34,7 @@ function NavigationWBackground() {
         <img src="/logos/worldhello.png" alt="globe" />
         WorldHello
       </Brand>
-      <Menu>Menu</Menu>
+      <Menu>Contact</Menu>
     </StyledNav>
   );
 }
