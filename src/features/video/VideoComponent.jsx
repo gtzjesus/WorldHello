@@ -48,9 +48,9 @@ function VideoComponent() {
       <video autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={worldhellovideo} type="video/mp4" />
       </video>
+
       <Introduction>
         <Title>Websites that turn your visitors into customers</Title>
-
         <Button variation="primary" size="small">
           Start your website
         </Button>
