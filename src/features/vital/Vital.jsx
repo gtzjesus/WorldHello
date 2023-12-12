@@ -6,7 +6,8 @@ const StyledVital = styled.div`
   background-size: cover;
   color: var(--color-white);
   padding: var(--padding-large) var(--padding-medium);
-  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 `;
 
 const Information = styled.div`
