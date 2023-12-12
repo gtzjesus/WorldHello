@@ -6,8 +6,8 @@ function Landing() {
   return (
     <>
       <VideoComponent />
-      <Carousel />
       <Vital />
+      <Carousel />
     </>
   );
 }

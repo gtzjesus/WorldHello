@@ -70,8 +70,8 @@ function Carousel() {
     <StyledCarousel>
       <Hook>
         <SubTitle>
-          We specialize in crafting strategic user experiences that precisely
-          target your ideal audience,
+          We specialize in crafting websites that precisely target your ideal
+          audience,
         </SubTitle>
         <Caption>
           <Special>[ </Special>What we have done <Special>]</Special>

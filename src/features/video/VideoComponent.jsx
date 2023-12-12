@@ -17,14 +17,6 @@ const StyledVideo = styled.div`
   object-fit: contain;
   z-index: 0;
   // REMOVE CONTROLS DISPLAY AT BEGINNING OF video
-
-  // BLACK AND WHITE
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  video::-webkit-media-controls-panel {
-    display: none !important;
-    opacity: 1 !important;
-  }
 `;
 
 const Introduction = styled.div`
@@ -34,7 +26,7 @@ const Introduction = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: var(--margin-medium);
+  padding: var(--margin-large);
   gap: var(--gap-medium);
 `;
 
@@ -50,7 +42,7 @@ function VideoComponent() {
       </video>
 
       <Introduction>
-        <Title>Websites that turn your visitors into customers</Title>
+        <Title>Websites that convert visitors into customers</Title>
         <Button variation="primary" size="small">
           Start your website
         </Button>
