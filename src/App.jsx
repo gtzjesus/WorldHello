@@ -1,7 +1,7 @@
 import Landing from './pages/landing/Landing';
 import GlobalStyles from './styles/GlobalStyles';
 import './styles/App.css';
-import ClipLoader from 'react-spinners/ClipLoader';
+
 import { useEffect, useState } from 'react';
 import { DesignsProvider } from './context/DesignsContext';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -27,11 +27,8 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  // GRAB STATE for loading screen (pre-fetching)
-  const [loading, setLoading] = useState();
   // GRAB STATE for navigation scroll
   const [header, setHeader] = useState(false);
-
   // FUNCTION TO change state on scroll
   const changeHeader = () => {
     if (window.scrollY >= 25) {
@@ -48,30 +45,13 @@ function App() {
     window.history.scrollRestoration = 'manual';
   }, []);
 
-  // DISPLAY AND REMOVE LOADING SCREEN
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-  }, []);
-
   return (
     <QueryClientProvider client={queryClient}>
       <GlobalStyles />
-      {loading ? (
-        <ClipLoader
-          loading={loading}
-          size={150}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      ) : (
-        <DesignsProvider>
-          <RouterProvider router={router} />
-          {!header ? <Navigation /> : <NavigationWBackground />}
-        </DesignsProvider>
-      )}
+      <DesignsProvider>
+        <RouterProvider router={router} />
+        {!header ? <Navigation /> : <NavigationWBackground />}
+      </DesignsProvider>
     </QueryClientProvider>
   );
 }
