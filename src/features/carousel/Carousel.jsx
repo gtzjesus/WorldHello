@@ -38,12 +38,6 @@ const End = styled.div`
   padding: var(--padding-medium);
 `;
 
-const Title = styled.span`
-  align-items: center;
-  font-size: var(--font-medium);
-  width: fit-content;
-`;
-
 const SubTitle = styled.span`
   font-size: var(--font-small);
 `;
@@ -58,10 +52,6 @@ const Caption = styled.span`
 
 const Special = styled.span`
   color: var(--color-blue);
-`;
-
-const Blued = styled.span`
-  border-bottom: 0.25rem solid var(--color-blue);
 `;
 
 const Img = styled.img`
@@ -79,9 +69,6 @@ function Carousel() {
   return (
     <StyledCarousel>
       <Hook>
-        <Title>
-          Say <Blued>HELLO</Blued> to the world!
-        </Title>
         <SubTitle>
           We specialize in crafting strategic user experiences that precisely
           target your ideal audience,
@@ -99,9 +86,7 @@ function Carousel() {
 
       <End>
         <Img src="/extras/arrow.png" alt="globe" />
-        <SubTitle>
-          transforming your visitors into loyal and paying clients.
-        </SubTitle>
+        <SubTitle>transforming them into loyal and paying clients.</SubTitle>
       </End>
     </StyledCarousel>
   );
