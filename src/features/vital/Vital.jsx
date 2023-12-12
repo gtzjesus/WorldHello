@@ -4,9 +4,8 @@ const StyledVital = styled.div`
   display: flex;
   background-image: url('/backgrounds/earth.jpeg');
   background-size: cover;
-  height: 100vh;
   color: var(--color-white);
-  padding: var(--padding-medium);
+  padding: var(--padding-large) var(--padding-medium);
 `;
 
 const Information = styled.div`
@@ -19,6 +18,11 @@ const Title = styled.span`
   font-size: var(--font-medium);
   width: fit-content;
 `;
+const Description = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+`;
 
 const Special = styled.span`
   border-bottom: 0.25rem solid #3da40d;
@@ -26,12 +30,27 @@ const Special = styled.span`
 
 const Quote = styled.span`
   font-size: var(--font-small);
+  padding: var(--padding-xlarge) 0 0 0;
 `;
 
 const Source = styled.span`
-  opacity: 0.4;
   font-size: var(--font-xsmall);
   text-transform: uppercase;
+  border-bottom: 0.25rem solid #0069b6;
+  width: fit-content;
+  opacity: 0.8;
+`;
+
+const Last = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xlarge) 0 0 0;
+
+  gap: var(--gap-small);
+`;
+
+const Ending = styled.span`
+  font-size: var(--font-xsmall);
 `;
 function Vital() {
   return (
@@ -40,13 +59,21 @@ function Vital() {
         <Title>
           Say <Special>HELLO</Special> to the world!
         </Title>
-        <Quote>
-          80% of consumers are more likely to buy from brands that offer
-          personalized website experiences
-        </Quote>
-        <Source href="https://bloggingwizard.com/website-statistics/">
-          view source
-        </Source>
+        <Description>
+          <Quote>
+            &ldquo; 80% of consumers are more likely to buy from brands that
+            offer personalized website experiences &rdquo;
+          </Quote>
+          <Source>
+            <a href="https://bloggingwizard.com/website-statistics/">
+              view source
+            </a>
+          </Source>
+        </Description>
+        <Last>
+          <Ending>first impressions are vital,</Ending>
+          <Ending>especially on the web!</Ending>
+        </Last>
       </Information>
     </StyledVital>
   );

@@ -26,7 +26,7 @@ const Introduction = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: var(--margin-large);
+  padding: var(--margin-medium);
   gap: var(--gap-medium);
 `;
 
