@@ -6,6 +6,7 @@ const StyledVital = styled.div`
   background-size: cover;
   color: var(--color-white);
   padding: var(--padding-large) var(--padding-medium);
+  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
 `;
 
 const Information = styled.div`
@@ -22,6 +23,7 @@ const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-medium);
+  font-size: var(--font-small);
 `;
 
 const Special = styled.span`
@@ -29,12 +31,10 @@ const Special = styled.span`
 `;
 
 const Quote = styled.span`
-  font-size: var(--font-small);
   padding: var(--padding-xlarge) 0 0 0;
 `;
 
 const Source = styled.span`
-  font-size: var(--font-xsmall);
   text-transform: uppercase;
   border-bottom: 0.25rem solid #0069b6;
   width: fit-content;
@@ -45,12 +45,11 @@ const Last = styled.div`
   display: flex;
   flex-direction: column;
   padding: var(--padding-xlarge) 0 0 0;
-
   gap: var(--gap-small);
 `;
 
 const Ending = styled.span`
-  font-size: var(--font-xsmall);
+  font-size: var(--font-small);
 `;
 function Vital() {
   return (
@@ -71,7 +70,7 @@ function Vital() {
           </Source>
         </Description>
         <Last>
-          <Ending>first impressions are vital,</Ending>
+          <Ending>First impressions are vital,</Ending>
           <Ending>especially on the web!</Ending>
         </Last>
       </Information>
