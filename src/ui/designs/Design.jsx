@@ -19,9 +19,7 @@ const Information = styled.div`
   // ALIGN div MIDDLE
   box-sizing: border-box;
   width: var(--width-design-video);
-
-  padding: var(--padding-xlarge) 0 0 0;
-  gap: var(--gap-medium);
+  padding: var(--padding-large) 0 0 0;
 `;
 
 const Creator = styled.span`
@@ -30,10 +28,19 @@ const Creator = styled.span`
   gap: var(--gap-small);
 `;
 
+const Additional = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--padding-xlarge) 0 0 0;
+`;
+
 const Title = styled.span`
   font-size: var(--font-small);
 `;
-const Description = styled.span``;
+const Description = styled.span`
+  font-size: var(--font-xsmall);
+`;
 
 const End = styled.div`
   position: absolute;
@@ -42,8 +49,7 @@ const End = styled.div`
   justify-content: center;
   align-items: center;
   bottom: 0;
-
-  padding: 0 0 var(--padding-small) 0;
+  padding: 0 0 var(--padding-large) 0;
 `;
 
 function Design({ design }) {
@@ -72,9 +78,10 @@ function Design({ design }) {
           <img src="/logos/worldhello.png" alt="globe" />
           {finalDesign.creator}
         </Creator>
-        <Title>{finalDesign.title}</Title>
-
-        <Description>{finalDesign.description}</Description>
+        <Additional>
+          <Title>{finalDesign.title}</Title>
+          <Description>{finalDesign.description}</Description>
+        </Additional>
       </Information>
       <End>
         <Button variation="primary" size="small">

@@ -46,6 +46,7 @@ const Caption = styled.span`
   text-transform: uppercase;
   gap: var(--gap-medium);
   text-align: center;
+  color: var(--color-blue);
 `;
 
 const Img = styled.img`
@@ -70,7 +71,7 @@ function Carousel() {
       </Hook>
 
       <Hook>
-        <Caption>Take a peek at what we have built </Caption>
+        <Caption>Take a peek at what we&rsquo;ve built </Caption>
       </Hook>
 
       <CarouselArea>

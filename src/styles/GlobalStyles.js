@@ -13,7 +13,7 @@ const GlobalStyles = createGlobalStyle`
     --height-full-window: 100vh;
     --height-percentage-window: 100%;
     --height-row: 10rem;
-    --height-arrow: 2.5vh;
+    --height-arrow: 3vh;
 
 
   /* Backrounds */
@@ -28,10 +28,10 @@ const GlobalStyles = createGlobalStyle`
   --color-yellow: #e7e167;
   --color-white: #ffff;
   --color-blue: #0069B6;
-  --color-green: #3DA40D
+  --color-green: #3DA40D;
 
   /* Text Size */
-  --font-xsmall: 1.5rem;
+  --font-xsmall: 1.15rem;
   --font-small: 2rem;
   --font-medium: 3rem;
   --font-large: 4rem;

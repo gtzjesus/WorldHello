@@ -26,10 +26,6 @@ const Description = styled.div`
   gap: var(--gap-medium);
 `;
 
-const Special = styled.span`
-  border-bottom: 0.25rem solid #3da40d;
-`;
-
 const Quote = styled.span`
   padding: var(--padding-xlarge) 0 0 0;
   font-size: var(--font-small);
@@ -40,7 +36,9 @@ const Source = styled.span`
   border-bottom: 0.25rem solid #0069b6;
   width: fit-content;
   font-size: var(--font-xsmall);
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+
   padding: 0.25rem;
 `;
 
@@ -58,9 +56,7 @@ function Vital() {
   return (
     <StyledVital>
       <Information>
-        <Title>
-          Say <Special>HELLO</Special> to the world!
-        </Title>
+        <Title>Say HELLO to the world!</Title>
         <Description>
           <Quote>
             &ldquo; 80% of consumers are more likely to buy from brands that
