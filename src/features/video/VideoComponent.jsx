@@ -7,6 +7,9 @@ const StyledVideo = styled.div`
   justify-content: center;
   color: var(--color-white);
 
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden; /* Hide vertical scrollbar */
   overflow-x: hidden;

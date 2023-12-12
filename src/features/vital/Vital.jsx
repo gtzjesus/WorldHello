@@ -24,7 +24,6 @@ const Description = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-medium);
-  font-size: var(--font-small);
 `;
 
 const Special = styled.span`
@@ -33,6 +32,7 @@ const Special = styled.span`
 
 const Quote = styled.span`
   padding: var(--padding-xlarge) 0 0 0;
+  font-size: var(--font-small);
 `;
 
 const Source = styled.span`
@@ -40,6 +40,7 @@ const Source = styled.span`
   border-bottom: 0.25rem solid #0069b6;
   width: fit-content;
   opacity: 0.8;
+  font-size: var(--font-xsmall);
 `;
 
 const Last = styled.div`
