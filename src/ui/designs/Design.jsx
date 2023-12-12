@@ -6,6 +6,9 @@ const StyledDesign = styled.div`
   display: flex;
   flex-direction: column;
   max-width: var(--width-design-video);
+  color: var(--color-white);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 `;
 
 const Information = styled.div`
@@ -17,7 +20,7 @@ const Information = styled.div`
   box-sizing: border-box;
   width: var(--width-design-video);
 
-  padding: var(--padding-medium) 0 0 0;
+  padding: var(--padding-xlarge) 0 0 0;
   gap: var(--gap-medium);
 `;
 
@@ -25,15 +28,12 @@ const Creator = styled.span`
   display: flex;
   align-items: center;
   gap: var(--gap-small);
-  font-size: var(--font-xsmall);
 `;
 
 const Title = styled.span`
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
 `;
-const Description = styled.span`
-  font-size: var(--font-xsmall);
-`;
+const Description = styled.span``;
 
 const End = styled.div`
   position: absolute;
@@ -43,7 +43,7 @@ const End = styled.div`
   align-items: center;
   bottom: 0;
 
-  padding: 0 0 var(--padding-medium) 0;
+  padding: 0 0 var(--padding-small) 0;
 `;
 
 function Design({ design }) {

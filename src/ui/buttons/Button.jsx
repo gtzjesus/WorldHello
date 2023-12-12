@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 const sizes = {
   small: css`
     font-size: var(--font-xsmall);
-    padding: 1.2rem 1.6rem;
+    padding: 0.8rem 1.2rem;
   `,
 };
 

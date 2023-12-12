@@ -14,9 +14,9 @@
 ::-webkit-scrollbar {
   height: 4px;
   width: 4px;
-  background: var(--color-black);
+  background: var(--color-white);
 }
 ::-webkit-scrollbar-thumb:horizontal {
-  background: var(--color-black);
+  background: var(--color-white);
   border-radius: 10px;
 }

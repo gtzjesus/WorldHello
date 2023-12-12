@@ -39,8 +39,9 @@ const Source = styled.span`
   text-transform: uppercase;
   border-bottom: 0.25rem solid #0069b6;
   width: fit-content;
-  opacity: 0.8;
   font-size: var(--font-xsmall);
+  background: rgba(0, 0, 0, 0.45);
+  padding: 0.25rem;
 `;
 
 const Last = styled.div`
@@ -67,7 +68,7 @@ function Vital() {
           </Quote>
           <Source>
             <a href="https://bloggingwizard.com/website-statistics/">
-              view source
+              click to view source
             </a>
           </Source>
         </Description>

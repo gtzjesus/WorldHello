@@ -5,9 +5,8 @@ import Design from '../../ui/designs/Design';
 import styled from 'styled-components';
 
 const StyledCarousel = styled.div`
-  background-color: var(--background-primary);
+  background-color: var(--background-secondary);
   overflow: hidden;
-  color: var(--color-white);
 `;
 const CarouselArea = styled.div`
   position: relative;
@@ -43,15 +42,10 @@ const SubTitle = styled.span`
 `;
 
 const Caption = styled.span`
-  opacity: 0.4;
-  font-size: var(--font-xsmall);
+  font-size: var(--font-small);
   text-transform: uppercase;
-  float: left;
   gap: var(--gap-medium);
-`;
-
-const Special = styled.span`
-  color: var(--color-blue);
+  text-align: center;
 `;
 
 const Img = styled.img`
@@ -73,9 +67,10 @@ function Carousel() {
           We specialize in crafting websites that precisely target your ideal
           audience,
         </SubTitle>
-        <Caption>
-          <Special>[ </Special>What we have done <Special>]</Special>
-        </Caption>
+      </Hook>
+
+      <Hook>
+        <Caption>Take a peek at what we have built </Caption>
       </Hook>
 
       <CarouselArea>
