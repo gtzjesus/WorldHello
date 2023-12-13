@@ -37,7 +37,7 @@ const SubTitle = styled.span`
 `;
 
 const Img = styled.img`
-  height: 5vw;
+  height: 7.5vw;
 `;
 
 const Caption = styled.div`

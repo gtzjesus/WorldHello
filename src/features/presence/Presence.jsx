@@ -4,7 +4,7 @@ import Button from '../../ui/buttons/Button';
 const StyledPresence = styled.div`
   background: var(--color-black);
   color: var(--color-white);
-  padding: var(--padding-large) var(--padding-medium);
+  padding: var(--padding-medium);
 `;
 
 const Information = styled.div`
@@ -15,7 +15,6 @@ const Information = styled.div`
 const Intro = styled.div`
   text-transform: uppercase;
   color: var(--color-green);
-  padding: var(--padding-small);
   opacity: 0.75;
 `;
 

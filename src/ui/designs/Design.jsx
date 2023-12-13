@@ -19,7 +19,7 @@ const Information = styled.div`
   // ALIGN div MIDDLE
   box-sizing: border-box;
   width: var(--width-design-video);
-  padding: var(--padding-large) 0 0 0;
+  padding: var(--padding-medium) 0 0 0;
 `;
 
 const Creator = styled.span`
@@ -49,7 +49,7 @@ const End = styled.div`
   justify-content: center;
   align-items: center;
   bottom: 0;
-  padding: 0 0 var(--padding-large) 0;
+  padding: 0 0 var(--padding-medium) 0;
 `;
 
 function Design({ design }) {
