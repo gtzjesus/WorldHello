@@ -11,6 +11,12 @@ const Information = styled.div`
   gap: var(--gap-large);
 `;
 
+const Intro = styled.div`
+  text-transform: uppercase;
+  color: var(--color-blue);
+  opacity: 0.75;
+`;
+
 const Title = styled.span`
   font-size: var(--font-medium);
 `;
@@ -34,6 +40,8 @@ function Company() {
   return (
     <StyledCompany>
       <Information>
+        <Intro>[ why we do what we do ]</Intro>
+
         <Title>Why us?</Title>
         <Description>
           At WorldHello we ensure that partnering with us is a valuable

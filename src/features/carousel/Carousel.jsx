@@ -20,11 +20,15 @@ const CarouselArea = styled.div`
   object-fit: cover;
 `;
 
+const Intro = styled.div`
+  text-transform: uppercase;
+  color: var(--color-blue);
+  opacity: 0.75;
+`;
+
 const Hook = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: var(--gap-medium);
   padding: var(--padding-medium);
 `;
@@ -66,6 +70,7 @@ function Carousel() {
   return (
     <StyledCarousel>
       <Hook>
+        <Intro>[ what we do ]</Intro>
         <SubTitle>
           We specialize in crafting websites that precisely target your ideal
           audience,
