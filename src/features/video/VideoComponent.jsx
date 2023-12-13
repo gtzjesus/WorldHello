@@ -7,32 +7,27 @@ const StyledVideo = styled.div`
   justify-content: center;
   color: var(--color-white);
 
+  // BETTER WAY TO SHOW TEXT OVER VIDEO
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-y: hidden;
   overflow-x: hidden;
-
   max-height: 100vh;
   max-width: 100vw;
-
   object-fit: contain;
   z-index: 0;
-  // REMOVE CONTROLS DISPLAY AT BEGINNING OF video
 `;
 
 const Introduction = styled.div`
   position: absolute;
   bottom: 0;
-
+  padding: var(--padding-medium);
   display: flex;
   flex-direction: column;
-
-  padding: var(--margin-medium);
   gap: var(--gap-medium);
 `;
-
 const Title = styled.span`
   font-size: var(--font-medium);
 `;
@@ -43,7 +38,6 @@ function VideoComponent() {
       <video autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={worldhellovideo} type="video/mp4" />
       </video>
-
       <Introduction>
         <Title>Websites that convert visitors into customers</Title>
         <Button variation="primary" size="small">

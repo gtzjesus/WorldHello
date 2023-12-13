@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
     --width-full-window: 100%;
     --width-half-window: 45vw;
     --width-filled-window: 100vw;
-    --width-design-video: 75vw;
+    --width-design-video: 85vw;
 
     --height-full-window: 100vh;
     --height-percentage-window: 100%;
@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
   --font-xsmall: 0.75rem;
   --font-small: 1.5rem;
   --font-medium: 2.5rem;
-  --font-large: 5rem;
+  --font-large: 3rem;
 
       /* Margin */
     --margin-xsmall: 0.75rem;

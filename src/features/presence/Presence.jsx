@@ -45,6 +45,7 @@ function Presence() {
         <Description>
           Unlock the full potential for your business with a digital presence!
           <br />
+          <br />
           <Special>Take control of your website with WorldHello.</Special>
         </Description>
         <Button variation="secondary" size="small">
