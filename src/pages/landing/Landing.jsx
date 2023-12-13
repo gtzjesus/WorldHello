@@ -8,8 +8,8 @@ function Landing() {
   return (
     <>
       <VideoComponent />
-      <Carousel />
       <Presence />
+      <Carousel />
       <Vital />
       <Company />
     </>
