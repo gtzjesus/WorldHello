@@ -37,12 +37,11 @@ function Presence() {
       <Information>
         <Intro>[ who we look for ]</Intro>
         <Title>
-          <Special>&ldquo;</Special> Do you have an ambitious brand you would
-          want to elevate with a digital footprint?
+          <Special>&ldquo;</Special> Do you have an ambitious brand you want to
+          elevate?
         </Title>
         <Description>
           Unlock the full potential for your business with a digital presence!
-          <br />
           <br />
           <Special>Take control of your website with WorldHello.</Special>
         </Description>

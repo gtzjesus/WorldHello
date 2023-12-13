@@ -56,7 +56,7 @@ const Caption = styled.span`
 `;
 
 const MiniDescription = styled.span`
-  font-size: var(--font-xsmall);
+  font-size: var(--font-xxsmall);
 `;
 
 function Carousel() {
@@ -91,12 +91,8 @@ function Carousel() {
         <SubTitle>transforming them into loyal and paying clients.</SubTitle>
         <MiniDescription>
           By prioritizing optimization for conversions and performance,
-          businesses can increase their chances of success, boost revenue and
-          profitability.
-        </MiniDescription>
-        <MiniDescription>
-          It is essential to work with a team that understands the strategies to
-          ensure the best possible outcomes for your business.
+          businesses can increase their chances of success, boost revenue and be
+          profitable.
         </MiniDescription>
       </End>
     </StyledCarousel>

@@ -13,7 +13,12 @@ const variations = {
     background-color: var(--background-secondary);
   `,
   secondary: css`
-    color: var(--color-black);
+    color: var(--color-green);
+    background-color: var(--background-secondary);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+  `,
+  third: css`
+    color: var(--color-blue);
     background-color: var(--background-secondary);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
   `,

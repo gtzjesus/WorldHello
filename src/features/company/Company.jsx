@@ -25,16 +25,22 @@ const Description = styled.span`
   font-size: var(--font-small);
 `;
 
-const Special = styled.div`
+const Special = styled.a`
   color: var(--color-blue);
 `;
 
-const Img = styled.img``;
-const Contact = styled.span`
+const Img = styled.img`
+  // BLACK AND WHITE
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+`;
+const Contact = styled.div`
+  display: flex;
   font-size: var(--font-xsmall);
 `;
+
 const MiniDescription = styled.span`
-  font-size: var(--font-xsmall);
+  font-size: var(--font-xxsmall);
 `;
 function Company() {
   return (
@@ -50,16 +56,18 @@ function Company() {
         </Description>
         <Img src="/extras/me.png"></Img>
         <Contact>
-          Contact our founder Jesus directly:
-          <br />
-          via LinkedIn or jesus@worldhello.com
+          Contact our founder Jesus directly: via
+          <Special href="https://www.linkedin.com/in/gtzjesus/">
+            LinkedIn
+          </Special>
+          or jesus@worldhello.com
         </Contact>
         <MiniDescription>
           We are problem solvers at heart and pride ourselves on a commitment to
           excellence. Delivering high-quality and high-performing websites is
           our passion, and we strive to exceed expectations with every website.
         </MiniDescription>
-        <Button variation="secondary" size="small">
+        <Button variation="third" size="small">
           Book A Free Call
         </Button>
       </Information>
