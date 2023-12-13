@@ -4,6 +4,7 @@ const sizes = {
   small: css`
     font-size: var(--font-xsmall);
     padding: 0.8rem 1.2rem;
+    text-transform: uppercase;
   `,
 };
 

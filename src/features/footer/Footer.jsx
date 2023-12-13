@@ -11,11 +11,13 @@ const FooterInfo = styled.div`
   display: flex;
   flex-direction: column;
   color: var(--color-white);
+  gap: var(--gap-medium);
 `;
 
 const Intro = styled.span`
   text-transform: uppercase;
   opacity: 0.75;
+
   color: var(--color-blue);
 `;
 
@@ -37,6 +39,7 @@ function Footer() {
           converting customer journeys through strategic web development that
           solve business challenges for brands.
         </Ending>
+        <hr />
         <Logo>WorldHello</Logo>
 
         <Button variation="third" size="small">

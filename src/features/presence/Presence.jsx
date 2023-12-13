@@ -27,6 +27,8 @@ const Title = styled.span`
   font-size: var(--font-medium);
 `;
 
+const Img = styled.img``;
+
 const Description = styled.span`
   font-size: var(--font-small);
 `;
@@ -40,6 +42,7 @@ function Presence() {
           <Special>&ldquo;</Special> Do you have an ambitious brand you want to
           elevate?
         </Title>
+        <Img src="/extras/brand.jpg"></Img>
         <Description>
           Unlock the full potential for your business with a digital presence!
           <br />

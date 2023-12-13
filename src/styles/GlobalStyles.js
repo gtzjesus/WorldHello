@@ -31,10 +31,10 @@ const GlobalStyles = createGlobalStyle`
   --color-green: #3DA40D;
 
   /* Text Size */
-  --font-xxsmall: 1.5rem;
-  --font-xsmall: 1.05rem;
-  --font-small: 2rem;
-  --font-medium: 3rem;
+  --font-xxsmall: 1.25rem;
+  --font-xsmall: 0.75rem;
+  --font-small: 1.5rem;
+  --font-medium: 2.5rem;
   --font-large: 5rem;
 
       /* Margin */

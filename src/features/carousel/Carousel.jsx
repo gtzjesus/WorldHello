@@ -12,7 +12,7 @@ const StyledCarousel = styled.div`
 const CarouselArea = styled.div`
   position: relative;
   display: flex;
-  gap: var(--gap-medium);
+  gap: var(--gap-small);
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden;
@@ -36,7 +36,10 @@ const SubTitle = styled.span`
   font-size: var(--font-small);
 `;
 
-const Caption = styled.span`
+const Img = styled.img``;
+
+const Caption = styled.div`
+  display: flex;
   font-size: var(--font-small);
   text-transform: uppercase;
   color: var(--color-blue);
@@ -62,7 +65,9 @@ function Carousel() {
           We specialize in crafting websites that precisely target your ideal
           audience,
         </SubTitle>
-        <Caption>Take a peek at what we&rsquo;ve built </Caption>
+        <Caption>
+          what we&rsquo;ve built <Img src="/extras/arrow.png"></Img>
+        </Caption>
         <CarouselArea>
           {designs.map((design) => (
             <Design design={design} key={design.id} />
