@@ -24,13 +24,14 @@ const Hook = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: var(--gap-medium);
   padding: var(--padding-medium);
 `;
 
 const End = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: var(--gap-medium);
@@ -45,12 +46,13 @@ const Caption = styled.span`
   font-size: var(--font-small);
   text-transform: uppercase;
   gap: var(--gap-medium);
-  text-align: center;
   color: var(--color-blue);
+  border-bottom: 0.25rem solid var(--color-green);
+  width: fit-content;
 `;
 
-const Img = styled.img`
-  height: var(--height-arrow);
+const MiniDescription = styled.span`
+  font-size: var(--font-xsmall);
 `;
 
 function Carousel() {
@@ -81,8 +83,16 @@ function Carousel() {
       </CarouselArea>
 
       <End>
-        <Img src="/extras/arrow.png" alt="globe" />
         <SubTitle>transforming them into loyal and paying clients.</SubTitle>
+        <MiniDescription>
+          By prioritizing optimization for conversions and performance,
+          businesses can increase their chances of success, boost revenue and
+          profitability.
+        </MiniDescription>
+        <MiniDescription>
+          It is essential to work with a team that understands the strategies to
+          ensure the best possible outcomes for your business.
+        </MiniDescription>
       </End>
     </StyledCarousel>
   );
