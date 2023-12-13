@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 * {
-  font-family: 'League Gothic', sans-serif;
+  font-family: 'Playfair Display', serif;
   margin: 0;
   padding: 0;
-  letter-spacing: 0.05rem;
   text-decoration: none;
   color: inherit;
 }

@@ -7,12 +7,12 @@ import styled from 'styled-components';
 const StyledCarousel = styled.div`
   background-color: var(--background-secondary);
   overflow: hidden;
+  padding: var(--padding-medium);
 `;
 const CarouselArea = styled.div`
   position: relative;
   display: flex;
   gap: var(--gap-medium);
-  padding: var(--margin-small) var(--margin-xlarge);
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden;
@@ -26,20 +26,10 @@ const Intro = styled.div`
   opacity: 0.75;
 `;
 
-const Hook = styled.div`
+const Information = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-medium);
-  padding: var(--padding-medium);
-`;
-
-const End = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: var(--gap-medium);
-  padding: var(--padding-medium);
 `;
 
 const SubTitle = styled.span`
@@ -49,10 +39,7 @@ const SubTitle = styled.span`
 const Caption = styled.span`
   font-size: var(--font-small);
   text-transform: uppercase;
-  gap: var(--gap-medium);
   color: var(--color-blue);
-  border-bottom: 0.25rem solid var(--color-green);
-  width: fit-content;
 `;
 
 const MiniDescription = styled.span`
@@ -69,32 +56,31 @@ function Carousel() {
 
   return (
     <StyledCarousel>
-      <Hook>
+      <Information>
         <Intro>[ what we do ]</Intro>
         <SubTitle>
           We specialize in crafting websites that precisely target your ideal
           audience,
         </SubTitle>
-      </Hook>
-
-      <Hook>
         <Caption>Take a peek at what we&rsquo;ve built </Caption>
-      </Hook>
+        <CarouselArea>
+          {designs.map((design) => (
+            <Design design={design} key={design.id} />
+          ))}
+        </CarouselArea>
 
-      <CarouselArea>
-        {designs.map((design) => (
-          <Design design={design} key={design.id} />
-        ))}
-      </CarouselArea>
-
-      <End>
         <SubTitle>transforming them into loyal and paying clients.</SubTitle>
+        <Intro>[ how we do it ]</Intro>
         <MiniDescription>
           By prioritizing optimization for conversions and performance,
-          businesses can increase their chances of success, boost revenue and be
-          profitable.
+          businesses can increase their chances of success, by boosting revenue
+          and being profitable.
         </MiniDescription>
-      </End>
+        <MiniDescription>
+          It is essential to work with a team that understands the strategies to
+          ensure the best possible outcomes for your business.
+        </MiniDescription>
+      </Information>
     </StyledCarousel>
   );
 }

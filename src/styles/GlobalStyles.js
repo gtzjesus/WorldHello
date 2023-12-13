@@ -35,7 +35,7 @@ const GlobalStyles = createGlobalStyle`
   --font-xsmall: 1.05rem;
   --font-small: 2rem;
   --font-medium: 3rem;
-  --font-large: 4rem;
+  --font-large: 5rem;
 
       /* Margin */
     --margin-xsmall: 0.75rem;
