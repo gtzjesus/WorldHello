@@ -36,8 +36,8 @@ function Footer() {
         <Intro>[ thank you ]</Intro>
         <Ending>
           WorldHello is a US based Web Development Agency, creating highly
-          converting customer journeys through strategic web development that
-          solve business challenges for brands.
+          converting customer requests through strategic web development
+          principles that solve business challenges for brands.
         </Ending>
         <hr />
         <Logo>WorldHello</Logo>
