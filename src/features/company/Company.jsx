@@ -49,7 +49,7 @@ function Company() {
         <MiniDescription>
           We are problem solvers at heart and pride ourselves on a commitment to
           excellence. Delivering high-quality and high-performing websites is
-          our passion, and we strive to exceed expectations with every project.
+          our passion, and we strive to exceed expectations with every website.
         </MiniDescription>
         <Button variation="secondary" size="small">
           Book A Free Call

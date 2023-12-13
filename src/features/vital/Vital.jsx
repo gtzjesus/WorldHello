@@ -56,7 +56,7 @@ function Vital() {
   return (
     <StyledVital>
       <Information>
-        <Title>Say HELLO to the world!</Title>
+        <Title>Say Hello to the world!</Title>
         <Description>
           <Quote>
             &ldquo; 80% of consumers are more likely to buy from brands that
