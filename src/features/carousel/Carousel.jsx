@@ -42,6 +42,7 @@ const Img = styled.img`
 
 const Caption = styled.div`
   display: flex;
+  justify-content: center;
   font-size: var(--font-small);
   align-items: center;
   text-transform: uppercase;
@@ -68,15 +69,15 @@ function Carousel() {
           We specialize in crafting websites that precisely target your ideal
           audience,
         </SubTitle>
-        <Caption>
-          what we&rsquo;ve built <Img src="/extras/arrow.png"></Img>
-        </Caption>
+        <Caption>what we&rsquo;ve built,</Caption>
         <CarouselArea>
           {designs.map((design) => (
             <Design design={design} key={design.id} />
           ))}
         </CarouselArea>
-
+        <Caption>
+          swipe to take a peek <Img src="/extras/arrow.png"></Img>
+        </Caption>
         <SubTitle>transforming them into loyal and paying clients.</SubTitle>
         <Intro>[ how we do it ]</Intro>
         <MiniDescription>
