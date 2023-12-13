@@ -36,11 +36,14 @@ const SubTitle = styled.span`
   font-size: var(--font-small);
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+  height: 5vw;
+`;
 
 const Caption = styled.div`
   display: flex;
   font-size: var(--font-small);
+  align-items: center;
   text-transform: uppercase;
   color: var(--color-blue);
 `;

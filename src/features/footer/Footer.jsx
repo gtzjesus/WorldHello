@@ -28,6 +28,7 @@ const Ending = styled.span`
 const Logo = styled.span`
   font-size: var(--font-large);
   margin: 0 auto;
+  width: fit-content;
 `;
 function Footer() {
   return (
