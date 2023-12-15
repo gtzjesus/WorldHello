@@ -46,8 +46,6 @@ function Company() {
   return (
     <StyledCompany>
       <Information>
-        <Intro>[ why we do what we do ]</Intro>
-
         <Title>Why us?</Title>
         <Description>
           At WorldHello we ensure that partnering with us is a valuable
@@ -62,6 +60,7 @@ function Company() {
             LinkedIn
           </Special>
         </Contact>
+        <Intro>[ why we do what we do ]</Intro>
 
         <MiniDescription>
           We are problem solvers at heart and pride ourselves on a commitment to

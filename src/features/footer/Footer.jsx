@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 
 const StyledFooter = styled.footer`
-  height: 50vh;
   background-color: var(--color-black);
   padding: var(--padding-medium);
 `;
@@ -29,6 +28,16 @@ const Logo = styled.span`
   font-size: var(--font-large);
   margin: 0 auto;
 `;
+
+const Contact = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding-xsmall) 0;
+`;
+
+const Label = styled.div``;
+
+const Result = styled.div``;
 function Footer() {
   return (
     <StyledFooter>
@@ -41,6 +50,25 @@ function Footer() {
         </Ending>
         <hr />
         <Logo>WorldHello</Logo>
+        <Intro>
+          <Label>Contact us</Label>
+        </Intro>
+        <Contact>
+          <Label>Telephone</Label>
+          <Result>
+            <a href="tel:+1 915-471-9129">+1 915-471-9129</a>
+          </Result>
+        </Contact>
+
+        <Contact>
+          <Label>Email</Label>
+          <Result>contact@worldhello.com</Result>
+        </Contact>
+
+        <Contact>
+          <Label>Based in</Label>
+          <Result>Texas, US</Result>
+        </Contact>
 
         <Button variation="third" size="small">
           start for free
