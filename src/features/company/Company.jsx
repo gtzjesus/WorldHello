@@ -40,7 +40,7 @@ const Contact = styled.div`
 `;
 
 const MiniDescription = styled.span`
-  font-size: var(--font-xxsmall);
+  font-size: var(--font-xsmall);
 `;
 function Company() {
   return (

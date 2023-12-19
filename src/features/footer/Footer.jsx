@@ -21,7 +21,7 @@ const Intro = styled.span`
 `;
 
 const Ending = styled.span`
-  font-size: var(--font-xxsmall);
+  font-size: var(--font-xsmall);
 `;
 
 const Logo = styled.span`
@@ -62,7 +62,7 @@ function Footer() {
 
         <Contact>
           <Label>Email</Label>
-          <Result>contact@worldhello.com</Result>
+          <Result>contact@worldhello.us</Result>
         </Contact>
 
         <Contact>

@@ -42,7 +42,6 @@ const Img = styled.img`
 
 const Caption = styled.div`
   display: flex;
-  justify-content: center;
   font-size: var(--font-small);
   align-items: center;
   text-transform: uppercase;
@@ -50,7 +49,7 @@ const Caption = styled.div`
 `;
 
 const MiniDescription = styled.span`
-  font-size: var(--font-xxsmall);
+  font-size: var(--font-xsmall);
 `;
 
 function Carousel() {
@@ -76,18 +75,18 @@ function Carousel() {
           ))}
         </CarouselArea>
         <Caption>
-          swipe to take a peek <Img src="/extras/arrow.png"></Img>
+          swipe left to see <Img src="/extras/arrow.png"></Img>
         </Caption>
         <SubTitle>transforming them into loyal and paying clients.</SubTitle>
         <Intro>[ how we do it ]</Intro>
         <MiniDescription>
+          It is essential to work with a team that understands the strategies to
+          ensure the best possible outcomes for your business.
+        </MiniDescription>
+        <MiniDescription>
           By prioritizing optimization for conversions and performance,
           businesses can increase their chances of success, by boosting revenue
           and being profitable.
-        </MiniDescription>
-        <MiniDescription>
-          It is essential to work with a team that understands the strategies to
-          ensure the best possible outcomes for your business.
         </MiniDescription>
       </Information>
     </StyledCarousel>

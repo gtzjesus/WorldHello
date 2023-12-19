@@ -39,7 +39,7 @@ const GlobalStyles = createGlobalStyle`
 
     /* Text Size */
     --font-xxsmall: 1.25rem;
-    --font-xsmall: 0.75rem;
+    --font-xsmall: 0.90rem;
     --font-small: 1.5rem;
     --font-medium: 2.5rem;
     --font-large: 3rem;
