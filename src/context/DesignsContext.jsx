@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 import useDesigns from '../features/carousel/useDesigns';
 
-// CREATE CONTEXT API
+// CREATE CONTEXT API (for designs)
 const DesignsContext = createContext();
 function DesignsProvider({ children }) {
   // CUSTOM HOOK TO GRAB designs

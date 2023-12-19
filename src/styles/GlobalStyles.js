@@ -3,6 +3,13 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
 :root {
 
+
+  /* Responsive Designs */
+    $bp-large: 78.15em; // 1250px
+    $bp-medium: 61.25em; // 980px
+    $bp-small: 40em; // 600px
+    $bp-smallest: 31.25em; // 500px
+
   /* Width && Height */
     --width-description: 80%;
     --width-full-window: 100%;
@@ -16,26 +23,26 @@ const GlobalStyles = createGlobalStyle`
     --height-arrow: 3vh;
 
 
-  /* Backrounds */
-  --background-primary: #070606;
-  --background-secondary: #ffff;
-  --background-third: #e7e167;
+    /* Backrounds */
+    --background-primary: #070606;
+    --background-secondary: #ffff;
+    --background-third: #e7e167;
 
 
-  /* Colors */
-  --color-red: #991b1b;
-  --color-black: #070606;
-  --color-yellow: #e7e167;
-  --color-white: #ffff;
-  --color-blue: #0069B6;
-  --color-green: #3DA40D;
+    /* Colors */
+    --color-red: #991b1b;
+    --color-black: #070606;
+    --color-yellow: #e7e167;
+    --color-white: #ffff;
+    --color-blue: #0069B6;
+    --color-green: #3DA40D;
 
-  /* Text Size */
-  --font-xxsmall: 1.25rem;
-  --font-xsmall: 0.75rem;
-  --font-small: 1.5rem;
-  --font-medium: 2.5rem;
-  --font-large: 3rem;
+    /* Text Size */
+    --font-xxsmall: 1.25rem;
+    --font-xsmall: 0.75rem;
+    --font-small: 1.5rem;
+    --font-medium: 2.5rem;
+    --font-large: 3rem;
 
       /* Margin */
     --margin-xsmall: 0.75rem;

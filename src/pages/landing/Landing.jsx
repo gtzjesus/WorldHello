@@ -4,6 +4,7 @@ import Vital from '../../features/vital/Vital';
 import Company from '../../features/company/Company';
 import Presence from '../../features/presence/Presence';
 import Footer from '../../features/footer/Footer';
+import Faqs from '../../features/faqs/Faqs';
 
 function Landing() {
   return (
@@ -12,6 +13,7 @@ function Landing() {
       <Carousel />
       <Vital />
       <Presence />
+      <Faqs />
       <Company />
       <Footer />
     </>
