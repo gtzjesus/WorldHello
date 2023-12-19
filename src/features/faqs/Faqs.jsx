@@ -25,12 +25,15 @@ const faqs = [
   },
 ];
 
-const StyledFaqs = styled.div``;
+const StyledFaqs = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 function Faqs() {
   // STATE to OPEN and CLOSE faqs
   const [currentOpen, setCurrentOpen] = useState(null);
   return (
-    <div className="accordion">
+    <StyledFaqs>
       {faqs.map((element, index) => (
         <FaqsItem
           currentOpen={currentOpen}
@@ -42,7 +45,7 @@ function Faqs() {
           {element.text}
         </FaqsItem>
       ))}
-    </div>
+    </StyledFaqs>
   );
 }
 
