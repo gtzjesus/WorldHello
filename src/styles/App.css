@@ -29,9 +29,6 @@ hr {
 
 /* // FAQS */
 /* OPEN STATE */
-.open {
-  border-top: 4px solid var(--color-blue);
-}
 
 .open .number,
 .open .title {

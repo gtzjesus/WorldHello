@@ -28,12 +28,36 @@ const faqs = [
 const StyledFaqs = styled.div`
   display: flex;
   flex-direction: column;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: var(--padding-large) var(--padding-medium);
+`;
+
+const Intro = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+`;
+
+const Title = styled.span`
+  font-size: var(--font-medium);
+`;
+
+const Description = styled.span`
+  font-size: var(--font-xsmall);
 `;
 function Faqs() {
   // STATE to OPEN and CLOSE faqs
   const [currentOpen, setCurrentOpen] = useState(null);
   return (
     <StyledFaqs>
+      <Intro>
+        <Title>Frequently Asked Questions</Title>
+        <Description>
+          If you have any other questions, feel free to send us a message at:
+          <br /> contact@worldhello.us
+        </Description>
+      </Intro>
       {faqs.map((element, index) => (
         <FaqsItem
           currentOpen={currentOpen}

@@ -3,10 +3,7 @@ import styled from 'styled-components';
 const StyledItem = styled.div`
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   padding: 20px 24px;
-  padding-right: 48px;
   cursor: pointer;
-  border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff;
 
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -42,12 +39,16 @@ function FaqsItem({ num, title, currentOpen, onOpen, children }) {
     onOpen(isOpen ? null : num);
   }
   return (
-    <StyledItem className={`${isOpen ? 'open' : ''}`} onClick={handleToggle}>
-      <Number className="number">{num < 9 ? `0${num + 1}` : num + 1}</Number>
-      <Title>{title}</Title>
-      <Icon>{isOpen ? '-' : '+'}</Icon>
-      {isOpen && <Content>{children}</Content>}
-    </StyledItem>
+    <>
+      <StyledItem className={`${isOpen ? 'open' : ''}`} onClick={handleToggle}>
+        <Number className="number">{num < 9 ? `0${num + 1}` : num + 1}</Number>
+        <Title>{title}</Title>
+        <Icon>{isOpen ? '-' : '+'}</Icon>
+        {isOpen && <Content>{children}</Content>}
+      </StyledItem>
+
+      <hr />
+    </>
   );
 }
 
