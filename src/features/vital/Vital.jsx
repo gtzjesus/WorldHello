@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Button from '../../ui/buttons/Button';
 
 const StyledVital = styled.div`
   display: flex;
@@ -31,16 +32,7 @@ const Quote = styled.span`
   font-size: var(--font-small);
 `;
 
-const Source = styled.span`
-  text-transform: uppercase;
-  border-bottom: 0.25rem solid #0069b6;
-  width: fit-content;
-  font-size: var(--font-xsmall);
-  background: rgba(0, 0, 0, 0.35);
-  border-radius: 5px;
-
-  padding: 0.25rem;
-`;
+const Source = styled.span``;
 
 const Last = styled.div`
   display: flex;
@@ -63,9 +55,13 @@ function Vital() {
             offer personalized website experiences &rdquo;
           </Quote>
           <Source>
-            <a href="https://bloggingwizard.com/website-statistics/">
-              click to view source
-            </a>
+            <Button
+              href="https://bloggingwizard.com/website-statistics/"
+              variation="third"
+              size="small"
+            >
+              click to visit source
+            </Button>
           </Source>
         </Description>
         <Last>

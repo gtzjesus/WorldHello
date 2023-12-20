@@ -43,10 +43,11 @@ function Footer() {
     <StyledFooter>
       <FooterInfo>
         <Intro>[ thank you ]</Intro>
+        <Ending>WorldHello is a US based Website Development Agency.</Ending>
+
         <Ending>
-          WorldHello is a US based Web Development Agency, creating highly
-          converting customer requests through strategic web development
-          principles that solve business challenges for brands.
+          We are best known for converting customer requests through strategic
+          web development principles that solve business challenges.
         </Ending>
         <hr />
         <Logo>WorldHello</Logo>
@@ -71,7 +72,7 @@ function Footer() {
         </Contact>
 
         <Button variation="third" size="small">
-          start for free
+          start for free today
         </Button>
       </FooterInfo>
     </StyledFooter>

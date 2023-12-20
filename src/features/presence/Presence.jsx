@@ -47,13 +47,13 @@ function Presence() {
         </Title>
         <Img src="/extras/brand.jpg"></Img>
         <Description>
-          Unlock the full potential for your business with a digital footprint!
+          Unlock the full potential of your business with a digital footprint!
           <br />
           <br />
           <Closing>Take control of your website with WorldHello.</Closing>
         </Description>
         <Button variation="primary" size="small">
-          Start your project
+          Start your project today
         </Button>
       </Information>
     </StyledPresence>

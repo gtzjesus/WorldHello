@@ -65,8 +65,12 @@ function Company() {
 
         <MiniDescription>
           We are problem solvers at heart and pride ourselves on a commitment to
-          excellence. Delivering high-quality and high-performing websites is
-          our passion, and we strive to exceed expectations with every website.
+          excellence.
+        </MiniDescription>
+        <MiniDescription>
+          At WorldHello, we strive to exceed expectations with every website
+          that crosses our path. Our passion relies in delivering high-quality
+          and high-performing websites.
         </MiniDescription>
         <Button variation="third" size="small">
           Book A Free Call
