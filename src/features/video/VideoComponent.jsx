@@ -40,9 +40,7 @@ function VideoComponent() {
       </video>
       <Introduction>
         <Title>Websites that transform visitors into customers.</Title>
-        <Button variation="primary" size="small">
-          Start your website
-        </Button>
+        <Button>Start your website</Button>
       </Introduction>
     </StyledVideo>
   );

@@ -71,7 +71,7 @@ function Footer() {
           <Result>Texas, US</Result>
         </Contact>
 
-        <Button variation="third" size="small">
+        <Button variation="primary" size="small">
           start for free today
         </Button>
       </FooterInfo>

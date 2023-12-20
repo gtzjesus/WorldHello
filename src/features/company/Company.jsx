@@ -72,7 +72,7 @@ function Company() {
           that crosses our path. Our passion relies in delivering high-quality
           and high-performing websites.
         </MiniDescription>
-        <Button variation="third" size="small">
+        <Button variation="primary" size="small">
           Book A Free Call
         </Button>
       </Information>
