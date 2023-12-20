@@ -3,7 +3,7 @@ import Button from '../../ui/buttons/Button';
 
 const StyledVital = styled.div`
   display: flex;
-  background-image: url('/backgrounds/earth.jpeg');
+  background-image: url('/backgrounds/earth.jpg');
   background-size: cover;
   color: var(--color-white);
   padding: var(--padding-large) var(--padding-medium);
@@ -32,6 +32,10 @@ const Quote = styled.span`
   font-size: var(--font-small);
 `;
 
+const Special = styled.span`
+  color: var(--color-blue);
+`;
+
 const Source = styled.span``;
 
 const Last = styled.div`
@@ -42,17 +46,18 @@ const Last = styled.div`
 `;
 
 const Ending = styled.span`
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
 `;
 function Vital() {
   return (
     <StyledVital>
       <Information>
-        <Title>Say Hello to the world!</Title>
+        <Title>Say hello to the world and put your brand on the map!</Title>
         <Description>
           <Quote>
-            &ldquo; 80% of consumers are more likely to buy from brands that
-            offer personalized website experiences &rdquo;
+            <Special>&ldquo;</Special> 80% of consumers are more likely to buy
+            from brands that offer personalized website experiences
+            <Special>&rdquo;</Special>
           </Quote>
           <Source>
             <Button

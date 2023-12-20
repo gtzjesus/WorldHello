@@ -83,7 +83,7 @@ function Carousel() {
         <Intro>[ how we do it ]</Intro>
         <MiniDescription>
           It is essential to work with a team that understands the strategies to
-          ensure the best possible outcomes for your business.
+          ensure the best possible outcome for your business.
         </MiniDescription>
         <MiniDescription>
           At WorldHello, we prioritize optimization for conversions and
