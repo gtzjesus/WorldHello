@@ -46,7 +46,7 @@ const Last = styled.div`
 `;
 
 const Ending = styled.span`
-  font-size: var(--font-xsmall);
+  font-size: var(--font-small);
 `;
 function Vital() {
   return (

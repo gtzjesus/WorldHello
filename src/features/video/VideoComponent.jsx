@@ -39,7 +39,7 @@ function VideoComponent() {
         <source src={worldhellovideo} type="video/mp4" />
       </video>
       <Introduction>
-        <Title>Websites that transform visitors into customers</Title>
+        <Title>Websites that transform visitors into customers.</Title>
         <Button variation="primary" size="small">
           Start your website
         </Button>

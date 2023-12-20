@@ -12,21 +12,24 @@ const variations = {
   primary: css`
     color: var(--color-blue);
     background-color: var(--background-secondary);
+    width: fit-content;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
   `,
   secondary: css`
     color: var(--color-green);
     background-color: var(--background-secondary);
+    width: fit-content;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
   `,
   third: css`
     color: var(--color-blue);
     background-color: var(--background-secondary);
+    width: fit-content;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
   `,
 };
 
-const Button = styled.button`
-  font-family: 'Bebas Neue', sans-serif;
+const Button = styled.a`
   border: none;
   cursor: pointer;
   border-radius: 5px;
