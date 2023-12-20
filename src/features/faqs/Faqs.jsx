@@ -36,7 +36,7 @@ const StyledFaqs = styled.div`
 const Intro = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--gap-medium);
+  gap: var(--gap-large);
 `;
 
 const Title = styled.span`

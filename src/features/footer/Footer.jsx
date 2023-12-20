@@ -51,7 +51,7 @@ function Footer() {
         <hr />
         <Logo>WorldHello</Logo>
         <Intro>
-          <Label>Contact us</Label>
+          <Label>[ Contact us ]</Label>
         </Intro>
         <Contact>
           <Label>Telephone</Label>

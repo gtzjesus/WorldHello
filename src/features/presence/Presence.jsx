@@ -26,6 +26,11 @@ const Title = styled.span`
   font-size: var(--font-medium);
 `;
 
+const Closing = styled.span`
+  color: var(--color-blue);
+  font-size: var(--font-xsmall);
+`;
+
 const Img = styled.img``;
 
 const Description = styled.span`
@@ -38,15 +43,14 @@ function Presence() {
       <Information>
         <Intro>[ who we look for ]</Intro>
         <Title>
-          <Special>&ldquo;</Special> Do you have an ambitious brand you want to
-          elevate?
+          <Special>&ldquo;</Special> Looking to elevate your brand?
         </Title>
         <Img src="/extras/brand.jpg"></Img>
         <Description>
-          Unlock the full potential for your business with a digital presence!
+          Unlock the full potential for your business with a digital footprint!
           <br />
           <br />
-          <Special>Take control of your website with WorldHello.</Special>
+          <Closing>Take control of your website with WorldHello.</Closing>
         </Description>
         <Button variation="primary" size="small">
           Start your project

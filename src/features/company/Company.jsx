@@ -27,6 +27,7 @@ const Description = styled.span`
 
 const Special = styled.a`
   color: var(--color-blue);
+  font-size: var(--font-xsmall);
 `;
 
 const Img = styled.img`

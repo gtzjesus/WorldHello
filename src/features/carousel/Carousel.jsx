@@ -75,18 +75,20 @@ function Carousel() {
           ))}
         </CarouselArea>
         <Caption>
-          swipe left to see <Img src="/extras/arrow.png"></Img>
+          swipe left to see more <Img src="/extras/arrow.png"></Img>
         </Caption>
-        <SubTitle>transforming them into loyal and paying clients.</SubTitle>
+        <SubTitle>
+          transforming your clientele into loyal and paying customers.
+        </SubTitle>
         <Intro>[ how we do it ]</Intro>
         <MiniDescription>
           It is essential to work with a team that understands the strategies to
           ensure the best possible outcomes for your business.
         </MiniDescription>
         <MiniDescription>
-          By prioritizing optimization for conversions and performance,
-          businesses can increase their chances of success, by boosting revenue
-          and being profitable.
+          At WorldHello, we prioritize optimization for conversions and
+          performance that allows businesses to increase their chances of
+          success, by boosting revenue and being profitable.
         </MiniDescription>
       </Information>
     </StyledCarousel>
