@@ -35,7 +35,7 @@ const Title = styled.span`
 function VideoComponent() {
   return (
     <StyledVideo>
-      <video autoPlay="autoPlay " loop muted playsInline={true}>
+      <video loop muted playsInline={true}>
         <source src={worldhellovideo} type="video/mp4" />
       </video>
       <Introduction>
