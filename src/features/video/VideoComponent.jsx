@@ -16,39 +16,30 @@ const StyledVideo = styled.div`
 `;
 
 const Introduction = styled.div`
-  position: absolute;
-  bottom: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: var(--gap-medium);
-  padding: var(--padding-medium);
+  padding: 0 0 0 var(--padding-medium);
 `;
 
-const SubTitle = styled.span`
-  font-size: var(--font-small);
-  color: var(--color-blue);
-`;
 const Title = styled.span`
   font-size: var(--font-medium);
 `;
-const MiniDescription = styled.span`
-  font-size: var(--font-small);
-`;
+
 const Description = styled.span`
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
 `;
 
 function VideoComponent() {
   return (
     <StyledVideo>
       <Introduction>
-        <SubTitle>[ WorldHello ]</SubTitle>
-
         <Title>Website Development Agency</Title>
-        <MiniDescription>
-          Creating highly converting websites through strategic designs.
-        </MiniDescription>
-        <Description>Websites that convert visitors into customers</Description>
+
+        <Description>
+          Websites that convert visitors into customers.
+        </Description>
         <Button variation="primary" size="small">
           Start your website
         </Button>
