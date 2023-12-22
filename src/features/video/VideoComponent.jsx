@@ -25,7 +25,7 @@ const Introduction = styled.div`
 
 const Title = styled.span`
   font-size: var(--font-xlarge);
-  letter-spacing: -0.7rem;
+  letter-spacing: -0.5rem;
   text-transform: uppercase;
 `;
 
