@@ -43,7 +43,12 @@ function VideoComponent() {
     <StyledVideo>
       <Introduction>
         <MiniDescription>WorldHello</MiniDescription>
-        <Title>Web Dev Agency</Title>
+        <Title>
+          Website Develop-
+          <br />
+          ment
+          <br /> Agency
+        </Title>
         <Description>
           Websites that convert visitors into
           <MiniDescription> customers</MiniDescription>.
