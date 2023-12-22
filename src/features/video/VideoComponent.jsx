@@ -20,11 +20,13 @@ const Introduction = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: var(--gap-medium);
-  padding: 0 0 0 var(--padding-medium);
+  padding: var(--padding-medium);
 `;
 
 const Title = styled.span`
-  font-size: var(--font-medium);
+  font-size: var(--font-xlarge);
+  letter-spacing: -0.7rem;
+  text-transform: uppercase;
 `;
 
 const Description = styled.span`
