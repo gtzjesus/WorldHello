@@ -63,6 +63,8 @@ const GlobalStyles = createGlobalStyle`
     --padding-large: 3rem;
     --padding-slarge: 5rem;
     --padding-xlarge: 7rem;
+    --padding-xxlarge: 15rem;
+
 
 
     --padding-header:0.5rem 1rem;

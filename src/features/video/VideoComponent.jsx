@@ -18,12 +18,32 @@ const StyledVideo = styled.div`
 const Introduction = styled.div`
   position: absolute;
   bottom: 0;
-  padding: var(--padding-medium);
   display: flex;
   flex-direction: column;
   gap: var(--gap-medium);
+  padding: var(--padding-medium);
+`;
+
+const Landing = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  gap: var(--gap-medium);
+  padding: var(--padding-xxlarge) var(--padding-medium) 0 var(--padding-medium);
+`;
+
+const SubTitle = styled.span`
+  font-size: var(--font-small);
+  color: var(--color-blue);
 `;
 const Title = styled.span`
+  font-size: var(--font-medium);
+`;
+const MiniDescription = styled.span`
+  font-size: var(--font-small);
+`;
+const Description = styled.span`
   font-size: var(--font-medium);
 `;
 
@@ -33,8 +53,18 @@ function VideoComponent() {
       {/* <video autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={worldhellovideo} type="video/mp4" />
       </video> */}
+      <Landing>
+        <SubTitle>[ WorldHello ]</SubTitle>
+
+        <Title>Web Development Agency</Title>
+        <MiniDescription>
+          Creating highly converting websites through strategic Design, SEO &
+          Data
+        </MiniDescription>
+      </Landing>
+
       <Introduction>
-        <Title>Websites that convert visitors into customers</Title>
+        <Description>Websites that convert visitors into customers</Description>
         <Button variation="primary" size="small">
           Start your website
         </Button>
