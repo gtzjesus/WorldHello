@@ -24,15 +24,6 @@ const Introduction = styled.div`
   padding: var(--padding-medium);
 `;
 
-const Landing = styled.div`
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  justify-content: center;
-  gap: var(--gap-medium);
-  padding: var(--padding-xxlarge) var(--padding-medium) 0 var(--padding-medium);
-`;
-
 const SubTitle = styled.span`
   font-size: var(--font-small);
   color: var(--color-blue);
@@ -50,20 +41,13 @@ const Description = styled.span`
 function VideoComponent() {
   return (
     <StyledVideo>
-      {/* <video autoPlay="autoPlay " loop muted playsInline={true}>
-        <source src={worldhellovideo} type="video/mp4" />
-      </video> */}
-      <Landing>
+      <Introduction>
         <SubTitle>[ WorldHello ]</SubTitle>
 
-        <Title>Web Development Agency</Title>
+        <Title>Website Development Agency</Title>
         <MiniDescription>
-          Creating highly converting websites through strategic Design, SEO &
-          Data
+          Creating highly converting websites through strategic designs.
         </MiniDescription>
-      </Landing>
-
-      <Introduction>
         <Description>Websites that convert visitors into customers</Description>
         <Button variation="primary" size="small">
           Start your website
@@ -74,3 +58,9 @@ function VideoComponent() {
 }
 
 export default VideoComponent;
+
+{
+  /* <video autoPlay="autoPlay " loop muted playsInline={true}>
+        <source src={worldhellovideo} type="video/mp4" />
+      </video> */
+}
