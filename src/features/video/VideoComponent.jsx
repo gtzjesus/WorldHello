@@ -36,6 +36,7 @@ const MiniDescription = styled.span`
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
+  padding: 0 0 var(--padding-medium) 0;
 `;
 
 function VideoComponent() {
