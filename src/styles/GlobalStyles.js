@@ -51,7 +51,7 @@ const GlobalStyles = createGlobalStyle`
     --margin-small: 1rem;
     --margin-medium: 2rem;
     --margin-large: 3rem;
-    --margin-xlarge: 5rem;
+    --margin-xlarge: 4.5rem;
 
 
     --margin-nav-height: 8rem;

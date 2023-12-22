@@ -35,7 +35,7 @@ const MiniDescription = styled.span`
   color: var(--color-blue);
 `;
 const Description = styled.span`
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
 `;
 
 function VideoComponent() {
@@ -44,9 +44,9 @@ function VideoComponent() {
       <Introduction>
         <MiniDescription>WorldHello</MiniDescription>
         <Title>Website Development Agency</Title>
-
         <Description>
-          Websites that convert visitors into customers.
+          Websites that convert visitors into
+          <MiniDescription> customers</MiniDescription>.
         </Description>
         <Button variation="primary" size="small">
           Start your website
