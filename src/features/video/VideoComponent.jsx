@@ -35,12 +35,14 @@ const Title = styled.span`
 function VideoComponent() {
   return (
     <StyledVideo>
-      <video muted="true" loop="true" playsInline={true}>
+      <video autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={worldhellovideo} type="video/mp4" />
       </video>
       <Introduction>
-        <Title>Websites that transform visitors into customers.</Title>
-        <Button>Start your website</Button>
+        <Title>Websites that convert visitors into customers</Title>
+        <Button variation="primary" size="small">
+          Start your website
+        </Button>
       </Introduction>
     </StyledVideo>
   );
