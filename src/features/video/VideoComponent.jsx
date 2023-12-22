@@ -25,10 +25,15 @@ const Introduction = styled.div`
 
 const Title = styled.span`
   font-size: var(--font-xlarge);
-  letter-spacing: -0.5rem;
+  letter-spacing: -0.3rem;
   text-transform: uppercase;
+  line-height: 4rem;
 `;
 
+const MiniDescription = styled.span`
+  font-size: var(--font-small);
+  color: var(--color-blue);
+`;
 const Description = styled.span`
   font-size: var(--font-small);
 `;
@@ -37,6 +42,7 @@ function VideoComponent() {
   return (
     <StyledVideo>
       <Introduction>
+        <MiniDescription>WorldHello</MiniDescription>
         <Title>Website Development Agency</Title>
 
         <Description>
