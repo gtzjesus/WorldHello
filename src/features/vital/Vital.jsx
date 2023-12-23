@@ -33,7 +33,7 @@ const Quote = styled.span`
 `;
 
 const Special = styled.span`
-  color: var(--color-blue);
+  color: var(--color-green);
 `;
 
 const Source = styled.span``;
