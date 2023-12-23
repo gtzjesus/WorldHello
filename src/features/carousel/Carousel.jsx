@@ -69,6 +69,10 @@ function Carousel() {
           We specialize in crafting websites that precisely target your ideal
           audience,
         </SubTitle>
+        <SubTitle>
+          We specialize in crafting websites that precisely target your ideal
+          audience,
+        </SubTitle>
         <Caption>what we&rsquo;ve built,</Caption>
         <CarouselArea>
           {designs.map((design) => (

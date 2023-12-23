@@ -13,7 +13,6 @@ function Landing() {
       <VideoComponent />
       <Carousel />
       <Grow />
-
       <Vital />
       <Presence />
       <Faqs />

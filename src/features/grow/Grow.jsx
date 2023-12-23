@@ -38,10 +38,10 @@ function Grow() {
           </MiniDescription>
         </Title>
         <Img src="/backgrounds/grow.png"></Img>
-        <Description>Join us and grow</Description>
+        <Description>Join us and grow!</Description>
         <MiniDescription>
-          Grow your business with WorldHello, benefit from our collective
-          resources and expertise.
+          Grow your business with WorldHello, get the full benefits from our
+          collective resources and our years of expertise.
           <br />
           <br />
           Lets achieve greater success together.
