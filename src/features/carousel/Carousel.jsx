@@ -66,13 +66,9 @@ function Carousel() {
       <Information>
         <Intro>[ what we do ]</Intro>
         <SubTitle>
-          We specialize in crafting websites that precisely target your ideal
-          audience,
+          Target your ideal audience with a specialized website from WorldHello,
         </SubTitle>
-        <SubTitle>
-          We specialize in crafting websites that precisely target your ideal
-          audience,
-        </SubTitle>
+
         <Caption>what we&rsquo;ve built,</Caption>
         <CarouselArea>
           {designs.map((design) => (
