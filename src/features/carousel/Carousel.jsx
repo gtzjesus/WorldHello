@@ -5,9 +5,10 @@ import Design from '../../ui/designs/Design';
 import styled from 'styled-components';
 
 const StyledCarousel = styled.div`
-  background-color: var(--background-secondary);
+  background-color: var(--background-primary);
   overflow: hidden;
   padding: var(--padding-medium);
+  color: var(--color-white);
 `;
 const CarouselArea = styled.div`
   position: relative;
@@ -42,7 +43,7 @@ const Img = styled.img`
 
 const Caption = styled.div`
   display: flex;
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
   align-items: center;
   text-transform: uppercase;
   color: var(--color-blue);
