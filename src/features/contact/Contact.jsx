@@ -8,7 +8,7 @@ const StyledContact = styled.div`
   color: var(--color-white);
 `;
 function Contact() {
-  return <StyledContact>contactß</StyledContact>;
+  return <StyledContact></StyledContact>;
 }
 
 export default Contact;
