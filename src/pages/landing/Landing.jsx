@@ -6,6 +6,7 @@ import Presence from '../../features/presence/Presence';
 import Footer from '../../features/footer/Footer';
 import Faqs from '../../features/faqs/Faqs';
 import Grow from '../../features/grow/Grow';
+import Contact from '../../features/contact/Contact';
 
 function Landing() {
   return (
@@ -16,6 +17,7 @@ function Landing() {
       <Vital />
       <Presence />
       <Faqs />
+      <Contact />
       <Company />
       <Footer />
     </>
