@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const StyledNav = styled.nav`
   position: fixed;
-  background: var(--color-white);
+  background: var(--color-green);
+  color: var(--color-white);
   top: 0;
   width: 100vw;
   z-index: var(--z-top);
