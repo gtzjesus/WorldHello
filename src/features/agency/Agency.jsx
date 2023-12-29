@@ -41,7 +41,6 @@ const Special = styled.span`
 const MiniDescription = styled.span`
   font-size: var(--font-small);
   color: var(--color-green);
-  background-color: var(--color-white);
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
@@ -53,7 +52,7 @@ function Agency() {
       <Introduction>
         <Title>Web</Title>
         <Title>
-          Dev <Special>Agency.</Special>
+          Dev<Special>Agency.</Special>
         </Title>
 
         <Description>
