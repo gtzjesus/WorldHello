@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     --width-full-window: 100%;
     --width-half-window: 45vw;
     --width-filled-window: 100vw;
-    --width-design-video: 80vw;
+    --width-design-video: 100vw;
 
     --height-full-window: 100vh;
     --height-percentage-window: 100%;

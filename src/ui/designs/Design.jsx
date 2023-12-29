@@ -7,6 +7,7 @@ const StyledDesign = styled.div`
   flex-direction: column;
   max-width: var(--width-design-video);
   color: var(--color-white);
+  z-index: var(--z-top);
 `;
 
 const Information = styled.div`

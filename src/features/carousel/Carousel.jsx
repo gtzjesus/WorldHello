@@ -11,14 +11,12 @@ const StyledCarousel = styled.div`
   color: var(--color-white);
 `;
 const CarouselArea = styled.div`
-  position: relative;
   display: flex;
   gap: var(--gap-medium);
-
+  z-index: var(--z-top);
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden;
   overflow-x: scroll;
-  object-fit: cover;
 `;
 
 const Intro = styled.div`
@@ -29,7 +27,7 @@ const Intro = styled.div`
 const Information = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--gap-medium);
+  gap: var(--gap-small);
 `;
 
 const SubTitle = styled.span`
