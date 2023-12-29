@@ -35,6 +35,8 @@ const Title = styled.span`
 
 const Special = styled.span`
   color: var(--color-green);
+  background-color: var(--color-white);
+  z-index: -1;
 `;
 
 const MiniDescription = styled.span`
@@ -49,7 +51,7 @@ function Agency() {
   return (
     <StyledVideo>
       <Introduction>
-        <Title>Website</Title>
+        <Title>Web</Title>
         <Title>
           Dev <Special>Agency</Special>
         </Title>
