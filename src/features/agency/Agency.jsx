@@ -16,6 +16,9 @@ const StyledVideo = styled.div`
 `;
 
 const Introduction = styled.div`
+  position: absolute;
+  bottom: 0;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
