@@ -21,6 +21,11 @@ const Title = styled.span`
   font-size: var(--font-large);
 `;
 
+const Special = styled.span`
+  background-color: var(--color-white);
+  color: var(--color-green);
+`;
+
 const Description = styled.span`
   font-size: var(--font-xsmall);
 `;
@@ -28,7 +33,9 @@ function Contact() {
   return (
     <StyledContact>
       <Information>
-        <Title>Refer and Earn</Title>
+        <Title>
+          Refer and <Special>Earn</Special>
+        </Title>
         <Description>
           Our referral program rewards you every time you refer a friend to us.
           Simply share our services with your friends, and once we complete the
