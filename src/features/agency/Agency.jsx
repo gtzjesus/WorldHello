@@ -30,6 +30,10 @@ const Title = styled.span`
   line-height: 2.5rem;
 `;
 
+const Special = styled.span`
+  color: var(--color-green);
+`;
+
 const MiniDescription = styled.span`
   font-size: var(--font-small);
   color: var(--color-green);
@@ -44,7 +48,7 @@ function Agency() {
       <Introduction>
         <Title>Website</Title>
         <Title>
-          Dev <MiniDescription>Agency</MiniDescription>
+          Dev <Special>Agency</Special>
         </Title>
 
         <Description>
