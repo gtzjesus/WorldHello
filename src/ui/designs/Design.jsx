@@ -24,13 +24,20 @@ const Creator = styled.span`
   display: flex;
   align-items: center;
   gap: var(--gap-small);
+  background-color: var(--color-white);
+  color: var(--color-green);
+  padding: var(--padding-xxsmall);
+  margin: 0 0 var(--padding-medium) 0;
 `;
 
 const Additional = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: var(--padding-xlarge) 0 0 0;
+  padding: var(--padding-xxsmall);
+
+  background-color: var(--color-green);
+  color: var(--color-white);
 `;
 
 const Title = styled.span`
@@ -73,7 +80,7 @@ function Design({ design }) {
       </video>
       <Information>
         <Creator>
-          <img src="/logos/worldhello.png" alt="globe" />
+          <img src="/logos/worldhellogreen.png" alt="globe" />
           {finalDesign.creator}
         </Creator>
         <Additional>
@@ -83,7 +90,7 @@ function Design({ design }) {
       </Information>
       <End>
         <Button variation="secondary" size="small">
-          visit website
+          Click to visit website
         </Button>
       </End>
     </StyledDesign>

@@ -15,7 +15,6 @@ const FooterInfo = styled.div`
 
 const Intro = styled.span`
   text-transform: uppercase;
-  opacity: 0.75;
 
   color: var(--color-green);
 `;

@@ -13,7 +13,7 @@ const StyledCarousel = styled.div`
 const CarouselArea = styled.div`
   position: relative;
   display: flex;
-  gap: var(--gap-small);
+  gap: var(--gap-medium);
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
   overflow-y: hidden;
@@ -24,7 +24,6 @@ const CarouselArea = styled.div`
 const Intro = styled.div`
   text-transform: uppercase;
   color: var(--color-green);
-  opacity: 0.75;
 `;
 
 const Information = styled.div`
@@ -38,11 +37,12 @@ const SubTitle = styled.span`
 `;
 
 const Img = styled.img`
-  height: 7.5vw;
+  height: 5vw;
 `;
 
 const Caption = styled.div`
   display: flex;
+  justify-content: space-between;
   font-size: var(--font-xsmall);
   align-items: center;
   text-transform: uppercase;
@@ -69,7 +69,9 @@ function Carousel() {
           Target your ideal audience with a specialized website from WorldHello,
         </SubTitle>
 
-        <Caption>what we&rsquo;ve built,</Caption>
+        <Caption>
+          what we&rsquo;ve built, <Img src="/extras/arrow.png"></Img>
+        </Caption>
         <CarouselArea>
           {designs.map((design) => (
             <Design design={design} key={design.id} />

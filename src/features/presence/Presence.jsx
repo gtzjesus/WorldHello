@@ -15,7 +15,6 @@ const Information = styled.div`
 const Intro = styled.div`
   text-transform: uppercase;
   color: var(--color-green);
-  opacity: 0.75;
 `;
 
 const Special = styled.span`
