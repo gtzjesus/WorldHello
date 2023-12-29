@@ -13,6 +13,8 @@ const StyledVideo = styled.div`
   // COVER THE FULL SCREEN OF EVERY DEVICE
   min-height: 100vh;
   min-width: 100vw;
+
+  padding: var(--padding-medium);
 `;
 
 const Introduction = styled.div`
@@ -20,36 +22,32 @@ const Introduction = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: var(--gap-medium);
-  padding: var(--padding-medium);
 `;
 
 const Title = styled.span`
   font-size: var(--font-xlarge);
   letter-spacing: -0.3rem;
   text-transform: uppercase;
-  line-height: 4rem;
 `;
 
 const MiniDescription = styled.span`
-  font-size: var(--font-small);
-  color: var(--color-blue);
+  font-size: var(--font-medium);
+  color: var(--color-green);
 `;
 const Description = styled.span`
-  font-size: var(--font-xsmall);
-  padding: 0 0 var(--padding-medium) 0;
+  font-size: var(--font-small);
 `;
 
 function VideoComponent() {
   return (
     <StyledVideo>
       <Introduction>
-        <MiniDescription>WorldHello</MiniDescription>
         <Title>Website Dev Agency</Title>
         <Description>
           Websites that convert visitors into
           <MiniDescription> customers</MiniDescription>.
         </Description>
-        <Button variation="primary" size="small">
+        <Button variation="secondary" size="small">
           Start your website
         </Button>
       </Introduction>

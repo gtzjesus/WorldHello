@@ -82,7 +82,7 @@ function Design({ design }) {
         </Additional>
       </Information>
       <End>
-        <Button variation="primary" size="small">
+        <Button variation="secondary" size="small">
           visit website
         </Button>
       </End>

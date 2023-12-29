@@ -17,7 +17,7 @@ const Intro = styled.span`
   text-transform: uppercase;
   opacity: 0.75;
 
-  color: var(--color-blue);
+  color: var(--color-green);
 `;
 
 const Ending = styled.span`
@@ -71,7 +71,7 @@ function Footer() {
           <Result>Texas, US</Result>
         </Contact>
 
-        <Button variation="primary" size="small">
+        <Button variation="secondary" size="small">
           start for free today
         </Button>
       </FooterInfo>

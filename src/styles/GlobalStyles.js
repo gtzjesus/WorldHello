@@ -76,6 +76,8 @@ const GlobalStyles = createGlobalStyle`
     --gap-small: .25rem;
     --gap-medium: 1rem;
     --gap-large: 2rem;
+    --gap-xlarge: 5rem;
+
 
 
     /* Image Sizes */

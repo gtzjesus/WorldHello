@@ -3,11 +3,12 @@ import Button from '../../ui/buttons/Button';
 
 const StyledContact = styled.div`
   display: flex;
-  height: var(--height-full-window);
+  flex-direction: column;
   background-image: url('/backgrounds/contact.png');
   background-size: cover;
   color: var(--color-white);
-  padding: var(--padding-medium);
+  padding: var(--padding-xlarge) var(--padding-medium);
+  gap: var(--gap-xlarge);
 `;
 
 const Information = styled.div`
@@ -26,6 +27,14 @@ const Description = styled.span`
 function Contact() {
   return (
     <StyledContact>
+      <Information>
+        <Title>Refer and Earn</Title>
+        <Description>
+          Our referral program rewards you every time you refer a friend to us.
+          Simply share our services with your friends, and once we complete the
+          project, we will pay you 10% of its value.
+        </Description>
+      </Information>
       <Information>
         <Title>Get in touch</Title>
         <Description>

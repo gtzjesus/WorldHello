@@ -13,7 +13,7 @@ const Information = styled.div`
 
 const Intro = styled.div`
   text-transform: uppercase;
-  color: var(--color-blue);
+  color: var(--color-green);
   opacity: 0.75;
 `;
 
@@ -26,7 +26,7 @@ const Description = styled.span`
 `;
 
 const Special = styled.a`
-  color: var(--color-blue);
+  color: var(--color-green);
   font-size: var(--font-xsmall);
 `;
 
@@ -72,7 +72,7 @@ function Company() {
           that crosses our path. Our passion relies in delivering high-quality
           and high-performing websites.
         </MiniDescription>
-        <Button variation="primary" size="small">
+        <Button variation="secondary" size="small">
           Book A Free Call
         </Button>
       </Information>

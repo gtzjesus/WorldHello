@@ -23,7 +23,7 @@ const CarouselArea = styled.div`
 
 const Intro = styled.div`
   text-transform: uppercase;
-  color: var(--color-blue);
+  color: var(--color-green);
   opacity: 0.75;
 `;
 
@@ -46,7 +46,7 @@ const Caption = styled.div`
   font-size: var(--font-xsmall);
   align-items: center;
   text-transform: uppercase;
-  color: var(--color-blue);
+  color: var(--color-green);
 `;
 
 const MiniDescription = styled.span`

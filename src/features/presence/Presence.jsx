@@ -14,12 +14,12 @@ const Information = styled.div`
 `;
 const Intro = styled.div`
   text-transform: uppercase;
-  color: var(--color-blue);
+  color: var(--color-green);
   opacity: 0.75;
 `;
 
 const Special = styled.span`
-  color: var(--color-blue);
+  color: var(--color-green);
 `;
 
 const Title = styled.span`
@@ -27,7 +27,7 @@ const Title = styled.span`
 `;
 
 const Closing = styled.span`
-  color: var(--color-blue);
+  color: var(--color-green);
   font-size: var(--font-xsmall);
 `;
 
@@ -52,7 +52,7 @@ function Presence() {
           <br />
           <Closing>Take control of your website with WorldHello.</Closing>
         </Description>
-        <Button variation="primary" size="small">
+        <Button variation="secondary" size="small">
           Start your project today
         </Button>
       </Information>
