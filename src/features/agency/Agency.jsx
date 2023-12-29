@@ -36,12 +36,14 @@ const Title = styled.span`
 const Special = styled.span`
   color: var(--color-green);
   background-color: var(--color-white);
-  z-index: -1;
+  padding: 0.25rem;
 `;
 
 const MiniDescription = styled.span`
   font-size: var(--font-small);
   color: var(--color-green);
+  background-color: var(--color-white);
+  padding: 0.25rem;
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
@@ -53,12 +55,12 @@ function Agency() {
       <Introduction>
         <Title>Web</Title>
         <Title>
-          Dev <Special>Agency</Special>
+          Dev <Special>Agency.</Special>
         </Title>
 
         <Description>
           Websites that convert visitors into
-          <MiniDescription> customers</MiniDescription>.
+          <MiniDescription> customers.</MiniDescription>
         </Description>
         <Button variation="secondary" size="small">
           Start your website
