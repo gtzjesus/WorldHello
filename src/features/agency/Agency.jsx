@@ -23,7 +23,7 @@ const Introduction = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: var(--gap-medium);
-  padding: var(--padding-medium);
+  padding: var(--padding-small);
 `;
 
 const Title = styled.span`
@@ -36,14 +36,12 @@ const Title = styled.span`
 const Special = styled.span`
   color: var(--color-green);
   background-color: var(--color-white);
-  padding: 0.25rem;
 `;
 
 const MiniDescription = styled.span`
   font-size: var(--font-small);
   color: var(--color-green);
   background-color: var(--color-white);
-  padding: 0.25rem;
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
