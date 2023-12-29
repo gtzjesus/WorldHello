@@ -34,7 +34,7 @@ const GlobalStyles = createGlobalStyle`
     --color-black: #070606;
     --color-yellow: #e7e167;
     --color-white: #ffff;
-    --color-blue: #0069B6;
+    --color-blue: #279AEE;
     --color-green: #6A7744;
     --color-tan: #D4D187;
 

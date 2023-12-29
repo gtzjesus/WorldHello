@@ -61,7 +61,9 @@ function Vital() {
           </Quote>
           <Source>
             <a href="https://bloggingwizard.com/website-statistics/">
-              <Button>visit source</Button>
+              <Button variation="secondary" size="small">
+                visit source
+              </Button>
             </a>
           </Source>
         </Description>

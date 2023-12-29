@@ -7,8 +7,23 @@ const StyledContact = styled.div`
   background-size: cover;
   color: var(--color-white);
 `;
+
+const Information = styled.div`
+  display: flex;
+  margin: 0 auto;
+`;
+
+const Title = styled.span`
+  font-size: var(--font-large);
+`;
 function Contact() {
-  return <StyledContact></StyledContact>;
+  return (
+    <StyledContact>
+      <Information>
+        <Title>Get in touch</Title>
+      </Information>
+    </StyledContact>
+  );
 }
 
 export default Contact;
