@@ -40,7 +40,6 @@ const Special = styled.span`
 
 const MiniDescription = styled.span`
   font-size: var(--font-small);
-  color: var(--color-green);
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
