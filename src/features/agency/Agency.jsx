@@ -11,10 +11,8 @@ const StyledVideo = styled.div`
   background-size: cover;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
-  min-height: 100vh;
+  min-height: 80vh;
   min-width: 100vw;
-
-  padding: var(--padding-medium);
 `;
 
 const Introduction = styled.div`
@@ -28,6 +26,7 @@ const Title = styled.span`
   font-size: var(--font-xlarge);
   letter-spacing: -0.3rem;
   text-transform: uppercase;
+  line-height: 2rem;
 `;
 
 const MiniDescription = styled.span`
@@ -35,14 +34,17 @@ const MiniDescription = styled.span`
   color: var(--color-green);
 `;
 const Description = styled.span`
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
 `;
 
-function VideoComponent() {
+function Agency() {
   return (
     <StyledVideo>
       <Introduction>
-        <Title>Website Dev Agency</Title>
+        <Title>Website</Title>
+        <Title>Development</Title>
+        <Title>Agency</Title>
+
         <Description>
           Websites that convert visitors into
           <MiniDescription> customers</MiniDescription>.
@@ -55,7 +57,7 @@ function VideoComponent() {
   );
 }
 
-export default VideoComponent;
+export default Agency;
 
 {
   /* <video autoPlay="autoPlay " loop muted playsInline={true}>
