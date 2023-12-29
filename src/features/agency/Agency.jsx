@@ -11,7 +11,7 @@ const StyledVideo = styled.div`
   background-size: cover;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
-  min-height: 80vh;
+  min-height: 100vh;
   min-width: 100vw;
 `;
 
@@ -20,17 +20,18 @@ const Introduction = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: var(--gap-medium);
+  padding: var(--padding-medium);
 `;
 
 const Title = styled.span`
   font-size: var(--font-xlarge);
   letter-spacing: -0.3rem;
   text-transform: uppercase;
-  line-height: 2rem;
+  line-height: 2.5rem;
 `;
 
 const MiniDescription = styled.span`
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
   color: var(--color-green);
 `;
 const Description = styled.span`
@@ -42,8 +43,9 @@ function Agency() {
     <StyledVideo>
       <Introduction>
         <Title>Website</Title>
-        <Title>Development</Title>
-        <Title>Agency</Title>
+        <Title>
+          Dev <MiniDescription>Agency</MiniDescription>
+        </Title>
 
         <Description>
           Websites that convert visitors into
