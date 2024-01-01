@@ -31,7 +31,7 @@ const CarouselDot = styled.div`
   border-radius: 50%;
   cursor: pointer;
   margin: var(--padding-medium) var(--padding-xsmall);
-  background-color: var(--color-green);
+  background-color: var(--color-white);
 `;
 
 const Intro = styled.div`

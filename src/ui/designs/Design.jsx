@@ -3,10 +3,22 @@ import styled from 'styled-components';
 const StyledDesign = styled.div`
   display: inline-block;
   overflow: hidden;
-  max-width: 100vw;
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
 `;
 
-const Video = styled.video``;
+const Video = styled.video`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`;
 
 function Design({ design }) {
   // CREATE design OBJECT to start displaying
