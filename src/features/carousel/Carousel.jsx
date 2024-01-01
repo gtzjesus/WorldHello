@@ -7,11 +7,12 @@ import styled from 'styled-components';
 const StyledCarousel = styled.div`
   background-color: var(--background-primary);
   color: var(--color-white);
+  padding: var(--padding-medium);
+  overflow: hidden;
 `;
 const CarouselArea = styled.div`
   // COVER THE FULL SCREEN OF EVERY DEVICE
   margin: 0 auto;
-  overflow: hidden;
   max-width: 100vw;
 `;
 

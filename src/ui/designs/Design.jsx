@@ -24,7 +24,7 @@ function Design({ design }) {
 
   return (
     <StyledDesign onClick={handleNavigation}>
-      <video height="750" autoPlay="autoPlay" loop muted playsInline={true}>
+      <video height="700" autoPlay="autoPlay" loop muted playsInline={true}>
         <source src={finalDesign.video} type="video/mp4" />
       </video>
     </StyledDesign>
