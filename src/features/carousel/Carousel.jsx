@@ -7,16 +7,16 @@ import styled from 'styled-components';
 const StyledCarousel = styled.div`
   background-color: var(--background-primary);
   overflow: hidden;
-  padding: var(--padding-medium);
   color: var(--color-white);
 `;
 const CarouselArea = styled.div`
   display: flex;
+  flex-direction: column;
   gap: var(--gap-medium);
   z-index: var(--z-top);
+  height: 100vh;
   // COVER THE FULL SCREEN OF EVERY DEVICE
-  overflow-y: hidden;
-  overflow-x: scroll;
+  overflow-y: scroll;
 `;
 
 const Intro = styled.div`
