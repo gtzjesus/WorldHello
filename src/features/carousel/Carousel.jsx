@@ -57,7 +57,7 @@ const Img = styled.img`
 const Caption = styled.div`
   display: flex;
   justify-content: space-between;
-  font-size: var(--font-xsmall);
+  font-size: var(--font-medium);
   align-items: center;
   text-transform: uppercase;
   color: var(--color-green);
@@ -102,9 +102,7 @@ function Carousel() {
           Target your ideal audience with a specialized website from WorldHello,
         </SubTitle>
 
-        <Caption>
-          what we&rsquo;ve built, <Img src="/extras/arrow.png"></Img>
-        </Caption>
+        <Caption>what we&rsquo;ve built,</Caption>
       </Information>
       <CarouselArea>
         <CarouselAreaSlider
@@ -127,9 +125,6 @@ function Carousel() {
         ))}
       </CarouselDots>
       <Information>
-        <Caption>
-          swipe left to see more <Img src="/extras/arrow.png"></Img>
-        </Caption>
         <SubTitle>
           transforming your clientele into loyal and paying customers.
         </SubTitle>
