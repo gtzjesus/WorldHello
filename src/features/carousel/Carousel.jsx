@@ -9,11 +9,9 @@ const StyledCarousel = styled.div`
   color: var(--color-white);
 `;
 const CarouselArea = styled.div`
-  gap: var(--gap-medium);
   // COVER THE FULL SCREEN OF EVERY DEVICE
   margin: 0 auto;
   overflow: hidden;
-
   max-width: 100vw;
 `;
 
@@ -28,12 +26,12 @@ const CarouselDots = styled.div`
 
 const CarouselDot = styled.div`
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   cursor: pointer;
-  margin: 15px 7px 0px;
-  background-color: #ffff;
+  margin: var(--padding-medium) var(--padding-xsmall);
+  background-color: var(--color-green);
 `;
 
 const Intro = styled.div`
@@ -44,7 +42,7 @@ const Intro = styled.div`
 const Information = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--gap-small);
+  gap: var(--gap-medium);
 `;
 
 const SubTitle = styled.span`

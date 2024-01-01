@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const StyledDesign = styled.div`
   display: inline-block;
-  max-width: 100vw;
   overflow: hidden;
 `;
 
@@ -24,7 +23,7 @@ function Design({ design }) {
 
   return (
     <StyledDesign onClick={handleNavigation}>
-      <video autoPlay="autoPlay " loop muted playsInline={true}>
+      <video height="900" autoPlay="autoPlay " loop muted playsInline={true}>
         <source src={finalDesign.video} type="video/mp4" />
       </video>
     </StyledDesign>
