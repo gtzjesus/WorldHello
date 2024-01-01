@@ -3,13 +3,10 @@ import styled from 'styled-components';
 const StyledDesign = styled.div`
   display: inline-block;
   overflow: hidden;
-  float: none;
-  clear: both;
   width: 100%;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;
-  height: 0;
 `;
 
 const Video = styled.video`

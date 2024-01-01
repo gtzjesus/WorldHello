@@ -26,11 +26,11 @@ const CarouselDots = styled.div`
 
 const CarouselDot = styled.div`
   display: inline-block;
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   cursor: pointer;
-  margin: var(--padding-medium) var(--padding-xsmall);
+  margin: 15px 7px 0px;
   background-color: var(--color-white);
 `;
 
