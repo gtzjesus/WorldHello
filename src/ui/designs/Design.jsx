@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const StyledDesign = styled.div`
   display: inline-block;
+  max-width: 100vw;
+  overflow: hidden;
 `;
 
 function Design({ design }) {
