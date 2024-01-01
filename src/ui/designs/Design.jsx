@@ -5,8 +5,8 @@ const StyledDesign = styled.div`
   overflow: hidden;
   width: 100%;
   position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
+  padding-bottom: 99%;
+  padding-top: 50%;
 `;
 
 const Video = styled.video`
