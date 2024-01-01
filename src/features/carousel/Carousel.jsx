@@ -7,7 +7,6 @@ import styled from 'styled-components';
 const StyledCarousel = styled.div`
   background-color: var(--background-primary);
   color: var(--color-white);
-  padding: var(--padding-medium);
   overflow: hidden;
 `;
 const CarouselArea = styled.div`
@@ -44,6 +43,7 @@ const Information = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-medium);
+  padding: var(--padding-medium);
 `;
 
 const SubTitle = styled.span`
@@ -105,26 +105,28 @@ function Carousel() {
         <Caption>
           what we&rsquo;ve built, <Img src="/extras/arrow.png"></Img>
         </Caption>
-        <CarouselArea>
-          <CarouselAreaSlider
-            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-          >
-            {designs.map((design) => (
-              <Design design={design} key={design.id} />
-            ))}
-          </CarouselAreaSlider>
-        </CarouselArea>
-        <CarouselDots>
-          {designs.map((_, index) => (
-            <CarouselDot
-              key={index}
-              className={`CarouselDot${index === index ? ' active' : ''}`}
-              onClick={() => {
-                setIndex(index);
-              }}
-            ></CarouselDot>
+      </Information>
+      <CarouselArea>
+        <CarouselAreaSlider
+          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        >
+          {designs.map((design) => (
+            <Design design={design} key={design.id} />
           ))}
-        </CarouselDots>
+        </CarouselAreaSlider>
+      </CarouselArea>
+      <CarouselDots>
+        {designs.map((_, index) => (
+          <CarouselDot
+            key={index}
+            className={`CarouselDot${index === index ? ' active' : ''}`}
+            onClick={() => {
+              setIndex(index);
+            }}
+          ></CarouselDot>
+        ))}
+      </CarouselDots>
+      <Information>
         <Caption>
           swipe left to see more <Img src="/extras/arrow.png"></Img>
         </Caption>
