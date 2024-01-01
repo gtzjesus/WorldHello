@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { DesignsContext } from '../../context/DesignsContext';
 import Spinner from '../../ui/spinners/Spinner';
 import Design from '../../ui/designs/Design';
@@ -6,17 +6,32 @@ import styled from 'styled-components';
 
 const StyledCarousel = styled.div`
   background-color: var(--background-primary);
-  overflow: hidden;
   color: var(--color-white);
+  overflow: hidden;
 `;
 const CarouselArea = styled.div`
-  display: flex;
-  flex-direction: column;
   gap: var(--gap-medium);
-  z-index: var(--z-top);
-  height: 100vh;
   // COVER THE FULL SCREEN OF EVERY DEVICE
-  overflow-y: scroll;
+  margin: 0 auto;
+`;
+
+const CarouselAreaSlider = styled.div`
+  white-space: nowrap;
+  transition: ease 2000ms;
+`;
+
+const CarouselDots = styled.div`
+  text-align: center;
+`;
+
+const CarouselDot = styled.div`
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  background-color: #ffff;
 `;
 
 const Intro = styled.div`
@@ -52,10 +67,29 @@ const MiniDescription = styled.span`
 `;
 
 function Carousel() {
+  const delay = 2500;
+  // use useState TO KEEP TRACK OF DESIGN + SLIDESHOW
+  const [index, setIndex] = useState(0);
   // GRAB designs WITH CONTEXT API
   const { designs, isLoading, error } = useContext(DesignsContext);
+
+  // useEffect for timer
+  // useEffect(() => {
+  //   setTimeout(
+  //     () =>
+  //       setIndex((prevIndex) =>
+  //         prevIndex === designs.length - 1 ? 0 : prevIndex + 1
+  //       ),
+
+  //     delay
+  //   );
+
+  //   return () => {};
+  // }, [index]);
+
   // CHECK if state IS LOADING
   if (isLoading) return <Spinner />;
+
   // HANDLE error
   if (error) throw new Error('Failed to grab designs');
 
@@ -71,10 +105,25 @@ function Carousel() {
           what we&rsquo;ve built, <Img src="/extras/arrow.png"></Img>
         </Caption>
         <CarouselArea>
-          {designs.map((design) => (
-            <Design design={design} key={design.id} />
-          ))}
+          <CarouselAreaSlider
+            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+          >
+            {designs.map((design) => (
+              <Design design={design} key={design.id} />
+            ))}
+          </CarouselAreaSlider>
         </CarouselArea>
+        <CarouselDots>
+          {designs.map((_, index) => (
+            <CarouselDot
+              key={index}
+              className={`CarouselDot${index === index ? ' active' : ''}`}
+              onClick={() => {
+                setIndex(index);
+              }}
+            ></CarouselDot>
+          ))}
+        </CarouselDots>
         <Caption>
           swipe left to see more <Img src="/extras/arrow.png"></Img>
         </Caption>
