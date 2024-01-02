@@ -130,7 +130,7 @@ function Carousel() {
             key={idx}
             className={`CarouselDot${index === idx ? ' active' : ''}`}
             onClick={() => {
-              setIndex(index);
+              setIndex(idx);
             }}
           ></CarouselDot>
         ))}
