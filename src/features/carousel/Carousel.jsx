@@ -89,7 +89,7 @@ function Carousel() {
     timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === designs && designs.length - 1 ? 0 : prevIndex + 1
+          prevIndex === designs.length - 1 ? 0 : prevIndex + 1
         ),
       delay
     );
@@ -97,7 +97,7 @@ function Carousel() {
     return () => {
       resetTimeout();
     };
-  }, [index]);
+  }, [index, designs]);
 
   // CHECK if state IS LOADING
   if (isLoading) return <Spinner />;
