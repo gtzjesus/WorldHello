@@ -16,7 +16,26 @@ const Video = styled.video`
   width: 100%;
   height: 100%;
 `;
+const Information = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
+const Title = styled.span`
+  font-size: var(--font-medium);
+  background-color: var(--color-white);
+  color: var(--color-green);
+  padding: 0 var(--padding-xxsmall);
+`;
+
+const Description = styled.span`
+  font-size: var(--font-xsmall);
+  background-color: var(--color-white);
+  color: var(--color-green);
+  padding: 0 var(--padding-xxsmall);
+`;
 function Design({ design }) {
   // CREATE design OBJECT to start displaying
   const finalDesign = {
@@ -38,6 +57,10 @@ function Design({ design }) {
       <Video preload="auto" autoPlay="autoPlay" loop muted playsInline={true}>
         <source src={finalDesign.video} type="video/mp4" />
       </Video>
+      <Information>
+        <Description>{finalDesign.description}</Description>
+        <Title>{finalDesign.title}</Title>
+      </Information>
     </StyledDesign>
   );
 }
