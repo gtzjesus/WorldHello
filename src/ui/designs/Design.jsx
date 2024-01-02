@@ -29,8 +29,9 @@ const Information = styled.div`
 
 const Title = styled.span`
   font-size: var(--font-small);
-  color: var(--color-white);
+  color: var(--color-green);
   text-transform: uppercase;
+  z-index: var(--z-top);
 `;
 
 const Description = styled.span`
@@ -62,7 +63,7 @@ function Design({ design }) {
       </Video>
       <Information>
         {/* <Description>{finalDesign.description}</Description> */}
-        <Title>{finalDesign.title}</Title>
+        <Title>{finalDesign.description}</Title>
       </Information>
     </StyledDesign>
   );
