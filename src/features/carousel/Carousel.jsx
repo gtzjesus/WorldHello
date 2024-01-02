@@ -69,7 +69,7 @@ const MiniDescription = styled.span`
 
 function Carousel() {
   // DELAY NEEDED FOR CAROUSEL setTIMEOUT
-  const delay = 3500;
+  const delay = 5000;
   // use useState TO KEEP TRACK OF DESIGN + SLIDESHOW
   const [index, setIndex] = useState(0);
   // NEED TO CLEAR OUR TIME IF click on buttons
