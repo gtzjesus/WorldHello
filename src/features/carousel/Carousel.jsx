@@ -60,8 +60,8 @@ const Caption = styled.div`
   font-size: var(--font-medium);
   align-items: center;
   text-transform: uppercase;
-  color: var(--color-green);
-  background-color: var(--color-white);
+  color: var(--color-white);
+  background-color: var(--color-green);
   padding: 0 var(--padding-xxsmall);
 `;
 
