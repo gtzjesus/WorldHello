@@ -5,7 +5,7 @@ const StyledDesign = styled.div`
   overflow: hidden;
   width: 100%;
   position: relative;
-  padding-bottom: 99%;
+  padding-bottom: 79%;
   padding-top: 40%;
 `;
 
@@ -17,10 +17,10 @@ const Video = styled.video`
   height: 100%;
 `;
 const Information = styled.div`
-  position: relative;
+  position: absolute;
   top: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 `;
 
@@ -29,6 +29,8 @@ const Title = styled.span`
   background-color: var(--color-white);
   color: var(--color-green);
   padding: 0 var(--padding-xxsmall);
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 `;
 
 const Description = styled.span`
@@ -59,7 +61,7 @@ function Design({ design }) {
         <source src={finalDesign.video} type="video/mp4" />
       </Video>
       <Information>
-        <Description>{finalDesign.description}</Description>
+        {/* <Description>{finalDesign.description}</Description> */}
         <Title>{finalDesign.title}</Title>
       </Information>
     </StyledDesign>
