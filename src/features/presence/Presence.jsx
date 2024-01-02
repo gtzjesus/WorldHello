@@ -10,7 +10,7 @@ const StyledPresence = styled.div`
 const Information = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--gap-large);
+  gap: var(--gap-medium);
 `;
 const Intro = styled.div`
   text-transform: uppercase;
@@ -26,7 +26,6 @@ const Title = styled.span`
 `;
 
 const Closing = styled.span`
-  color: var(--color-green);
   font-size: var(--font-xsmall);
 `;
 
@@ -36,20 +35,30 @@ const Description = styled.span`
   font-size: var(--font-small);
 `;
 
+const BackgroundColored = styled.div`
+  background-color: var(--color-white);
+  color: var(--color-green);
+  padding: 0 var(--padding-xxsmall);
+  width: fit-content;
+`;
+
 function Presence() {
   return (
     <StyledPresence>
       <Information>
         <Intro>[ who we look for ]</Intro>
         <Title>
-          <Special>&ldquo;</Special> Looking to elevate your brand?
+          <Special>&ldquo;</Special> Looking to boost your brand?
         </Title>
         <Img src="/extras/brand.jpg"></Img>
         <Description>
-          Unlock the full potential of your business with a digital footprint!
+          <BackgroundColored>Unlock the full potential</BackgroundColored> of
+          your business with a digital footprint!
           <br />
           <br />
-          <Closing>Take control of your website with WorldHello.</Closing>
+          <Closing>
+            Take control of your website with <Special>WorldHello</Special>.
+          </Closing>
         </Description>
         <Button variation="secondary" size="small">
           Start your project today

@@ -108,7 +108,7 @@ function Carousel() {
   return (
     <StyledCarousel>
       <Information>
-        <Intro>[ what we do ]</Intro>
+        <Intro>[ get started today ]</Intro>
         <SubTitle>
           Target your ideal audience with a specialized website from WorldHello,
         </SubTitle>
@@ -137,7 +137,7 @@ function Carousel() {
       </CarouselDots>
       <Information>
         <SubTitle>
-          transforming your clientele into loyal and paying customers.
+          Tranform your clientele into loyal and paying customers.
         </SubTitle>
         <Intro>[ how we do it ]</Intro>
         <MiniDescription>
@@ -147,8 +147,9 @@ function Carousel() {
         <MiniDescription>
           At WorldHello, we prioritize optimization for conversions and
           performance that allows businesses to increase their chances of
-          success, by boosting revenue and being profitable. test
+          success,
         </MiniDescription>
+        <SubTitle>By boosting revenue and being profitable.</SubTitle>
       </Information>
     </StyledCarousel>
   );

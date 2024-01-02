@@ -37,19 +37,23 @@ function Contact() {
           Refer and <Special>Earn</Special>
         </Title>
         <Description>
-          Our referral program rewards you every time you refer a friend to us.
-          Simply share our services with your friends, and once we complete the
-          project, we will pay you 10% of its value.
+          WorldHello rewards you every time you successfully refer someone to
+          us. We till pay you 10% of the value once completed, you just simply
+          have to share our services with your friends.
         </Description>
       </Information>
       <Information>
-        <Title>Get in touch</Title>
+        <Title>Contact us</Title>
         <Description>
-          If you have a general inquiry and would like to speak with our team,
-          you can contact us via email at: contact@worldhello.us
+          We have a team available at WorldHello if you have a general inquiry,
+          <br />
+          You can contact us via email at: contact@worldhello.us
+          <br />
+          <br />
+          Or just,
         </Description>
         <Button variation="secondary" size="small">
-          Call us for free
+          Contact us here
         </Button>
       </Information>
     </StyledContact>

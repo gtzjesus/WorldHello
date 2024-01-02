@@ -7,8 +7,6 @@ const StyledVital = styled.div`
   background-size: cover;
   color: var(--color-white);
   padding: var(--padding-large) var(--padding-medium);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
 `;
 
 const Information = styled.div`
@@ -16,10 +14,18 @@ const Information = styled.div`
   flex-direction: column;
 `;
 
+const Intro = styled.div`
+  text-transform: uppercase;
+  color: var(--color-white);
+  padding: 0 0 var(--padding-medium) 0;
+`;
+
 const Title = styled.span`
   align-items: center;
   font-size: var(--font-medium);
   width: fit-content;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 `;
 const Description = styled.div`
   display: flex;
@@ -30,6 +36,8 @@ const Description = styled.div`
 const Quote = styled.span`
   padding: var(--padding-xlarge) 0 0 0;
   font-size: var(--font-small);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 `;
 
 const Special = styled.span`
@@ -46,17 +54,23 @@ const Last = styled.div`
 `;
 
 const Ending = styled.span`
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
+  background-color: var(--color-white);
+  color: var(--color-green);
+  padding: 0 var(--padding-xxsmall);
 `;
+
 function Vital() {
   return (
     <StyledVital>
       <Information>
+        <Intro>[ why its important ]</Intro>
+
         <Title>Say hello to the world and put your brand on the map!</Title>
         <Description>
           <Quote>
             <Special>&ldquo;</Special> 80% of consumers are more likely to buy
-            from brands that offer personalized website experiences
+            from brands that offer personalized website experiences.
             <Special>&rdquo;</Special>
           </Quote>
           <Source>
@@ -68,8 +82,10 @@ function Vital() {
           </Source>
         </Description>
         <Last>
-          <Ending>First impressions are vital,</Ending>
-          <Ending>especially on the web!</Ending>
+          <Ending>
+            Make your first impression last well beyond that moment, Especially
+            on the web.
+          </Ending>
         </Last>
       </Information>
     </StyledVital>

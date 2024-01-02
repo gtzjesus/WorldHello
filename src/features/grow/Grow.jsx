@@ -27,6 +27,12 @@ const MiniDescription = styled.span`
 
 const Img = styled.img``;
 
+const Special = styled.span`
+  background-color: var(--color-white);
+  color: var(--color-green);
+  padding: 0 var(--padding-xxsmall);
+`;
+
 function Grow() {
   return (
     <StyledGrow>
@@ -42,10 +48,10 @@ function Grow() {
         <MiniDescription>
           Grow your business with WorldHello, get the full benefits from our
           collective resources and our years of expertise.
-          <br />
-          <br />
-          Lets achieve greater success together.
         </MiniDescription>
+        <Description>
+          Lets achieve greater <Special>success</Special> together.
+        </Description>
         <Button variation="secondary" size="small">
           click to begin your website
         </Button>
