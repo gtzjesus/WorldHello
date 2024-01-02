@@ -27,14 +27,16 @@ hr {
   border-radius: 10px;
 } */
 
+/* // CAROUSEL */
+/* ACTIVE DESIGN STATE */
+.CarouselDot.active {
+  background-color: var(--color-green);
+}
+
 /* // FAQS */
 /* OPEN STATE */
 
 .open .number,
 .open .title {
   color: var(--color-green);
-}
-
-.CarouselDot.active {
-  background-color: var(--color-green);
 }

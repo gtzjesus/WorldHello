@@ -125,10 +125,10 @@ function Carousel() {
         </CarouselAreaSlider>
       </CarouselArea>
       <CarouselDots>
-        {designs.map((_, index) => (
+        {designs.map((_, idx) => (
           <CarouselDot
-            key={index}
-            className={`CarouselDot${index === index ? ' active' : ''}`}
+            key={idx}
+            className={`CarouselDot${index === idx ? ' active' : ''}`}
             onClick={() => {
               setIndex(index);
             }}
