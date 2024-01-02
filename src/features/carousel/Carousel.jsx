@@ -147,7 +147,7 @@ function Carousel() {
         <MiniDescription>
           At WorldHello, we prioritize optimization for conversions and
           performance that allows businesses to increase their chances of
-          success, by boosting revenue and being profitable.
+          success, by boosting revenue and being profitable. test
         </MiniDescription>
       </Information>
     </StyledCarousel>
