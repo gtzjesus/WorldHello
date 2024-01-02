@@ -61,6 +61,8 @@ const Caption = styled.div`
   align-items: center;
   text-transform: uppercase;
   color: var(--color-green);
+  background-color: var(--color-white);
+  padding: 0 var(--padding-xxsmall);
 `;
 
 const MiniDescription = styled.span`
@@ -108,13 +110,13 @@ function Carousel() {
   return (
     <StyledCarousel>
       <Information>
-        <Intro>[ begin today ]</Intro>
+        <Intro>[ what we offer]</Intro>
         <SubTitle>
-          Reach your target audience effectively with a customized website by
+          Connect with your desired audience with a customized website from
           WorldHello,
         </SubTitle>
 
-        <Caption>our accomplishments,</Caption>
+        <Caption>our achievements,</Caption>
       </Information>
       <CarouselArea>
         <CarouselAreaSlider
@@ -148,7 +150,7 @@ function Carousel() {
         </MiniDescription>
         <MiniDescription>
           At WorldHello, our focus is on optimizing conversions to elevate your
-          business&rsquo;s potential for success,
+          business&rsquo;s potential for success.
         </MiniDescription>
         <SubTitle>
           Ultimately driving revenue growth and profitability.
