@@ -71,17 +71,19 @@ function Carousel() {
   const delay = 2500;
   // use useState TO KEEP TRACK OF DESIGN + SLIDESHOW
   const [index, setIndex] = useState(0);
+  //
+  const [isBusy, setBusy] = useState(true);
+
   // GRAB designs WITH CONTEXT API
   const { designs, isLoading, error } = useContext(DesignsContext);
 
-  // useEffect for timer
+  // useEffect for settingTimeout FUNCTIONALITY
   useEffect(() => {
     setTimeout(
       () =>
         setIndex((prevIndex) =>
-          prevIndex === designs.length - 1 ? 0 : prevIndex + 1
+          prevIndex === designs && designs.length - 1 ? 0 : prevIndex + 1
         ),
-
       delay
     );
 
