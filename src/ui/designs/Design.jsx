@@ -5,8 +5,8 @@ const StyledDesign = styled.div`
   overflow: hidden;
   width: 100%;
   position: relative;
-  padding-bottom: 79%;
-  padding-top: 50%;
+  padding-bottom: 99%;
+  padding-top: 40%;
 `;
 
 const Video = styled.video`
@@ -17,7 +17,8 @@ const Video = styled.video`
   height: 100%;
 `;
 const Information = styled.div`
-  position: absolute;
+  position: relative;
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
