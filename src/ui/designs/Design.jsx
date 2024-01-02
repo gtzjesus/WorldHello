@@ -22,15 +22,15 @@ const Information = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  padding: 0 var(--padding-xsmall);
 `;
 
 const Title = styled.span`
-  font-size: var(--font-medium);
-  background-color: var(--color-white);
-  color: var(--color-green);
-  padding: 0 var(--padding-xxsmall);
-  writing-mode: vertical-lr;
-  text-orientation: upright;
+  font-size: var(--font-small);
+  color: var(--color-white);
+  text-transform: uppercase;
 `;
 
 const Description = styled.span`
