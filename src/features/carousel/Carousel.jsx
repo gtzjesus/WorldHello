@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { DesignsContext } from '../../context/DesignsContext';
 import Spinner from '../../ui/spinners/Spinner';
 import Design from '../../ui/designs/Design';
@@ -68,18 +68,25 @@ const MiniDescription = styled.span`
 `;
 
 function Carousel() {
-  const delay = 2500;
+  // DELAY NEEDED FOR CAROUSEL setTIMEOUT
+  const delay = 3500;
   // use useState TO KEEP TRACK OF DESIGN + SLIDESHOW
   const [index, setIndex] = useState(0);
-  //
-  const [isBusy, setBusy] = useState(true);
-
+  // NEED TO CLEAR OUR TIME IF click on buttons
+  const timeoutRef = useRef(null);
+  // FUNCTION TO CLEAR OUT THE TIMEOUT (RESET)
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
   // GRAB designs WITH CONTEXT API
   const { designs, isLoading, error } = useContext(DesignsContext);
 
   // useEffect for settingTimeout FUNCTIONALITY
   useEffect(() => {
-    setTimeout(
+    resetTimeout();
+    timeoutRef.current = setTimeout(
       () =>
         setIndex((prevIndex) =>
           prevIndex === designs && designs.length - 1 ? 0 : prevIndex + 1
@@ -87,7 +94,9 @@ function Carousel() {
       delay
     );
 
-    return () => {};
+    return () => {
+      resetTimeout();
+    };
   }, [index]);
 
   // CHECK if state IS LOADING
