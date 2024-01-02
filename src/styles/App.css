@@ -34,3 +34,7 @@ hr {
 .open .title {
   color: var(--color-green);
 }
+
+.CarouselDot.active {
+  background-color: var(--color-green);
+}

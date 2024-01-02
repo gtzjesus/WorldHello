@@ -75,18 +75,18 @@ function Carousel() {
   const { designs, isLoading, error } = useContext(DesignsContext);
 
   // useEffect for timer
-  // useEffect(() => {
-  //   setTimeout(
-  //     () =>
-  //       setIndex((prevIndex) =>
-  //         prevIndex === designs.length - 1 ? 0 : prevIndex + 1
-  //       ),
+  useEffect(() => {
+    setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === designs.length - 1 ? 0 : prevIndex + 1
+        ),
 
-  //     delay
-  //   );
+      delay
+    );
 
-  //   return () => {};
-  // }, [index]);
+    return () => {};
+  }, [index]);
 
   // CHECK if state IS LOADING
   if (isLoading) return <Spinner />;
