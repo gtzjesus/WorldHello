@@ -48,16 +48,16 @@ function Presence() {
       <Information>
         <Intro>[ who we look for ]</Intro>
         <Title>
-          <Special>&ldquo;</Special> Looking to boost your brand?
+          <Special>&ldquo;</Special> Seeking to enhance your brand?
         </Title>
         <Img src="/extras/brand.jpg"></Img>
         <Description>
-          <BackgroundColored>Unlock the full potential</BackgroundColored> of
-          your business with a digital footprint!
+          <BackgroundColored>Fully maximize</BackgroundColored> the capabilities
+          of your business with a strong digital presence!
           <br />
           <br />
           <Closing>
-            Take control of your website with <Special>WorldHello</Special>.
+            Manage your website effectively with <Special>WorldHello</Special>.
           </Closing>
         </Description>
         <Button variation="secondary" size="small">

@@ -45,8 +45,8 @@ function Footer() {
         <Ending>WorldHello is a US based Website Development Agency.</Ending>
 
         <Ending>
-          We are best known for converting customer requests through strategic
-          web development principles that solve business challenges.
+          We excel in transforming client requirements using strategic web
+          development strategies designed to address business needs effectively.
         </Ending>
         <hr />
         <Logo>WorldHello</Logo>

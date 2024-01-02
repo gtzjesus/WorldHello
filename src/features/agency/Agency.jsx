@@ -56,7 +56,7 @@ function Agency() {
         </Title>
 
         <Description>
-          Websites that convert visitors into
+          Websites engineered to turn visitors into
           <MiniDescription> customers.</MiniDescription>
         </Description>
         <Button variation="secondary" size="small">

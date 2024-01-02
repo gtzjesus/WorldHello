@@ -24,6 +24,7 @@ const Title = styled.span`
 const Special = styled.span`
   background-color: var(--color-white);
   color: var(--color-green);
+  padding: 0 var(--padding-xxsmall);
 `;
 
 const Description = styled.span`
@@ -37,17 +38,17 @@ function Contact() {
           Refer and <Special>Earn</Special>
         </Title>
         <Description>
-          WorldHello rewards you every time you successfully refer someone to
-          us. We till pay you 10% of the value once completed, you just simply
-          have to share our services with your friends.
+          WorldHello <Special>offers rewards</Special> for every successful
+          referral you make to us. Upon completion, we&rsquo;ll compensate you
+          with 10% of the total value; all you need to do is share our services
+          with your friends.
         </Description>
       </Information>
       <Information>
         <Title>Contact us</Title>
         <Description>
           We have a team available at WorldHello if you have a general inquiry,
-          <br />
-          You can contact us via email at: contact@worldhello.us
+          you can contact us via email at: contact@worldhello.us
           <br />
           <br />
           Or just,

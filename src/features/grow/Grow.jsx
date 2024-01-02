@@ -38,19 +38,19 @@ function Grow() {
     <StyledGrow>
       <Information>
         <Title>
-          Creating highly converting websites, <br />
+          Crafting websites with high conversion rates, <br />
           <MiniDescription>
-            through strategic designs, data & SEO.
+            utilizing strategic designs, data & SEO.
           </MiniDescription>
         </Title>
         <Img src="/backgrounds/grow.png"></Img>
         <Description>Join us and grow!</Description>
         <MiniDescription>
-          Grow your business with WorldHello, get the full benefits from our
-          collective resources and our years of expertise.
+          Expand your business with WorldHello, harnessing the full advantages
+          of our combined resources and extensive experience.
         </MiniDescription>
         <Description>
-          Lets achieve greater <Special>success</Special> together.
+          Let&rsquo;s strive for greater <Special>success</Special> together.
         </Description>
         <Button variation="secondary" size="small">
           click to begin your website

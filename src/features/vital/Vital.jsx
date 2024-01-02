@@ -64,7 +64,7 @@ function Vital() {
   return (
     <StyledVital>
       <Information>
-        <Intro>[ why its important ]</Intro>
+        <Intro>[ why it matters ]</Intro>
 
         <Title>Say hello to the world and put your brand on the map!</Title>
         <Description>
@@ -83,8 +83,8 @@ function Vital() {
         </Description>
         <Last>
           <Ending>
-            Make your first impression last well beyond that moment, Especially
-            on the web.
+            Ensure your initial impression resonates long after the first
+            encounter, particularly online.
           </Ending>
         </Last>
       </Information>

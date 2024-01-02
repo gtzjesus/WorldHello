@@ -108,12 +108,13 @@ function Carousel() {
   return (
     <StyledCarousel>
       <Information>
-        <Intro>[ get started today ]</Intro>
+        <Intro>[ begin today ]</Intro>
         <SubTitle>
-          Target your ideal audience with a specialized website from WorldHello,
+          Reach your target audience effectively with a customized website by
+          WorldHello,
         </SubTitle>
 
-        <Caption>what we&rsquo;ve built,</Caption>
+        <Caption>our accomplishments,</Caption>
       </Information>
       <CarouselArea>
         <CarouselAreaSlider
@@ -137,19 +138,21 @@ function Carousel() {
       </CarouselDots>
       <Information>
         <SubTitle>
-          Tranform your clientele into loyal and paying customers.
+          Tranform your clientele into devoted, paying customers through a
+          top-performing website.
         </SubTitle>
-        <Intro>[ how we do it ]</Intro>
+        <Intro>[ WorldHello&rsquo;s approach]</Intro>
         <MiniDescription>
-          It is essential to work with a team that understands the strategies to
-          ensure the best possible outcome for your business.
+          Collaborating with a team knowledgeable in effective strategies is
+          crucial for maximizing your business outcomes.
         </MiniDescription>
         <MiniDescription>
-          At WorldHello, we prioritize optimization for conversions and
-          performance that allows businesses to increase their chances of
-          success,
+          At WorldHello, our focus is on optimizing conversions to elevate your
+          business&rsquo;s potential for success,
         </MiniDescription>
-        <SubTitle>By boosting revenue and being profitable.</SubTitle>
+        <SubTitle>
+          Ultimately driving revenue growth and profitability.
+        </SubTitle>
       </Information>
     </StyledCarousel>
   );

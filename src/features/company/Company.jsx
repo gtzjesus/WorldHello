@@ -48,10 +48,10 @@ function Company() {
       <Information>
         <Title>Why us?</Title>
         <Description>
-          At WorldHello we ensure that partnering with us is a valuable
-          investment to growing your business,
+          At WorldHello, we guarantee that teaming up with us is a strategic
+          investment in expanding your business,
           <br />
-          <Special>rather than an additonal expense.</Special>
+          <Special>not just an extra cost.</Special>
         </Description>
         <Img src="/extras/me.png"></Img>
         <Contact>
@@ -63,16 +63,15 @@ function Company() {
         <Intro>[ why we do what we do ]</Intro>
 
         <MiniDescription>
-          We are problem solvers at heart and pride ourselves on a commitment to
-          excellence.
+          At WorldHello, our core is rooted in solving challenges and we take
+          immense pride in our relentless pursuit of excellence.
         </MiniDescription>
         <MiniDescription>
-          At WorldHello, we strive to exceed expectations with every website
-          that crosses our path. Our passion relies in delivering high-quality
-          and high-performing websites.
+          We aim to surpass expectations with each website we undertake, driven
+          by our passion for delivering top-notch, high-performance websites.
         </MiniDescription>
         <Button variation="secondary" size="small">
-          Book A Free Call
+          get in touch for free
         </Button>
       </Information>
     </StyledCompany>
