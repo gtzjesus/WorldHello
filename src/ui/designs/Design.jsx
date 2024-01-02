@@ -27,19 +27,13 @@ const Information = styled.div`
   padding: 0 var(--padding-xsmall);
 `;
 
-const Title = styled.span`
-  font-size: var(--font-small);
-  color: var(--color-green);
+const Description = styled.span`
+  font-size: var(--font-xsmall);
+  color: var(--color-white);
   text-transform: uppercase;
   z-index: var(--z-top);
 `;
 
-const Description = styled.span`
-  font-size: var(--font-xsmall);
-  background-color: var(--color-white);
-  color: var(--color-green);
-  padding: 0 var(--padding-xxsmall);
-`;
 function Design({ design }) {
   // CREATE design OBJECT to start displaying
   const finalDesign = {
@@ -62,8 +56,7 @@ function Design({ design }) {
         <source src={finalDesign.video} type="video/mp4" />
       </Video>
       <Information>
-        {/* <Description>{finalDesign.description}</Description> */}
-        <Title>{finalDesign.description}</Title>
+        <Description>{finalDesign.description}</Description>
       </Information>
     </StyledDesign>
   );
