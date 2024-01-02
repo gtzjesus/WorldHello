@@ -5,7 +5,7 @@ const StyledDesign = styled.div`
   overflow: hidden;
   width: 100%;
   position: relative;
-  padding-bottom: 89%;
+  padding-bottom: 79%;
   padding-top: 50%;
 `;
 
