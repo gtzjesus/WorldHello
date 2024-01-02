@@ -17,7 +17,7 @@ const Video = styled.video`
   height: 100%;
 `;
 const Information = styled.div`
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
