@@ -28,9 +28,12 @@ const Introduction = styled.div`
   gap: var(--gap-medium);
   padding: var(--padding-small);
 
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+
   @media (min-width: 61.25em) {
     top: 0;
-    left: 0;
+    right: 0;
     gap: var(--gap-large);
     padding: var(--padding-large);
   }

@@ -31,7 +31,7 @@ function App() {
   const [header, setHeader] = useState(false);
   // FUNCTION TO change state on scroll
   const changeHeader = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 100) {
       setHeader(true);
     } else {
       setHeader(false);
