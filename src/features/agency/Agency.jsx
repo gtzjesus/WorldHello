@@ -42,12 +42,12 @@ const Title = styled.span`
   text-transform: uppercase;
   line-height: 2.5rem;
 
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-
   @media (min-width: 61.25em) {
     font-size: var(--font-xxlarge);
     line-height: 3.5rem;
+
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 `;
 
@@ -66,10 +66,12 @@ const MiniDescription = styled.span`
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
+
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 `;
 
