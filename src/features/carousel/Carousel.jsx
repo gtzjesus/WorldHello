@@ -44,10 +44,24 @@ const Information = styled.div`
   flex-direction: column;
   gap: var(--gap-medium);
   padding: var(--padding-medium);
+
+  @media (min-width: 40.25em) {
+    padding: var(--padding-medium) var(--padding-xlarge);
+  }
+
+  @media (min-width: 78.15em) {
+  }
 `;
 
 const SubTitle = styled.span`
   font-size: var(--font-small);
+
+  @media (min-width: 40.25em) {
+    font-size: var(--font-medium);
+  }
+
+  @media (min-width: 78.15em) {
+  }
 `;
 
 const Img = styled.img`
@@ -63,10 +77,25 @@ const Caption = styled.div`
   color: var(--color-white);
   background-color: var(--color-green);
   padding: 0 var(--padding-xxsmall);
+
+  @media (min-width: 40.25em) {
+    font-size: var(--font-large);
+    padding: 0 var(--padding-xsmall);
+  }
+
+  @media (min-width: 78.15em) {
+  }
 `;
 
 const MiniDescription = styled.span`
   font-size: var(--font-xsmall);
+
+  @media (min-width: 40.25em) {
+    font-size: var(--font-small);
+  }
+
+  @media (min-width: 78.15em) {
+  }
 `;
 
 function Carousel() {
