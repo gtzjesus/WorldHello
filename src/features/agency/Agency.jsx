@@ -44,9 +44,7 @@ const Title = styled.span`
 
   @media (min-width: 61.25em) {
     font-size: var(--font-xxlarge);
-    letter-spacing: -0.3rem;
-    text-transform: uppercase;
-    line-height: 2.5rem;
+    line-height: 3.5rem;
   }
 `;
 
@@ -58,9 +56,15 @@ const Special = styled.span`
 
 const MiniDescription = styled.span`
   font-size: var(--font-small);
+  @media (min-width: 61.25em) {
+    font-size: var(--font-medium);
+  }
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
+  @media (min-width: 61.25em) {
+    font-size: var(--font-small);
+  }
 `;
 
 function Agency() {
@@ -74,7 +78,10 @@ function Agency() {
 
         <Description>
           Websites engineered to turn visitors into
-          <MiniDescription> customers.</MiniDescription>
+          <MiniDescription>
+            {' '}
+            <Special>customers.</Special>
+          </MiniDescription>
         </Description>
         <Button variation="secondary" size="small">
           Start your website

@@ -5,6 +5,10 @@ const sizes = {
     font-size: var(--font-xsmall);
     padding: 0.8rem 1.2rem;
     text-transform: uppercase;
+
+    @media (min-width: 61.25em) {
+      font-size: var(--font-small);
+    }
   `,
 };
 
