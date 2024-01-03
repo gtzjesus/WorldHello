@@ -14,7 +14,7 @@ const StyledVideo = styled.div`
   min-height: 100vh;
   min-width: 100vw;
 
-  @media (min-width: 61.25em;) {
+  @media (min-width: 61.25em) {
     display: none;
   }
 `;
