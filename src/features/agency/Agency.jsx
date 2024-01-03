@@ -16,7 +16,6 @@ const StyledVideo = styled.div`
 
   @media (min-width: 61.25em) {
     background-image: url('/backgrounds/landing_second.png');
-    /* Use filter to add blur effect */
   }
 `;
 
@@ -31,9 +30,13 @@ const Introduction = styled.div`
 
   @media (min-width: 61.25em) {
     top: 0;
-    right: 0;
+    left: 0;
     gap: var(--gap-large);
     padding: var(--padding-large);
+  }
+
+  @media (min-width: 78.15em) {
+    padding: var(--padding-xxlarge);
   }
 `;
 
@@ -46,6 +49,11 @@ const Title = styled.span`
   @media (min-width: 61.25em) {
     font-size: var(--font-xxlarge);
     line-height: 4.5rem;
+  }
+
+  @media (min-width: 78.15em) {
+    font-size: var(--font-xxxlarge);
+    line-height: 6.5rem;
   }
 `;
 
@@ -61,12 +69,20 @@ const MiniDescription = styled.span`
   @media (min-width: 61.25em) {
     font-size: var(--font-medium);
   }
+
+  @media (min-width: 78.15em) {
+    font-size: var(--font-xlarge);
+  }
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
 
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
+  }
+
+  @media (min-width: 78.15em) {
+    font-size: var(--font-large);
   }
 `;
 

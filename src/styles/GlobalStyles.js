@@ -46,6 +46,8 @@ const GlobalStyles = createGlobalStyle`
     --font-large: 3rem;
     --font-xlarge: 4rem;
     --font-xxlarge: 7rem;
+    --font-xxxlarge: 10rem;
+
 
 
 
@@ -68,7 +70,7 @@ const GlobalStyles = createGlobalStyle`
     --padding-large: 3rem;
     --padding-slarge: 5rem;
     --padding-xlarge: 7rem;
-    --padding-xxlarge: 15rem;
+    --padding-xxlarge: 10rem;
 
 
 
