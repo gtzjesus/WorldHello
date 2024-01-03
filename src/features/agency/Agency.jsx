@@ -33,6 +33,7 @@ const Introduction = styled.div`
     top: 0;
     right: 0;
     gap: var(--gap-large);
+    padding: var(--padding-large);
   }
 `;
 
@@ -45,9 +46,6 @@ const Title = styled.span`
   @media (min-width: 61.25em) {
     font-size: var(--font-xxlarge);
     line-height: 4.5rem;
-
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 0 #000;
   }
 `;
 
@@ -69,9 +67,6 @@ const Description = styled.span`
 
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
-
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 0 #000;
   }
 `;
 
