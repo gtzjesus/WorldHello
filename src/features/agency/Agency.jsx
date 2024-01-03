@@ -13,6 +13,10 @@ const StyledVideo = styled.div`
   // COVER THE FULL SCREEN OF EVERY DEVICE
   min-height: 100vh;
   min-width: 100vw;
+
+  @media (min-width: 61.25em;) {
+    display: none;
+  }
 `;
 
 const Introduction = styled.div`
