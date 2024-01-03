@@ -16,6 +16,7 @@ const StyledVideo = styled.div`
 
   @media (min-width: 61.25em) {
     background-image: url('/backgrounds/landing_second.png');
+    /* Use filter to add blur effect */
   }
 `;
 
