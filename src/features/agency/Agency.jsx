@@ -15,7 +15,7 @@ const StyledVideo = styled.div`
   min-width: 100vw;
 
   @media (min-width: 61.25em) {
-    display: none;
+    background-image: url('/backgrounds/landing_second.jpg');
   }
 `;
 
