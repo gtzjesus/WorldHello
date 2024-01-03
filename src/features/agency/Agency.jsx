@@ -40,11 +40,11 @@ const Title = styled.span`
   font-size: var(--font-xlarge);
   letter-spacing: -0.3rem;
   text-transform: uppercase;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
 
   @media (min-width: 61.25em) {
     font-size: var(--font-xxlarge);
-    line-height: 3.5rem;
+    line-height: 4.5rem;
 
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
       1px 1px 0 #000;
