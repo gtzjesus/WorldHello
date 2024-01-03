@@ -7,6 +7,13 @@ const StyledDesign = styled.div`
   position: relative;
   padding-bottom: 85%;
   padding-top: 40%;
+  @media (min-width: 40.25em) {
+    padding-bottom: 75%;
+    padding-top: 30%;
+  }
+
+  @media (min-width: 78.15em) {
+  }
 `;
 
 const Video = styled.video`
@@ -25,6 +32,13 @@ const Information = styled.div`
   writing-mode: vertical-lr;
   text-orientation: upright;
   padding: 0 var(--padding-xsmall);
+
+  @media (min-width: 40.25em) {
+    padding: 0 var(--padding-large);
+  }
+
+  @media (min-width: 78.15em) {
+  }
 `;
 
 const Description = styled.span`
@@ -32,6 +46,13 @@ const Description = styled.span`
   color: var(--color-white);
   text-transform: uppercase;
   z-index: var(--z-top);
+
+  @media (min-width: 40.25em) {
+    font-size: var(--font-small);
+  }
+
+  @media (min-width: 78.15em) {
+  }
 `;
 
 function Design({ design }) {
