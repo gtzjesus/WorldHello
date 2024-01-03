@@ -28,14 +28,10 @@ const Introduction = styled.div`
   gap: var(--gap-medium);
   padding: var(--padding-small);
 
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-
   @media (min-width: 61.25em) {
     top: 0;
     right: 0;
     gap: var(--gap-large);
-    padding: var(--padding-large);
   }
 `;
 
@@ -44,6 +40,9 @@ const Title = styled.span`
   letter-spacing: -0.3rem;
   text-transform: uppercase;
   line-height: 2.5rem;
+
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
 
   @media (min-width: 61.25em) {
     font-size: var(--font-xxlarge);
@@ -59,12 +58,15 @@ const Special = styled.span`
 
 const MiniDescription = styled.span`
   font-size: var(--font-small);
+
   @media (min-width: 61.25em) {
     font-size: var(--font-medium);
   }
 `;
 const Description = styled.span`
   font-size: var(--font-xsmall);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
@@ -82,7 +84,6 @@ function Agency() {
         <Description>
           Websites engineered to turn visitors into
           <MiniDescription>
-            {' '}
             <Special>customers.</Special>
           </MiniDescription>
         </Description>
