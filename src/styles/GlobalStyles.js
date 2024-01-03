@@ -45,6 +45,8 @@ const GlobalStyles = createGlobalStyle`
     --font-medium: 2.5rem;
     --font-large: 3rem;
     --font-xlarge: 4rem;
+    --font-xxlarge: 7rem;
+
 
 
       /* Margin */

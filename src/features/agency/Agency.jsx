@@ -15,19 +15,25 @@ const StyledVideo = styled.div`
   min-width: 100vw;
 
   @media (min-width: 61.25em) {
-    background-image: url('/backgrounds/landing_second.jpg');
+    background-image: url('/backgrounds/landing_second.png');
   }
 `;
 
 const Introduction = styled.div`
   position: absolute;
   bottom: 0;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: var(--gap-medium);
   padding: var(--padding-small);
+
+  @media (min-width: 61.25em) {
+    top: 0;
+    left: 0;
+    gap: var(--gap-large);
+    padding: var(--padding-large);
+  }
 `;
 
 const Title = styled.span`
@@ -35,6 +41,13 @@ const Title = styled.span`
   letter-spacing: -0.3rem;
   text-transform: uppercase;
   line-height: 2.5rem;
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-xxlarge);
+    letter-spacing: -0.3rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+  }
 `;
 
 const Special = styled.span`
