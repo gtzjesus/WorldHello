@@ -58,8 +58,7 @@ const Title = styled.span`
 `;
 
 const Special = styled.span`
-  color: var(--color-green);
-  background-color: var(--color-white);
+  background-color: var(--color-green);
   padding: 0 var(--padding-xxsmall);
 `;
 
