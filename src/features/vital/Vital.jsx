@@ -41,14 +41,8 @@ const Title = styled.span`
   font-size: var(--font-medium);
   width: fit-content;
 
-  @media (min-width: 40.25em) {
-  }
-
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
-  }
-
-  @media (min-width: 78.15em) {
   }
 
   @media (min-width: 150.15em) {
@@ -68,14 +62,8 @@ const Quote = styled.span`
   padding: var(--padding-xxsmall);
   margin: var(--padding-medium) 0;
 
-  @media (min-width: 40.25em) {
-  }
-
   @media (min-width: 61.25em) {
     font-size: var(--font-medium);
-  }
-
-  @media (min-width: 78.15em) {
   }
 
   @media (min-width: 150.15em) {
@@ -99,18 +87,12 @@ const Last = styled.div`
 const Ending = styled.span`
   font-size: var(--font-xsmall);
 
-  @media (min-width: 40.25em) {
-  }
-
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
 
   @media (min-width: 78.15em) {
     font-size: var(--font-medium);
-  }
-
-  @media (min-width: 150.15em) {
   }
 `;
 
@@ -119,7 +101,6 @@ function Vital() {
     <StyledVital>
       <Information>
         <Intro>[ why it matters ]</Intro>
-
         <Title>
           Greet the world and establish your brand&rsquo;s presence.
         </Title>

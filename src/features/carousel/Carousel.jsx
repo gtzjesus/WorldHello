@@ -13,8 +13,8 @@ const ParentCarousel = styled.div`
 `;
 
 const StyledCarousel = styled.div`
-  background-color: var(--background-primary);
-  color: var(--color-white);
+  background-color: var(--background-secondary);
+  color: var(--color-black);
   overflow: hidden;
 `;
 const CarouselArea = styled.div`
@@ -41,7 +41,7 @@ const CarouselDot = styled.div`
   border-radius: 50%;
   cursor: pointer;
   margin: 15px 7px 0px;
-  background-color: var(--color-white);
+  background-color: var(--color-black);
 
   @media (min-width: 78.15em) {
     height: 30px;
@@ -142,6 +142,7 @@ const MiniDescription = styled.span`
 
 const Underline = styled.div`
   background: var(--color-green);
+  color: var(--color-white);
   padding: 0 var(--padding-xxsmall);
   width: fit-content;
 `;

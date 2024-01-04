@@ -12,9 +12,6 @@ const StyledGrow = styled.div`
     padding: var(--padding-xlarge);
   }
 
-  @media (min-width: 61.25em) {
-  }
-
   @media (min-width: 78.15em) {
     justify-content: space-between;
     flex-direction: row;
