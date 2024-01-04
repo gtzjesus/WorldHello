@@ -89,7 +89,6 @@ const Additional = styled.div`
 
 const SubTitle = styled.span`
   font-size: var(--font-small);
-  float: right;
 
   @media (min-width: 40.25em) {
     font-size: var(--font-medium);
@@ -141,6 +140,12 @@ const Underline = styled.div`
   background: var(--color-green);
   padding: 0 var(--padding-xxsmall);
   width: fit-content;
+`;
+
+const ImageCaption = styled.div`
+  @media (min-width: 78.15em) {
+    font-size: var(--font-small);
+  }
 `;
 
 function Carousel() {
@@ -219,15 +224,12 @@ function Carousel() {
         <SubTitle>
           <Intro>[ WorldHello&rsquo;s approach]</Intro>
           Our focus is on optimizing conversions to elevate your
-          business&rsquo;s <Underline>potential for success.</Underline> <br />
+          business&rsquo;s potential for success. Transforming your clientele
+          into loyal, paying customers through a
+          <Underline>top-performing website.</Underline> <br />
           <MiniDescription>
-            Ultimately driving revenue growth and profitability.
+            Ultimately driving profitability and revenue growth.
           </MiniDescription>
-        </SubTitle>
-
-        <SubTitle>
-          Tranform your clientele into loyal, paying customers through a
-          top-performing website.
         </SubTitle>
       </Additional>
     </StyledCarousel>
