@@ -25,6 +25,12 @@ const variations = {
     width: fit-content;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
   `,
+  third: css`
+    color: var(--color-purple);
+    background-color: var(--background-secondary);
+    width: fit-content;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+  `,
 };
 
 const Button = styled.button`

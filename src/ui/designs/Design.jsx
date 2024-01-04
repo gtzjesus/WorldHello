@@ -48,16 +48,19 @@ const Information = styled.div`
 `;
 
 const Description = styled.span`
+  display: none;
   font-size: var(--font-xsmall);
   color: var(--color-white);
   text-transform: uppercase;
   z-index: var(--z-top);
 
   @media (min-width: 40.25em) {
+    display: block;
     font-size: var(--font-small);
   }
 
   @media (min-width: 78.15em) {
+    display: block;
     font-size: var(--font-medium);
   }
 `;

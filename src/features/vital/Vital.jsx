@@ -9,15 +9,19 @@ const StyledVital = styled.div`
   padding: var(--padding-large) var(--padding-medium);
 
   @media (min-width: 40.25em) {
+    padding: var(--padding-xlarge);
   }
 
   @media (min-width: 61.25em) {
+    padding: var(--padding-xxlarge);
   }
 
   @media (min-width: 78.15em) {
+    padding: var(--padding-xxxlarge);
   }
 
   @media (min-width: 150.15em) {
+    padding: var(--padding-giant);
   }
 `;
 
@@ -36,6 +40,20 @@ const Title = styled.span`
   align-items: center;
   font-size: var(--font-medium);
   width: fit-content;
+
+  @media (min-width: 40.25em) {
+  }
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-large);
+  }
+
+  @media (min-width: 78.15em) {
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-xlarge);
+  }
 `;
 const Description = styled.div`
   display: flex;
@@ -46,13 +64,27 @@ const Description = styled.div`
 const Quote = styled.span`
   font-size: var(--font-small);
   background-color: var(--color-white);
-  color: var(--color-green);
+  color: var(--color-purple);
   padding: var(--padding-xxsmall);
   margin: var(--padding-medium) 0;
+
+  @media (min-width: 40.25em) {
+  }
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-medium);
+  }
+
+  @media (min-width: 78.15em) {
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-large);
+  }
 `;
 
 const Special = styled.span`
-  color: var(--color-green);
+  color: var(--color-purple);
 `;
 
 const Source = styled.span``;
@@ -66,6 +98,20 @@ const Last = styled.div`
 
 const Ending = styled.span`
   font-size: var(--font-xsmall);
+
+  @media (min-width: 40.25em) {
+  }
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-small);
+  }
+
+  @media (min-width: 78.15em) {
+    font-size: var(--font-medium);
+  }
+
+  @media (min-width: 150.15em) {
+  }
 `;
 
 function Vital() {
@@ -85,7 +131,7 @@ function Vital() {
           </Quote>
           <Source>
             <a href="https://bloggingwizard.com/website-statistics/">
-              <Button variation="secondary" size="small">
+              <Button variation="third" size="small">
                 view article
               </Button>
             </a>

@@ -37,6 +37,7 @@ const GlobalStyles = createGlobalStyle`
     --color-blue: #279AEE;
     --color-green: #6A7744;
     --color-tan: #D4D187;
+    --color-purple: #6B4C8A;
 
     /* Text Size */
     --font-xxsmall: 1.25rem;
@@ -72,6 +73,8 @@ const GlobalStyles = createGlobalStyle`
     --padding-xlarge: 7rem;
     --padding-xxlarge: 10rem;
     --padding-xxxlarge: 20rem;
+    --padding-giant: 30rem;
+
 
 
 
