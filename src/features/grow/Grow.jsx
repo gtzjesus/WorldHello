@@ -13,13 +13,12 @@ const StyledGrow = styled.div`
   }
 
   @media (min-width: 61.25em) {
-    flex-direction: row;
-    padding: var(--padding-small);
   }
 
   @media (min-width: 78.15em) {
-    padding: var(--padding-xlarge);
     justify-content: space-between;
+    flex-direction: row;
+    padding: var(--padding-large);
   }
 `;
 
@@ -35,6 +34,10 @@ const Title = styled.span`
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
   }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-xlarge);
+  }
 `;
 
 const Description = styled.span`
@@ -42,6 +45,9 @@ const Description = styled.span`
 
   @media (min-width: 61.25em) {
     font-size: var(--font-medium);
+  }
+  @media (min-width: 150.15em) {
+    font-size: var(--font-large);
   }
 `;
 
@@ -51,6 +57,9 @@ const MiniDescription = styled.span`
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
+  @media (min-width: 150.15em) {
+    font-size: var(--font-medium);
+  }
 `;
 
 const Img = styled.img`
@@ -58,8 +67,15 @@ const Img = styled.img`
     padding: var(--padding-large);
   }
 
+  @media (min-width: 61.25em) {
+    width: 60vw;
+  }
+
+  @media (min-width: 78.15em) {
+    width: 35vw;
+  }
   @media (min-width: 150.15em) {
-    padding: var(--padding-xxlarge);
+    width: 30vw;
   }
 `;
 
@@ -88,7 +104,7 @@ function Grow() {
           of our combined resources and extensive experience.
         </MiniDescription>
         <Description>
-          Let&rsquo;s strive for greater <Special>success</Special> together.
+          Let&rsquo;s strive for greater <Special>success together.</Special>
         </Description>
         <Button variation="secondary" size="small">
           click to begin your website

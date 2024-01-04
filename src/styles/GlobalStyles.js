@@ -71,6 +71,8 @@ const GlobalStyles = createGlobalStyle`
     --padding-slarge: 5rem;
     --padding-xlarge: 7rem;
     --padding-xxlarge: 10rem;
+    --padding-xxxlarge: 20rem;
+
 
 
 
