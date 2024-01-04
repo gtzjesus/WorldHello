@@ -7,6 +7,18 @@ const StyledVital = styled.div`
   background-size: cover;
   color: var(--color-white);
   padding: var(--padding-large) var(--padding-medium);
+
+  @media (min-width: 40.25em) {
+  }
+
+  @media (min-width: 61.25em) {
+  }
+
+  @media (min-width: 78.15em) {
+  }
+
+  @media (min-width: 150.15em) {
+  }
 `;
 
 const Information = styled.div`
