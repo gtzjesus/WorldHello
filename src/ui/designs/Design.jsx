@@ -40,6 +40,7 @@ const Information = styled.div`
   }
 
   @media (min-width: 78.15em) {
+    writing-mode: horizontal-tb;
     padding: 0 var(--padding-xxlarge);
   }
 `;
