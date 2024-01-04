@@ -3,18 +3,22 @@ import styled from 'styled-components';
 const StyledDesign = styled.div`
   display: inline-block;
   overflow: hidden;
-  width: 100vw;
-  height: 85vh;
+  width: fit-content;
+  height: fit-content;
   /* padding-bottom: 85%;
   padding-top: 40%; */
   @media (min-width: 40.25em) {
     /* padding-bottom: 75%;
     padding-top: 30%; */
+    width: 100vw;
+    height: 65vh;
   }
 
-  @media (min-width: 78.15em) {
+  @media (min-width: 150.15em) {
     /* padding-bottom: 30%; */
     /* padding-top: 25%; */
+    width: 100vw;
+    height: 95vh;
   }
 `;
 
@@ -24,8 +28,8 @@ const Video = styled.video`
 `;
 const Information = styled.div`
   position: absolute;
-  top: 0;
   display: flex;
+  top: 0;
   flex-direction: row;
   align-items: center;
   writing-mode: vertical-lr;

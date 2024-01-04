@@ -6,6 +6,10 @@ import styled from 'styled-components';
 
 const ParentCarousel = styled.div`
   display: flex;
+  flex-direction: column;
+  @media (min-width: 150.15em) {
+    flex-direction: row;
+  }
 `;
 
 const StyledCarousel = styled.div`
@@ -27,7 +31,7 @@ const CarouselAreaSlider = styled.div`
 const CarouselDots = styled.div`
   z-index: var(--z-top);
   text-align: right;
-  padding: var(--padding-medium) var(--padding-xlarge);
+  padding: 0 var(--padding-medium) var(--padding-small) 0;
 `;
 
 const CarouselDot = styled.div`
@@ -49,7 +53,7 @@ const CarouselDot = styled.div`
 const Intro = styled.div`
   text-transform: uppercase;
   color: var(--color-green);
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
 `;
 
 const Information = styled.div`
@@ -222,10 +226,11 @@ function Carousel() {
       </CarouselDots>
       <Additional>
         <SubTitle>
-          <Intro>[ WorldHello&rsquo;s approach]</Intro>
+          <Intro>[ our approach]</Intro>
+          <br />
           Our focus is on optimizing conversions to elevate your
-          business&rsquo;s potential for success. Transforming your clientele
-          into loyal, paying customers through a
+          business&rsquo;s potential for success. <br /> Transforming your
+          clientele into loyal, paying customers through a
           <Underline>top-performing website.</Underline> <br />
           <MiniDescription>
             Ultimately driving profitability and revenue growth.
