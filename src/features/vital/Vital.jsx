@@ -3,6 +3,7 @@ import Button from '../../ui/buttons/Button';
 
 const StyledVital = styled.div`
   display: flex;
+  filter: brightness(1) saturate(50%);
   background-image: url('/backgrounds/earth.jpg');
   background-size: cover;
   color: var(--color-white);
@@ -34,16 +35,12 @@ const Intro = styled.div`
   text-transform: uppercase;
   color: var(--color-white);
   padding: 0 0 var(--padding-medium) 0;
-
-  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black;
 `;
 
 const Title = styled.span`
   align-items: center;
   font-size: var(--font-medium);
   width: fit-content;
-
-  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black;
 
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
