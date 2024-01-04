@@ -42,6 +42,8 @@ const Title = styled.span`
   font-size: var(--font-medium);
   width: fit-content;
 
+  text-shadow: 0.03em 0 black, 0 0.03em black, -0.03em 0 black, 0 -0.03em black;
+
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
   }
@@ -87,7 +89,7 @@ const Last = styled.div`
 
 const Ending = styled.span`
   font-size: var(--font-xsmall);
-  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black;
+  text-shadow: 0.03em 0 black, 0 0.03em black, -0.03em 0 black, 0 -0.03em black;
 
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
