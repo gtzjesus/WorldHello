@@ -26,44 +26,6 @@ const Video = styled.video`
   width: 100%;
   height: 100%;
 `;
-const Information = styled.div`
-  position: absolute;
-  display: flex;
-  top: 0;
-  flex-direction: row;
-  align-items: center;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-  padding: 0 var(--padding-xsmall);
-  z-index: var(--z-top);
-
-  @media (min-width: 40.25em) {
-    padding: 0 var(--padding-large);
-  }
-
-  @media (min-width: 78.15em) {
-    writing-mode: horizontal-tb;
-    padding: 0 var(--padding-xxlarge);
-  }
-`;
-
-const Description = styled.span`
-  display: none;
-  font-size: var(--font-xsmall);
-  color: var(--color-white);
-  text-transform: uppercase;
-  z-index: var(--z-top);
-
-  @media (min-width: 40.25em) {
-    display: block;
-    font-size: var(--font-small);
-  }
-
-  @media (min-width: 78.15em) {
-    display: block;
-    font-size: var(--font-medium);
-  }
-`;
 
 function Design({ design }) {
   // CREATE design OBJECT to start displaying
@@ -86,9 +48,6 @@ function Design({ design }) {
       <Video preload="auto" autoPlay="autoPlay" loop muted playsInline={true}>
         <source src={finalDesign.video} type="video/mp4" />
       </Video>
-      <Information>
-        <Description>{finalDesign.description}</Description>
-      </Information>
     </StyledDesign>
   );
 }

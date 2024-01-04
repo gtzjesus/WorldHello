@@ -41,13 +41,13 @@ const Title = styled.span`
 `;
 
 const Description = styled.span`
-  font-size: var(--font-small);
+  font-size: var(--font-medium);
 
   @media (min-width: 61.25em) {
-    font-size: var(--font-medium);
+    font-size: var(--font-large);
   }
   @media (min-width: 150.15em) {
-    font-size: var(--font-large);
+    font-size: var(--font-xlarge);
   }
 `;
 
