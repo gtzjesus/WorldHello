@@ -112,7 +112,7 @@ function Presence() {
           <br />
           Seeking to enhance your company?
         </Title>
-        <Img src="/extras/brand.jpg"></Img>
+        <Img src="/extras/brand.png"></Img>
       </Information>
       <Information>
         <Description>
