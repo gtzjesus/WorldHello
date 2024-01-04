@@ -51,7 +51,7 @@ const Title = styled.span`
     line-height: 4.5rem;
   }
 
-  @media (min-width: 78.15em) {
+  @media (min-width: 150.15em) {
     font-size: var(--font-xxxlarge);
     line-height: 6.5rem;
   }
@@ -69,7 +69,7 @@ const MiniDescription = styled.span`
     font-size: var(--font-medium);
   }
 
-  @media (min-width: 78.15em) {
+  @media (min-width: 150.15em) {
     font-size: var(--font-xlarge);
   }
 `;
@@ -80,7 +80,7 @@ const Description = styled.span`
     font-size: var(--font-small);
   }
 
-  @media (min-width: 78.15em) {
+  @media (min-width: 150.15em) {
     font-size: var(--font-large);
   }
 `;

@@ -14,6 +14,13 @@ const StyledDesign = styled.div`
     height: 65vh;
   }
 
+  @media (min-width: 78.25em) {
+    /* padding-bottom: 75%;
+    padding-top: 30%; */
+    width: 100vw;
+    height: 85vh;
+  }
+
   @media (min-width: 150.15em) {
     /* padding-bottom: 30%; */
     /* padding-top: 25%; */

@@ -9,19 +9,19 @@ const StyledVital = styled.div`
   padding: var(--padding-large) var(--padding-medium);
 
   @media (min-width: 40.25em) {
-    padding: var(--padding-xlarge);
+    padding: var(--padding-large) var(--padding-xlarge);
   }
 
   @media (min-width: 61.25em) {
-    padding: var(--padding-xxlarge);
+    padding: var(--padding-xlarge) var(--padding-xxlarge);
   }
 
   @media (min-width: 78.15em) {
-    padding: var(--padding-xxxlarge);
+    padding: var(--padding-xlarge) var(--padding-xxxlarge);
   }
 
   @media (min-width: 150.15em) {
-    padding: var(--padding-giant);
+    padding: var(--padding-xxxlarge) var(--padding-giant);
   }
 `;
 
@@ -34,12 +34,16 @@ const Intro = styled.div`
   text-transform: uppercase;
   color: var(--color-white);
   padding: 0 0 var(--padding-medium) 0;
+
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black;
 `;
 
 const Title = styled.span`
   align-items: center;
   font-size: var(--font-medium);
   width: fit-content;
+
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black;
 
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
@@ -86,6 +90,7 @@ const Last = styled.div`
 
 const Ending = styled.span`
   font-size: var(--font-xsmall);
+  text-shadow: 0.05em 0 black, 0 0.05em black, -0.05em 0 black, 0 -0.05em black;
 
   @media (min-width: 61.25em) {
     font-size: var(--font-small);

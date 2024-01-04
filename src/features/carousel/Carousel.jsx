@@ -32,6 +32,10 @@ const CarouselDots = styled.div`
   z-index: var(--z-top);
   text-align: right;
   padding: 0 var(--padding-medium) var(--padding-small) 0;
+
+  @media (min-width: 78.15em) {
+    padding: 0 var(--padding-giant) var(--padding-medium) 0;
+  }
 `;
 
 const CarouselDot = styled.div`
