@@ -13,6 +13,8 @@ const StyledDesign = styled.div`
   }
 
   @media (min-width: 78.15em) {
+    padding-bottom: 10%;
+    padding-top: 25%;
   }
 `;
 
@@ -38,6 +40,7 @@ const Information = styled.div`
   }
 
   @media (min-width: 78.15em) {
+    padding: 0 var(--padding-xxlarge);
   }
 `;
 
@@ -52,6 +55,7 @@ const Description = styled.span`
   }
 
   @media (min-width: 78.15em) {
+    font-size: var(--font-medium);
   }
 `;
 

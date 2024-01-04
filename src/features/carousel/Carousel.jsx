@@ -32,6 +32,12 @@ const CarouselDot = styled.div`
   cursor: pointer;
   margin: 15px 7px 0px;
   background-color: var(--color-white);
+
+  @media (min-width: 78.15em) {
+    height: 30px;
+    width: 30px;
+    margin: 20px 10px 0px;
+  }
 `;
 
 const Intro = styled.div`
@@ -47,9 +53,11 @@ const Information = styled.div`
 
   @media (min-width: 40.25em) {
     padding: var(--padding-medium) var(--padding-xlarge);
+    gap: var(--gap-large);
   }
 
   @media (min-width: 78.15em) {
+    padding: var(--padding-large) var(--padding-xxlarge);
   }
 `;
 
@@ -61,6 +69,7 @@ const SubTitle = styled.span`
   }
 
   @media (min-width: 78.15em) {
+    font-size: var(--font-large);
   }
 `;
 
@@ -84,6 +93,8 @@ const Caption = styled.div`
   }
 
   @media (min-width: 78.15em) {
+    width: fit-content;
+    font-size: var(--font-xlarge);
   }
 `;
 
@@ -95,6 +106,7 @@ const MiniDescription = styled.span`
   }
 
   @media (min-width: 78.15em) {
+    font-size: var(--font-small);
   }
 `;
 
