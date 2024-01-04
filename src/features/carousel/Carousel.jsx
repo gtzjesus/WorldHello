@@ -4,6 +4,10 @@ import Spinner from '../../ui/spinners/Spinner';
 import Design from '../../ui/designs/Design';
 import styled from 'styled-components';
 
+const ParentCarousel = styled.div`
+  display: flex;
+`;
+
 const StyledCarousel = styled.div`
   background-color: var(--background-primary);
   color: var(--color-white);
@@ -17,11 +21,13 @@ const CarouselArea = styled.div`
 
 const CarouselAreaSlider = styled.div`
   white-space: nowrap;
-  transition: ease 1000ms;
+  transition: ease 1100ms;
 `;
 
 const CarouselDots = styled.div`
-  text-align: center;
+  z-index: var(--z-top);
+  text-align: right;
+  padding: var(--padding-medium) var(--padding-xlarge);
 `;
 
 const CarouselDot = styled.div`
@@ -150,24 +156,27 @@ function Carousel() {
 
   return (
     <StyledCarousel>
-      <Information>
-        <Intro>[ what we offer]</Intro>
-        <SubTitle>
-          Connect with your desired audience with a customized website from
-          WorldHello,
-        </SubTitle>
+      <ParentCarousel>
+        <Information>
+          <Intro>[ what we offer]</Intro>
+          <SubTitle>
+            Connect with your desired audience with a customized website from
+            WorldHello,
+          </SubTitle>
 
-        <Caption>our achievements,</Caption>
-      </Information>
-      <CarouselArea>
-        <CarouselAreaSlider
-          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-        >
-          {designs.map((design) => (
-            <Design design={design} key={design.id} />
-          ))}
-        </CarouselAreaSlider>
-      </CarouselArea>
+          <Caption>our achievements,</Caption>
+        </Information>
+
+        <CarouselArea>
+          <CarouselAreaSlider
+            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+          >
+            {designs.map((design) => (
+              <Design design={design} key={design.id} />
+            ))}
+          </CarouselAreaSlider>
+        </CarouselArea>
+      </ParentCarousel>
       <CarouselDots>
         {designs.map((_, idx) => (
           <CarouselDot

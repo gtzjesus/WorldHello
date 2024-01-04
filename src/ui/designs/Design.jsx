@@ -3,25 +3,22 @@ import styled from 'styled-components';
 const StyledDesign = styled.div`
   display: inline-block;
   overflow: hidden;
-  width: 100%;
-  position: relative;
-  padding-bottom: 85%;
-  padding-top: 40%;
+  width: 100vw;
+  height: 85vh;
+  /* padding-bottom: 85%;
+  padding-top: 40%; */
   @media (min-width: 40.25em) {
-    padding-bottom: 75%;
-    padding-top: 30%;
+    /* padding-bottom: 75%;
+    padding-top: 30%; */
   }
 
   @media (min-width: 78.15em) {
-    padding-bottom: 10%;
-    padding-top: 25%;
+    /* padding-bottom: 30%; */
+    /* padding-top: 25%; */
   }
 `;
 
 const Video = styled.video`
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 `;
