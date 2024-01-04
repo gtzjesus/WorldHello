@@ -49,6 +49,7 @@ const CarouselDot = styled.div`
 const Intro = styled.div`
   text-transform: uppercase;
   color: var(--color-green);
+  font-size: var(--font-small);
 `;
 
 const Information = styled.div`
@@ -64,11 +65,31 @@ const Information = styled.div`
 
   @media (min-width: 78.15em) {
     padding: var(--padding-large) var(--padding-xxlarge);
+    gap: var(--gap-xxlarge);
+  }
+`;
+
+const Additional = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+  padding: var(--padding-medium);
+
+  @media (min-width: 40.25em) {
+    padding: var(--padding-medium) var(--padding-xlarge);
+    gap: var(--gap-large);
+  }
+
+  @media (min-width: 78.15em) {
+    padding: var(--padding-large) var(--padding-xxlarge);
+    gap: var(--gap-xxlarge);
+    flex-direction: row;
   }
 `;
 
 const SubTitle = styled.span`
   font-size: var(--font-small);
+  float: right;
 
   @media (min-width: 40.25em) {
     font-size: var(--font-medium);
@@ -116,6 +137,12 @@ const MiniDescription = styled.span`
   }
 `;
 
+const Underline = styled.div`
+  background: var(--color-green);
+  padding: 0 var(--padding-xxsmall);
+  width: fit-content;
+`;
+
 function Carousel() {
   // DELAY NEEDED FOR CAROUSEL setTIMEOUT
   const delay = 5000;
@@ -160,8 +187,8 @@ function Carousel() {
         <Information>
           <Intro>[ what we offer]</Intro>
           <SubTitle>
-            Connect with your desired audience with a customized website from
-            WorldHello,
+            Connect with your desired audience with a
+            <Underline>customized website</Underline> from WorldHello,
           </SubTitle>
 
           <Caption>our achievements,</Caption>
@@ -188,24 +215,21 @@ function Carousel() {
           ></CarouselDot>
         ))}
       </CarouselDots>
-      <Information>
+      <Additional>
         <SubTitle>
-          Tranform your clientele into devoted, paying customers through a
+          <Intro>[ WorldHello&rsquo;s approach]</Intro>
+          Our focus is on optimizing conversions to elevate your
+          business&rsquo;s <Underline>potential for success.</Underline> <br />
+          <MiniDescription>
+            Ultimately driving revenue growth and profitability.
+          </MiniDescription>
+        </SubTitle>
+
+        <SubTitle>
+          Tranform your clientele into loyal, paying customers through a
           top-performing website.
         </SubTitle>
-        <Intro>[ WorldHello&rsquo;s approach]</Intro>
-        <MiniDescription>
-          Collaborating with a team knowledgeable in effective strategies is
-          crucial for maximizing your business outcomes.
-        </MiniDescription>
-        <MiniDescription>
-          At WorldHello, our focus is on optimizing conversions to elevate your
-          business&rsquo;s potential for success.
-        </MiniDescription>
-        <SubTitle>
-          Ultimately driving revenue growth and profitability.
-        </SubTitle>
-      </Information>
+      </Additional>
     </StyledCarousel>
   );
 }
