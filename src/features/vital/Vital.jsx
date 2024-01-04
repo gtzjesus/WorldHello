@@ -36,8 +36,6 @@ const Title = styled.span`
   align-items: center;
   font-size: var(--font-medium);
   width: fit-content;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
 `;
 const Description = styled.div`
   display: flex;
@@ -46,10 +44,11 @@ const Description = styled.div`
 `;
 
 const Quote = styled.span`
-  padding: var(--padding-xlarge) 0 0 0;
   font-size: var(--font-small);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  background-color: var(--color-white);
+  color: var(--color-green);
+  padding: var(--padding-xxsmall);
+  margin: var(--padding-medium) 0;
 `;
 
 const Special = styled.span`
@@ -67,9 +66,6 @@ const Last = styled.div`
 
 const Ending = styled.span`
   font-size: var(--font-xsmall);
-  background-color: var(--color-white);
-  color: var(--color-green);
-  padding: 0 var(--padding-xxsmall);
 `;
 
 function Vital() {
@@ -78,7 +74,9 @@ function Vital() {
       <Information>
         <Intro>[ why it matters ]</Intro>
 
-        <Title>Say hello to the world and put your brand on the map!</Title>
+        <Title>
+          Greet the world and establish your brand&rsquo;s presence.
+        </Title>
         <Description>
           <Quote>
             <Special>&ldquo;</Special> 80% of consumers are more likely to buy
@@ -88,7 +86,7 @@ function Vital() {
           <Source>
             <a href="https://bloggingwizard.com/website-statistics/">
               <Button variation="secondary" size="small">
-                visit source
+                view article
               </Button>
             </a>
           </Source>
