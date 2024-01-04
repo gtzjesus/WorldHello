@@ -116,6 +116,7 @@ const Caption = styled.div`
   color: var(--color-white);
   background-color: var(--color-green);
   padding: 0 var(--padding-xxsmall);
+  width: fit-content;
 
   @media (min-width: 40.25em) {
     font-size: var(--font-large);
@@ -123,7 +124,6 @@ const Caption = styled.div`
   }
 
   @media (min-width: 78.15em) {
-    width: fit-content;
     font-size: var(--font-xlarge);
   }
 `;

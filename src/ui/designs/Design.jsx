@@ -35,6 +35,7 @@ const Information = styled.div`
   writing-mode: vertical-lr;
   text-orientation: upright;
   padding: 0 var(--padding-xsmall);
+  z-index: var(--z-top);
 
   @media (min-width: 40.25em) {
     padding: 0 var(--padding-large);
