@@ -34,12 +34,12 @@ const Information = styled.div`
 `;
 const Intro = styled.div`
   text-transform: uppercase;
-  color: var(--color-green);
+  color: var(--color-tan);
   font-size: var(--font-xsmall);
 `;
 
 const Special = styled.span`
-  color: var(--color-green);
+  color: var(--color-tan);
 `;
 
 const Title = styled.span`
@@ -98,7 +98,7 @@ const Description = styled.span`
 
 const BackgroundColored = styled.div`
   background-color: var(--color-white);
-  color: var(--color-green);
+  color: var(--color-tan);
   padding: 0 var(--padding-xxsmall);
   width: fit-content;
 `;
