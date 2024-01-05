@@ -4,9 +4,9 @@ import Button from '../../ui/buttons/Button';
 const StyledGrow = styled.div`
   display: flex;
   flex-direction: column;
-  background: var(--color-green);
+  background: var(--color-tan);
   padding: var(--padding-medium);
-  color: var(--color-white);
+  color: var(--color-black);
 
   @media (min-width: 40.25em) {
     padding: var(--padding-xlarge);
@@ -60,6 +60,7 @@ const MiniDescription = styled.span`
 `;
 
 const Img = styled.img`
+  padding: var(--padding-medium) 0;
   @media (min-width: 40.25em) {
     padding: var(--padding-large);
   }
@@ -77,8 +78,8 @@ const Img = styled.img`
 `;
 
 const Special = styled.span`
-  background-color: var(--color-white);
-  color: var(--color-green);
+  background-color: var(--color-black);
+  color: var(--color-tan);
   padding: 0 var(--padding-xxsmall);
 `;
 
@@ -103,7 +104,7 @@ function Grow() {
         <Description>
           Let&rsquo;s strive for greater <Special>success together.</Special>
         </Description>
-        <Button variation="secondary" size="small">
+        <Button variation="fifth" size="small">
           click to begin your website
         </Button>
       </Information>

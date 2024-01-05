@@ -26,8 +26,20 @@ const variations = {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
   `,
   third: css`
-    color: var(--color-purple);
-    background-color: var(--background-secondary);
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    width: fit-content;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+  `,
+  fourth: css`
+    color: var(--color-black);
+    background-color: var(--color-tan);
+    width: fit-content;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+  `,
+  fifth: css`
+    color: var(--color-tan);
+    background-color: var(--color-black);
     width: fit-content;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
   `,

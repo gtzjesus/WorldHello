@@ -97,8 +97,8 @@ const Description = styled.span`
 `;
 
 const BackgroundColored = styled.div`
-  background-color: var(--color-white);
-  color: var(--color-tan);
+  background-color: var(--color-tan);
+  color: var(--color-black);
   padding: 0 var(--padding-xxsmall);
   width: fit-content;
 `;
@@ -125,7 +125,7 @@ function Presence() {
             <br />
             <br />
           </Closing>
-          <Button variation="secondary" size="small">
+          <Button variation="fourth" size="small">
             Start now for free
           </Button>
         </Description>

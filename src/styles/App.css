@@ -30,7 +30,7 @@ hr {
 /* // CAROUSEL */
 /* ACTIVE DESIGN STATE */
 .CarouselDot.active {
-  background-color: var(--color-green);
+  background-color: var(--color-tan);
 }
 
 /* // FAQS */

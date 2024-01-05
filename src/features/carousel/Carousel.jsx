@@ -13,8 +13,8 @@ const ParentCarousel = styled.div`
 `;
 
 const StyledCarousel = styled.div`
-  background-color: var(--background-secondary);
-  color: var(--color-black);
+  background-color: var(--color-black);
+  color: var(--color-white);
   overflow: hidden;
 `;
 const CarouselArea = styled.div`
@@ -45,7 +45,7 @@ const CarouselDot = styled.div`
   border-radius: 50%;
   cursor: pointer;
   margin: 15px 7px 0px;
-  background-color: var(--color-black);
+  background-color: var(--color-white);
 
   @media (min-width: 78.15em) {
     height: 30px;
@@ -56,7 +56,7 @@ const CarouselDot = styled.div`
 
 const Intro = styled.div`
   text-transform: uppercase;
-  color: var(--color-green);
+  color: var(--color-tan);
   font-size: var(--font-xsmall);
 `;
 
@@ -117,8 +117,8 @@ const Caption = styled.div`
   font-size: var(--font-medium);
   align-items: center;
   text-transform: uppercase;
-  color: var(--color-white);
-  background-color: var(--color-green);
+  color: var(--color-black);
+  background-color: var(--color-tan);
   padding: 0 var(--padding-xxsmall);
   width: fit-content;
 
@@ -145,8 +145,8 @@ const MiniDescription = styled.span`
 `;
 
 const Underline = styled.div`
-  background: var(--color-green);
-  color: var(--color-white);
+  background: var(--color-tan);
+  color: var(--color-black);
   padding: 0 var(--padding-xxsmall);
   width: fit-content;
 `;
@@ -234,8 +234,8 @@ function Carousel() {
           <Intro>[ our approach]</Intro>
           <br />
           Our focus is on optimizing conversions to elevate your
-          business&rsquo;s potential for success. <br /> Transforming your
-          clientele into loyal, paying customers through a
+          business&rsquo;s potential for success. <br /> <br /> Transforming
+          your clientele into loyal, paying customers through a
           <Underline>top-performing website.</Underline> <br />
           <MiniDescription>
             Ultimately driving profitability and revenue growth.

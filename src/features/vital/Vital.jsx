@@ -3,7 +3,7 @@ import Button from '../../ui/buttons/Button';
 
 const StyledVital = styled.div`
   display: flex;
-  filter: brightness(1) saturate(30%);
+  filter: brightness(1) saturate(25%);
   background-image: url('/backgrounds/earth.jpg');
   background-size: cover;
   color: var(--color-white);
