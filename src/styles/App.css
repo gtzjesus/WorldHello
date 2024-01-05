@@ -38,5 +38,6 @@ hr {
 
 .open .number,
 .open .title {
-  color: var(--color-green);
+  color: var(--color-tan);
+  font-size: var(--font-small);
 }

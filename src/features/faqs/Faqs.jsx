@@ -50,10 +50,39 @@ const Intro = styled.div`
 
 const Title = styled.span`
   font-size: var(--font-medium);
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-large);
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-xlarge);
+  }
 `;
 
 const Description = styled.span`
   font-size: var(--font-xsmall);
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-small);
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-medium);
+  }
+`;
+
+const Special = styled.span`
+  color: var(--color-tan);
+  font-size: var(--font-large);
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-xlarge);
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-xxlarge);
+  }
 `;
 function Faqs() {
   // STATE to OPEN and CLOSE faqs
@@ -61,7 +90,9 @@ function Faqs() {
   return (
     <StyledFaqs>
       <Intro>
-        <Title>Frequently Asked Questions</Title>
+        <Title>
+          Frequently <Special>Asked Questions</Special>
+        </Title>
         <Description>
           If you have any other questions, feel free to send us a message at:
           <br /> contact@worldhello.us

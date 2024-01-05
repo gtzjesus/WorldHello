@@ -10,15 +10,34 @@ const StyledItem = styled.div`
   column-gap: 24px;
   row-gap: 32px;
   align-items: center;
+
+  @media (min-width: 61.25em) {
+    padding: 30px 34px;
+  }
+
+  @media (min-width: 78.15em) {
+    padding: 40px 44px;
+  }
+
+  @media (min-width: 150.15em) {
+    padding: 50px 54px;
+  }
 `;
 
 const Number = styled.p`
   font-weight: 500;
-  color: #ced4da;
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-small);
+  }
 `;
 
 const Title = styled.p`
   font-weight: 500;
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-small);
+  }
 `;
 
 const Icon = styled.p`
@@ -29,6 +48,14 @@ const Content = styled.p`
   grid-column: 2 / -1;
   padding-bottom: 16px;
   line-height: 1.6;
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-small);
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-medium);
+  }
 `;
 
 function FaqsItem({ num, title, currentOpen, onOpen, children }) {
