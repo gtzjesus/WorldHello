@@ -1,13 +1,14 @@
+import { Suspense } from 'react';
 import styled from 'styled-components';
 // import worldhellovideo from '/videos/worldhello.mp4';
 import Button from '../../ui/buttons/Button';
 
-const StyledVideo = styled.div`
+const StyledAgency = styled.div`
   display: flex;
   justify-content: center;
   color: var(--color-white);
 
-  background-image: url('/backgrounds/landing.png');
+  background-image: url('src/assets/backgrounds/landing.png');
   background-size: cover;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
@@ -15,7 +16,7 @@ const StyledVideo = styled.div`
   min-width: 100vw;
 
   @media (min-width: 61.25em) {
-    background-image: url('/backgrounds/landing_second.png');
+    background-image: url('src/assets/backgrounds/landing_second.png');
   }
 `;
 
@@ -87,24 +88,26 @@ const Description = styled.span`
 
 function Agency() {
   return (
-    <StyledVideo>
-      <Introduction>
-        <Title>Web</Title>
-        <Title>
-          Dev<Special>Agency.</Special>
-        </Title>
+    <Suspense>
+      <StyledAgency>
+        <Introduction>
+          <Title>Web</Title>
+          <Title>
+            Dev<Special>Agency.</Special>
+          </Title>
 
-        <Description>
-          Websites engineered to turn visitors into
-          <MiniDescription>
-            <Special>customers.</Special>
-          </MiniDescription>
-        </Description>
-        <Button variation="secondary" size="small">
-          Start your website
-        </Button>
-      </Introduction>
-    </StyledVideo>
+          <Description>
+            Websites engineered to turn visitors into
+            <MiniDescription>
+              <Special>customers.</Special>
+            </MiniDescription>
+          </Description>
+          <Button variation="secondary" size="small">
+            Start your website
+          </Button>
+        </Introduction>
+      </StyledAgency>
+    </Suspense>
   );
 }
 
