@@ -32,7 +32,14 @@ const Extra = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-large);
-  padding-top: 45rem;
+
+  @media (min-width: 78.15em) {
+    padding-top: 35rem;
+  }
+
+  @media (min-width: 150.15em) {
+    padding-top: 45rem;
+  }
 `;
 
 const Intro = styled.div`
