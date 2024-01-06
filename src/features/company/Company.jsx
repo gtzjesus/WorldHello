@@ -7,19 +7,17 @@ const StyledCompany = styled.div`
   background-color: var(--color-tan);
   padding: var(--padding-large) var(--padding-medium);
 
-  @media (min-width: 40.25em) {
-  }
-
   @media (min-width: 61.25em) {
-    padding: var(--padding-large) var(--padding-medium);
+    padding: var(--padding-large) var(--padding-xxlarge);
   }
 
   @media (min-width: 78.15em) {
-    padding: var(--padding-xxxlarge) var(--padding-xxlarge);
+    padding: var(--padding-xlarge) var(--padding-large);
+    flex-direction: row;
   }
 
   @media (min-width: 150.15em) {
-    padding: var(--padding-giant) var(--padding-xxxlarge);
+    padding: var(--padding-xlarge) var(--padding-xxxlarge);
     gap: var(--gap-giant);
   }
 `;
@@ -28,6 +26,13 @@ const Information = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-large);
+`;
+
+const Extra = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-large);
+  padding-top: 45rem;
 `;
 
 const Intro = styled.div`
@@ -41,10 +46,25 @@ const Intro = styled.div`
 
 const Title = styled.span`
   font-size: var(--font-medium);
+  @media (min-width: 61.25em) {
+    font-size: var(--font-large);
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-xlarge);
+  }
 `;
 
 const Description = styled.span`
   font-size: var(--font-small);
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-medium);
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-large);
+  }
 `;
 
 const Special = styled.a`
@@ -52,6 +72,14 @@ const Special = styled.a`
   font-size: var(--font-xsmall);
   background-color: var(--color-black);
   padding: 0 var(--padding-xxsmall);
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-small);
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-medium);
+  }
 `;
 
 const Img = styled.img`
@@ -59,10 +87,33 @@ const Img = styled.img`
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   padding: var(--padding-medium) 0;
+
+  @media (min-width: 78.15em) {
+    padding: var(--padding-xlarge);
+    width: 40vw;
+  }
+
+  @media (min-width: 100.15em) {
+    padding: var(--padding-xxlarge);
+    width: 30vw;
+  }
+
+  @media (min-width: 150.15em) {
+    padding: var(--padding-xxlarge);
+    width: 25vw;
+  }
 `;
 
 const MiniDescription = styled.span`
   font-size: var(--font-xsmall);
+
+  @media (min-width: 61.25em) {
+    font-size: var(--font-small);
+  }
+
+  @media (min-width: 150.15em) {
+    font-size: var(--font-medium);
+  }
 `;
 function Company() {
   return (
@@ -77,7 +128,7 @@ function Company() {
         </Description>
         <Img src="/backgrounds/company.png"></Img>
       </Information>
-      <Information>
+      <Extra>
         <Intro>[ why we do what we do ]</Intro>
 
         <MiniDescription>
@@ -91,7 +142,7 @@ function Company() {
         <Button variation="fifth" size="small">
           get in touch for free
         </Button>
-      </Information>
+      </Extra>
     </StyledCompany>
   );
 }
