@@ -1,7 +1,6 @@
 import Landing from './pages/landing/Landing';
 import GlobalStyles from './styles/GlobalStyles';
 import './styles/App.css';
-
 import { useEffect, useState } from 'react';
 import { DesignsProvider } from './context/DesignsContext';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
