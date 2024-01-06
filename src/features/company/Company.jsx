@@ -2,7 +2,26 @@ import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 
 const StyledCompany = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-tan);
   padding: var(--padding-large) var(--padding-medium);
+
+  @media (min-width: 40.25em) {
+  }
+
+  @media (min-width: 61.25em) {
+    padding: var(--padding-large) var(--padding-medium);
+  }
+
+  @media (min-width: 78.15em) {
+    padding: var(--padding-xxxlarge) var(--padding-xxlarge);
+  }
+
+  @media (min-width: 150.15em) {
+    padding: var(--padding-giant) var(--padding-xxxlarge);
+    gap: var(--gap-giant);
+  }
 `;
 
 const Information = styled.div`
@@ -13,7 +32,11 @@ const Information = styled.div`
 
 const Intro = styled.div`
   text-transform: uppercase;
-  color: var(--color-green);
+  color: var(--color-tan);
+  font-size: var(--font-xsmall);
+  background-color: var(--color-black);
+  padding: 0 var(--padding-xxsmall);
+  width: fit-content;
 `;
 
 const Title = styled.span`
@@ -25,18 +48,17 @@ const Description = styled.span`
 `;
 
 const Special = styled.a`
-  color: var(--color-green);
+  color: var(--color-tan);
   font-size: var(--font-xsmall);
+  background-color: var(--color-black);
+  padding: 0 var(--padding-xxsmall);
 `;
 
 const Img = styled.img`
   // BLACK AND WHITE
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-`;
-const Contact = styled.div`
-  display: flex;
-  font-size: var(--font-xsmall);
+  padding: var(--padding-medium) 0;
 `;
 
 const MiniDescription = styled.span`
@@ -46,20 +68,16 @@ function Company() {
   return (
     <StyledCompany>
       <Information>
-        <Title>Why us?</Title>
+        <Title>About us</Title>
         <Description>
-          At WorldHello, we guarantee that teaming up with us is a strategic
-          investment in expanding your business,
+          At <Special>WorldHello</Special>, we guarantee that teaming up with us
+          is a strategic investment in expanding your business,
           <br />
           <Special>not just an extra cost.</Special>
         </Description>
-        <Img src="/extras/me.png"></Img>
-        <Contact>
-          Contact our founder Jesus directly via:
-          <Special href="https://www.linkedin.com/in/gtzjesus/">
-            LinkedIn
-          </Special>
-        </Contact>
+        <Img src="/backgrounds/company.png"></Img>
+      </Information>
+      <Information>
         <Intro>[ why we do what we do ]</Intro>
 
         <MiniDescription>
@@ -70,7 +88,7 @@ function Company() {
           We aim to surpass expectations with each website we undertake, driven
           by our passion for delivering top-notch, high-performance websites.
         </MiniDescription>
-        <Button variation="secondary" size="small">
+        <Button variation="fifth" size="small">
           get in touch for free
         </Button>
       </Information>

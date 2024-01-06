@@ -30,11 +30,10 @@ const CarouselAreaSlider = styled.div`
 
 const CarouselDots = styled.div`
   z-index: var(--z-top);
-  text-align: right;
-  padding: 0 var(--padding-medium) var(--padding-small) 0;
+  text-align: center;
 
-  @media (min-width: 78.15em) {
-    padding: 0 var(--padding-giant) var(--padding-medium) 0;
+  @media (min-width: 150.15em) {
+    text-align: right;
   }
 `;
 

@@ -112,13 +112,12 @@ function Presence() {
           <br />
           Seeking to enhance your company?
         </Title>
-        <Img src="/extras/brand.png"></Img>
+        <Img src="/backgrounds/brand.png"></Img>
       </Information>
       <Information>
         <Description>
           <BackgroundColored>Fully maximize</BackgroundColored> the capabilities
           of your business with a strong digital presence!
-          <br />
           <br />
           <Closing>
             Manage your website effectively with <Special>WorldHello</Special>.{' '}

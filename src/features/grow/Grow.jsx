@@ -98,8 +98,8 @@ function Grow() {
         <Img src="/backgrounds/grow.png"></Img>
         <Description>Join us and grow!</Description>
         <MiniDescription>
-          Expand your business with WorldHello, harnessing the full advantages
-          of our combined resources and extensive experience.
+          Expand your business by harnessing the full advantages of our combined
+          resources and extensive experience.
         </MiniDescription>
         <Description>
           Let&rsquo;s strive for greater <Special>success together.</Special>
