@@ -88,6 +88,7 @@ const GlobalStyles = createGlobalStyle`
     --gap-xlarge: 5rem;
     --gap-xxlarge: 8rem;
     --gap-giant: 12rem;
+    --gap-xgiant: 16rem;
 
 
 
