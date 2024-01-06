@@ -42,7 +42,7 @@ function Navigation() {
   return (
     <StyledNav>
       <Brand>
-        <img src="src/assets/logos/worldhello.png" alt="globe" />
+        <img src="/logos/worldhello.png" alt="globe" />
         WorldHello
       </Brand>
       <Menu>Contact</Menu>

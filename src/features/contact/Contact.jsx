@@ -4,7 +4,7 @@ import Button from '../../ui/buttons/Button';
 const StyledContact = styled.div`
   display: flex;
   flex-direction: column;
-  background-image: url('src/assets/backgrounds/contact.png');
+  background-image: url('/backgrounds/contact.png');
   background-size: cover;
   color: var(--color-white);
   padding: var(--padding-xlarge) var(--padding-medium);

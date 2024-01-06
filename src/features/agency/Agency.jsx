@@ -8,7 +8,7 @@ const StyledAgency = styled.div`
   justify-content: center;
   color: var(--color-white);
 
-  background-image: url('src/assets/backgrounds/landing.png');
+  background-image: url('backgrounds/landing.png');
   background-size: cover;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
@@ -16,7 +16,7 @@ const StyledAgency = styled.div`
   min-width: 100vw;
 
   @media (min-width: 61.25em) {
-    background-image: url('src/assets/backgrounds/landing_second.png');
+    background-image: url('backgrounds/landing_second.png');
   }
 `;
 

@@ -4,7 +4,7 @@ import Button from '../../ui/buttons/Button';
 const StyledVital = styled.div`
   display: flex;
   filter: brightness(1) saturate(25%);
-  background-image: url('src/assets/backgrounds/earth.jpg');
+  background-image: url('/backgrounds/earth.jpg');
   background-size: cover;
   color: var(--color-white);
   padding: var(--padding-large) var(--padding-medium);
