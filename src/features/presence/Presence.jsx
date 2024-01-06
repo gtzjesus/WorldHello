@@ -110,7 +110,7 @@ function Presence() {
         <Title>
           <Intro>[ who we look for ]</Intro>
           <br />
-          Seeking to enhance your company?
+          Seeking to enhance your products?
         </Title>
         <Img src="/backgrounds/brand.png"></Img>
       </Information>
