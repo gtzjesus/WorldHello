@@ -7,8 +7,7 @@ const StyledAgency = styled.div`
   display: flex;
   justify-content: center;
   color: var(--color-white);
-
-  background-image: url('backgrounds/landing.png');
+  background-image: url('src/assets/landing.png');
   background-size: cover;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
@@ -90,12 +89,12 @@ function Agency() {
   return (
     <Suspense>
       <StyledAgency>
+        {/* <img src="src/assets/landing.png" /> */}
         <Introduction>
           <Title>Web</Title>
           <Title>
             Dev<Special>Agency.</Special>
           </Title>
-
           <Description>
             Websites engineered to turn visitors into
             <MiniDescription>
