@@ -7,7 +7,7 @@ const StyledAgency = styled.div`
   display: flex;
   justify-content: center;
   color: var(--color-white);
-  background-image: url('src/assets/landing.png');
+  background-image: url('https://worldhello.us/src/assets/landing.png');
   background-size: cover;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
