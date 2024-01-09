@@ -160,7 +160,7 @@ const ImageCaption = styled.div`
 
 function Carousel() {
   // DELAY NEEDED FOR CAROUSEL setTIMEOUT
-  const delay = 17500;
+  const delay = 20500;
   // use useState TO KEEP TRACK OF DESIGN + SLIDESHOW
   const [index, setIndex] = useState(0);
   // NEED TO CLEAR OUR TIME IF click on buttons
