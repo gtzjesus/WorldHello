@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import FaqsItem from './FaqsItem';
 import { useState } from 'react';
+import LazyLoad from 'react-lazyload';
+
 // FAQs
 const faqs = [
   {
@@ -88,28 +90,30 @@ function Faqs() {
   // STATE to OPEN and CLOSE faqs
   const [currentOpen, setCurrentOpen] = useState(null);
   return (
-    <StyledFaqs>
-      <Intro>
-        <Title>
-          Frequently <Special>Asked Questions</Special>
-        </Title>
-        <Description>
-          If you have any other questions, feel free to send us a message at:
-          <br /> contact@worldhello.us
-        </Description>
-      </Intro>
-      {faqs.map((element, index) => (
-        <FaqsItem
-          currentOpen={currentOpen}
-          onOpen={setCurrentOpen}
-          title={element.title}
-          num={index}
-          key={element.title}
-        >
-          {element.text}
-        </FaqsItem>
-      ))}
-    </StyledFaqs>
+    <LazyLoad>
+      <StyledFaqs>
+        <Intro>
+          <Title>
+            Frequently <Special>Asked Questions</Special>
+          </Title>
+          <Description>
+            If you have any other questions, feel free to send us a message at:
+            <br /> contact@worldhello.us
+          </Description>
+        </Intro>
+        {faqs.map((element, index) => (
+          <FaqsItem
+            currentOpen={currentOpen}
+            onOpen={setCurrentOpen}
+            title={element.title}
+            num={index}
+            key={element.title}
+          >
+            {element.text}
+          </FaqsItem>
+        ))}
+      </StyledFaqs>
+    </LazyLoad>
   );
 }
 

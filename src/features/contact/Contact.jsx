@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 
+import LazyLoad from 'react-lazyload';
+
 const StyledContact = styled.div`
   display: flex;
   flex-direction: column;
@@ -72,32 +74,34 @@ const Description = styled.span`
 `;
 function Contact() {
   return (
-    <StyledContact>
-      <Information>
-        <Title>
-          Refer and <Special>Earn</Special>
-        </Title>
-        <Description>
-          WorldHello <Special>offers rewards</Special> for every successful
-          referral you make to us. Upon completion, we&rsquo;ll compensate you
-          with 10% of the total value; all you need to do is share our services
-          with your friends.
-        </Description>
-      </Information>
-      <Information>
-        <Title>Contact us</Title>
-        <Description>
-          We have a team available at WorldHello if you have a general inquiry,
-          you can contact us via email at: contact@worldhello.us
-          <br />
-          <br />
-          Or just,
-        </Description>
-        <Button variation="fourth" size="small">
-          Contact us here
-        </Button>
-      </Information>
-    </StyledContact>
+    <LazyLoad>
+      <StyledContact>
+        <Information>
+          <Title>
+            Refer and <Special>Earn</Special>
+          </Title>
+          <Description>
+            WorldHello <Special>offers rewards</Special> for every successful
+            referral you make to us. Upon completion, we&rsquo;ll compensate you
+            with 10% of the total value; all you need to do is share our
+            services with your friends.
+          </Description>
+        </Information>
+        <Information>
+          <Title>Contact us</Title>
+          <Description>
+            We have a team available at WorldHello if you have a general
+            inquiry, you can contact us via email at: contact@worldhello.us
+            <br />
+            <br />
+            Or just,
+          </Description>
+          <Button variation="fourth" size="small">
+            Contact us here
+          </Button>
+        </Information>
+      </StyledContact>
+    </LazyLoad>
   );
 }
 

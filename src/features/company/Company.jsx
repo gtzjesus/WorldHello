@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
+import LazyLoad from 'react-lazyload';
 
 const StyledCompany = styled.div`
   display: flex;
@@ -124,33 +125,36 @@ const MiniDescription = styled.span`
 `;
 function Company() {
   return (
-    <StyledCompany>
-      <Information>
-        <Title>About us</Title>
-        <Description>
-          At <Special>WorldHello</Special>, we guarantee that teaming up with us
-          is a strategic investment in expanding your business,
-          <br />
-          <Special>not just an extra cost.</Special>
-        </Description>
-        <Img src="/backgrounds/company.jpg"></Img>
-      </Information>
-      <Extra>
-        <Intro>[ why we do what we do ]</Intro>
+    <LazyLoad>
+      <StyledCompany>
+        <Information>
+          <Title>About us</Title>
+          <Description>
+            At <Special>WorldHello</Special>, we guarantee that teaming up with
+            us is a strategic investment in expanding your business,
+            <br />
+            <Special>not just an extra cost.</Special>
+          </Description>
+          <Img src="/backgrounds/company.jpg" alt="Company"></Img>
+        </Information>
+        <Extra>
+          <Intro>[ why we do what we do ]</Intro>
 
-        <MiniDescription>
-          At WorldHello, our core is rooted in solving challenges and we take
-          immense pride in our relentless pursuit of excellence.
-        </MiniDescription>
-        <MiniDescription>
-          We aim to surpass expectations with each website we undertake, driven
-          by our passion for delivering top-notch, high-performance websites.
-        </MiniDescription>
-        <Button variation="fifth" size="small">
-          get in touch for free
-        </Button>
-      </Extra>
-    </StyledCompany>
+          <MiniDescription>
+            At WorldHello, our core is rooted in solving challenges and we take
+            immense pride in our relentless pursuit of excellence.
+          </MiniDescription>
+          <MiniDescription>
+            We aim to surpass expectations with each website we undertake,
+            driven by our passion for delivering top-notch, high-performance
+            websites.
+          </MiniDescription>
+          <Button variation="fifth" size="small">
+            get in touch for free
+          </Button>
+        </Extra>
+      </StyledCompany>
+    </LazyLoad>
   );
 }
 

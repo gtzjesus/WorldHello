@@ -3,6 +3,7 @@ import { DesignsContext } from '../../context/DesignsContext';
 import Spinner from '../../ui/spinners/Spinner';
 import Design from '../../ui/designs/Design';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazyload';
 
 const ParentCarousel = styled.div`
   display: flex;
@@ -196,53 +197,55 @@ function Carousel() {
   if (error) throw new Error('Failed to grab designs');
 
   return (
-    <StyledCarousel>
-      <ParentCarousel>
-        <Information>
-          <Intro>[ what we offer]</Intro>
+    <LazyLoad>
+      <StyledCarousel>
+        <ParentCarousel>
+          <Information>
+            <Intro>[ what we offer]</Intro>
+            <SubTitle>
+              Connect with your desired audience with a
+              <Underline>customized website</Underline> from WorldHello,
+            </SubTitle>
+
+            <Caption>our achievements,</Caption>
+          </Information>
+
+          <CarouselArea>
+            <CarouselAreaSlider
+              style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+            >
+              {designs.map((design) => (
+                <Design design={design} key={design.id} />
+              ))}
+            </CarouselAreaSlider>
+          </CarouselArea>
+        </ParentCarousel>
+        <CarouselDots>
+          {designs.map((_, idx) => (
+            <CarouselDot
+              key={idx}
+              className={`CarouselDot${index === idx ? ' active' : ''}`}
+              onClick={() => {
+                setIndex(idx);
+              }}
+            ></CarouselDot>
+          ))}
+        </CarouselDots>
+        <Additional>
           <SubTitle>
-            Connect with your desired audience with a
-            <Underline>customized website</Underline> from WorldHello,
+            <Intro>[ our approach]</Intro>
+            <br />
+            Our focus is on optimizing conversions to elevate your
+            business&rsquo;s potential for success. <br /> <br /> Transforming
+            your clientele into loyal, paying customers through a
+            <Underline>top-performing website.</Underline> <br />
+            <MiniDescription>
+              Ultimately driving profitability and revenue growth.
+            </MiniDescription>
           </SubTitle>
-
-          <Caption>our achievements,</Caption>
-        </Information>
-
-        <CarouselArea>
-          <CarouselAreaSlider
-            style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-          >
-            {designs.map((design) => (
-              <Design design={design} key={design.id} />
-            ))}
-          </CarouselAreaSlider>
-        </CarouselArea>
-      </ParentCarousel>
-      <CarouselDots>
-        {designs.map((_, idx) => (
-          <CarouselDot
-            key={idx}
-            className={`CarouselDot${index === idx ? ' active' : ''}`}
-            onClick={() => {
-              setIndex(idx);
-            }}
-          ></CarouselDot>
-        ))}
-      </CarouselDots>
-      <Additional>
-        <SubTitle>
-          <Intro>[ our approach]</Intro>
-          <br />
-          Our focus is on optimizing conversions to elevate your
-          business&rsquo;s potential for success. <br /> <br /> Transforming
-          your clientele into loyal, paying customers through a
-          <Underline>top-performing website.</Underline> <br />
-          <MiniDescription>
-            Ultimately driving profitability and revenue growth.
-          </MiniDescription>
-        </SubTitle>
-      </Additional>
-    </StyledCarousel>
+        </Additional>
+      </StyledCarousel>
+    </LazyLoad>
   );
 }
 

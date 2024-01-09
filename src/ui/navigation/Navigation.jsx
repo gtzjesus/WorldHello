@@ -39,10 +39,6 @@ const Menu = styled.a`
   }
 `;
 function Navigation() {
-  // GRAB NAVIGATION HOOK
-
-  // HANDLER FUNCTION to navigate
-  function handleNavigation() {}
   return (
     <StyledNav>
       <Brand>

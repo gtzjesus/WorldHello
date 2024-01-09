@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 
+import LazyLoad from 'react-lazyload';
+
 const StyledPresence = styled.div`
   background: var(--color-black);
   color: var(--color-white);
@@ -105,31 +107,33 @@ const BackgroundColored = styled.div`
 
 function Presence() {
   return (
-    <StyledPresence>
-      <Information>
-        <Title>
-          <Intro>[ who we look for ]</Intro>
-          <br />
-          Seeking to enhance your products?
-        </Title>
-        <Img src="/backgrounds/brand.jpg"></Img>
-      </Information>
-      <Information>
-        <Description>
-          <BackgroundColored>Fully maximize</BackgroundColored> the capabilities
-          of your business with a strong digital presence!
-          <br />
-          <Closing>
-            Manage your website effectively with <Special>WorldHello</Special>.{' '}
+    <LazyLoad>
+      <StyledPresence>
+        <Information>
+          <Title>
+            <Intro>[ who we look for ]</Intro>
             <br />
+            Seeking to enhance your products?
+          </Title>
+          <Img src="/backgrounds/brand.jpg"></Img>
+        </Information>
+        <Information>
+          <Description>
+            <BackgroundColored>Fully maximize</BackgroundColored> the
+            capabilities of your business with a strong digital presence!
             <br />
-          </Closing>
-          <Button variation="fourth" size="small">
-            Start now for free
-          </Button>
-        </Description>
-      </Information>
-    </StyledPresence>
+            <Closing>
+              Manage your website effectively with <Special>WorldHello</Special>
+              . <br />
+              <br />
+            </Closing>
+            <Button variation="fourth" size="small">
+              Start now for free
+            </Button>
+          </Description>
+        </Information>
+      </StyledPresence>
+    </LazyLoad>
   );
 }
 

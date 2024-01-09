@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 
+import LazyLoad from 'react-lazyload';
+
 const StyledVital = styled.div`
   display: flex;
   filter: brightness(1) saturate(25%);
@@ -102,34 +104,36 @@ const Ending = styled.span`
 
 function Vital() {
   return (
-    <StyledVital>
-      <Information>
-        <Intro>[ why it matters ]</Intro>
-        <Title>
-          Greet the world and establish your brand&rsquo;s presence.
-        </Title>
-        <Description>
-          <Quote>
-            <Special>&ldquo;</Special> 80% of consumers are more likely to buy
-            from brands that offer personalized website experiences.
-            <Special>&rdquo;</Special>
-          </Quote>
-          <Source>
-            <a href="https://bloggingwizard.com/website-statistics/">
-              <Button variation="third" size="small">
-                view article
-              </Button>
-            </a>
-          </Source>
-        </Description>
-        <Last>
-          <Ending>
-            Ensure your initial impression resonates long after the first
-            encounter, particularly online.
-          </Ending>
-        </Last>
-      </Information>
-    </StyledVital>
+    <LazyLoad>
+      <StyledVital>
+        <Information>
+          <Intro>[ why it matters ]</Intro>
+          <Title>
+            Greet the world and establish your brand&rsquo;s presence.
+          </Title>
+          <Description>
+            <Quote>
+              <Special>&ldquo;</Special> 80% of consumers are more likely to buy
+              from brands that offer personalized website experiences.
+              <Special>&rdquo;</Special>
+            </Quote>
+            <Source>
+              <a href="https://bloggingwizard.com/website-statistics/">
+                <Button variation="third" size="small">
+                  view article
+                </Button>
+              </a>
+            </Source>
+          </Description>
+          <Last>
+            <Ending>
+              Ensure your initial impression resonates long after the first
+              encounter, particularly online.
+            </Ending>
+          </Last>
+        </Information>
+      </StyledVital>
+    </LazyLoad>
   );
 }
 

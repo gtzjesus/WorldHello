@@ -21,11 +21,11 @@ const queryClient = new QueryClient({
 // CREATE ROUTER FROM REACT ROUTER DOM (PAGES)
 const router = createBrowserRouter([
   {
-    path: 'https://worldhello.us',
+    path: '/',
     element: <Landing />,
   },
   {
-    path: 'https://worldhello.us/contact',
+    path: '/contact',
     element: <Contact />,
   },
 ]);

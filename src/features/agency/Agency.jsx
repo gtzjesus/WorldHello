@@ -3,6 +3,8 @@ import styled from 'styled-components';
 // import worldhellovideo from '/videos/worldhello.mp4';
 import Button from '../../ui/buttons/Button';
 
+import LazyLoad from 'react-lazyload';
+
 const StyledAgency = styled.div`
   display: flex;
   justify-content: center;
@@ -87,7 +89,7 @@ const Description = styled.span`
 
 function Agency() {
   return (
-    <Suspense>
+    <LazyLoad>
       <StyledAgency>
         <Introduction>
           <Title>Web</Title>
@@ -105,7 +107,7 @@ function Agency() {
           </Button>
         </Introduction>
       </StyledAgency>
-    </Suspense>
+    </LazyLoad>
   );
 }
 

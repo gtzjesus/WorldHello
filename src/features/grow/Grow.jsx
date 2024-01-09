@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 
+import LazyLoad from 'react-lazyload';
+
 const StyledGrow = styled.div`
   display: flex;
   flex-direction: column;
@@ -85,30 +87,32 @@ const Special = styled.span`
 
 function Grow() {
   return (
-    <StyledGrow>
-      <Information>
-        <Title>
-          Crafting websites with high conversion rates, <br />
+    <LazyLoad>
+      <StyledGrow>
+        <Information>
+          <Title>
+            Crafting websites with high conversion rates, <br />
+            <MiniDescription>
+              utilizing strategic designs, data & SEO.
+            </MiniDescription>
+          </Title>
+        </Information>
+        <Information>
+          <Img src="/backgrounds/grow.jpg"></Img>
+          <Description>Join us and grow!</Description>
           <MiniDescription>
-            utilizing strategic designs, data & SEO.
+            Expand your business by harnessing the full advantages of our
+            combined resources and extensive experience.
           </MiniDescription>
-        </Title>
-      </Information>
-      <Information>
-        <Img src="/backgrounds/grow.jpg"></Img>
-        <Description>Join us and grow!</Description>
-        <MiniDescription>
-          Expand your business by harnessing the full advantages of our combined
-          resources and extensive experience.
-        </MiniDescription>
-        <Description>
-          Let&rsquo;s strive for greater <Special>success together.</Special>
-        </Description>
-        <Button variation="fifth" size="small">
-          click to begin your website
-        </Button>
-      </Information>
-    </StyledGrow>
+          <Description>
+            Let&rsquo;s strive for greater <Special>success together.</Special>
+          </Description>
+          <Button variation="fifth" size="small">
+            click to begin your website
+          </Button>
+        </Information>
+      </StyledGrow>
+    </LazyLoad>
   );
 }
 
