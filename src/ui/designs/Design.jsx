@@ -5,27 +5,29 @@ const StyledDesign = styled.div`
   overflow: hidden;
   width: fit-content;
   height: fit-content;
+  width: 100vw;
+  height: 85vh;
   /* padding-bottom: 85%;
   padding-top: 40%; */
   @media (min-width: 40.25em) {
     /* padding-bottom: 75%;
     padding-top: 30%; */
     width: 100vw;
-    height: 65vh;
+    height: 60vh;
   }
 
   @media (min-width: 78.25em) {
     /* padding-bottom: 75%;
     padding-top: 30%; */
     width: 100vw;
-    height: 85vh;
+    height: 80vh;
   }
 
   @media (min-width: 150.15em) {
     /* padding-bottom: 30%; */
     /* padding-top: 25%; */
     width: 100vw;
-    height: 95vh;
+    height: 90vh;
   }
 `;
 
