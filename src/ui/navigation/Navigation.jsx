@@ -32,7 +32,7 @@ const Brand = styled.span`
   }
 `;
 
-const Menu = styled.div`
+const Menu = styled.a`
   padding: 0 var(--padding-small) 0 0;
   @media (min-width: 61.25em) {
     padding: 0 var(--padding-medium) 0 0;
@@ -49,7 +49,7 @@ function Navigation() {
         <img src="/logos/worldhello.png" alt="globe" />
         WorldHello
       </Brand>
-      <Menu onClick={handleNavigation}>Contact</Menu>
+      <Menu href="/contact">Contact</Menu>
     </StyledNav>
   );
 }

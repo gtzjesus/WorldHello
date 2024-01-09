@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Navigation from './ui/navigation/Navigation';
 import NavigationWBackground from './ui/navigation/NavigationWBackground';
+import Contact from './pages/contact/Contact';
 
 // REACT QUERY INTEGRATION
 const queryClient = new QueryClient({
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/contact',
-    element: <Landing />,
+    element: <Contact />,
   },
 ]);
 
