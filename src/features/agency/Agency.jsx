@@ -15,7 +15,7 @@ const StyledAgency = styled.div`
   min-width: 100vw;
 
   @media (min-width: 61.25em) {
-    background-image: url('backgrounds/landing_second.png');
+    background-image: url('backgrounds/landing_second.jpg');
   }
 `;
 

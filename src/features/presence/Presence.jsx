@@ -112,7 +112,7 @@ function Presence() {
           <br />
           Seeking to enhance your products?
         </Title>
-        <Img src="/backgrounds/brand.png"></Img>
+        <Img src="/backgrounds/brand.jpg"></Img>
       </Information>
       <Information>
         <Description>

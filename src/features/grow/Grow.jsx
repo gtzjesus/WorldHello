@@ -95,7 +95,7 @@ function Grow() {
         </Title>
       </Information>
       <Information>
-        <Img src="/backgrounds/grow.png"></Img>
+        <Img src="/backgrounds/grow.jpg"></Img>
         <Description>Join us and grow!</Description>
         <MiniDescription>
           Expand your business by harnessing the full advantages of our combined

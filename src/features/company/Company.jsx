@@ -133,7 +133,7 @@ function Company() {
           <br />
           <Special>not just an extra cost.</Special>
         </Description>
-        <Img src="/backgrounds/company.png"></Img>
+        <Img src="/backgrounds/company.jpg"></Img>
       </Information>
       <Extra>
         <Intro>[ why we do what we do ]</Intro>
