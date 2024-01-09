@@ -110,9 +110,3 @@ function Agency() {
 }
 
 export default Agency;
-
-{
-  /* <video autoPlay="autoPlay " loop muted playsInline={true}>
-        <source src={worldhellovideo} type="video/mp4" />
-      </video> */
-}
