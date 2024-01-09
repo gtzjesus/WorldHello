@@ -13,7 +13,7 @@ const StyledDesign = styled.div`
     /* padding-bottom: 75%;
     padding-top: 30%; */
     width: 100vw;
-    height: 60vh;
+    height: 80vh;
   }
 
   @media (min-width: 78.25em) {
