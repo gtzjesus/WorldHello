@@ -39,13 +39,17 @@ const Menu = styled.div`
   }
 `;
 function Navigation() {
+  // GRAB NAVIGATION HOOK
+
+  // HANDLER FUNCTION to navigate
+  function handleNavigation() {}
   return (
     <StyledNav>
       <Brand>
         <img src="/logos/worldhello.png" alt="globe" />
         WorldHello
       </Brand>
-      <Menu>Contact</Menu>
+      <Menu onClick={handleNavigation}>Contact</Menu>
     </StyledNav>
   );
 }

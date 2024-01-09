@@ -23,6 +23,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <Landing />,
   },
+  {
+    path: '/contact',
+    element: <Landing />,
+  },
 ]);
 
 function App() {

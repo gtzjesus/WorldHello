@@ -7,7 +7,7 @@ const StyledAgency = styled.div`
   display: flex;
   justify-content: center;
   color: var(--color-white);
-  /* background-image: url('http://:5173/src/assets/landing.png'); */
+  background-image: url('backgrounds/landing.png');
   background-size: cover;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
@@ -89,7 +89,6 @@ function Agency() {
   return (
     <Suspense>
       <StyledAgency>
-        <img src="src/assets/landing.png" />
         <Introduction>
           <Title>Web</Title>
           <Title>
