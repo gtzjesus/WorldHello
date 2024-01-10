@@ -59,7 +59,9 @@ const Title = styled.span`
 `;
 
 const Special = styled.span`
-  background-color: var(--color-green);
+  background-color: var(--color-tan);
+  color: var(--color-black);
+
   padding: 0 var(--padding-xxsmall);
 `;
 
@@ -101,7 +103,7 @@ function Agency() {
               <Special>customers.</Special>
             </MiniDescription>
           </Description>
-          <Button variation="secondary" size="small">
+          <Button variation="fourth" size="small">
             Start your website
           </Button>
         </Introduction>

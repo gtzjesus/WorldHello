@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledNav = styled.nav`
   position: fixed;
   background: transparent;
-  color: var(--color-white);
+  color: var(--color-black);
   top: 0;
   width: 100vw;
   z-index: var(--z-top);
@@ -20,7 +20,7 @@ const StyledNav = styled.nav`
   }
 `;
 
-const Brand = styled.span`
+const Brand = styled.div`
   // ARRANGE CHILDREN
   display: flex;
   align-items: center;
@@ -32,6 +32,12 @@ const Brand = styled.span`
   }
 `;
 
+const Logo = styled.img`
+  height: 2.5rem;
+`;
+
+const Title = styled.span``;
+
 const Menu = styled.a`
   padding: 0 var(--padding-small) 0 0;
   @media (min-width: 61.25em) {
@@ -42,8 +48,8 @@ function Navigation() {
   return (
     <StyledNav>
       <Brand>
-        <img src="/logos/worldhello.png" alt="globe" />
-        WorldHello
+        <Logo src="/logos/worldhello.png" alt="globe"></Logo>
+        <Title>WorldHello</Title>
       </Brand>
       <Menu href="/contact">Contact</Menu>
     </StyledNav>
