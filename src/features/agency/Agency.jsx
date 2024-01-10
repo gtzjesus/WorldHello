@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import styled from 'styled-components';
 // import worldhellovideo from '/videos/worldhello.mp4';
 import Button from '../../ui/buttons/Button';
@@ -9,7 +8,7 @@ const StyledAgency = styled.div`
   display: flex;
   justify-content: center;
   color: var(--color-white);
-  background-image: url('backgrounds/landing.png');
+  background-image: url('backgrounds/landing.jpg');
   background-size: cover;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
