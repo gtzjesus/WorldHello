@@ -98,12 +98,12 @@ function Agency() {
           <Title>
             Dev<Special>Agency.</Special>
           </Title>
-          <Description>
-            Websites designed to tranform visitors into valued
-            <MiniDescription>
-              <Special>customers.</Special>
-            </MiniDescription>
-          </Description>
+          <Special>
+            <Description>
+              Websites designed to tranform visitors into valued
+              <MiniDescription> customers.</MiniDescription>
+            </Description>
+          </Special>
           <Button variation="fourth" size="small">
             Start your website
           </Button>
