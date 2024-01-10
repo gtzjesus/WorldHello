@@ -10,6 +10,7 @@ const StyledAgency = styled.div`
   color: var(--color-white);
   background-image: url('backgrounds/landing.jpg');
   background-size: cover;
+  text-shadow: 0.03em 0 black, 0 0.03em black, -0.03em 0 black, 0 -0.03em black;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
   min-height: 100vh;

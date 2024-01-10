@@ -34,6 +34,12 @@ const Brand = styled.span`
   }
 `;
 
+const Logo = styled.img`
+  height: 2.5rem;
+`;
+
+const Title = styled.span``;
+
 const Menu = styled.div`
   padding: 0 var(--padding-small) 0 0;
 
@@ -45,10 +51,10 @@ function NavigationWBackground() {
   return (
     <StyledNav>
       <Brand>
-        <img src="/logos/worldhello.png" alt="globe" />
-        WorldHello
+        <Logo src="/logos/worldhello.png" alt="globe"></Logo>
+        <Title>WorldHello</Title>
       </Brand>
-      <Menu>Contact</Menu>
+      <Menu href="/contact">Contact</Menu>
     </StyledNav>
   );
 }
