@@ -10,7 +10,7 @@ const StyledAgency = styled.div`
   color: var(--color-white);
   background-image: url('backgrounds/landing.jpg');
   background-size: cover;
-  text-shadow: 0.03em 0 black, 0 0.03em black, -0.03em 0 black, 0 -0.03em black;
+  text-shadow: 0.08em 0 black, 0 0.08em black, -0.08em 0 black, 0 -0.08em black;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
   min-height: 100vh;
@@ -99,7 +99,7 @@ function Agency() {
             Dev<Special>Agency.</Special>
           </Title>
           <Description>
-            Websites engineered to turn visitors into
+            Websites designed to tranform visitors into valued
             <MiniDescription>
               <Special>customers.</Special>
             </MiniDescription>
