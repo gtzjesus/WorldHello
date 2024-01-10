@@ -9,7 +9,7 @@ const StyledAgency = styled.div`
   display: flex;
   justify-content: center;
   color: var(--color-white);
-  background-image: url('backgrounds/landing.jpg');
+  background-image: url('backgrounds/landing.png');
   background-size: cover;
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
