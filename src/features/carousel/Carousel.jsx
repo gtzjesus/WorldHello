@@ -108,8 +108,19 @@ const SubTitle = styled.span`
   }
 `;
 
-const Img = styled.img`
-  height: 5vw;
+const StyledFinish = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+
+  @media (min-width: 40.25em) {
+    font-size: var(--font-medium);
+  }
+
+  @media (min-width: 78.15em) {
+    font-size: var(--font-medium);
+    width: var(--width-half-window);
+  }
 `;
 
 const Caption = styled.div`
@@ -150,12 +161,6 @@ const Underline = styled.div`
   color: var(--color-black);
   padding: 0 var(--padding-xxsmall);
   width: fit-content;
-`;
-
-const ImageCaption = styled.div`
-  @media (min-width: 78.15em) {
-    font-size: var(--font-small);
-  }
 `;
 
 function Carousel() {
@@ -232,7 +237,7 @@ function Carousel() {
           ))}
         </CarouselDots>
         <Additional>
-          <SubTitle>
+          <StyledFinish>
             <Intro>[ our approach]</Intro>
             <br />
             Our focus is on optimizing conversions to elevate your
@@ -242,7 +247,7 @@ function Carousel() {
             <MiniDescription>
               Ultimately driving profitability and revenue growth.
             </MiniDescription>
-          </SubTitle>
+          </StyledFinish>
         </Additional>
       </StyledCarousel>
     </LazyLoad>
