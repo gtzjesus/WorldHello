@@ -7,7 +7,8 @@ const StyledNav = styled.nav`
   top: 0;
   width: 100vw;
   z-index: var(--z-top);
-  padding: var(--margin-small) 0 0 0;
+  padding: var(--margin-small) 0;
+
   // FONTS
   font-size: var(--font-xsmall);
   // ARRANGE CHILDREN
