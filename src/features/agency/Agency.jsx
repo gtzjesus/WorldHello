@@ -23,12 +23,11 @@ const StyledAgency = styled.div`
 
 const Introduction = styled.div`
   position: absolute;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--gap-medium);
   padding: var(--padding-small);
+  margin: 50% 0 0 0;
 
   @media (min-width: 61.25em) {
     top: 0;
@@ -62,8 +61,8 @@ const Title = styled.span`
 const Special = styled.span`
   background-color: var(--color-tan);
   color: var(--color-black);
-
   padding: 0 var(--padding-xxsmall);
+  margin: var(--margin-medium) 0;
 `;
 
 const MiniDescription = styled.span`
@@ -100,11 +99,11 @@ function Agency() {
           </Title>
           <Special>
             <Description>
-              Websites designed to tranform visitors into valued
+              Websites designed to tranform visitors into
               <MiniDescription> customers.</MiniDescription>
             </Description>
           </Special>
-          <Button variation="fourth" size="small">
+          <Button variation="primary" size="small">
             Start your website
           </Button>
         </Introduction>

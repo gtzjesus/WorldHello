@@ -14,7 +14,7 @@ const sizes = {
 
 const variations = {
   primary: css`
-    color: var(--color-blue);
+    color: var(--color-black);
     background-color: var(--background-secondary);
     width: fit-content;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);

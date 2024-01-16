@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const StyledNav = styled.nav`
   position: fixed;
   background: transparent;
-  color: var(--color-black);
+  color: var(--color-white);
   top: 0;
   width: 100vw;
   z-index: var(--z-top);
