@@ -28,7 +28,7 @@ const Introduction = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: var(--padding-small);
-  margin: 35% 0 0 0;
+  margin: 20% 0 0 0;
 
   @media (min-width: 61.25em) {
     top: 0;
@@ -64,7 +64,7 @@ const Special = styled.span`
   background-color: var(--color-tan);
   color: var(--color-black);
   padding: 0 var(--padding-xxsmall);
-  margin: var(--margin-medium) 0;
+  margin: var(--margin-small) 0;
 `;
 
 const MiniDescription = styled.span`

@@ -54,7 +54,7 @@ function Navigation() {
         <Logo src="/logos/worldhello.png" alt="globe"></Logo>
         <Title>WorldHello</Title>
       </Brand>
-      <Menu href="/contact">Contact</Menu>
+      <Menu>Contact</Menu>
     </StyledNav>
   );
 }
