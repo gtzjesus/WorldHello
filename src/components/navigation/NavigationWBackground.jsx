@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useNavigate } from 'react-router';
 
 const StyledNav = styled.nav`
   position: fixed;
@@ -48,13 +49,22 @@ const Menu = styled.div`
   }
 `;
 function NavigationWBackground() {
+  const navigate = useNavigate();
+
+  function handleContact() {
+    navigate('/contact');
+  }
+
+  function handleHome() {
+    navigate('/');
+  }
   return (
     <StyledNav>
-      <Brand>
+      <Brand onClick={handleHome}>
         <Logo src="/logos/worldhello.png" alt="globe"></Logo>
         <Title>WorldHello</Title>
       </Brand>
-      <Menu href="/contact">Contact</Menu>
+      <Menu onClick={handleContact}>Contact</Menu>
     </StyledNav>
   );
 }

@@ -9,7 +9,6 @@ const StyledAgency = styled.div`
   justify-content: center;
   color: var(--color-white);
   background-image: url('backgrounds/landing.jpg');
-
   background-size: cover;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with a slight contrast */
 
@@ -25,10 +24,10 @@ const StyledAgency = styled.div`
 const Introduction = styled.div`
   position: absolute;
   display: flex;
+  bottom: 0;
   flex-direction: column;
   justify-content: center;
   padding: var(--padding-small);
-  margin: 20% 0 0 0;
 
   @media (min-width: 61.25em) {
     top: 0;
@@ -39,7 +38,6 @@ const Introduction = styled.div`
 
   @media (min-width: 78.15em) {
     padding: var(--padding-xxlarge);
-    margin: 15% 0 0 0;
   }
 `;
 
@@ -64,7 +62,7 @@ const Special = styled.span`
   background-color: var(--color-tan);
   color: var(--color-black);
   padding: 0 var(--padding-xxsmall);
-  margin: var(--margin-small) 0;
+  margin: var(--margin-medium) 0;
 `;
 
 const MiniDescription = styled.span`

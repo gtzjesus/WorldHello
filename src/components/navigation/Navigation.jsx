@@ -51,16 +51,20 @@ const Menu = styled.a`
 function Navigation() {
   const navigate = useNavigate();
 
-  function handleNavigation() {
+  function handleContact() {
     navigate('/contact');
+  }
+
+  function handleHome() {
+    navigate('/');
   }
   return (
     <StyledNav>
-      <Brand>
+      <Brand onClick={handleHome}>
         <Logo src="/logos/worldhello.png" alt="globe"></Logo>
         <Title>WorldHello</Title>
       </Brand>
-      <Menu onClick={handleNavigation}>Contact</Menu>
+      <Menu onClick={handleContact}>Contact</Menu>
     </StyledNav>
   );
 }

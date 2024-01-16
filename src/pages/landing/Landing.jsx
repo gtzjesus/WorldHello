@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Navigation from '../../ui/navigation/Navigation';
-import NavigationWBackground from '../../ui/navigation/NavigationWBackground';
+import Navigation from '../../components/navigation/Navigation';
+import NavigationWBackground from '../../components/navigation/NavigationWBackground';
 import Carousel from '../../components/carousel/Carousel';
 import Vital from '../../components/vital/Vital';
 import Company from '../../components/company/Company';
