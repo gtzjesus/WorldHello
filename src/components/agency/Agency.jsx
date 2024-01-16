@@ -9,6 +9,7 @@ const StyledAgency = styled.div`
   justify-content: center;
   color: var(--color-white);
   background-image: url('backgrounds/landing.jpg');
+
   background-size: cover;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with a slight contrast */
 
@@ -27,7 +28,7 @@ const Introduction = styled.div`
   flex-direction: column;
   justify-content: center;
   padding: var(--padding-small);
-  margin: 50% 0 0 0;
+  margin: 35% 0 0 0;
 
   @media (min-width: 61.25em) {
     top: 0;
@@ -38,7 +39,7 @@ const Introduction = styled.div`
 
   @media (min-width: 78.15em) {
     padding: var(--padding-xxlarge);
-    margin: 0;
+    margin: 15% 0 0 0;
   }
 `;
 

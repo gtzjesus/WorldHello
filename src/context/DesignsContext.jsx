@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import useDesigns from '../features/carousel/useDesigns';
+import useDesigns from '../components/carousel/useDesigns';
 
 // CREATE CONTEXT API (for designs)
 const DesignsContext = createContext();

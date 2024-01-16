@@ -1,12 +1,12 @@
-import Carousel from '../../features/carousel/Carousel';
-import Vital from '../../features/vital/Vital';
-import Company from '../../features/company/Company';
-import Presence from '../../features/presence/Presence';
-import Footer from '../../features/footer/Footer';
-import Faqs from '../../features/faqs/Faqs';
-import Grow from '../../features/grow/Grow';
-import Contact from '../../features/contact/Contact';
-import Agency from '../../features/agency/Agency';
+import Carousel from '../../components/carousel/Carousel';
+import Vital from '../../components/vital/Vital';
+import Company from '../../components/company/Company';
+import Presence from '../../components/presence/Presence';
+import Footer from '../../components/footer/Footer';
+import Faqs from '../../components/faqs/Faqs';
+import Grow from '../../components/grow/Grow';
+import Contact from '../../components/contact/Contact';
+import Agency from '../../components/agency/Agency';
 
 function Landing() {
   return (

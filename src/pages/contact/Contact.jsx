@@ -1,5 +1,5 @@
-import Footer from '../../features/footer/Footer';
-import Form from '../../features/form/Form';
+import Footer from '../../components/footer/Footer';
+import Form from '../../components/form/Form';
 
 function Contact() {
   return (
