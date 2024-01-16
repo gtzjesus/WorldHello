@@ -38,6 +38,7 @@ const Introduction = styled.div`
 
   @media (min-width: 78.15em) {
     padding: var(--padding-xxlarge);
+    margin: 0;
   }
 `;
 

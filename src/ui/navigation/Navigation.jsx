@@ -16,6 +16,8 @@ const StyledNav = styled.nav`
   align-items: center;
   justify-content: space-between;
 
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with a slight contrast */
+
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
