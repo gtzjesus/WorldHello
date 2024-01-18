@@ -61,7 +61,7 @@ function NavigationWBackground() {
   return (
     <StyledNav>
       <Brand onClick={handleHome}>
-        <Logo src="/logos/worldhello.png" alt="globe"></Logo>
+        <Logo src="/logos/helloworld.png" alt="globe"></Logo>
         <Title>WorldHello</Title>
       </Brand>
       <Menu onClick={handleContact}>Contact</Menu>

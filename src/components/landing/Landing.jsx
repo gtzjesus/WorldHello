@@ -109,8 +109,6 @@ function Landing() {
           <Subtitle>your visitors</Subtitle>
           <Subtitle>into customers.</Subtitle>
           <br />
-          <br />
-
           <Button variation="primary" size="small">
             click to start
           </Button>

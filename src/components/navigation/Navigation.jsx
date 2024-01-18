@@ -11,6 +11,7 @@
 
 import styled from 'styled-components';
 import { useNavigate } from 'react-router';
+import LazyLoad from 'react-lazyload';
 
 // ------------------------------
 // Styled Componenets
@@ -25,17 +26,10 @@ const StyledNav = styled.nav`
   // Code logic for positioning fixed in all web app + header config
   position: fixed;
   background: transparent;
-  color: var(--color-black);
-  top: 0;
-  width: 100vw;
+  width: var(--width-full-window);
   z-index: var(--z-top);
   height: var(--height-navigation);
-  font-size: var(--font-xsmall);
-
-  // @MEDIAQUERY logic for bigger devices (responsive design)
-  @media (min-width: 61.25em) {
-    font-size: var(--font-small);
-  }
+  font-size: var(--font-xxxsmall);
 `;
 
 const Brand = styled.div`
@@ -47,42 +41,54 @@ const Brand = styled.div`
 
   // @MEDIAQUERY logic for bigger devices (responsive design)
   @media (min-width: 61.25em) {
-    padding: 0 0 0 var(--padding-medium);
-    gap: var(--gap-medium);
   }
 `;
 
 const Logo = styled.img`
-  height: 2rem;
+  // Code logic to modify logo
+  height: var(--logo-height);
 `;
 
-const Title = styled.span``;
+const Title = styled.span`
+  // TODO: Code logic to modify brand title
+`;
 
 const Menu = styled.a`
+  // Code logic for contact link a element
   padding: 0 var(--padding-small) 0 0;
-  @media (min-width: 61.25em) {
-    padding: 0 var(--padding-medium) 0 0;
-  }
 `;
-function Navigation() {
-  const navigate = useNavigate();
 
+// ------------------------------
+// Component
+// ------------------------------
+// This section has our React Component which handles the hook data
+
+function Navigation() {
+  // Grab react hook to navigate the router
+  const navigate = useNavigate();
+  // Handles the navigation to contact page
   function handleContact() {
     navigate('/contact');
   }
-
+  // Handles the navigation to home page
   function handleHome() {
     navigate('/');
   }
   return (
-    <StyledNav>
-      <Brand onClick={handleHome}>
-        <Logo src="/logos/worldhello.png" alt="globe"></Logo>
-        <Title>WorldHello</Title>
-      </Brand>
-      <Menu onClick={handleContact}>Contact</Menu>
-    </StyledNav>
+    <LazyLoad>
+      {/* <!-- Nav Container , the header --> */}
+      <StyledNav>
+        {/* <!-- Brand Container for logo and title --> */}
+        <Brand onClick={handleHome}>
+          <Logo src="/logos/worldhello.png" alt="globe"></Logo>
+          <Title>WorldHello</Title>
+        </Brand>
+        {/* <!-- Menu Container for links --> */}
+        <Menu onClick={handleContact}>Contact</Menu>
+      </StyledNav>
+    </LazyLoad>
   );
 }
 
+// Export the Component (reusable)
 export default Navigation;

@@ -15,13 +15,15 @@ const GlobalStyles = createGlobalStyle`
     --width-description: 80%;
     --width-half-window: 45vw;
     --width-filled-window: 100vw;
-    --width-design-video: 100vw;
+    --width-full-window: 100vw;
 
     --height-full-window: 100vh;
     --height-percentage-window: 100%;
     --height-row: 10rem;
     --height-navigation: 3.5rem;
     --height-navigation-padding: 5rem;
+
+    --logo-height: 2rem;
 
 
     /* Backrounds */
@@ -78,6 +80,8 @@ const GlobalStyles = createGlobalStyle`
     --padding-xxxlarge: 20rem;
     --padding-giant: 30rem;
 
+    --padding-app: 1rem;
+
     /* Letter Spacing */
     --spacing-subtitle: -0.05rem;
     --spacing-title: -0.3rem;
@@ -86,7 +90,7 @@ const GlobalStyles = createGlobalStyle`
     --padding-header:0.5rem 1rem;
 
     /* Gap */
-    --gap-small: .25rem;
+    --gap-small: .30rem;
     --gap-medium: 1rem;
     --gap-large: 2rem;
     --gap-xlarge: 5rem;
