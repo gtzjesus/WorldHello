@@ -8,7 +8,7 @@ const StyledAgency = styled.div`
   display: flex;
   justify-content: center;
   color: var(--color-black);
-  background-image: url('backgrounds/brand.jpg');
+  background-image: url('backgrounds/landing.jpg');
   background-size: cover;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with a slight contrast */
 
