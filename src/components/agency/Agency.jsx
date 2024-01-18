@@ -10,10 +10,8 @@ const StyledAgency = styled.div`
   color: var(--color-black);
 
   // BACKGROUND IMAGE CONFIGURATION
-  background: url('backgrounds/landing.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background: url('backgrounds/landing.jpg');
+
   background-size: cover;
 
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with a slight contrast */
@@ -27,7 +25,26 @@ const StyledAgency = styled.div`
   }
 `;
 
-const Introduction = styled.div`
+const Intro = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-small);
+
+  @media (min-width: 61.25em) {
+    top: 0;
+    left: 0;
+    gap: var(--gap-large);
+    padding: var(--padding-large);
+  }
+
+  @media (min-width: 78.15em) {
+    padding: var(--padding-xxlarge);
+  }
+`;
+
+const Outro = styled.div`
   position: absolute;
   display: flex;
   bottom: 0;
@@ -97,11 +114,13 @@ function Agency() {
   return (
     <LazyLoad>
       <StyledAgency>
-        <Introduction>
+        <Intro>
           <Title>Web</Title>
           <Title>
             Dev<Special>Agency.</Special>
           </Title>
+        </Intro>
+        <Outro>
           <Special>
             <Description>
               Websites designed to tranform visitors into
@@ -111,7 +130,7 @@ function Agency() {
           <Button variation="primary" size="small">
             Start your website
           </Button>
-        </Introduction>
+        </Outro>
       </StyledAgency>
     </LazyLoad>
   );
