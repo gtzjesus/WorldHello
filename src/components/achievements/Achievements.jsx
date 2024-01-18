@@ -47,7 +47,7 @@ const StyledAchievements = styled.div`
 const AchievementsArea = styled.div`
   // Code logic to cover the full screen of the device user is in
   margin: 0 auto;
-  max-width: 100vw;
+  max-width: var(--width-filled-window);
 `;
 
 const AchievementsAreaSlider = styled.div`
