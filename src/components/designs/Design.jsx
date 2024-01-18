@@ -41,7 +41,7 @@ const StyledDesign = styled.div`
     /* padding-bottom: 30%; */
     /* padding-top: 25%; */
     width: 100vw;
-    height: 90vh;
+    height: 75vh;
   }
 `;
 

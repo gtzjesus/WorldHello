@@ -64,7 +64,7 @@ const AchievementsDots = styled.div`
   // @MEDIAQUERY logic for bigger devices
   @media (min-width: 150.15em) {
     text-align: right;
-    padding-right: var(--padding-xxlarge);
+    padding-right: var(--padding-xxxlarge);
   }
 `;
 
