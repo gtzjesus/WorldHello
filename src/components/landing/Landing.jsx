@@ -58,13 +58,6 @@ const Hook = styled.div`
   }
 `;
 
-const Subtitle = styled.span`
-  // Code logic for subtitle element
-  font-size: var(--font-xsmall);
-  letter-spacing: var(--spacing-subtitle);
-  padding: var(--padding-xxxsmall) 0;
-`;
-
 const Title = styled.span`
   // Code logic for title element
   font-size: var(--font-xlarge);
@@ -85,6 +78,12 @@ const Title = styled.span`
   }
 `;
 
+const Subtitle = styled.span`
+  // Code logic for subtitle element
+  font-size: var(--font-small);
+  letter-spacing: var(--spacing-subtitle);
+`;
+
 // ------------------------------
 // Component
 // ------------------------------
@@ -101,13 +100,16 @@ function Landing() {
           <Title>Web</Title>
           <Title>Dev</Title>
           <Title>Agency</Title>
+          <br />
+          <br />
+          <br />
           <Subtitle>Get a </Subtitle>
           <Subtitle>website</Subtitle>
           <Subtitle>to tranform</Subtitle>
           <Subtitle>your visitors</Subtitle>
           <Subtitle>into customers</Subtitle>
           <Button variation="primary" size="small">
-            Start your website
+            click to start
           </Button>
         </Hook>
       </StyledLanding>
