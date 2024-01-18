@@ -244,10 +244,13 @@ function Achievements() {
 
   return (
     <LazyLoad>
+      {/* <!-- Main Container --> */}
       <StyledAchievements>
+        {/* <!-- Another Parent Achievements Container --> */}
         <ParentAchievements>
+          {/* <!-- All information Container --> */}
           <Information>
-            <Intro>[ what we offer]</Intro>
+            <Intro>[ what we offer ]</Intro>
             <SubTitle>
               Connect with your desired audience with a customized website.
             </SubTitle>
@@ -255,16 +258,19 @@ function Achievements() {
             <Caption>our achievements,</Caption>
           </Information>
 
+          {/* <!-- Achivements HERE Container --> */}
           <AchievementsArea>
             <AchievementsAreaSlider
               style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
+              {/* <!-- Map the array of designs and display all as new Design Component --> */}
               {designs.map((design) => (
                 <Design design={design} key={design.id} />
               ))}
             </AchievementsAreaSlider>
           </AchievementsArea>
         </ParentAchievements>
+        {/* <!-- Dots for User Navigation Container --> */}
         <AchievementsDots>
           {designs.map((_, idx) => (
             <AchievementsDot
@@ -276,14 +282,19 @@ function Achievements() {
             ></AchievementsDot>
           ))}
         </AchievementsDots>
+        {/* <!-- Additional Ending Container --> */}
         <Additional>
           <StyledFinish>
-            <Intro>[ our approach]</Intro>
+            <Intro>[ our approach ]</Intro>
             Our focus is on optimizing conversions to elevate your
-            business&rsquo;s potential for success. Transforming your clientele
-            into loyal, paying customers through a top-performing website.
+            business&rsquo;s potential for success. <br />
+            <br />
+            Transforming your clientele into loyal, paying customers through a
+            top-performing website.
+            <br />
+            <br />
             <MiniDescription>
-              Ultimately driving profitability and revenue growth.
+              Ultimately driving revenue growth and profitability.
             </MiniDescription>
           </StyledFinish>
         </Additional>
