@@ -9,6 +9,9 @@ const StyledAgency = styled.div`
   justify-content: center;
   color: var(--color-black);
   background-image: url('backgrounds/landing.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with a slight contrast */
 
