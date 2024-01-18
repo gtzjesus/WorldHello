@@ -1,4 +1,4 @@
-import Landing from './pages/landing/Landing';
+import Home from './pages/home/Home';
 import GlobalStyles from './styles/GlobalStyles';
 import './styles/App.css';
 import { useEffect } from 'react';
@@ -21,7 +21,7 @@ const queryClient = new QueryClient({
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Landing />,
+    element: <Home />,
   },
   {
     path: '/contact',

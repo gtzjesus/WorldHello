@@ -9,9 +9,9 @@ import Footer from '../../components/footer/Footer';
 import Faqs from '../../components/faqs/Faqs';
 import Grow from '../../components/grow/Grow';
 import Contact from '../../components/contact/Contact';
-import Agency from '../../components/agency/Agency';
+import Landing from '../../components/landing/Landing';
 
-function Landing() {
+function Home() {
   // GRAB STATE for navigation scroll
   const [header, setHeader] = useState(false);
   // FUNCTION TO change state on scroll
@@ -27,7 +27,7 @@ function Landing() {
   return (
     <>
       {!header ? <Navigation /> : <NavigationWBackground />}
-      <Agency />
+      <Landing />
       <Carousel />
       <Grow />
       <Vital />
@@ -40,4 +40,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default Home;

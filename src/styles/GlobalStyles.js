@@ -6,13 +6,13 @@ const GlobalStyles = createGlobalStyle`
 
   /* Responsive Designs */
     $bp-large: 78.15em; // 1250px
-    $bp-medium: 61.25em; // 980px
+    --responsive-medium: 61.25em; // 980px
     $bp-small: 40em; // 600px
     $bp-smallest: 31.25em; // 500px
 
   /* Width && Height */
+    --width-full-window: 100vh;
     --width-description: 80%;
-    --width-full-window: 100%;
     --width-half-window: 45vw;
     --width-filled-window: 100vw;
     --width-design-video: 100vw;
@@ -65,6 +65,7 @@ const GlobalStyles = createGlobalStyle`
 
 
     /* Padding */
+    --padding-xxxsmall: 0.15rem;
     --padding-xxsmall: 0.30rem;
     --padding-xsmall: 0.95rem;
     --padding-small: 1.25rem;
@@ -76,8 +77,9 @@ const GlobalStyles = createGlobalStyle`
     --padding-xxxlarge: 20rem;
     --padding-giant: 30rem;
 
-
-
+    /* Letter Spacing */
+    --spacing-subtitle: -0.05rem;
+    --spacing-title: -0.3rem;
 
 
     --padding-header:0.5rem 1rem;
@@ -91,9 +93,14 @@ const GlobalStyles = createGlobalStyle`
     --gap-giant: 12rem;
     --gap-xgiant: 16rem;
 
+    /* Shadows */
+    --text-shadow-font: 4px 3px 5px rgba(0, 0, 0, 0.5);
 
 
-
+    /* Line Height */
+    --line-height-small: 3.5rem;
+    --line-height-medium: 4.5rem;
+    --line-height-large: 6.5rem;
 
     /* Image Sizes */
     --image-small: 8rem;
