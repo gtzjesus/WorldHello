@@ -29,7 +29,6 @@ const StyledLanding = styled.div`
 
   // Code logic for covering full-screen devices
   min-height: 100vh;
-  min-width: 100vw;
 
   // @MEDIAQUERY logic for bigger devices (responsive design)
   @media (min-width: 61.25em) {
