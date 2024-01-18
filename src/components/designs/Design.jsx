@@ -1,12 +1,26 @@
+// ------------------------------
+// File: Design.js
+// ------------------------------
+// Description: React individual component for each achievement done by WorldHello (the design videos will be displayed with this reusable component dynamically), using supabase integration (backend)
+// ------------------------------
+// Figma Designs + Video Screen Editor/Recording.
+// ------------------------------
+// Global Styles from /src/styles/ used for global variables.
+
+// ------------------------------
+// Imports
+// ------------------------------
+// This section has all necessary imports for this component.
 import styled from 'styled-components';
 
 const StyledDesign = styled.div`
+  // Code logic to display every design side-by-side
   display: inline-block;
   overflow: hidden;
   width: fit-content;
   height: fit-content;
-  width: 100vw;
-  height: 85vh;
+  width: var(--width-filled-window);
+  height: fit-content;
   /* padding-bottom: 85%;
   padding-top: 40%; */
   @media (min-width: 40.25em) {

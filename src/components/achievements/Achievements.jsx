@@ -15,7 +15,7 @@
 // This section has all necessary imports for this component.
 
 import Spinner from '../../ui/spinners/Spinner';
-import Design from '../../ui/designs/Design';
+import Design from '../designs/Design';
 import styled from 'styled-components';
 import LazyLoad from 'react-lazyload';
 
