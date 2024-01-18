@@ -28,8 +28,8 @@ const StyledLanding = styled.div`
   text-transform: uppercase;
 
   // Code logic for covering full-screen devices
-  min-height: var(--height-full-window);
-  min-width: var(--width-full-window);
+  min-height: 100vh;
+  min-width: 100vw;
 
   // @MEDIAQUERY logic for bigger devices (responsive design)
   @media (min-width: 61.25em) {
@@ -107,7 +107,8 @@ function Landing() {
           <Subtitle>website</Subtitle>
           <Subtitle>to tranform</Subtitle>
           <Subtitle>your visitors</Subtitle>
-          <Subtitle>into customers</Subtitle>
+          <Subtitle>into customers.</Subtitle>
+          <br />
           <Button variation="primary" size="small">
             click to start
           </Button>
