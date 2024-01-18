@@ -80,7 +80,7 @@ const Title = styled.span`
 
 const Subtitle = styled.span`
   // Code logic for subtitle element
-  font-size: var(--font-small);
+  font-size: var(--font-xsmall);
   letter-spacing: var(--spacing-subtitle);
 `;
 
