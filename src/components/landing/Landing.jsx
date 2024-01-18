@@ -1,7 +1,12 @@
+// ------------------------------
 // File: Landing.js
+// ------------------------------
 // Description: React component for displaying landing page (first thing USER sees).
+// ------------------------------
 // Figma Design.
+// ------------------------------
 // LazyLoading from React for optimization (images & web app loading time).
+// ------------------------------
 // Global Styles from /src/styles/ used for global variables.
 
 // ------------------------------
@@ -47,7 +52,7 @@ const Hook = styled.div`
     padding: var(--height-navigation-padding-40-em) var(--padding-large);
   }
 
-  // @MEDIAQUERY logic for small devices 600px
+  // @MEDIAQUERY logic for small devices 980px
   @media (min-width: 61.25em) {
     padding: var(--height-navigation-padding) var(--padding-large);
   }

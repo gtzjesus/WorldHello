@@ -29,7 +29,7 @@ hr {
 
 /* // CAROUSEL */
 /* ACTIVE DESIGN STATE */
-.CarouselDot.active {
+.AchievementsDot.active {
   background-color: var(--color-tan);
 }
 

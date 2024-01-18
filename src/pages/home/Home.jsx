@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Navigation from '../../components/navigation/Navigation';
 import NavigationWBackground from '../../components/navigation/NavigationWBackground';
-import Carousel from '../../components/carousel/Carousel';
+import Achievements from '../../components/achievements/Achievements';
 import Vital from '../../components/vital/Vital';
 import Company from '../../components/company/Company';
 import Presence from '../../components/presence/Presence';
@@ -28,7 +28,7 @@ function Home() {
     <>
       {!header ? <Navigation /> : <NavigationWBackground />}
       <Landing />
-      <Carousel />
+      <Achievements />
       <Grow />
       <Vital />
       <Presence />
