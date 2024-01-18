@@ -188,6 +188,11 @@ const MiniDescription = styled.span`
   }
 `;
 
+// ------------------------------
+// Component
+// ------------------------------
+// This section has our React Component which handles the achievements data located at supabase backend
+
 function Achievements() {
   // Code logic for delay carousel
   const delay = 16000;
@@ -286,4 +291,5 @@ function Achievements() {
   );
 }
 
+// Export reusable Carousel Achivements component
 export default Achievements;
