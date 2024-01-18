@@ -102,8 +102,7 @@ const Information = styled.div`
 
   // @MEDIAQUERY logic for medium devices
   @media (min-width: 78.15em) {
-    padding: var(--padding-large) var(--padding-xxlarge);
-    gap: var(--gap-xxlarge);
+    padding: var(--padding-large);
   }
 `;
 
@@ -113,18 +112,9 @@ const Additional = styled.div`
   flex-direction: column;
   gap: var(--gap-medium);
   padding: var(--padding-medium);
-
-  // @MEDIAQUERY logic for small devices
-  @media (min-width: 40.25em) {
-    padding: var(--padding-medium) var(--padding-xlarge);
-    gap: var(--gap-large);
-  }
-
   // @MEDIAQUERY logic for medium devices
   @media (min-width: 78.15em) {
-    padding: var(--padding-large) var(--padding-xxlarge);
-    gap: var(--gap-xxlarge);
-    flex-direction: row;
+    padding: var(--padding-large);
   }
 `;
 
@@ -175,7 +165,6 @@ const Caption = styled.div`
   // @MEDIAQUERY logic for small devices
   @media (min-width: 40.25em) {
     font-size: var(--font-large);
-    padding: 0 var(--padding-xsmall);
   }
 
   // @MEDIAQUERY logic for medium devices
