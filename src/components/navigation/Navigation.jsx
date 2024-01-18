@@ -30,8 +30,6 @@ const StyledNav = styled.nav`
   z-index: var(--z-top);
   height: var(--height-navigation);
   font-size: var(--font-xxxsmall);
-
-
 `;
 
 const Brand = styled.div`
@@ -40,18 +38,11 @@ const Brand = styled.div`
   align-items: center;
   padding: 0 0 0 var(--padding-small);
   gap: var(--gap-small);
-
-
 `;
 
 const Logo = styled.img`
   // Code logic to modify logo
   height: var(--logo-height);
-
-  // @MEDIAQUERY logic for big devices 1500px+
-  @media (min-width: 108.25em) {
-    height: var(--logo-height-big);
-  }
 `;
 
 const Title = styled.span`
@@ -60,7 +51,7 @@ const Title = styled.span`
 
 const Menu = styled.a`
   // Code logic for contact link a element
-  padding: 0 var(--padding-large) 0 0;
+  padding: 0 var(--padding-small) 0 0;
 `;
 
 // ------------------------------
