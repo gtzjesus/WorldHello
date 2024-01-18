@@ -1,5 +1,8 @@
+// File: Agency.js
+// Description: React component for displaying landing page (first thing USER sees)
+// Figma Design
+
 import styled from 'styled-components';
-// import worldhellovideo from '/videos/worldhello.mp4';
 import Button from '../../ui/buttons/Button';
 
 import LazyLoad from 'react-lazyload';
@@ -8,8 +11,6 @@ const StyledAgency = styled.div`
   // BACKGROUND IMAGE CONFIGURATION
   background: url('backgrounds/landing.jpg');
   background-size: cover;
-
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with a slight contrast */
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
   min-height: 100vh;
@@ -39,24 +40,10 @@ const Intro = styled.div`
   }
 `;
 
-const Outro = styled.div`
-  position: absolute;
-  display: flex;
-  bottom: 0;
-  flex-direction: column;
-  justify-content: center;
-  padding: var(--padding-small);
-
-  @media (min-width: 61.25em) {
-    top: 0;
-    left: 0;
-    gap: var(--gap-large);
-    padding: var(--padding-large);
-  }
-
-  @media (min-width: 78.15em) {
-    padding: var(--padding-xxlarge);
-  }
+const Subtitle = styled.span`
+  font-size: var(--font-small);
+  letter-spacing: -0.05rem;
+  text-transform: uppercase;
 `;
 
 const Title = styled.span`
@@ -64,6 +51,7 @@ const Title = styled.span`
   letter-spacing: -0.3rem;
   text-transform: uppercase;
   line-height: 3.5rem;
+  text-shadow: 4px 3px 5px rgba(0, 0, 0, 0.5);
 
   @media (min-width: 61.25em) {
     font-size: var(--font-xxlarge);
@@ -110,23 +98,19 @@ function Agency() {
     <LazyLoad>
       <StyledAgency>
         <Intro>
+          {/* MESSI IMPLEMENTATION BUT HAD TO DO UNIQUE DESIGN FOR MOBILE DEVICES (VERTICAL span ELEMENTS) */}
           <Title>Web</Title>
-          <Title>
-            Dev<Special>Agency.</Special>
-          </Title>
+          <Title>Dev</Title>
+          <Title>Agency</Title>
+          <Subtitle>Get a </Subtitle>
+          <Subtitle>website</Subtitle>
+          <Subtitle>to tranform</Subtitle>
+          <Subtitle>your visitors</Subtitle>
+          <Subtitle>into customers</Subtitle>
         </Intro>
-
-        <Outro>
-          <Special>
-            <Description>
-              Websites designed to tranform visitors into
-              <MiniDescription> customers.</MiniDescription>
-            </Description>
-          </Special>
-          <Button variation="primary" size="small">
-            Start your website
-          </Button>
-        </Outro>
+        <Button variation="primary" size="small">
+          Start your website
+        </Button>
       </StyledAgency>
     </LazyLoad>
   );
