@@ -4,7 +4,7 @@ const StyledForm = styled.div`
   height: 200vh;
 `;
 function Form() {
-  return <StyledForm>world hello</StyledForm>;
+  return <StyledForm></StyledForm>;
 }
 
 export default Form;

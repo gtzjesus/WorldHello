@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 // import worldhellovideo from '/videos/worldhello.mp4';
 import Button from '../../ui/buttons/Button';
+import videoBg from '../../../public/videos/ecommerce.mp4';
 
 import LazyLoad from 'react-lazyload';
 
@@ -8,8 +9,6 @@ const StyledAgency = styled.div`
   display: flex;
   justify-content: center;
   color: var(--color-white);
-  background-image: url('backgrounds/landing.jpg');
-  background-size: cover;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with a slight contrast */
 
   // COVER THE FULL SCREEN OF EVERY DEVICE
@@ -91,6 +90,9 @@ const Description = styled.span`
 function Agency() {
   return (
     <LazyLoad>
+      <video autoPlay="autoPlay " loop muted playsInline={true}>
+        <source src={videoBg} type="video/mp4" />
+      </video>
       <StyledAgency>
         <Introduction>
           <Title>Web</Title>
