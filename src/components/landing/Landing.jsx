@@ -44,7 +44,7 @@ const Hook = styled.div`
 
   // @MEDIAQUERY logic for small devices 600px
   @media (min-width: 40em) {
-    padding: var(--height-navigation-padding-40-em) var(--padding-small);
+    padding: var(--height-navigation-padding-40-em) var(--padding-large);
   }
 `;
 
