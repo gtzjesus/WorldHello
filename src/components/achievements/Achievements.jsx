@@ -100,12 +100,6 @@ const Information = styled.div`
   gap: var(--gap-medium);
   padding: var(--padding-app);
 
-  // @MEDIAQUERY logic for smaller devices
-  @media (min-width: 40.25em) {
-    padding: var(--padding-medium) var(--padding-xlarge);
-    gap: var(--gap-large);
-  }
-
   // @MEDIAQUERY logic for medium devices
   @media (min-width: 78.15em) {
     padding: var(--padding-large) var(--padding-xxlarge);
