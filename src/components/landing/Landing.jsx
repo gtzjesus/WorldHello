@@ -17,7 +17,6 @@ import LazyLoad from 'react-lazyload';
 // Styled Componenets
 // ------------------------------
 // This section has all CSS styles configured for every HTML element.
-//
 
 const StyledLanding = styled.div`
   // Code logic for setting the background
@@ -101,12 +100,17 @@ function Landing() {
           <br />
           <br />
           <br />
+          <br />
+          <br />
+
           <Subtitle>Get a </Subtitle>
           <Subtitle>website</Subtitle>
           <Subtitle>to tranform</Subtitle>
           <Subtitle>your visitors</Subtitle>
           <Subtitle>into customers.</Subtitle>
           <br />
+          <br />
+
           <Button variation="primary" size="small">
             click to start
           </Button>
