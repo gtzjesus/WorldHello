@@ -21,7 +21,10 @@ const GlobalStyles = createGlobalStyle`
     --height-percentage-window: 100%;
     --height-row: 10rem;
     --height-navigation: 3.5rem;
+
+    /* Extra Heights */
     --height-navigation-padding: 5rem;
+    --height-navigation-padding-40-em: 10rem;
 
     --logo-height: 2rem;
 
@@ -103,9 +106,9 @@ const GlobalStyles = createGlobalStyle`
 
 
     /* Line Height */
-    --line-height-small: 3.5rem;
-    --line-height-medium: 4.5rem;
-    --line-height-large: 6.5rem;
+    --line-height-small: 3rem;
+    --line-height-medium: 5rem;
+    --line-height-large: 6rem;
 
     /* Image Sizes */
     --image-small: 8rem;

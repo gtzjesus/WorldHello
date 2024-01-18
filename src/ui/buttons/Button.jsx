@@ -6,8 +6,9 @@ const sizes = {
     padding: 0.8rem 1.2rem;
     text-transform: uppercase;
 
-    @media (min-width: 61.25em) {
-      font-size: var(--font-small);
+    // @MEDIAQUERY logic for small devices 600px
+    @media (min-width: 40em) {
+      font-size: var(--font-xsmall);
     }
   `,
 };

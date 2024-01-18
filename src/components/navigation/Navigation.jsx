@@ -38,10 +38,6 @@ const Brand = styled.div`
   align-items: center;
   padding: 0 0 0 var(--padding-small);
   gap: var(--gap-small);
-
-  // @MEDIAQUERY logic for bigger devices (responsive design)
-  @media (min-width: 61.25em) {
-  }
 `;
 
 const Logo = styled.img`

@@ -27,7 +27,7 @@ const StyledLanding = styled.div`
   // Code logic for covering full-screen devices
   min-height: 100vh;
 
-  // @MEDIAQUERY logic for bigger devices (responsive design)
+  // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     // Design background from Figma software
     background-image: url('backgrounds/landing_second.jpg');
@@ -42,15 +42,9 @@ const Hook = styled.div`
   justify-content: center;
   padding: var(--height-navigation-padding) var(--padding-small);
 
-  // @MEDIAQUERY logic for bigger devices
-  @media (min-width: 61.25em) {
-    top: 0;
-    left: 0;
-    gap: var(--gap-large);
-    padding: var(--padding-large);
-  }
-  @media (min-width: 78.15em) {
-    padding: var(--padding-xxlarge);
+  // @MEDIAQUERY logic for small devices 600px
+  @media (min-width: 40em) {
+    padding: var(--height-navigation-padding-40-em) var(--padding-small);
   }
 `;
 
@@ -63,15 +57,10 @@ const Title = styled.span`
   text-shadow: var(--text-shadow-font);
   text-transform: uppercase;
 
-  // @MEDIAQUERY logic for bigger devices (responsive design)
-  @media (min-width: 61.25em) {
+  // @MEDIAQUERY logic for small devices 600px
+  @media (min-width: 40em) {
     font-size: var(--font-xxlarge);
     line-height: var(--line-height-medium);
-  }
-
-  @media (min-width: 150.15em) {
-    font-size: var(--font-xxxlarge);
-    line-height: var(--line-height-large);
   }
 `;
 
@@ -79,6 +68,10 @@ const Subtitle = styled.span`
   // Code logic for subtitle element
   font-size: var(--font-xsmall);
   letter-spacing: var(--spacing-subtitle);
+
+  @media (min-width: 40em) {
+    font-size: var(--font-medium);
+  }
 `;
 
 // ------------------------------
