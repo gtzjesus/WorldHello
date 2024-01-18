@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 
 const sizes = {
   small: css`
-    font-size: var(--font-xsmall);
+    font-size: var(--font-xxxsmall);
     padding: 0.8rem 1.2rem;
     text-transform: uppercase;
 

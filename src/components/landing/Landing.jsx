@@ -25,8 +25,6 @@ const StyledLanding = styled.div`
   background: url('backgrounds/landing.jpg');
   background-size: cover;
 
-  text-transform: uppercase;
-
   // Code logic for covering full-screen devices
   min-height: 100vh;
 
@@ -64,6 +62,7 @@ const Title = styled.span`
   line-height: var(--line-height-small);
   // Code logic shadow beneath text (more visibility)
   text-shadow: var(--text-shadow-font);
+  text-transform: uppercase;
 
   // @MEDIAQUERY logic for bigger devices (responsive design)
   @media (min-width: 61.25em) {
