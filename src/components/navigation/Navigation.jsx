@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
   top: 0;
   width: 100vw;
   z-index: var(--z-top);
-  padding: var(--margin-small) 0;
+  height: var(--height-navigation);
 
   // FONTS
   font-size: var(--font-xsmall);

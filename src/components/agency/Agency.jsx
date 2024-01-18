@@ -5,13 +5,8 @@ import Button from '../../ui/buttons/Button';
 import LazyLoad from 'react-lazyload';
 
 const StyledAgency = styled.div`
-  display: flex;
-  justify-content: center;
-  color: var(--color-black);
-
   // BACKGROUND IMAGE CONFIGURATION
   background: url('backgrounds/landing.jpg');
-
   background-size: cover;
 
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with a slight contrast */
@@ -30,7 +25,7 @@ const Intro = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: var(--padding-small);
+  padding: var(--height-navigation-padding) var(--padding-small);
 
   @media (min-width: 61.25em) {
     top: 0;
@@ -120,6 +115,7 @@ function Agency() {
             Dev<Special>Agency.</Special>
           </Title>
         </Intro>
+
         <Outro>
           <Special>
             <Description>
