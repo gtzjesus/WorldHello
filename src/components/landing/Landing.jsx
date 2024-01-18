@@ -68,9 +68,11 @@ const Subtitle = styled.span`
   // Code logic for subtitle element
   font-size: var(--font-xsmall);
   letter-spacing: var(--spacing-subtitle);
+  line-height: var(--line-height-xsmall);
 
   @media (min-width: 40em) {
     font-size: var(--font-medium);
+    line-height: var(--line-height-small);
   }
 `;
 
