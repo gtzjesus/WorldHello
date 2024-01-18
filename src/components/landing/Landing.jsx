@@ -46,6 +46,11 @@ const Hook = styled.div`
   @media (min-width: 40em) {
     padding: var(--height-navigation-padding-40-em) var(--padding-large);
   }
+
+  // @MEDIAQUERY logic for small devices 600px
+  @media (min-width: 61.25em) {
+    padding: var(--height-navigation-padding) var(--padding-large);
+  }
 `;
 
 const Title = styled.span`

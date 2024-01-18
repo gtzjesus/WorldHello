@@ -31,10 +31,7 @@ const StyledNav = styled.nav`
   height: var(--height-navigation);
   font-size: var(--font-xxxsmall);
 
-  // @MEDIAQUERY logic for big devices 1500px+
-  @media (min-width: 108.25em) {
-    font-size: var(--font-small);
-  }
+
 `;
 
 const Brand = styled.div`
@@ -44,11 +41,7 @@ const Brand = styled.div`
   padding: 0 0 0 var(--padding-small);
   gap: var(--gap-small);
 
-  // @MEDIAQUERY logic for big devices 1500px+
-  @media (min-width: 108.25em) {
-    gap: var(--gap-medium);
-    padding: 0 0 0 var(--padding-large);
-  }
+
 `;
 
 const Logo = styled.img`
