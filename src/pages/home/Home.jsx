@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navigation from '../../components/navigation/Navigation';
 import NavigationWBackground from '../../components/navigation/NavigationWBackground';
 import Achievements from '../../components/achievements/Achievements';
-import Vital from '../../components/vital/Vital';
+import Source from '../../components/source/Source';
 import Company from '../../components/company/Company';
 import Presence from '../../components/presence/Presence';
 import Footer from '../../components/footer/Footer';
@@ -30,7 +30,7 @@ function Home() {
       <Landing />
       <Achievements />
       <Craft />
-      <Vital />
+      <Source />
       <Presence />
       <Faqs />
       <Contact />

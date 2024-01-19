@@ -1,15 +1,43 @@
+// ------------------------------
+// File: Source.js
+// ------------------------------
+// Description: React component for our source being displayed
+// ------------------------------
+// Figma Design.
+// ------------------------------
+// LazyLoading from React for optimization (images & web app loading time).
+// ------------------------------
+// Global Styles from /src/styles/ used for global variables.
+
+// ------------------------------
+// Imports
+// ------------------------------
+// This section has all necessary imports for this component.
+
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 
 import LazyLoad from 'react-lazyload';
 
-const StyledVital = styled.div`
+// ------------------------------
+// Styled Componenets
+// ------------------------------
+// This section has all CSS styles configured for every HTML element.
+const StyledSource = styled.div`
+  // Code logic for arranging children
   display: flex;
-  filter: brightness(1) saturate(25%);
+  // Code logic for figma design blackening
+  filter: brightness(1) saturate(100%);
+  // Code logic for setting the background
   background-image: url('/backgrounds/earth.jpg');
   background-size: cover;
   color: var(--color-white);
   padding: var(--padding-large) var(--padding-medium);
+
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
+  // These are used for responsive design, for all screens we can modify the web application based on the screen size
 
   @media (min-width: 40.25em) {
     padding: var(--padding-large) var(--padding-xlarge);
@@ -46,6 +74,10 @@ const Title = styled.span`
 
   text-shadow: 0.03em 0 black, 0 0.03em black, -0.03em 0 black, 0 -0.03em black;
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
+  // These are used for responsive design, for all screens we can modify the web application based on the screen size
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
   }
@@ -54,7 +86,9 @@ const Title = styled.span`
     font-size: var(--font-xlarge);
   }
 `;
+
 const Description = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   gap: var(--gap-medium);
@@ -63,10 +97,14 @@ const Description = styled.div`
 const Quote = styled.span`
   font-size: var(--font-small);
   background-color: var(--color-white);
-  color: var(--color-purple);
+  color: var(--color-black);
   padding: var(--padding-xxsmall);
   margin: var(--padding-medium) 0;
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
+  // These are used for responsive design, for all screens we can modify the web application based on the screen size
   @media (min-width: 61.25em) {
     font-size: var(--font-medium);
   }
@@ -76,13 +114,8 @@ const Quote = styled.span`
   }
 `;
 
-const Special = styled.span`
-  color: var(--color-purple);
-`;
-
-const Source = styled.span``;
-
 const Last = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   padding: var(--padding-xlarge) 0 0 0;
@@ -93,6 +126,10 @@ const Ending = styled.span`
   font-size: var(--font-xsmall);
   text-shadow: 0.03em 0 black, 0 0.03em black, -0.03em 0 black, 0 -0.03em black;
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
+  // These are used for responsive design, for all screens we can modify the web application based on the screen size
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
@@ -102,10 +139,17 @@ const Ending = styled.span`
   }
 `;
 
-function Vital() {
+// ------------------------------
+// Component
+// ------------------------------
+// This section has our React Component which handles the hook data
+
+function Source() {
   return (
     <LazyLoad>
-      <StyledVital>
+      {/* <!-- Main Container --> */}
+      <StyledSource>
+        {/* <!-- Information Big Container --> */}
         <Information>
           <Intro>[ why it matters ]</Intro>
           <Title>
@@ -113,17 +157,16 @@ function Vital() {
           </Title>
           <Description>
             <Quote>
-              <Special>&ldquo;</Special> 80% of consumers are more likely to buy
-              from brands that offer personalized website experiences.
-              <Special>&rdquo;</Special>
+              &ldquo; 80% of consumers are more likely to buy from brands that
+              offer personalized website experiences. &rdquo;
             </Quote>
-            <Source>
-              <a href="https://bloggingwizard.com/website-statistics/">
-                <Button variation="third" size="small">
-                  view article
-                </Button>
-              </a>
-            </Source>
+            <a
+              href="https://bloggingwizard.com/website-statistics/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button>view article</Button>
+            </a>
           </Description>
           <Last>
             <Ending>
@@ -132,9 +175,9 @@ function Vital() {
             </Ending>
           </Last>
         </Information>
-      </StyledVital>
+      </StyledSource>
     </LazyLoad>
   );
 }
 
-export default Vital;
+export default Source;
