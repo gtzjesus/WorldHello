@@ -26,7 +26,6 @@ const StyledBusiness = styled.div`
   // @Media Queries
   // ------------------------------
   // These are used for responsive design, for all screens we can modify the web application based on the screen size
-
   @media (min-width: 40.25em) {
     padding: 0 var(--padding-small);
   }

@@ -1,13 +1,33 @@
+// ------------------------------
+// File: Footer.js
+// ------------------------------
+// Description: Last React reusable Component, our web application's footer
+
+// ------------------------------
+// Imports
+// ------------------------------
+// This section has all necessary imports for this component.
+
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 
+// ------------------------------
+// Styled Componenets
+// ------------------------------
+// This section has all CSS styles configured for every HTML element.
+
 const StyledFooter = styled.footer`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   background-color: var(--color-black);
   color: var(--color-white);
   padding: var(--padding-medium);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
+  // These are used for responsive design, for all screens we can modify the web application based on the screen size
   @media (min-width: 61.25em) {
     padding: var(--padding-xlarge);
   }
@@ -23,22 +43,25 @@ const StyledFooter = styled.footer`
 `;
 
 const FooterInfo = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   gap: var(--gap-medium);
 `;
 
 const Intro = styled.span`
-  text-transform: uppercase;
-  background-color: var(--color-tan);
-  color: var(--color-black);
-  padding: 0 var(--padding-xxsmall);
-  width: fit-content;
+  // Code logic to style div element
+  color: var(--color-tan);
+  font-size: var(--font-xxxsmall);
+  padding: var(--padding-small) 0;
 `;
 
 const Ending = styled.span`
   font-size: var(--font-xsmall);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 78.15em) {
     font-size: var(--font-small);
   }
@@ -48,19 +71,34 @@ const Ending = styled.span`
   }
 `;
 
-const Logo = styled.span`
-  font-size: var(--font-large);
+const Mark = styled.div`
+  // Code logic to arrange children
+  display: flex;
+  align-items: center;
+  gap: var(--gap-small);
   margin: 0 auto;
-  background-color: var(--color-tan);
-  color: var(--color-black);
+`;
+
+const Logo = styled.img`
+  // Code logic to modify logo
+  height: var(--logo-height-big);
+`;
+
+const Brand = styled.span`
+  font-size: var(--font-large);
+  color: var(--color-tan);
   padding: 0 var(--padding-xxsmall);
 `;
 
 const Contact = styled.div`
+  // Code logic for arranging children
   display: flex;
   justify-content: space-between;
   padding: var(--padding-xsmall) 0;
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 78.15em) {
     padding: var(--padding-small) 0;
   }
@@ -76,10 +114,18 @@ const Label = styled.div``;
 const Result = styled.div`
   color: var(--color-tan);
 `;
+
+// ------------------------------
+// Component
+// ------------------------------
+// This section has our React Component which handles footer
+
 function Footer() {
   return (
     <StyledFooter>
+      {/* <!-- Footer Container (2 for responsive design) --> */}
       <FooterInfo>
+        {/* <!-- All necessary info --> */}
         <Intro>[ thank you ]</Intro>
         <Ending>WorldHello is a US based Website Development Agency.</Ending>
 
@@ -89,34 +135,40 @@ function Footer() {
         </Ending>
       </FooterInfo>
       <hr />
+      {/* <!-- Mark Brand Container --> */}
+      <Mark>
+        <Logo src="/logos/helloworldy.png" alt="globe"></Logo>
+        <Brand>WorldHello </Brand>
+      </Mark>
+      <hr />
+
+      {/* <!-- Footer Container --> */}
       <FooterInfo>
-        <Logo>WorldHello</Logo>
         <Intro>
-          <Label>[ Contact us ]</Label>
+          <Label>[ contact us ]</Label>
         </Intro>
+        {/* <!-- One of our Contact Containers --> */}
         <Contact>
           <Label>Telephone</Label>
           <Result>
             <a href="tel:+1 915-471-9129">+1 915-471-9129</a>
           </Result>
         </Contact>
-
+        {/* <!-- One of our Contact Containers --> */}
         <Contact>
           <Label>Email</Label>
           <Result>contact@worldhello.us</Result>
         </Contact>
-
+        {/* <!-- One of our Contact Containers --> */}
         <Contact>
           <Label>Based in</Label>
           <Result>Texas, US</Result>
         </Contact>
-
-        <Button variation="fourth" size="small">
-          start today
-        </Button>
+        <Button>start today for free</Button>
       </FooterInfo>
     </StyledFooter>
   );
 }
 
+// Export reusable Component
 export default Footer;
