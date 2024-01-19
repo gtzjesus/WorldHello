@@ -3,7 +3,7 @@ import Navigation from '../../components/navigation/Navigation';
 import NavigationWBackground from '../../components/navigation/NavigationWBackground';
 import Achievements from '../../components/achievements/Achievements';
 import Source from '../../components/source/Source';
-import Company from '../../components/company/Company';
+import About from '../../components/about/About';
 import Business from '../../components/business/Business';
 import Footer from '../../components/footer/Footer';
 import Faqs from '../../components/faqs/Faqs';
@@ -34,7 +34,7 @@ function Home() {
       <Business />
       <Faqs />
       <Contact />
-      <Company />
+      <About />
       <Footer />
     </>
   );

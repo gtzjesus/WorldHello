@@ -137,4 +137,5 @@ function Contact() {
   );
 }
 
+// Export reusable Component
 export default Contact;

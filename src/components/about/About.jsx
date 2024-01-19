@@ -1,13 +1,33 @@
+// ------------------------------
+// File: About.js
+// ------------------------------
+// Description: React component showcasing about WorldHello.
+
+// ------------------------------
+// Imports
+// ------------------------------
+// This section has all necessary imports for this component.
+
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 import LazyLoad from 'react-lazyload';
 
-const StyledCompany = styled.div`
+// ------------------------------
+// Styled Componenets
+// ------------------------------
+// This section has all CSS styles configured for every HTML element.
+
+const StyledAbout = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   background-color: var(--color-tan);
   padding: var(--padding-large) var(--padding-medium);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
+  // These are used for responsive design, for all screens we can modify the web application based on the screen size
   @media (min-width: 61.25em) {
     padding: var(--padding-large) var(--padding-xxlarge);
   }
@@ -24,16 +44,21 @@ const StyledCompany = styled.div`
 `;
 
 const Information = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   gap: var(--gap-large);
 `;
 
 const Extra = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   gap: var(--gap-large);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 78.15em) {
     padding-top: 35rem;
   }
@@ -44,16 +69,18 @@ const Extra = styled.div`
 `;
 
 const Intro = styled.div`
-  text-transform: uppercase;
-  color: var(--color-tan);
-  font-size: var(--font-xsmall);
-  background-color: var(--color-black);
-  padding: 0 var(--padding-xxsmall);
-  width: fit-content;
+  // Code logic to style div element
+  color: var(--color-purple);
+  font-size: var(--font-xxxsmall);
+  padding: var(--padding-small) 0;
 `;
 
 const Title = styled.span`
   font-size: var(--font-medium);
+
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
   }
@@ -66,6 +93,9 @@ const Title = styled.span`
 const Description = styled.span`
   font-size: var(--font-small);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 61.25em) {
     font-size: var(--font-medium);
   }
@@ -76,11 +106,11 @@ const Description = styled.span`
 `;
 
 const Special = styled.a`
-  color: var(--color-tan);
-  font-size: var(--font-xsmall);
-  background-color: var(--color-black);
-  padding: 0 var(--padding-xxsmall);
+  color: var(--color-purple);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
@@ -91,11 +121,14 @@ const Special = styled.a`
 `;
 
 const Img = styled.img`
-  // BLACK AND WHITE
+  // Code logic for black and white effect on image
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   padding: var(--padding-medium) 0;
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 78.15em) {
     padding: var(--padding-xlarge);
     width: 40vw;
@@ -115,6 +148,9 @@ const Img = styled.img`
 const MiniDescription = styled.span`
   font-size: var(--font-xsmall);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
@@ -123,11 +159,20 @@ const MiniDescription = styled.span`
     font-size: var(--font-medium);
   }
 `;
-function Company() {
+
+// ------------------------------
+// Component
+// ------------------------------
+// This section has our React Component which handles the  data
+
+function About() {
   return (
     <LazyLoad>
-      <StyledCompany>
+      {/* <!-- Main Container --> */}
+      <StyledAbout>
+        {/* <!-- Information Big Container --> */}
         <Information>
+          {/* <!-- All necessary info --> */}
           <Title>About us</Title>
           <Description>
             At <Special>WorldHello</Special>, we guarantee that teaming up with
@@ -135,11 +180,11 @@ function Company() {
             <br />
             <Special>not just an extra cost.</Special>
           </Description>
-          <Img src="/backgrounds/company.jpg" alt="Company"></Img>
+          <Img src="/backgrounds/company.jpg" alt="About"></Img>
         </Information>
+        {/* <!-- Extra Container to end --> */}
         <Extra>
           <Intro>[ why we do what we do ]</Intro>
-
           <MiniDescription>
             At WorldHello, our core is rooted in solving challenges and we take
             immense pride in our relentless pursuit of excellence.
@@ -149,13 +194,12 @@ function Company() {
             driven by our passion for delivering top-notch, high-performance
             websites.
           </MiniDescription>
-          <Button variation="fifth" size="small">
-            get in touch for free
-          </Button>
+          <Button>get in touch for free</Button>
         </Extra>
-      </StyledCompany>
+      </StyledAbout>
     </LazyLoad>
   );
 }
 
-export default Company;
+// Export reusable Component
+export default About;
