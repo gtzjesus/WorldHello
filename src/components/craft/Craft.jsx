@@ -33,14 +33,12 @@ const StyledCraft = styled.div`
 
   // @MEDIAQUERY logic for small devices
   @media (min-width: 40.25em) {
-    padding: var(--padding-xlarge);
   }
 
   // @MEDIAQUERY logic for bigger devices
   @media (min-width: 78.15em) {
     justify-content: space-between;
     flex-direction: row;
-    padding: var(--padding-large);
   }
 `;
 

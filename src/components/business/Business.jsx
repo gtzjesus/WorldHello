@@ -28,15 +28,7 @@ const StyledBusiness = styled.div`
   // These are used for responsive design, for all screens we can modify the web application based on the screen size
 
   @media (min-width: 40.25em) {
-    padding: var(--padding-small) var(--padding-xlarge);
-  }
-
-  @media (min-width: 61.25em) {
-    padding: var(--padding-medium) var(--padding-xxlarge);
-  }
-
-  @media (min-width: 78.15em) {
-    padding: var(--padding-large) var(--padding-xlarge);
+    padding: 0 var(--padding-small);
   }
 
   @media (min-width: 150.15em) {
@@ -104,6 +96,10 @@ const Img = styled.img`
   // ------------------------------
   // @Media Queries
   // ------------------------------
+
+  @media (min-width: 40.15em) {
+    padding: var(--padding-xlarge);
+  }
   @media (min-width: 78.15em) {
     padding: var(--padding-xlarge);
     width: 40vw;
