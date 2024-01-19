@@ -1,9 +1,22 @@
+// ------------------------------
+// File: Business.js
+// ------------------------------
+// Description: React component for displaying our frequently asked questions.
+
+// ------------------------------
+// Imports
+// ------------------------------
+// This section has all necessary imports for this component.
+
 import styled from 'styled-components';
 import FaqsItem from './FaqsItem';
 import { useState } from 'react';
 import LazyLoad from 'react-lazyload';
 
+// ------------------------------
 // FAQs
+// ------------------------------
+// This section contains an array of objects. Our frequently asked questions with the provided answers
 const faqs = [
   {
     title: 'What benefits do I get with a custom website?',
@@ -35,24 +48,33 @@ const faqs = [
   },
 ];
 
+// ------------------------------
+// Styled Componenets
+// ------------------------------
+// This section has all CSS styles configured for every HTML element.
+
 const StyledFaqs = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   background: var(--color-black);
   color: var(--color-white);
-  padding: var(--padding-large) var(--padding-medium);
 `;
 
 const Intro = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
-  gap: var(--gap-medium);
-  padding: 0 0 var(--padding-medium) 0;
+  padding: var(--padding-large) var(--padding-small);
 `;
 
 const Title = styled.span`
   font-size: var(--font-medium);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
+  // These are used for responsive design, for all screens we can modify the web application based on the screen size
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
   }
@@ -62,22 +84,13 @@ const Title = styled.span`
   }
 `;
 
-const Description = styled.span`
-  font-size: var(--font-xsmall);
-
-  @media (min-width: 61.25em) {
-    font-size: var(--font-small);
-  }
-
-  @media (min-width: 150.15em) {
-    font-size: var(--font-medium);
-  }
-`;
-
 const Special = styled.span`
   color: var(--color-tan);
   font-size: var(--font-large);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 61.25em) {
     font-size: var(--font-xlarge);
   }
@@ -86,21 +99,25 @@ const Special = styled.span`
     font-size: var(--font-xxlarge);
   }
 `;
+
+// ------------------------------
+// Component
+// ------------------------------
+// This section has our React Component which handles the hook data
+
 function Faqs() {
-  // STATE to OPEN and CLOSE faqs
+  // React hook useState to control user interaction when clicking on FAQ, displaying and not displaying answers
   const [currentOpen, setCurrentOpen] = useState(null);
   return (
     <LazyLoad>
+      {/* <!-- Main Container --> */}
       <StyledFaqs>
         <Intro>
           <Title>
             Frequently <Special>Asked Questions</Special>
           </Title>
-          <Description>
-            If you have any other questions, feel free to send us a message at:
-            <br /> contact@worldhello.us
-          </Description>
         </Intro>
+        {/* <!-- Map all array to display every FAQ --> */}
         {faqs.map((element, index) => (
           <FaqsItem
             currentOpen={currentOpen}
@@ -117,4 +134,5 @@ function Faqs() {
   );
 }
 
+// Export reusable Component
 export default Faqs;

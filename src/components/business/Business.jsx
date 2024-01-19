@@ -16,6 +16,7 @@ import LazyLoad from 'react-lazyload';
 // Styled Componenets
 // ------------------------------
 // This section has all CSS styles configured for every HTML element.
+
 const StyledBusiness = styled.div`
   background: var(--color-black);
   color: var(--color-white);
