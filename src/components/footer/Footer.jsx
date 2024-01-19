@@ -29,16 +29,13 @@ const StyledFooter = styled.footer`
   // ------------------------------
   // These are used for responsive design, for all screens we can modify the web application based on the screen size
   @media (min-width: 61.25em) {
-    padding: var(--padding-xlarge);
   }
 
   @media (min-width: 78.15em) {
-    flex-direction: row;
-    gap: var(--gap-giant);
   }
 
   @media (min-width: 150.15em) {
-    gap: var(--gap-xgiant);
+    padding: var(--padding-medium) var(--padding-giant);
   }
 `;
 
