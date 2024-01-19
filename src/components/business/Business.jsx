@@ -1,12 +1,30 @@
+// ------------------------------
+// File: Business.js
+// ------------------------------
+// Description: React component for displaying products, a digital footprint for the user to interact
+
+// ------------------------------
+// Imports
+// ------------------------------
+// This section has all necessary imports for this component.
+
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
-
 import LazyLoad from 'react-lazyload';
 
-const StyledPresence = styled.div`
+// ------------------------------
+// Styled Componenets
+// ------------------------------
+// This section has all CSS styles configured for every HTML element.
+const StyledBusiness = styled.div`
   background: var(--color-black);
   color: var(--color-white);
   padding: var(--padding-medium);
+
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
+  // These are used for responsive design, for all screens we can modify the web application based on the screen size
 
   @media (min-width: 40.25em) {
     padding: var(--padding-small) var(--padding-xlarge);
@@ -26,18 +44,23 @@ const StyledPresence = styled.div`
 `;
 
 const Information = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   gap: var(--gap-medium);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 78.15em) {
     flex-direction: row;
   }
 `;
 const Intro = styled.div`
-  text-transform: uppercase;
+  // Code logic to style div element
   color: var(--color-tan);
-  font-size: var(--font-xsmall);
+  font-size: var(--font-xxxsmall);
+  padding: var(--padding-small) 0;
 `;
 
 const Special = styled.span`
@@ -47,6 +70,9 @@ const Special = styled.span`
 const Title = styled.span`
   font-size: var(--font-medium);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
   }
@@ -58,6 +84,10 @@ const Title = styled.span`
 
 const Closing = styled.span`
   font-size: var(--font-xsmall);
+
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
@@ -70,6 +100,9 @@ const Closing = styled.span`
 const Img = styled.img`
   padding: var(--padding-medium) 0;
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 78.15em) {
     padding: var(--padding-xlarge);
     width: 40vw;
@@ -89,6 +122,9 @@ const Img = styled.img`
 const Description = styled.span`
   font-size: var(--font-small);
 
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
   @media (min-width: 61.25em) {
     font-size: var(--font-medium);
   }
@@ -98,18 +134,19 @@ const Description = styled.span`
   }
 `;
 
-const BackgroundColored = styled.div`
-  background-color: var(--color-tan);
-  color: var(--color-black);
-  padding: 0 var(--padding-xxsmall);
-  width: fit-content;
-`;
+// ------------------------------
+// Component
+// ------------------------------
+// This section has our React Component which handles the hook data
 
-function Presence() {
+function Business() {
   return (
     <LazyLoad>
-      <StyledPresence>
+      {/* <!-- Main Container --> */}
+      <StyledBusiness>
+        {/* <!-- Information Big Container --> */}
         <Information>
+          {/* <!-- All necessary info --> */}
           <Title>
             <Intro>[ who we look for ]</Intro>
             <br />
@@ -117,24 +154,28 @@ function Presence() {
           </Title>
           <Img src="/backgrounds/brand.jpg"></Img>
         </Information>
+        {/* <!-- Information Big Container --> */}
         <Information>
+          {/* <!-- All necessary info --> */}
           <Description>
-            <BackgroundColored>Fully maximize</BackgroundColored> the
-            capabilities of your business with a strong digital presence!
+            Fully maximize the capabilities of your business with a strong
+            digital presence!
+            <br />
+            <br />
             <br />
             <Closing>
               Manage your website effectively with <Special>WorldHello</Special>
-              . <br />
+              .
+              <br />
               <br />
             </Closing>
-            <Button variation="fourth" size="small">
-              Start now for free
-            </Button>
+            <Button>Start now for free</Button>
           </Description>
         </Information>
-      </StyledPresence>
+      </StyledBusiness>
     </LazyLoad>
   );
 }
 
-export default Presence;
+// Export reusable Component
+export default Business;

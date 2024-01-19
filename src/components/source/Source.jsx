@@ -156,6 +156,7 @@ function Source() {
       <StyledSource>
         {/* <!-- Information Big Container --> */}
         <Information>
+          {/* <!-- All necessary info --> */}
           <Intro>[ why it matters ]</Intro>
           <Title>
             Greet the world and establish your brand&rsquo;s presence.
@@ -186,4 +187,5 @@ function Source() {
   );
 }
 
+// Export reusable Component
 export default Source;

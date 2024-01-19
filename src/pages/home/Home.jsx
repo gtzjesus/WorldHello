@@ -4,7 +4,7 @@ import NavigationWBackground from '../../components/navigation/NavigationWBackgr
 import Achievements from '../../components/achievements/Achievements';
 import Source from '../../components/source/Source';
 import Company from '../../components/company/Company';
-import Presence from '../../components/presence/Presence';
+import Business from '../../components/business/Business';
 import Footer from '../../components/footer/Footer';
 import Faqs from '../../components/faqs/Faqs';
 import Craft from '../../components/craft/Craft';
@@ -31,7 +31,7 @@ function Home() {
       <Achievements />
       <Craft />
       <Source />
-      <Presence />
+      <Business />
       <Faqs />
       <Contact />
       <Company />
