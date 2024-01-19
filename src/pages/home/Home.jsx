@@ -7,7 +7,7 @@ import Company from '../../components/company/Company';
 import Presence from '../../components/presence/Presence';
 import Footer from '../../components/footer/Footer';
 import Faqs from '../../components/faqs/Faqs';
-import Grow from '../../components/grow/Grow';
+import Craft from '../../components/craft/Craft';
 import Contact from '../../components/contact/Contact';
 import Landing from '../../components/landing/Landing';
 
@@ -29,7 +29,7 @@ function Home() {
       {!header ? <Navigation /> : <NavigationWBackground />}
       <Landing />
       <Achievements />
-      <Grow />
+      <Craft />
       <Vital />
       <Presence />
       <Faqs />
