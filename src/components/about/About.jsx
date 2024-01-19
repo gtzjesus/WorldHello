@@ -194,7 +194,7 @@ function About() {
             driven by our passion for delivering top-notch, high-performance
             websites.
           </MiniDescription>
-          <Button>get in touch for free</Button>
+          <Button>click to get to know us</Button>
         </Extra>
       </StyledAbout>
     </LazyLoad>

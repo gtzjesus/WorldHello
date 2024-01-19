@@ -57,7 +57,7 @@ const Intro = styled.span`
 `;
 
 const Ending = styled.span`
-  font-size: var(--font-xsmall);
+  font-size: var(--font-xxxsmall);
 
   // ------------------------------
   // @Media Queries
@@ -93,8 +93,8 @@ const Brand = styled.span`
 const Contact = styled.div`
   // Code logic for arranging children
   display: flex;
-  justify-content: space-between;
   padding: var(--padding-xsmall) 0;
+  justify-content: space-between;
 
   // ------------------------------
   // @Media Queries
@@ -109,7 +109,14 @@ const Contact = styled.div`
   }
 `;
 
-const Label = styled.div``;
+const Icon = styled.img`
+  // Code logic to modify logo
+  height: var(--logo-height);
+`;
+
+const Label = styled.div`
+  color: var(--color-tan);
+`;
 
 const Result = styled.div`
   color: var(--color-tan);
@@ -134,6 +141,10 @@ function Footer() {
           development strategies designed to address business needs effectively.
         </Ending>
       </FooterInfo>
+      <br />
+      <br />
+      <br />
+
       <hr />
       {/* <!-- Mark Brand Container --> */}
       <Mark>
@@ -149,22 +160,17 @@ function Footer() {
         </Intro>
         {/* <!-- One of our Contact Containers --> */}
         <Contact>
-          <Label>Telephone</Label>
+          <Icon src="/icons/phone.png" alt="Telephone"></Icon>
           <Result>
             <a href="tel:+1 915-471-9129">+1 915-471-9129</a>
           </Result>
         </Contact>
         {/* <!-- One of our Contact Containers --> */}
         <Contact>
-          <Label>Email</Label>
-          <Result>contact@worldhello.us</Result>
-        </Contact>
-        {/* <!-- One of our Contact Containers --> */}
-        <Contact>
           <Label>Based in</Label>
           <Result>Texas, US</Result>
         </Contact>
-        <Button>start today for free</Button>
+        <Button>click to start today for free</Button>
       </FooterInfo>
     </StyledFooter>
   );
