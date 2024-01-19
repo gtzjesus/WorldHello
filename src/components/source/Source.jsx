@@ -62,9 +62,10 @@ const Information = styled.div`
 `;
 
 const Intro = styled.div`
-  text-transform: uppercase;
-  color: var(--color-white);
-  padding: 0 0 var(--padding-medium) 0;
+  // Code logic to style div element
+  color: var(--color-tan);
+  font-size: var(--font-xxxsmall);
+  padding: var(--padding-small) 0;
 `;
 
 const Title = styled.span`
@@ -114,6 +115,10 @@ const Quote = styled.span`
   }
 `;
 
+const Quotation = styled.span`
+  font-weight: 9999;
+`;
+
 const Last = styled.div`
   // Code logic for arranging children
   display: flex;
@@ -157,8 +162,9 @@ function Source() {
           </Title>
           <Description>
             <Quote>
-              &ldquo; 80% of consumers are more likely to buy from brands that
-              offer personalized website experiences. &rdquo;
+              <Quotation>&ldquo;</Quotation>80% of consumers are more likely to
+              buy from brands that offer personalized website experiences.
+              <Quotation>&rdquo;</Quotation>
             </Quote>
             <a
               href="https://bloggingwizard.com/website-statistics/"
