@@ -97,9 +97,6 @@ const Img = styled.img`
   // @Media Queries
   // ------------------------------
 
-  @media (min-width: 40.15em) {
-    padding: var(--padding-xlarge);
-  }
   @media (min-width: 78.15em) {
     padding: var(--padding-xlarge);
     width: 40vw;
