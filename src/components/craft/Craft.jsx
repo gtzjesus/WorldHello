@@ -1,19 +1,42 @@
+// ------------------------------
+// File: Craft.js
+// ------------------------------
+// Description: A React Component a crafted website using SEO, designs, and data
+// ------------------------------
+// Figma Design.
+// ------------------------------
+// LazyLoading from React for optimization (images & web app loading time).
+// ------------------------------
+// Global Styles from /src/styles/ used for global variables.
+
+// ------------------------------
+// Imports
+// ------------------------------
+// This section has all necessary imports for this component.
+
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
-
 import LazyLoad from 'react-lazyload';
 
-const StyledGrow = styled.div`
+// ------------------------------
+// Styled Componenets
+// ------------------------------
+// This section has all CSS styles configured for every HTML element.
+
+const StyledCraft = styled.div`
+  // Code logic for arranging children + styles
   display: flex;
   flex-direction: column;
   background: var(--color-tan);
   padding: var(--padding-medium);
   color: var(--color-black);
 
+  // @MEDIAQUERY logic for small devices
   @media (min-width: 40.25em) {
     padding: var(--padding-xlarge);
   }
 
+  // @MEDIAQUERY logic for bigger devices
   @media (min-width: 78.15em) {
     justify-content: space-between;
     flex-direction: row;
@@ -22,6 +45,7 @@ const StyledGrow = styled.div`
 `;
 
 const Information = styled.div`
+  // Code logic for arranging children
   display: flex;
   flex-direction: column;
   gap: var(--gap-medium);
@@ -30,10 +54,11 @@ const Information = styled.div`
 const Title = styled.span`
   font-size: var(--font-medium);
 
+  // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
   }
-
+  // @MEDIAQUERY logic for desktop devices
   @media (min-width: 150.15em) {
     font-size: var(--font-xlarge);
   }
@@ -42,9 +67,11 @@ const Title = styled.span`
 const Description = styled.span`
   font-size: var(--font-medium);
 
+  // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     font-size: var(--font-large);
   }
+  // @MEDIAQUERY logic for desktop devices
   @media (min-width: 150.15em) {
     font-size: var(--font-xlarge);
   }
@@ -53,9 +80,11 @@ const Description = styled.span`
 const MiniDescription = styled.span`
   font-size: var(--font-xsmall);
 
+  // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
+  // @MEDIAQUERY logic for desktop devices
   @media (min-width: 150.15em) {
     font-size: var(--font-medium);
   }
@@ -67,6 +96,7 @@ const Img = styled.img`
     padding: var(--padding-large);
   }
 
+  // @MEDIAQUERY logic for bigger devices 980px
   @media (min-width: 61.25em) {
     width: 60vw;
   }
@@ -74,21 +104,23 @@ const Img = styled.img`
   @media (min-width: 78.15em) {
     width: 35vw;
   }
+  // @MEDIAQUERY logic for desktop devices
   @media (min-width: 150.15em) {
     width: 30vw;
   }
 `;
 
-const Special = styled.span`
-  background-color: var(--color-black);
-  color: var(--color-tan);
-  padding: 0 var(--padding-xxsmall);
-`;
+// ------------------------------
+// Component
+// ------------------------------
+// This section has our React Component which displays our figma design + information
 
-function Grow() {
+function Craft() {
   return (
     <LazyLoad>
-      <StyledGrow>
+      {/* <!-- Main Container --> */}
+      <StyledCraft>
+        {/* <!-- Information Container (need 2 for responsiveness) --> */}
         <Information>
           <Title>
             Crafting websites with high conversion rates, <br />
@@ -97,6 +129,8 @@ function Grow() {
             </MiniDescription>
           </Title>
         </Information>
+
+        {/* <!-- Information Container (need 2 for responsiveness) --> */}
         <Information>
           <Img src="/backgrounds/grow.jpg"></Img>
           <Description>Join us and grow!</Description>
@@ -104,16 +138,17 @@ function Grow() {
             Expand your business by harnessing the full advantages of our
             combined resources and extensive experience.
           </MiniDescription>
+          <br />
           <Description>
-            Let&rsquo;s strive for greater <Special>success together.</Special>
+            Let&rsquo;s strive for greater success together.
           </Description>
-          <Button variation="fifth" size="small">
-            click to begin your website
-          </Button>
+          <br />
+          <Button>click to begin your website</Button>
         </Information>
-      </StyledGrow>
+      </StyledCraft>
     </LazyLoad>
   );
 }
 
-export default Grow;
+// Export the Component (reusable)
+export default Craft;

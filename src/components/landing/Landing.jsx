@@ -114,9 +114,7 @@ function Landing() {
           <Subtitle>your visitors</Subtitle>
           <Subtitle>into customers.</Subtitle>
           <br />
-          <Button variation="primary" size="small">
-            click to start
-          </Button>
+          <Button>click to start</Button>
         </Hook>
       </StyledLanding>
     </LazyLoad>

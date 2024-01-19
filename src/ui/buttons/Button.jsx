@@ -1,5 +1,19 @@
+// ------------------------------
+// File: Landing.js
+// ------------------------------
+// Description: Reusable Button Component (throughout the whole application)
+// ------------------------------
+
+// ------------------------------
+// Imports
+// ------------------------------
+// This section has all necessary imports for this component.
 import styled, { css } from 'styled-components';
 
+// ------------------------------
+// Constant
+// ------------------------------
+// This section is used to modify the different sizes we can have in a button (we can add more sizes)
 const sizes = {
   small: css`
     font-size: var(--font-xxxsmall);
@@ -13,6 +27,10 @@ const sizes = {
   `,
 };
 
+// ------------------------------
+// Constant
+// ------------------------------
+// This section is used to modify the different variations we can have in a button (we can add more variations)
 const variations = {
   primary: css`
     color: var(--color-black);
@@ -20,32 +38,12 @@ const variations = {
     width: fit-content;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
   `,
-  secondary: css`
-    color: var(--color-green);
-    background-color: var(--background-secondary);
-    width: fit-content;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
-  `,
-  third: css`
-    color: var(--color-white);
-    background-color: var(--color-purple);
-    width: fit-content;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
-  `,
-  fourth: css`
-    color: var(--color-black);
-    background-color: var(--color-tan);
-    width: fit-content;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
-  `,
-  fifth: css`
-    color: var(--color-tan);
-    background-color: var(--color-black);
-    width: fit-content;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
-  `,
 };
 
+// ------------------------------
+// Styled Componenet
+// ------------------------------
+// This section has all CSS styles configured for this HTML element.
 const Button = styled.button`
   border: none;
   cursor: pointer;
@@ -55,9 +53,11 @@ const Button = styled.button`
   ${(props) => variations[props.variation]};
 `;
 
+// Code logic for default specifications of button element
 Button.defaultProps = {
   variation: 'primary',
   size: 'small',
 };
 
+// Export the Button (reusable)
 export default Button;
