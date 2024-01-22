@@ -14,6 +14,15 @@ import Landing from '../../components/landing/Landing';
 function Home() {
   // GRAB STATE for navigation scroll
   const [header, setHeader] = useState(false);
+  // GRAB STATE for opening/closing modal component
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // Code logic for user interaction with modal
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   // FUNCTION TO change state on scroll
   const changeHeader = () => {
     if (window.scrollY >= 50) {
@@ -27,7 +36,11 @@ function Home() {
   return (
     <>
       {!header ? <Navigation /> : <NavigationWBackground />}
-      <Landing />
+      <Landing
+        isModalOpen={isModalOpen}
+        openModal={openModal}
+        closeModal={closeModal}
+      />
       <Achievements />
       <Craft />
       <Source />

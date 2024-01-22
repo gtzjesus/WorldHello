@@ -17,6 +17,7 @@
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 import LazyLoad from 'react-lazyload';
+import Modal from '../../ui/modals/Modal';
 
 // ------------------------------
 // Styled Componenets
@@ -91,7 +92,7 @@ const Subtitle = styled.span`
 // ------------------------------
 // This section has our React Component which handles the hook data
 
-function Landing() {
+function Landing({ isModalOpen, openModal, closeModal }) {
   return (
     <LazyLoad>
       {/* <!-- Main Container --> */}
@@ -114,7 +115,8 @@ function Landing() {
           <Subtitle>your visitors</Subtitle>
           <Subtitle>into customers.</Subtitle>
           <br />
-          <Button>click to start</Button>
+          <Button onClick={openModal}>click to start</Button>
+          {isModalOpen && <Modal closeModal={closeModal} />}
         </Hook>
       </StyledLanding>
     </LazyLoad>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navigation from '../../components/navigation/Navigation';
 import NavigationWBackground from '../../components/navigation/NavigationWBackground';
 import Footer from '../../components/footer/Footer';
-import Form from '../../components/form/Form';
+import Form from '../../ui/form/Form';
 
 function Contact() {
   // GRAB STATE for navigation scroll
