@@ -35,7 +35,7 @@ const ModalContent = styled.div`
   // Code logic for aligning vertically
   align-items: center;
   // Code logic for aligning horizontally
-  justify-content: center;
+  justify-content: space-between;
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -46,6 +46,10 @@ const ModalContent = styled.div`
   text-align: center;
 `;
 
+const Close = styled.img`
+  cursor: pointer;
+`;
+
 // ------------------------------
 // Component
 // ------------------------------
@@ -54,7 +58,8 @@ function Modal({ closeModal }) {
   return (
     <StyledModal>
       <ModalContent>
-        modal content here <img src="/icons/close.png" />
+        modal content here
+        <Close onClick={closeModal} src="/icons/close.png" />
       </ModalContent>
     </StyledModal>
   );
