@@ -3,11 +3,6 @@
 // ------------------------------
 // Description: React component for displaying landing page (first thing USER sees).
 // ------------------------------
-// Figma Design.
-// ------------------------------
-// LazyLoading from React for optimization (images & web app loading time).
-// ------------------------------
-// Global Styles from /src/styles/ used for global variables.
 
 // ------------------------------
 // Imports

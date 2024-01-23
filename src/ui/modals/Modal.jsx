@@ -9,6 +9,7 @@
 // This section has all necessary imports for this component.
 
 import styled from 'styled-components';
+import Form from '../form/Form';
 
 // ------------------------------
 // Styled Componenets
@@ -29,13 +30,26 @@ const StyledModal = styled.div`
   align-items: center;
 `;
 
-const ModalContent = styled.div`
+const ModalNav = styled.div`
   // Logic for arranging children
   display: flex;
   // Code logic for aligning vertically
   align-items: center;
   // Code logic for aligning horizontally
   justify-content: space-between;
+
+  // UI
+  // Code logic for title element
+  font-size: var(--font-medium);
+  letter-spacing: var(--spacing-subtitle);
+  // Code logic shadow beneath text (more visibility)
+  text-shadow: var(--text-shadow-font);
+  text-transform: uppercase;
+`;
+
+const ModalTitle = styled.span``;
+
+const ModalContent = styled.div`
   background-color: white;
   padding: 20px;
   border-radius: 8px;
@@ -58,8 +72,11 @@ function Modal({ closeModal }) {
   return (
     <StyledModal>
       <ModalContent>
-        modal content here
-        <Close onClick={closeModal} src="/icons/close.png" />
+        <ModalNav>
+          <ModalTitle>Send a message</ModalTitle>
+          <Close onClick={closeModal} src="/icons/close.png" />
+        </ModalNav>
+        <Form />
       </ModalContent>
     </StyledModal>
   );

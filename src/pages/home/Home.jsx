@@ -23,7 +23,7 @@ function Home() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
-  // FUNCTION TO change state on scroll
+  // Function TO change state on scroll
   const changeHeader = () => {
     if (window.scrollY >= 50) {
       setHeader(true);
