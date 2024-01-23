@@ -19,7 +19,7 @@ import Button from '../buttons/Button';
 // This section has all CSS styles configured for every HTML element.
 
 const StyledForm = styled.form`
-  color: var(--color-black);
+  width: fit-content;
 `;
 
 const HorizontalGroup = styled.div`
@@ -28,13 +28,10 @@ const HorizontalGroup = styled.div`
 `;
 
 const FormGroup = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: var(--margin-medium);
 `;
 
-const Label = styled.label`
-  display: block;
-  margin-bottom: 8px;
-`;
+const Label = styled.label``;
 
 const Input = styled.input`
   width: 100%;
@@ -59,6 +56,7 @@ const Option = styled.option``;
 
 const Asterik = styled.span`
   color: var(--color-purple);
+  font-size: var(--font-xsmall);
 `;
 
 // ------------------------------
@@ -162,9 +160,7 @@ function Form() {
       </HorizontalGroup>
       <HorizontalGroup>
         <FormGroup>
-          <Label htmlFor="companyName">
-            Company Name<Asterik>(optional)</Asterik>
-          </Label>
+          <Label htmlFor="companyName">Company Name</Label>
           <Input
             type="text"
             id="companyName"
@@ -176,9 +172,7 @@ function Form() {
           {errors.companyName && <Error>{errors.companyName}</Error>}
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="website">
-            Website URL<Asterik>(optional)</Asterik>
-          </Label>
+          <Label htmlFor="website">Website URL</Label>
           <Input
             type="text"
             id="website"
@@ -215,7 +209,7 @@ function Form() {
           onChange={handleInputChange}
         >
           <Option value="default" disabled>
-            Select an option
+            Select an Option
           </Option>
           <Option value="socialMedia">Social Media</Option>
           <Option value="friend">Friend</Option>

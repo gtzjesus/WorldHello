@@ -47,18 +47,19 @@ const ModalNav = styled.div`
   // Code logic shadow beneath text (more visibility)
   text-shadow: var(--text-shadow-font);
   text-transform: uppercase;
+
+  // Code logic for margin from form in modal
+  margin-bottom: var(--margin-large);
 `;
 
 const ModalTitle = styled.span``;
 
 const ModalContent = styled.div`
   background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width: 80%;
+  border-radius: 10px;
+  width: 100%;
   // TODO: Code logic for width adjustments
-  max-width: 600px;
+  max-width: 700px;
   text-align: center;
 `;
 
