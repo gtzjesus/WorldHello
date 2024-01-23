@@ -58,7 +58,6 @@ const AchievementsAreaSlider = styled.div`
 
 const AchievementsDots = styled.div`
   // Code logic for achievement dots, where user can navigate between apps
-  z-index: var(--z-top);
   text-align: center;
 
   // @MEDIAQUERY logic for bigger devices

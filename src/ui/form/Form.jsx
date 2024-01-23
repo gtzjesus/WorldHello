@@ -22,6 +22,11 @@ const StyledForm = styled.form`
   color: var(--color-black);
 `;
 
+const HorizontalGroup = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 const FormGroup = styled.div`
   margin-bottom: 20px;
 `;
@@ -124,62 +129,68 @@ function Form() {
         />
         {errors.name && <Error>{errors.name}</Error>}
       </FormGroup>
-      <FormGroup>
-        <Label htmlFor="email">
-          Email Address<Asterik>*</Asterik>
-        </Label>
-        <Input
-          type="text"
-          id="email"
-          name="email"
-          placeholder="Enter Email Address"
-          value={formData.email}
-          onChange={handleInputChange}
-        />
-        {errors.email && <Error>{errors.email}</Error>}
-      </FormGroup>
-      <FormGroup>
-        <Label htmlFor="phone">
-          Phone Number<Asterik>*</Asterik>
-        </Label>
-        <Input
-          type="text"
-          id="phone"
-          name="phone"
-          placeholder="Enter Phone Number"
-          value={formData.phone}
-          onChange={handleInputChange}
-        />
-        {errors.phone && <Error>{errors.phone}</Error>}
-      </FormGroup>
-      <FormGroup>
-        <Label htmlFor="companyName">
-          Company Name<Asterik>(optional)</Asterik>
-        </Label>
-        <Input
-          type="text"
-          id="companyName"
-          name="companyName"
-          placeholder="Enter Company Name"
-          value={formData.companyName}
-          onChange={handleInputChange}
-        />
-        {errors.companyName && <Error>{errors.companyName}</Error>}
-      </FormGroup>
-      <FormGroup>
-        <Label htmlFor="website">
-          Website URL<Asterik>(optional)</Asterik>
-        </Label>
-        <Input
-          type="text"
-          id="website"
-          name="website"
-          placeholder="Enter Website URL (Link)"
-          value={formData.website}
-          onChange={handleInputChange}
-        />
-        {errors.website && <Error>{errors.website}</Error>}
-      </FormGroup>
+
+      <HorizontalGroup>
+        <FormGroup>
+          <Label htmlFor="email">
+            Email Address<Asterik>*</Asterik>
+          </Label>
+          <Input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter Email Address"
+            value={formData.email}
+            onChange={handleInputChange}
+          />
+          {errors.email && <Error>{errors.email}</Error>}
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="phone">
+            Phone Number<Asterik>*</Asterik>
+          </Label>
+          <Input
+            type="text"
+            id="phone"
+            name="phone"
+            placeholder="Enter Phone Number"
+            value={formData.phone}
+            onChange={handleInputChange}
+          />
+          {errors.phone && <Error>{errors.phone}</Error>}
+        </FormGroup>
+      </HorizontalGroup>
+      <HorizontalGroup>
+        <FormGroup>
+          <Label htmlFor="companyName">
+            Company Name<Asterik>(optional)</Asterik>
+          </Label>
+          <Input
+            type="text"
+            id="companyName"
+            name="companyName"
+            placeholder="Enter Company Name"
+            value={formData.companyName}
+            onChange={handleInputChange}
+          />
+          {errors.companyName && <Error>{errors.companyName}</Error>}
+        </FormGroup>
+        <FormGroup>
+          <Label htmlFor="website">
+            Website URL<Asterik>(optional)</Asterik>
+          </Label>
+          <Input
+            type="text"
+            id="website"
+            name="website"
+            placeholder="Enter Website URL (Link)"
+            value={formData.website}
+            onChange={handleInputChange}
+          />
+          {errors.website && <Error>{errors.website}</Error>}
+        </FormGroup>
+      </HorizontalGroup>
+
       <FormGroup>
         <Label htmlFor="howCanWeHelp">
           Let us know how we can help you or your business

@@ -28,6 +28,8 @@ const StyledModal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  overflow: none;
 `;
 
 const ModalNav = styled.div`

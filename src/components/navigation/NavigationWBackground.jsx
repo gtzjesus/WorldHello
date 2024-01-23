@@ -11,7 +11,6 @@
 
 import styled from 'styled-components';
 import { useNavigate } from 'react-router';
-import LazyLoad from 'react-lazyload';
 
 // ------------------------------
 // Styled Componenets
