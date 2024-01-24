@@ -20,11 +20,13 @@ import Button from '../buttons/Button';
 
 const StyledForm = styled.form`
   width: fit-content;
+  padding: var(--padding-small);
 `;
 
 const HorizontalGroup = styled.div`
   display: flex;
   justify-content: center;
+  gap: var(--gap-form);
 `;
 
 const FormGroup = styled.div`
@@ -35,8 +37,9 @@ const Label = styled.label``;
 
 const Input = styled.input`
   width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
+  padding: var(--padding-small);
+  border: none;
+  border-bottom: 1px solid #ccc;
   border-radius: 4px;
 `;
 
@@ -56,7 +59,7 @@ const Option = styled.option``;
 
 const Asterik = styled.span`
   color: var(--color-purple);
-  font-size: var(--font-xsmall);
+  font-size: var(--font-form);
 `;
 
 // ------------------------------

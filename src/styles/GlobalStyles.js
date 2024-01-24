@@ -56,6 +56,7 @@ const GlobalStyles = createGlobalStyle`
     --font-xlarge: 4rem;
     --font-xxlarge: 7rem;
     --font-xxxlarge: 10rem;
+    --font-form: 0.9rem;
 
 
 
@@ -101,6 +102,7 @@ const GlobalStyles = createGlobalStyle`
     --gap-xxlarge: 8rem;
     --gap-giant: 12rem;
     --gap-xgiant: 16rem;
+    --gap-form: 3.5rem;
 
     /* Shadows */
     --text-shadow-font: 4px 3px 5px rgba(0, 0, 0, 0.5);
