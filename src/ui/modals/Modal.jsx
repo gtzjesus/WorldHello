@@ -60,7 +60,9 @@ const ModalContent = styled.div`
   border-radius: 10px;
   width: 100%;
   // TODO: Code logic for width adjustments
-  max-width: 300px;
+  max-width: 350px;
+  max-height: 600px;
+
   text-align: center;
 `;
 
