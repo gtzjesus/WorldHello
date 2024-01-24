@@ -20,27 +20,27 @@ import Button from '../buttons/Button';
 
 const StyledForm = styled.form`
   width: fit-content;
-  padding: var(--padding-small);
+  display: flex;
+  flex-direction: column;
 `;
 
 const HorizontalGroup = styled.div`
-  display: flex;
-  justify-content: center;
   gap: var(--gap-form);
 `;
 
 const FormGroup = styled.div`
-  margin-bottom: var(--margin-medium);
+  margin-bottom: var(--margin-small);
 `;
 
-const Label = styled.label``;
+const Label = styled.label`
+  float: left;
+`;
 
 const Input = styled.input`
-  width: 100%;
+  max-width: fit-content;
   padding: var(--padding-small);
   border: none;
   border-bottom: 1px solid #ccc;
-  border-radius: 4px;
 `;
 
 const Error = styled.p`
@@ -52,7 +52,6 @@ const Select = styled.select`
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 4px;
 `;
 
 const Option = styled.option``;
