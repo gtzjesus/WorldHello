@@ -24,7 +24,7 @@ const StyledModal = styled.div`
   width: 100%;
   height: 100%;
   // Code logic for the background overlay
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,6 +50,7 @@ const ModalNav = styled.div`
 
   // Code logic for margin from form in modal
   margin-bottom: var(--margin-large);
+  padding: var(--padding-small);
 `;
 
 const ModalTitle = styled.span``;
@@ -59,7 +60,7 @@ const ModalContent = styled.div`
   border-radius: 10px;
   width: 100%;
   // TODO: Code logic for width adjustments
-  max-width: 700px;
+  max-width: 500px;
   text-align: center;
 `;
 
