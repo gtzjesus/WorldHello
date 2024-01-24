@@ -42,7 +42,7 @@ const ModalNav = styled.div`
 
   // UI
   // Code logic for title element
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
   letter-spacing: var(--spacing-subtitle);
   // Code logic shadow beneath text (more visibility)
   text-shadow: var(--text-shadow-font);
@@ -50,7 +50,7 @@ const ModalNav = styled.div`
 
   // Code logic for margin from form in modal
   margin-bottom: var(--margin-large);
-  padding: var(--padding-small);
+  padding: var(--padding-modal-nav);
 `;
 
 const ModalTitle = styled.span``;

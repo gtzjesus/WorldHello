@@ -86,6 +86,7 @@ const GlobalStyles = createGlobalStyle`
     --padding-giant: 30rem;
 
     --padding-app: 1rem;
+    --padding-modal-nav: 0.75rem;
 
     /* Letter Spacing */
     --spacing-subtitle: -0.05rem;
