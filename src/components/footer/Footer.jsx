@@ -10,6 +10,7 @@
 
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
+import Modal from '../../ui/modals/Modal';
 
 // ------------------------------
 // Styled Componenets
@@ -124,7 +125,7 @@ const Result = styled.div`
 // ------------------------------
 // This section has our React Component which handles footer
 
-function Footer() {
+function Footer({ isModalOpen, openModal, closeModal }) {
   return (
     <StyledFooter>
       {/* <!-- Footer Container (2 for responsive design) --> */}
@@ -167,7 +168,8 @@ function Footer() {
           <Label>Based in</Label>
           <Result>Texas, US</Result>
         </Contact>
-        <Button>click to start today for free</Button>
+        <Button onClick={openModal}>click to start today for free</Button>
+        {isModalOpen && <Modal closeModal={closeModal} />}
       </FooterInfo>
     </StyledFooter>
   );

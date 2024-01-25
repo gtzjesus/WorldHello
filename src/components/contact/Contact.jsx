@@ -12,6 +12,7 @@ import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 
 import LazyLoad from 'react-lazyload';
+import Modal from '../../ui/modals/Modal';
 
 // ------------------------------
 // Styled Componenets
@@ -99,7 +100,7 @@ const Description = styled.span`
 // ------------------------------
 // This section has our React Component which handles the data
 
-function Contact() {
+function Contact({ isModalOpen, openModal, closeModal }) {
   return (
     <LazyLoad>
       {/* <!-- Main Container --> */}
@@ -130,7 +131,8 @@ function Contact() {
             <br />
             <br />
           </Description>
-          <Button>Clicking here</Button>
+          <Button onClick={openModal}>Clicking here</Button>
+          {isModalOpen && <Modal closeModal={closeModal} />}
         </Information>
       </StyledContact>
     </LazyLoad>

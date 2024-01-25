@@ -99,6 +99,9 @@ function Form() {
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
+
+    // Log formData for debugging
+    console.log('formData:', formData);
   };
 
   // Handle the form submittion
