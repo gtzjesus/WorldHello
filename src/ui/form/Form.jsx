@@ -21,6 +21,7 @@ import Button from '../buttons/Button';
 const StyledForm = styled.form`
   padding: 0 var(--padding-small);
   font-size: var(--font-form);
+  color: var(--color-black);
 `;
 
 const FormGroup = styled.div`

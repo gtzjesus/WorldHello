@@ -25,6 +25,7 @@ const StyledModal = styled.div`
   height: 100%;
   // Code logic for the background overlay
   background-color: rgba(0, 0, 0, 0.8);
+  color: var(--color-black);
   display: flex;
   justify-content: center;
   align-items: center;
