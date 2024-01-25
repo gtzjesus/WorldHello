@@ -60,6 +60,8 @@ const Select = styled.select`
   border: none;
   border: 1px solid #ccc;
   float: left;
+  // IOS feature UI for select
+  -webkit-appearance: none;
 `;
 
 const Option = styled.option``;
