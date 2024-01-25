@@ -29,6 +29,7 @@ const FormGroup = styled.div`
 
 const FormRow = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
 `;
 
@@ -44,7 +45,7 @@ const Input = styled.input`
   max-width: fit-content;
   padding: var(--padding-small);
   border: none;
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
   float: left;
 `;
 
@@ -66,6 +67,10 @@ const Asterik = styled.span`
   font-size: var(--font-form);
 `;
 
+const FormButton = styled.div`
+  float: right;
+  margin: var(--margin-small) 0 var(--margin-form) 0;
+`;
 // ------------------------------
 // Component
 // ------------------------------
@@ -226,20 +231,18 @@ function Form() {
             value={formData.howDidYouHear}
             onChange={handleInputChange}
           >
-            <Option value="default" disabled>
-              Select an Option
-            </Option>
+            <Option value="googleSearch">Google Search</Option>
             <Option value="socialMedia">Social Media</Option>
             <Option value="friend">Friend</Option>
             <Option value="ad">Ad</Option>
           </Select>
         </FormRow>
       </FormGroup>
-      <FormGroup>
+      <FormButton>
         <FormRow>
           <Button>Submit Message</Button>
         </FormRow>
-      </FormGroup>
+      </FormButton>
     </StyledForm>
   );
 }
