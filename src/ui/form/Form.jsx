@@ -55,9 +55,11 @@ const Error = styled.p`
 `;
 
 const Select = styled.select`
-  width: 100%;
-  padding: 8px;
+  max-width: 100%;
+  padding: var(--padding-small);
+  border: none;
   border: 1px solid #ccc;
+  float: left;
 `;
 
 const Option = styled.option``;
@@ -69,7 +71,7 @@ const Asterik = styled.span`
 
 const FormButton = styled.div`
   float: right;
-  margin: var(--margin-small) 0 var(--margin-form) 0;
+  margin: var(--margin-small) 0 var(--margin-small) 0;
 `;
 // ------------------------------
 // Component
@@ -207,9 +209,7 @@ function Form() {
       </HorizontalGroup>
       <FormGroup>
         <FormRow>
-          <Label htmlFor="howCanWeHelp">
-            Let us know how we can help you or your business
-          </Label>
+          <Label htmlFor="howCanWeHelp">How can we help you?</Label>
           <Input
             type="text"
             id="howCanWeHelp"

@@ -30,6 +30,7 @@ const StyledModal = styled.div`
   align-items: center;
 
   overflow: none;
+  overflow: hidden;
 `;
 
 const ModalNav = styled.div`
