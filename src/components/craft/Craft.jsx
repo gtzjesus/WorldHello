@@ -17,6 +17,7 @@
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 import LazyLoad from 'react-lazyload';
+import Modal from '../../ui/modals/Modal';
 
 // ------------------------------
 // Styled Componenets
@@ -113,7 +114,7 @@ const Img = styled.img`
 // ------------------------------
 // This section has our React Component which displays our figma design + information
 
-function Craft() {
+function Craft({ isModalOpen, openModal, closeModal }) {
   return (
     <LazyLoad>
       {/* <!-- Main Container --> */}
@@ -141,7 +142,8 @@ function Craft() {
             Let&rsquo;s strive for greater success together.
           </Description>
           <br />
-          <Button>click to begin your website</Button>
+          <Button onClick={openModal}>click to begin your website</Button>
+          {isModalOpen && <Modal closeModal={closeModal} />}
         </Information>
       </StyledCraft>
     </LazyLoad>

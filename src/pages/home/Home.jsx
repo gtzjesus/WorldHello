@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Navigation from '../../components/navigation/Navigation';
 import NavigationWBackground from '../../components/navigation/NavigationWBackground';
 import Achievements from '../../components/achievements/Achievements';
@@ -23,6 +23,20 @@ function Home() {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  // Handle add/removing the class based on the modal state
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add('body-overflow-hidden');
+    } else {
+      document.body.classList.remove('body-overflow-hidden');
+    }
+    // Code logic to clean up function, to remove the class when the component unmounts
+    return () => {
+      document.body.classList.remove('body-overflow-hidden');
+    };
+  }, [isModalOpen]);
+
   // Function TO change state on scroll
   const changeHeader = () => {
     if (window.scrollY >= 50) {
@@ -42,13 +56,33 @@ function Home() {
         closeModal={closeModal}
       />
       <Achievements />
-      <Craft />
+      <Craft
+        isModalOpen={isModalOpen}
+        openModal={openModal}
+        closeModal={closeModal}
+      />
       <Source />
-      <Business />
+      <Business
+        isModalOpen={isModalOpen}
+        openModal={openModal}
+        closeModal={closeModal}
+      />
       <Faqs />
-      <Contact />
-      <About />
-      <Footer />
+      <Contact
+        isModalOpen={isModalOpen}
+        openModal={openModal}
+        closeModal={closeModal}
+      />
+      <About
+        isModalOpen={isModalOpen}
+        openModal={openModal}
+        closeModal={closeModal}
+      />
+      <Footer
+        isModalOpen={isModalOpen}
+        openModal={openModal}
+        closeModal={closeModal}
+      />
     </>
   );
 }

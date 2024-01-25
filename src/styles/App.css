@@ -16,6 +16,11 @@ hr {
   padding: 0;
 }
 
+/* This class will be added to the body when the modal is open */
+.body-overflow-hidden {
+  overflow: hidden;
+}
+
 /* ::-webkit-scrollbar {
   height: 4px;
   width: 4px;

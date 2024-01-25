@@ -216,7 +216,7 @@ function Form() {
             type="text"
             id="howCanWeHelp"
             name="howCanWeHelp"
-            placeholder="Enter Website URL (Link)"
+            placeholder="Need a New Website?"
             value={formData.howCanWeHelp}
             onChange={handleInputChange}
           />
@@ -237,6 +237,7 @@ function Form() {
             <Option value="socialMedia">Social Media</Option>
             <Option value="friend">Friend</Option>
             <Option value="ad">Ad</Option>
+            <Option value="other">Other</Option>
           </Select>
         </FormRow>
       </FormGroup>

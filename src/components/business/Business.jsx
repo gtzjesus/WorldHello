@@ -11,6 +11,7 @@
 import styled from 'styled-components';
 import Button from '../../ui/buttons/Button';
 import LazyLoad from 'react-lazyload';
+import Modal from '../../ui/modals/Modal';
 
 // ------------------------------
 // Styled Componenets
@@ -132,7 +133,7 @@ const Description = styled.span`
 // ------------------------------
 // This section has our React Component which handles the hook data
 
-function Business() {
+function Business({ isModalOpen, openModal, closeModal }) {
   return (
     <LazyLoad>
       {/* <!-- Main Container --> */}
@@ -162,7 +163,8 @@ function Business() {
               <br />
               <br />
             </Closing>
-            <Button>Start now for free</Button>
+            <Button onClick={openModal}>Start now for free</Button>
+            {isModalOpen && <Modal closeModal={closeModal} />}
           </Description>
         </Information>
       </StyledBusiness>

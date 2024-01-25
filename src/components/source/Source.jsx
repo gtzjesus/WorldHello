@@ -27,7 +27,7 @@ const StyledSource = styled.div`
   // Code logic for arranging children
   display: flex;
   // Code logic for figma design blackening
-  filter: brightness(1) saturate(100%);
+  /* filter: brightness(1) saturate(100%); */
   // Code logic for setting the background
   background-image: url('/backgrounds/earth.jpg');
   background-size: cover;
