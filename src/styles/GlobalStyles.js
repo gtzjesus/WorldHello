@@ -56,7 +56,7 @@ const GlobalStyles = createGlobalStyle`
     --font-xlarge: 4rem;
     --font-xxlarge: 7rem;
     --font-xxxlarge: 10rem;
-    --font-form: 0.9rem;
+    --font-form: 0.75rem;
 
 
 
@@ -70,6 +70,7 @@ const GlobalStyles = createGlobalStyle`
 
 
     --margin-nav-height: 8rem;
+    --margin-form: 0.5rem;
 
 
     /* Padding */

@@ -45,15 +45,17 @@ const ModalNav = styled.div`
   font-size: var(--font-small);
   letter-spacing: var(--spacing-subtitle);
   // Code logic shadow beneath text (more visibility)
-  text-shadow: var(--text-shadow-font);
+  /* text-shadow: var(--text-shadow-font); */
   text-transform: uppercase;
 
   // Code logic for margin from form in modal
-  margin-bottom: var(--margin-large);
+  margin-bottom: var(--margin-form);
   padding: var(--padding-modal-nav);
 `;
 
-const ModalTitle = styled.span``;
+const ModalTitle = styled.span`
+  font-size: var(--font-xxxsmall);
+`;
 
 const ModalContent = styled.div`
   background-color: white;

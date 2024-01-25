@@ -19,17 +19,21 @@ import Button from '../buttons/Button';
 // This section has all CSS styles configured for every HTML element.
 
 const StyledForm = styled.form`
-  width: fit-content;
+  padding: 0 var(--padding-small);
+  font-size: var(--font-form);
+`;
+
+const FormGroup = styled.div`
+  margin-bottom: var(--margin-form);
+`;
+
+const FormRow = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const HorizontalGroup = styled.div`
   gap: var(--gap-form);
-`;
-
-const FormGroup = styled.div`
-  margin-bottom: var(--margin-small);
 `;
 
 const Label = styled.label`
@@ -41,6 +45,7 @@ const Input = styled.input`
   padding: var(--padding-small);
   border: none;
   border-bottom: 1px solid #ccc;
+  float: left;
 `;
 
 const Error = styled.p`
@@ -116,110 +121,124 @@ function Form() {
   return (
     <StyledForm>
       <FormGroup>
-        <Label htmlFor="name">
-          First and Last Name<Asterik>*</Asterik>
-        </Label>
-        <Input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Enter Full Name"
-          value={formData.name}
-          onChange={handleInputChange}
-        />
-        {errors.name && <Error>{errors.name}</Error>}
-      </FormGroup>
-
-      <HorizontalGroup>
-        <FormGroup>
-          <Label htmlFor="email">
-            Email Address<Asterik>*</Asterik>
+        <FormRow>
+          <Label htmlFor="name">
+            First and Last Name<Asterik>*</Asterik>
           </Label>
           <Input
             type="text"
-            id="email"
-            name="email"
-            placeholder="Enter Email Address"
-            value={formData.email}
+            id="name"
+            name="name"
+            placeholder="Enter Full Name"
+            value={formData.name}
             onChange={handleInputChange}
           />
+        </FormRow>
+        {errors.name && <Error>{errors.name}</Error>}
+      </FormGroup>
+      <HorizontalGroup>
+        <FormGroup>
+          <FormRow>
+            <Label htmlFor="email">
+              Email Address<Asterik>*</Asterik>
+            </Label>
+            <Input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter Email Address"
+              value={formData.email}
+              onChange={handleInputChange}
+            />
+          </FormRow>
           {errors.email && <Error>{errors.email}</Error>}
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="phone">
-            Phone Number<Asterik>*</Asterik>
-          </Label>
-          <Input
-            type="text"
-            id="phone"
-            name="phone"
-            placeholder="Enter Phone Number"
-            value={formData.phone}
-            onChange={handleInputChange}
-          />
+          <FormRow>
+            <Label htmlFor="phone">
+              Phone Number<Asterik>*</Asterik>
+            </Label>
+            <Input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Enter Phone Number"
+              value={formData.phone}
+              onChange={handleInputChange}
+            />
+          </FormRow>
           {errors.phone && <Error>{errors.phone}</Error>}
         </FormGroup>
       </HorizontalGroup>
       <HorizontalGroup>
         <FormGroup>
-          <Label htmlFor="companyName">Company Name</Label>
-          <Input
-            type="text"
-            id="companyName"
-            name="companyName"
-            placeholder="Enter Company Name"
-            value={formData.companyName}
-            onChange={handleInputChange}
-          />
+          <FormRow>
+            <Label htmlFor="companyName">Company Name</Label>
+            <Input
+              type="text"
+              id="companyName"
+              name="companyName"
+              placeholder="Enter Company Name"
+              value={formData.companyName}
+              onChange={handleInputChange}
+            />
+          </FormRow>
           {errors.companyName && <Error>{errors.companyName}</Error>}
         </FormGroup>
         <FormGroup>
-          <Label htmlFor="website">Website URL</Label>
-          <Input
-            type="text"
-            id="website"
-            name="website"
-            placeholder="Enter Website URL (Link)"
-            value={formData.website}
-            onChange={handleInputChange}
-          />
+          <FormRow>
+            <Label htmlFor="website">Website URL</Label>
+            <Input
+              type="text"
+              id="website"
+              name="website"
+              placeholder="Enter Website URL (Link)"
+              value={formData.website}
+              onChange={handleInputChange}
+            />
+          </FormRow>
           {errors.website && <Error>{errors.website}</Error>}
         </FormGroup>
       </HorizontalGroup>
-
       <FormGroup>
-        <Label htmlFor="howCanWeHelp">
-          Let us know how we can help you or your business
-        </Label>
-        <Input
-          type="text"
-          id="howCanWeHelp"
-          name="howCanWeHelp"
-          placeholder="Enter Website URL (Link)"
-          value={formData.howCanWeHelp}
-          onChange={handleInputChange}
-        />
+        <FormRow>
+          <Label htmlFor="howCanWeHelp">
+            Let us know how we can help you or your business
+          </Label>
+          <Input
+            type="text"
+            id="howCanWeHelp"
+            name="howCanWeHelp"
+            placeholder="Enter Website URL (Link)"
+            value={formData.howCanWeHelp}
+            onChange={handleInputChange}
+          />
+        </FormRow>
         {errors.howCanWeHelp && <Error>{errors.howCanWeHelp}</Error>}
       </FormGroup>
 
       <FormGroup>
-        <Label htmlFor="howDidYouHear">How did you hear about us?</Label>
-        <Select
-          id="howDidYouHear"
-          name="howDidYouHear"
-          value={formData.howDidYouHear}
-          onChange={handleInputChange}
-        >
-          <Option value="default" disabled>
-            Select an Option
-          </Option>
-          <Option value="socialMedia">Social Media</Option>
-          <Option value="friend">Friend</Option>
-          <Option value="ad">Ad</Option>
-        </Select>
+        <FormRow>
+          <Label htmlFor="howDidYouHear">How did you hear about us?</Label>
+          <Select
+            id="howDidYouHear"
+            name="howDidYouHear"
+            value={formData.howDidYouHear}
+            onChange={handleInputChange}
+          >
+            <Option value="default" disabled>
+              Select an Option
+            </Option>
+            <Option value="socialMedia">Social Media</Option>
+            <Option value="friend">Friend</Option>
+            <Option value="ad">Ad</Option>
+          </Select>
+        </FormRow>
       </FormGroup>
       <FormGroup>
-        <Button>Submit Message</Button>
+        <FormRow>
+          <Button>Submit Message</Button>
+        </FormRow>
       </FormGroup>
     </StyledForm>
   );
