@@ -106,28 +106,28 @@ function Form() {
   };
 
   // Handle the form submittion
-  const handleSubmit = (event) => {
-    // Code logic to prevent web app from refreshing on submit
+  // Example using fetch in React
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const newErrors = {};
+    try {
+      const response = await fetch('http://localhost:3001/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Code logic for performing validation
-    if (!formData.name) {
-      newErrors.name = 'First name is required';
-    }
-
-    if (!formData.email) {
-      newErrors.email = 'Email is required';
-    }
-
-    // Code logic for submittion with validation
-    if (Object.keys(newErrors).length === 0) {
-      // Enters here, the form is valid for submittion
-      console.log('Form submitted', formData);
-    } else {
-      // Code logic for updating the state with errors
-      setErrors(newErrors);
+      if (response.ok) {
+        console.log('Email sent successfully');
+        // Optionally, reset the form or show a success message to the user
+      } else {
+        console.error('Error sending email');
+        // Handle the error (e.g., display an error message to the user)
+      }
+    } catch (error) {
+      console.error('Error:', error.message);
     }
   };
 
@@ -247,7 +247,7 @@ function Form() {
       </FormGroup>
       <FormButton>
         <FormRow>
-          <Button>Submit Message</Button>
+          <Button onClick={handleSubmit}>Submit Message</Button>
         </FormRow>
       </FormButton>
     </StyledForm>
