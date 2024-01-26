@@ -82,7 +82,7 @@ function Modal({ closeModal }) {
           <ModalTitle>Send a message</ModalTitle>
           <Close onClick={closeModal} src="/icons/close.png" />
         </ModalNav>
-        <Form />
+        <Form closeModal={closeModal} />
       </ModalContent>
     </StyledModal>
   );

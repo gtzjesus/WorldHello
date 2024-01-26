@@ -81,7 +81,7 @@ const FormButton = styled.div`
 // ------------------------------
 // This section has our React Component which handles the hook data
 
-function Form() {
+function Form({ closeModal }) {
   // Code logic for creating a state for our input data, an object
   const [formData, setFormData] = useState({
     name: '',
@@ -132,7 +132,7 @@ function Form() {
   };
 
   return (
-    <StyledForm>
+    <StyledForm action="http://localhost:3001/api/sendEmail" method="post">
       <FormGroup>
         <FormRow>
           <Label htmlFor="name">
@@ -247,7 +247,9 @@ function Form() {
       </FormGroup>
       <FormButton>
         <FormRow>
-          <Button onClick={handleSubmit}>Submit Message</Button>
+          <Button type="submit" onClick={handleSubmit}>
+            Submit Message
+          </Button>
         </FormRow>
       </FormButton>
     </StyledForm>
