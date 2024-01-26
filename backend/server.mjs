@@ -46,17 +46,17 @@ app.post('/api/sendEmail', async (req, res) => {
 
     // Create a nodemailer transporter using Gmail
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: 'outlook',
       auth: {
-        user: 'worldhellodev@gmail.com',
-        pass: 'wfgj inyn uhzz wbix',
+        user: 'gtz.jesus@outlook.com',
+        pass: 'React!584911',
       },
     });
 
     // Email content
     const mailOptions = {
-      from: 'worldhellodev@gmail.com',
-      to: 'recipient',
+      from: FormData.email,
+      to: 'gtz.jesus@outlook.com',
       subject: 'WorldHello New Contact Form Submission',
       html: `
             <p>Name: ${name}</p>
