@@ -46,16 +46,18 @@ app.post('/api/sendEmail', async (req, res) => {
 
     // Create a nodemailer transporter using Gmail
     const transporter = nodemailer.createTransport({
-      service: 'outlook',
+      host: 'smtp.office365.com', // Outlook SMTP server
+      port: 587, // Outlook SMTP port
+      secure: false, // false for TLS - as a boolean not string - but the default is false so just remove this completely
       auth: {
         user: 'gtz.jesus@outlook.com',
-        pass: 'React!584911',
+        pass: 'mjesccccultmcjzs',
       },
     });
 
     // Email content
     const mailOptions = {
-      from: FormData.email,
+      from: 'gtz.jesus@outlook.com',
       to: 'gtz.jesus@outlook.com',
       subject: 'WorldHello New Contact Form Submission',
       html: `
