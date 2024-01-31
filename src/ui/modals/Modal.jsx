@@ -33,7 +33,7 @@ const StyledModal = styled.div`
 const ModalContent = styled.div`
   background-color: white;
   border-radius: 10px;
-  height: 46vh;
+  height: 75vh;
   width: 100%;
   // TODO: Code logic for width adjustments
   max-width: 355px;
