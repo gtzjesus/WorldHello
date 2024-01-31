@@ -11,9 +11,9 @@ const Spinner = styled.div`
   width: 6.4rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(farthest-side, #3da40d 94%, #0000) top/10px 10px
+  background: radial-gradient(farthest-side, #6b4c8a 94%, #0000) top/10px 10px
       no-repeat,
-    conic-gradient(#0000 30%, #0069b6);
+    conic-gradient(#0000 30%, #eddbdb);
   -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 10px), #000 0);
   animation: ${rotate} 1.5s infinite linear;
 `;

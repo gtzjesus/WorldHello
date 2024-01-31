@@ -9,31 +9,43 @@
 // ------------------------------
 // This section has all necessary imports for this component.
 
-import React, { useState } from 'react';
-import styled, { keyframes } from 'styled-components';
+import { useState } from 'react';
+import styled from 'styled-components';
 import Button from '../buttons/Button';
+import Spinner from '../spinners/Spinner';
 
 // ------------------------------
 // Styled Componenets
 // ------------------------------
 // This section has all CSS styles configured for every HTML element.
 
-const rotate = keyframes`
-  to {
-    transform: rotate(1turn);
-  }
+const ModalNav = styled.div`
+  // Logic for arranging children
+  display: flex;
+  // Code logic for aligning vertically
+  align-items: center;
+  // Code logic for aligning horizontally
+  justify-content: space-between;
+
+  // UI
+  // Code logic for title element
+  font-size: var(--font-small);
+  letter-spacing: var(--spacing-subtitle);
+  // Code logic shadow beneath text (more visibility)
+  /* text-shadow: var(--text-shadow-font); */
+  text-transform: uppercase;
+
+  // Code logic for margin from form in modal
+  margin-bottom: var(--margin-form);
+  padding: var(--padding-modal-nav);
 `;
 
-const Spinner = styled.div`
-  margin: 4.8rem auto;
-  width: 6.4rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: radial-gradient(farthest-side, #3da40d 94%, #0000) top/10px 10px
-      no-repeat,
-    conic-gradient(#0000 30%, #0069b6);
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 10px), #000 0);
-  animation: ${rotate} 1.5s infinite linear;
+const Close = styled.img`
+  cursor: pointer;
+`;
+
+const ModalTitle = styled.span`
+  font-size: var(--font-xxsmall);
 `;
 
 const StyledForm = styled.form`
@@ -99,7 +111,6 @@ const FormButton = styled.div`
 const DeliveryContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: var(--padding-large) 0;
   gap: var(--gap-large);
 `;
 
@@ -113,33 +124,8 @@ const Delivered = styled.span`
   font-size: var(--font-xsmall);
 `;
 
-const ModalNav = styled.div`
-  // Logic for arranging children
-  display: flex;
-  // Code logic for aligning vertically
-  align-items: center;
-  // Code logic for aligning horizontally
-  justify-content: space-between;
-
-  // UI
-  // Code logic for title element
-  font-size: var(--font-small);
-  letter-spacing: var(--spacing-subtitle);
-  // Code logic shadow beneath text (more visibility)
-  /* text-shadow: var(--text-shadow-font); */
-  text-transform: uppercase;
-
-  // Code logic for margin from form in modal
-  margin-bottom: var(--margin-form);
-  padding: var(--padding-modal-nav);
-`;
-
-const Close = styled.img`
-  cursor: pointer;
-`;
-
-const ModalTitle = styled.span`
-  font-size: var(--font-xxsmall);
+const DeliveredSmall = styled.span`
+  font-size: var(--font-form);
 `;
 
 // ------------------------------
@@ -172,6 +158,28 @@ function Form({ closeModal }) {
     howCanWeHelp: '',
     howDidYouHear: 'default',
   });
+
+  // ------------------------------
+  // Modal functions
+  // ------------------------------
+  // This section includes functions used to perform different tasks
+  const openModal1 = () => {
+    setModal1Open(true);
+    setModal2Open(false);
+  };
+
+  const openModal2 = () => {
+    setModal2Open(true);
+    setModal1Open(false);
+  };
+
+  const closeModal1 = () => {
+    setModal1Open(false);
+  };
+
+  const closeModal2 = () => {
+    setModal2Open(false);
+  };
 
   // ------------------------------
   // Handler functions
@@ -217,6 +225,7 @@ function Form({ closeModal }) {
       if (response.ok) {
         // Update the state to indicate that submission is complete
         setSubmissionComplete(true);
+        openModal1();
         console.log('Email sent successfully');
         // Optionally, reset the form or show a success message to the user
       } else {
@@ -226,28 +235,6 @@ function Form({ closeModal }) {
     } catch (error) {
       console.error('Error:', error.message);
     }
-  };
-
-  // ------------------------------
-  // Modal functions
-  // ------------------------------
-  // This section includes functions used to perform different tasks
-  const openModal1 = () => {
-    setModal1Open(true);
-    setModal2Open(false);
-  };
-
-  const openModal2 = () => {
-    setModal2Open(true);
-    setModal1Open(false);
-  };
-
-  const closeModal1 = () => {
-    setModal1Open(false);
-  };
-
-  const closeModal2 = () => {
-    setModal2Open(false);
   };
 
   return (
@@ -277,9 +264,12 @@ function Form({ closeModal }) {
             <DeliveryContainer>
               <Img src="/icons/email-sent.png"></Img>
               <Delivered>
-                Successfully sent the email; we will reach out to you shortly.
+                Email sent successfully! <br />
+                We will reach out to you shortly.
               </Delivered>
-              <Delivered>Thank you for your time.</Delivered>
+              <DeliveredSmall>
+                We look forward to create a successful partnership.
+              </DeliveredSmall>
             </DeliveryContainer>
           </StyledForm>
         </>
