@@ -54,15 +54,14 @@ const StyledForm = styled.form`
   color: var(--color-black);
 
   // Minimum height for each modal content
-  min-height: 70vh;
 
   // ------------------------------
   // @Media Queries
   // ------------------------------
   // These are used for responsive design, for all screens we can modify the web application based on the screen size
-  @media (min-width: 40.5em) {
+  /* @media (min-width: 40.5em) {
     min-height: 45vh;
-  }
+  } */
 `;
 
 const FormGroup = styled.div`
