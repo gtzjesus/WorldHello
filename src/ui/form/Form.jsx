@@ -190,8 +190,6 @@ function Form({ closeModal }) {
   // Handle the form submittion
   // Example using fetch in React
   const handleSubmit = async (event) => {
-    event.preventDefault();
-
     // Start the loading state
     setLoading(true);
 
