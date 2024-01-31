@@ -52,7 +52,6 @@ const StyledForm = styled.form`
   padding: 0 var(--padding-small);
   font-size: var(--font-form);
   color: var(--color-black);
-  height: 41vh;
 `;
 
 const FormGroup = styled.div`
@@ -140,9 +139,6 @@ function Form({ closeModal }) {
   // This section sets all variables needed to implement form submission
   // Create variable to keep track of form submission satus
   const [isSubmittionComplete, setSubmissionComplete] = useState(false);
-  // Create some variables to track the visibility of the modals
-  const [isModal1Open, setModal1Open] = useState(false);
-  const [isModal2Open, setModal2Open] = useState(false);
   // Create variable to keep track of the loading state while submitting form
   const [isLoading, setLoading] = useState(false);
   // Creating errors state (used for validation)
@@ -158,28 +154,6 @@ function Form({ closeModal }) {
     howCanWeHelp: '',
     howDidYouHear: 'default',
   });
-
-  // ------------------------------
-  // Modal functions
-  // ------------------------------
-  // This section includes functions used to perform different tasks
-  const openModal1 = () => {
-    setModal1Open(true);
-    setModal2Open(false);
-  };
-
-  const openModal2 = () => {
-    setModal2Open(true);
-    setModal1Open(false);
-  };
-
-  const closeModal1 = () => {
-    setModal1Open(false);
-  };
-
-  const closeModal2 = () => {
-    setModal2Open(false);
-  };
 
   // ------------------------------
   // Handler functions
@@ -225,7 +199,6 @@ function Form({ closeModal }) {
       if (response.ok) {
         // Update the state to indicate that submission is complete
         setSubmissionComplete(true);
-        openModal1();
         console.log('Email sent successfully');
         // Optionally, reset the form or show a success message to the user
       } else {
