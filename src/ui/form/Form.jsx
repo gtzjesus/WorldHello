@@ -52,6 +52,9 @@ const StyledForm = styled.form`
   padding: 0 var(--padding-small);
   font-size: var(--font-form);
   color: var(--color-black);
+
+  // Minimum height for each modal content
+  min-height: 50vh;
 `;
 
 const FormGroup = styled.div`

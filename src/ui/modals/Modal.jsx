@@ -33,20 +33,10 @@ const StyledModal = styled.div`
 const ModalContent = styled.div`
   background-color: white;
   border-radius: 10px;
-  height: 75vh;
   width: 100%;
   // TODO: Code logic for width adjustments
   max-width: 355px;
-
   text-align: center;
-
-  // ------------------------------
-  // @Media Queries
-  // ------------------------------
-  // These are used for responsive design, for all screens we can modify the web application based on the screen size
-  @media (min-width: 40.5em) {
-    height: 47vh;
-  }
 `;
 
 // ------------------------------
