@@ -45,8 +45,17 @@ const ModalContent = styled.div`
 // ------------------------------
 // This section has our React Component which handles the information data
 function Modal({ closeModal }) {
+  // ------------------------------
+  // Handler functions
+  // ------------------------------
+  // This section includes functions used to perform different tasks
+  const handleOutsideClick = (event) => {
+    if (event.target === event.currentTarget) {
+      closeModal();
+    }
+  };
   return (
-    <StyledModal>
+    <StyledModal onClick={handleOutsideClick}>
       <ModalContent>
         <Form closeModal={closeModal} />
       </ModalContent>
