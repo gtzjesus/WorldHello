@@ -10,6 +10,7 @@
 
 import styled from 'styled-components';
 import Form from '../form/Form';
+import { useEffect } from 'react';
 
 // ------------------------------
 // Styled Componenets
@@ -54,6 +55,21 @@ function Modal({ closeModal }) {
       closeModal();
     }
   };
+
+  // This function handles scroll events
+  const handleScroll = () => {
+    closeModal();
+  };
+
+  // Add scroll event listener when the modal is mounted
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener when the modal is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <StyledModal onClick={handleOutsideClick}>
       <ModalContent>
