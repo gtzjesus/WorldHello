@@ -95,16 +95,73 @@ const FormButton = styled.div`
   float: right;
   margin: var(--margin-small) 0 var(--margin-small) 0;
 `;
+
+const DeliveryContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-large) 0;
+  gap: var(--gap-large);
+`;
+
+const Img = styled.img`
+  max-height: 64px;
+  max-width: 64px;
+  margin: 0 auto;
+`;
+
+const Delivered = styled.span`
+  font-size: var(--font-xsmall);
+`;
+
+const ModalNav = styled.div`
+  // Logic for arranging children
+  display: flex;
+  // Code logic for aligning vertically
+  align-items: center;
+  // Code logic for aligning horizontally
+  justify-content: space-between;
+
+  // UI
+  // Code logic for title element
+  font-size: var(--font-small);
+  letter-spacing: var(--spacing-subtitle);
+  // Code logic shadow beneath text (more visibility)
+  /* text-shadow: var(--text-shadow-font); */
+  text-transform: uppercase;
+
+  // Code logic for margin from form in modal
+  margin-bottom: var(--margin-form);
+  padding: var(--padding-modal-nav);
+`;
+
+const Close = styled.img`
+  cursor: pointer;
+`;
+
+const ModalTitle = styled.span`
+  font-size: var(--font-xxsmall);
+`;
+
 // ------------------------------
 // Component
 // ------------------------------
 // This section has our React Component which handles the hook data
 
-function Form() {
+function Form({ closeModal }) {
+  // ------------------------------
+  // const variables
+  // ------------------------------
+  // This section sets all variables needed to implement form submission
   // Create variable to keep track of form submission satus
   const [isSubmittionComplete, setSubmissionComplete] = useState(false);
+  // Create some variables to track the visibility of the modals
+  const [isModal1Open, setModal1Open] = useState(false);
+  const [isModal2Open, setModal2Open] = useState(false);
   // Create variable to keep track of the loading state while submitting form
   const [isLoading, setLoading] = useState(false);
+  // Creating errors state (used for validation)
+  const [errors, setErrors] = useState({});
+
   // Code logic for creating a state for our input data, an object
   const [formData, setFormData] = useState({
     name: '',
@@ -116,16 +173,17 @@ function Form() {
     howDidYouHear: 'default',
   });
 
-  // Creating errors state (used for validation)
-  const [errors, setErrors] = useState({});
+  // ------------------------------
+  // Handler functions
+  // ------------------------------
+  // This section includes functions used to perform different tasks
 
   // Handle the input changes in the form
   const handleInputChange = (event) => {
+    // Create variable to keep track of form submission satus
     const { name, value } = event.target;
+    // Code logic to set the data from the inputs
     setFormData({ ...formData, [name]: value });
-
-    // // Log formData for debugging
-    // console.log('formData:', formData);
   };
 
   // Handle the form submittion
@@ -145,7 +203,7 @@ function Form() {
 
       // Stop the loading state
       setLoading(false);
-    }, 2000);
+    }, 2500);
 
     try {
       const response = await fetch('http://localhost:3001/api/sendEmail', {
@@ -170,15 +228,63 @@ function Form() {
     }
   };
 
+  // ------------------------------
+  // Modal functions
+  // ------------------------------
+  // This section includes functions used to perform different tasks
+  const openModal1 = () => {
+    setModal1Open(true);
+    setModal2Open(false);
+  };
+
+  const openModal2 = () => {
+    setModal2Open(true);
+    setModal1Open(false);
+  };
+
+  const closeModal1 = () => {
+    setModal1Open(false);
+  };
+
+  const closeModal2 = () => {
+    setModal2Open(false);
+  };
+
   return (
     <>
+      {!isSubmittionComplete && !isLoading ? (
+        <ModalNav>
+          <ModalTitle>Send a message</ModalTitle>
+          <Close onClick={closeModal} src="/icons/close.png" />
+        </ModalNav>
+      ) : (
+        ''
+      )}
+
       {isLoading ? (
+        // SPINNER MODAL
         <StyledForm>
           <Spinner />
         </StyledForm>
       ) : isSubmittionComplete ? (
-        <StyledForm>hello world</StyledForm>
+        // 2ND MODAL
+        <>
+          <ModalNav>
+            <ModalTitle></ModalTitle>
+            <Close onClick={closeModal} src="/icons/close.png" />
+          </ModalNav>
+          <StyledForm>
+            <DeliveryContainer>
+              <Img src="/icons/email-sent.png"></Img>
+              <Delivered>
+                Successfully sent the email; we will reach out to you shortly.
+              </Delivered>
+              <Delivered>Thank you for your time.</Delivered>
+            </DeliveryContainer>
+          </StyledForm>
+        </>
       ) : (
+        // 1ST MODAL
         <StyledForm action="http://localhost:3001/api/sendEmail" method="post">
           <FormGroup>
             <FormRow>

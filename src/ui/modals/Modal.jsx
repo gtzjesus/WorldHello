@@ -30,32 +30,6 @@ const StyledModal = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
-const ModalNav = styled.div`
-  // Logic for arranging children
-  display: flex;
-  // Code logic for aligning vertically
-  align-items: center;
-  // Code logic for aligning horizontally
-  justify-content: space-between;
-
-  // UI
-  // Code logic for title element
-  font-size: var(--font-small);
-  letter-spacing: var(--spacing-subtitle);
-  // Code logic shadow beneath text (more visibility)
-  /* text-shadow: var(--text-shadow-font); */
-  text-transform: uppercase;
-
-  // Code logic for margin from form in modal
-  margin-bottom: var(--margin-form);
-  padding: var(--padding-modal-nav);
-`;
-
-const ModalTitle = styled.span`
-  font-size: var(--font-xxxsmall);
-`;
-
 const ModalContent = styled.div`
   background-color: white;
   border-radius: 10px;
@@ -66,10 +40,6 @@ const ModalContent = styled.div`
   text-align: center;
 `;
 
-const Close = styled.img`
-  cursor: pointer;
-`;
-
 // ------------------------------
 // Component
 // ------------------------------
@@ -78,10 +48,6 @@ function Modal({ closeModal }) {
   return (
     <StyledModal>
       <ModalContent>
-        <ModalNav>
-          <ModalTitle>Send a message</ModalTitle>
-          <Close onClick={closeModal} src="/icons/close.png" />
-        </ModalNav>
         <Form closeModal={closeModal} />
       </ModalContent>
     </StyledModal>
