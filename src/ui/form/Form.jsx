@@ -40,6 +40,7 @@ const StyledForm = styled.form`
   padding: 0 var(--padding-small);
   font-size: var(--font-form);
   color: var(--color-black);
+  height: 41vh;
 `;
 
 const FormGroup = styled.div`
@@ -172,7 +173,9 @@ function Form() {
   return (
     <>
       {isLoading ? (
-        <Spinner />
+        <StyledForm>
+          <Spinner />
+        </StyledForm>
       ) : isSubmittionComplete ? (
         <StyledForm>hello world</StyledForm>
       ) : (
