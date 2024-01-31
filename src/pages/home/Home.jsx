@@ -19,9 +19,14 @@ function Home() {
   // Code logic for user interaction with modal
   const openModal = () => {
     setIsModalOpen(true);
+    // When modal is open
+    document.body.style.overflow = 'hidden';
   };
   const closeModal = () => {
     setIsModalOpen(false);
+
+    // When modal is closed
+    document.body.style.overflow = 'auto';
   };
 
   // Handle add/removing the class based on the modal state

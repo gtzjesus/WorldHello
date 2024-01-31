@@ -59,7 +59,7 @@ app.post('/api/sendEmail', async (req, res) => {
     const mailOptions = {
       from: 'gtz.jesus@outlook.com',
       to: 'gtz.jesus@outlook.com',
-      subject: 'WorldHello New Contact Form Submission',
+      subject: 'WorldHello New Lead',
       html: `
             <p>Name: ${name}</p>
             <p>Email: ${email}</p>
