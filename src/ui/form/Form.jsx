@@ -179,7 +179,7 @@ function Form({ closeModal }) {
     setTimeout(() => {
       closeModal();
       closeAllModals();
-    }, 10000); // 10000 milliseconds = 10 seconds
+    }, 12000); // 10000 milliseconds = 10 seconds
   };
 
   // ------------------------------
@@ -256,16 +256,6 @@ function Form({ closeModal }) {
       ) : isSubmittionComplete ? (
         // 2ND MODAL
         <>
-          <ModalNav>
-            <ModalTitle></ModalTitle>
-            <Close
-              onClick={() => {
-                closeModal();
-                closeAllModals();
-              }}
-              src="/icons/close.png"
-            />
-          </ModalNav>
           <StyledForm>
             <DeliveryContainer>
               <Img src="/icons/email-sent.png"></Img>
@@ -278,6 +268,7 @@ function Form({ closeModal }) {
               </DeliveredSmall>
             </DeliveryContainer>
           </StyledForm>
+          {/* Close the modal automatically */}
           {autoCloseModal()}
         </>
       ) : (
