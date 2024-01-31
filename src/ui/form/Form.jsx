@@ -174,6 +174,14 @@ function Form({ closeModal }) {
     setLoading(false);
   };
 
+  // Function to close modal after 10 seconds
+  const autoCloseModal = () => {
+    setTimeout(() => {
+      closeModal();
+      closeAllModals();
+    }, 5000); // 10000 milliseconds = 10 seconds
+  };
+
   // ------------------------------
   // Handler functions
   // ------------------------------
@@ -190,6 +198,8 @@ function Form({ closeModal }) {
   // Handle the form submittion
   // Example using fetch in React
   const handleSubmit = async (event) => {
+    event.preventDefault();
+
     // Start the loading state
     setLoading(true);
 
@@ -268,6 +278,7 @@ function Form({ closeModal }) {
               </DeliveredSmall>
             </DeliveryContainer>
           </StyledForm>
+          {autoCloseModal()}
         </>
       ) : (
         // 1ST MODAL
