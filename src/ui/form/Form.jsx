@@ -179,7 +179,7 @@ function Form({ closeModal }) {
     setTimeout(() => {
       closeModal();
       closeAllModals();
-    }, 5000); // 10000 milliseconds = 10 seconds
+    }, 10000); // 10000 milliseconds = 10 seconds
   };
 
   // ------------------------------
