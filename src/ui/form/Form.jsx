@@ -167,6 +167,13 @@ function Form({ closeModal }) {
     howDidYouHear: 'default',
   });
 
+  // Function to close all modals
+  const closeAllModals = () => {
+    // Add any other modals you have and set them to false
+    setSubmissionComplete(false);
+    setLoading(false);
+  };
+
   // ------------------------------
   // Handler functions
   // ------------------------------
@@ -243,7 +250,13 @@ function Form({ closeModal }) {
         <>
           <ModalNav>
             <ModalTitle></ModalTitle>
-            <Close onClick={closeModal} src="/icons/close.png" />
+            <Close
+              onClick={() => {
+                closeModal();
+                closeAllModals();
+              }}
+              src="/icons/close.png"
+            />
           </ModalNav>
           <StyledForm>
             <DeliveryContainer>
