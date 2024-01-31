@@ -152,7 +152,7 @@ const MiniDescription = styled.span`
   // ------------------------------
   // @Media Queries
   // ------------------------------
-  @media (min-width: 61.25em) {
+  (min-width: 61.25em) {
     font-size: var(--font-small);
   }
 

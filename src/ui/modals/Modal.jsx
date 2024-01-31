@@ -39,6 +39,14 @@ const ModalContent = styled.div`
   max-width: 355px;
 
   text-align: center;
+
+  // ------------------------------
+  // @Media Queries
+  // ------------------------------
+  // These are used for responsive design, for all screens we can modify the web application based on the screen size
+  @media (min-width: 40.5em) {
+    height: 47vh;
+  }
 `;
 
 // ------------------------------
