@@ -36,6 +36,7 @@ const ModalContent = styled.div`
   width: 100%;
   // TODO: Code logic for width adjustments
   max-width: 355px;
+
   text-align: center;
 `;
 

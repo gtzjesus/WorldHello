@@ -22,7 +22,7 @@ const sizes = {
 
     // @MEDIAQUERY logic for small devices 600px
     @media (min-width: 40em) {
-      font-size: var(--font-xsmall);
+      font-size: var(--font-xxsmall);
     }
   `,
 };
@@ -36,7 +36,7 @@ const variations = {
     color: var(--color-black);
     background-color: var(--background-secondary);
     width: fit-content;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
   `,
 };
 
