@@ -121,6 +121,7 @@ const DeliveryContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-large);
+  padding: var(--padding-large) 0;
 `;
 
 const Img = styled.img`
@@ -135,6 +136,7 @@ const Delivered = styled.span`
 
 const DeliveredSmall = styled.span`
   font-size: var(--font-form);
+  padding: var(--padding-small);
 `;
 
 // ------------------------------
