@@ -10,6 +10,7 @@
 
 import styled from 'styled-components';
 import Form from '../form/Form';
+import { useEffect, useState } from 'react';
 
 // ------------------------------
 // Styled Componenets
@@ -47,6 +48,8 @@ const ModalContent = styled.div`
 // ------------------------------
 // This section has our React Component which handles the information data
 function Modal({ closeModal }) {
+  // State variable to control scrollable state
+  const [isScrollable, setIsScrollable] = useState(true);
   // ------------------------------
   // Handler functions
   // ------------------------------
@@ -59,8 +62,21 @@ function Modal({ closeModal }) {
     }
   };
 
+  // Update body style on mount and dismount
+  useEffect(() => {
+    document.body.style.overflow = isScrollable ? 'auto' : 'hidden';
+
+    // Cleanup when the modal is unmounted
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isScrollable]);
+
   return (
-    <StyledModal onClick={handleOutsideClick}>
+    <StyledModal
+      onClick={handleOutsideClick}
+      style={{ overflowY: isScrollable ? 'scroll' : 'hidden' }}
+    >
       <ModalContent>
         <Form closeModal={closeModal} />
       </ModalContent>
