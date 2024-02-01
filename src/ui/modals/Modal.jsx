@@ -29,6 +29,7 @@ const StyledModal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: var(--z-top);
 `;
 const ModalContent = styled.div`
   background-color: white;
@@ -38,6 +39,7 @@ const ModalContent = styled.div`
   max-width: 355px;
 
   text-align: center;
+  z-index: var(--z-top);
 `;
 
 // ------------------------------
@@ -49,6 +51,8 @@ function Modal({ closeModal }) {
   // Handler functions
   // ------------------------------
   // This section includes functions used to perform different tasks
+
+  // Handler function to close modal with detection of outside click
   const handleOutsideClick = (event) => {
     if (event.target === event.currentTarget) {
       closeModal();

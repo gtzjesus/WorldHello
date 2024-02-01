@@ -38,12 +38,10 @@ const ModalNav = styled.div`
   // Code logic for margin from form in modal
   margin-bottom: var(--margin-form);
   padding: var(--padding-modal-nav);
-  z-index: var(--z-top);
 `;
 
 const Close = styled.img`
   cursor: pointer;
-  z-index: var(--z-top);
 `;
 
 const ModalTitle = styled.span`
