@@ -51,7 +51,9 @@ function Modal({ closeModal }) {
   };
 
   useEffect(() => {
-    const originalOverflowStyle = document.body.style.overflow;
+    const originalOverflowStyle = window.getComputedStyle(
+      document.body
+    ).overflow;
 
     // Disable scrolling on the body
     document.body.style.overflow = 'hidden';

@@ -16,29 +16,24 @@ function Home() {
   const [header, setHeader] = useState(false);
   // GRAB STATE for opening/closing modal component
   const [isModalOpen, setIsModalOpen] = useState(false);
-  // Code logic for user interaction with modal
+
   const openModal = () => {
     setIsModalOpen(true);
-    // When modal is open
-    document.body.style.overflow = 'hidden';
   };
+
   const closeModal = () => {
     setIsModalOpen(false);
-
-    // When modal is closed
-    document.body.style.overflow = 'auto';
   };
 
-  // Handle add/removing the class based on the modal state
   useEffect(() => {
     if (isModalOpen) {
-      document.body.classList.add('body-overflow-hidden');
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.classList.remove('body-overflow-hidden');
+      document.body.style.overflow = 'auto';
     }
-    // Code logic to clean up function, to remove the class when the component unmounts
+
     return () => {
-      document.body.classList.remove('body-overflow-hidden');
+      document.body.style.overflow = 'auto';
     };
   }, [isModalOpen]);
 
