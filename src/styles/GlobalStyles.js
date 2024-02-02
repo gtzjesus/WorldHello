@@ -122,9 +122,10 @@ const GlobalStyles = createGlobalStyle`
     --image-large: 30rem;
 
     /* Z-Indexes */
-    --z-top: 9999;
-    --z-second: 9998;
-    --z-third: 9997;
+    --z-toppest: 9999;
+    --z-top: 9998;
+    --z-second: 9997;
+    --z-third: 9996;
 
 }
 `;

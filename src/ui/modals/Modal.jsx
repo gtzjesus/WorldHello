@@ -10,7 +10,7 @@
 
 import styled from 'styled-components';
 import Form from '../form/Form';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 // ------------------------------
 // Styled Componenets
@@ -28,7 +28,7 @@ const StyledModal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: var(--z-top);
+  z-index: var(--z-toppest);
   overflow: hidden;
 `;
 
@@ -38,7 +38,7 @@ const ModalContent = styled.div`
   width: 100%;
   max-width: 355px;
   text-align: center;
-  z-index: var(--z-top);
+  z-index: var(--z-toppest);
   overflow-y: auto; /* Enable scrolling inside the modal content */
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
 `;
