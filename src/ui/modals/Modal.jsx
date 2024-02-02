@@ -51,10 +51,14 @@ function Modal({ closeModal }) {
   };
 
   useEffect(() => {
+    const originalOverflowStyle = document.body.style.overflow;
+
+    // Disable scrolling on the body
     document.body.style.overflow = 'hidden';
 
+    // Cleanup when the modal is unmounted
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = originalOverflowStyle;
     };
   }, []);
 
