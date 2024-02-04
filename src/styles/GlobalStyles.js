@@ -127,6 +127,10 @@ const GlobalStyles = createGlobalStyle`
     --z-second: 9997;
     --z-third: 9996;
 
+    body.modal-open {
+    overflow: hidden;
+  }
+
 }
 `;
 

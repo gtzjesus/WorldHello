@@ -26,10 +26,14 @@ function Home() {
   };
 
   useEffect(() => {
-    document.body.style.overflow = isModalOpen ? 'hidden' : 'auto';
+    if (isModalOpen) {
+      document.body.classList.add('modal-open');
+    } else {
+      document.body.classList.remove('modal-open');
+    }
 
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.classList.remove('modal-open');
     };
   }, [isModalOpen]);
 
