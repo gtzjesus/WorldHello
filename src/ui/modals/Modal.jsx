@@ -1,16 +1,6 @@
-// ------------------------------
-// File: Modal.js
-// ------------------------------
-// Description: A Modal React Component used to display a window covering the full screen of the UI with a click of a button.
-
-// ------------------------------
-// Imports
-// ------------------------------
-// This section has all necessary imports for this component.
-
 import styled from 'styled-components';
 import Form from '../form/Form';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const StyledModal = styled.div`
   position: fixed;
@@ -39,8 +29,6 @@ const ModalContent = styled.div`
 `;
 
 function Modal({ closeModal }) {
-  const [isScrollable, setIsScrollable] = useState(false);
-
   const handleOutsideClick = (event) => {
     if (event.target === event.currentTarget) {
       closeModal();
@@ -48,21 +36,16 @@ function Modal({ closeModal }) {
   };
 
   useEffect(() => {
-    // Disable scrolling on the body when modal is open
-    document.body.style.overflow = isScrollable ? 'auto' : 'hidden';
+    document.body.style.overflow = 'hidden';
 
     return () => {
-      // Cleanup when the modal is unmounted
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = 'auto'; // Revert to 'auto' on unmount
     };
-  }, [isScrollable]);
+  }, []);
 
   return (
     <StyledModal onClick={handleOutsideClick}>
-      <ModalContent
-        onMouseEnter={() => setIsScrollable(true)}
-        onMouseLeave={() => setIsScrollable(false)}
-      >
+      <ModalContent>
         <Form closeModal={closeModal} />
       </ModalContent>
     </StyledModal>
