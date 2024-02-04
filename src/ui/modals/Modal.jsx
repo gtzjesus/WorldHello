@@ -10,12 +10,7 @@
 
 import styled from 'styled-components';
 import Form from '../form/Form';
-import { useEffect } from 'react';
-
-// ------------------------------
-// Styled Componenets
-// ------------------------------
-// This section has all CSS styles configured for every HTML element.
+import { useEffect, useState } from 'react';
 
 const StyledModal = styled.div`
   position: fixed;
@@ -44,6 +39,8 @@ const ModalContent = styled.div`
 `;
 
 function Modal({ closeModal }) {
+  const [isScrollable, setIsScrollable] = useState(false);
+
   const handleOutsideClick = (event) => {
     if (event.target === event.currentTarget) {
       closeModal();
@@ -51,22 +48,21 @@ function Modal({ closeModal }) {
   };
 
   useEffect(() => {
-    const originalOverflowStyle = window.getComputedStyle(
-      document.body
-    ).overflow;
+    // Disable scrolling on the body when modal is open
+    document.body.style.overflow = isScrollable ? 'auto' : 'hidden';
 
-    // Disable scrolling on the body
-    document.body.style.overflow = 'hidden';
-
-    // Cleanup when the modal is unmounted
     return () => {
-      document.body.style.overflow = originalOverflowStyle;
+      // Cleanup when the modal is unmounted
+      document.body.style.overflow = 'auto';
     };
-  }, []);
+  }, [isScrollable]);
 
   return (
     <StyledModal onClick={handleOutsideClick}>
-      <ModalContent>
+      <ModalContent
+        onMouseEnter={() => setIsScrollable(true)}
+        onMouseLeave={() => setIsScrollable(false)}
+      >
         <Form closeModal={closeModal} />
       </ModalContent>
     </StyledModal>
