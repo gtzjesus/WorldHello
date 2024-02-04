@@ -26,11 +26,7 @@ function Home() {
   };
 
   useEffect(() => {
-    if (isModalOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
+    document.body.style.overflow = isModalOpen ? 'hidden' : 'auto';
 
     return () => {
       document.body.style.overflow = 'auto';

@@ -29,19 +29,21 @@ const ModalContent = styled.div`
 `;
 
 function Modal({ closeModal }) {
+  useEffect(() => {
+    // Set body overflow to 'hidden' when modal is opened
+    document.body.style.overflow = 'hidden';
+
+    // Revert body overflow to 'auto' when modal is closed
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
+
   const handleOutsideClick = (event) => {
     if (event.target === event.currentTarget) {
       closeModal();
     }
   };
-
-  useEffect(() => {
-    document.body.style.overflow = 'hidden';
-
-    return () => {
-      document.body.style.overflow = 'auto'; // Revert to 'auto' on unmount
-    };
-  }, []);
 
   return (
     <StyledModal onClick={handleOutsideClick}>
