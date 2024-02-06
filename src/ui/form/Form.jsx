@@ -206,13 +206,11 @@ function Form({ closeModal }) {
   // ------------------------------
   // This section includes functions used to perform different tasks
 
+  // Inside validateForm function, set the errors state correctly
   const validateForm = () => {
     const errors = {};
     let isValid = true;
 
-    // ------------------------------
-    // Validate the form fields
-    // ------------------------------
     if (!fullName.trim()) {
       errors.fullName = 'Full name is required';
       isValid = false;
@@ -228,6 +226,7 @@ function Form({ closeModal }) {
       isValid = false;
     }
 
+    // Update the formErrors state
     setFormErrors(errors);
     return isValid;
   };
@@ -238,26 +237,29 @@ function Form({ closeModal }) {
   // This section includes functions used to perform different tasks
 
   // Handle the input changes in the form
+  // Inside handleInputChange function, update the state correctly
   const handleInputChange = (event) => {
-    // Create variable to keep track of form submission satus
     const { name, value } = event.target;
-    // Code logic to set the data from the inputs
+    // Update the corresponding state variable based on the input name
+    if (name === 'name') {
+      setFullName(value);
+    } else if (name === 'email') {
+      setEmail(value);
+    } else if (name === 'phone') {
+      setPhoneNumber(value);
+    }
+    // Update the form data object
     setFormData({ ...formData, [name]: value });
   };
 
   // Handle the form submittion
-  // Example using fetch in React
+  // Inside handleSubmit function, update the form state properly
   const handleSubmit = async (event) => {
     event.preventDefault();
-
-    // Start the loading state
     setLoading(true);
 
-    // Validate the form
     if (validateForm()) {
-      // Form is valid, proceed with submission logic
       try {
-        // Code logic for submittion of form (e.g., using fetch)
         const response = await fetch('http://localhost:3001/api/sendEmail', {
           method: 'POST',
           body: JSON.stringify({ fullName, email, phoneNumber }),
@@ -267,19 +269,17 @@ function Form({ closeModal }) {
         });
 
         if (response.ok) {
-          // Submission successful
           setSubmissionComplete(true);
         } else {
-          // Handle server errors or other issues
           console.error('Submission failed:', response.statusText);
         }
       } catch (error) {
-        // Handle fetch errors or other exceptions
         console.error('Error submitting form:', error);
+      } finally {
+        setLoading(false); // Ensure loading state is always updated
       }
     } else {
-      // Form validation failed, stop loading state
-      setLoading(false);
+      setLoading(false); // Ensure loading state is updated when form validation fails
       console.log('Form validation failed');
     }
   };
