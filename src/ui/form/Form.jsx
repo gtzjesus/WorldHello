@@ -434,11 +434,7 @@ function Form({ closeModal }) {
           </FormGroup>
           <FormButton>
             <FormRow>
-              <Button
-                type="submit"
-                onClick={handleSubmit}
-                disabled={!isFormValid}
-              >
+              <Button type="submit" onClick={handleSubmit}>
                 Submit Message
               </Button>
             </FormRow>
