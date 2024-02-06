@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import Form from '../form/Form';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const StyledModal = styled.div`
   position: fixed;
@@ -14,7 +13,6 @@ const StyledModal = styled.div`
   justify-content: center;
   align-items: center;
   z-index: var(--z-toppest);
-  overflow: hidden;
 `;
 
 const ModalContent = styled.div`
@@ -24,32 +22,34 @@ const ModalContent = styled.div`
   max-width: 355px;
   text-align: center;
   z-index: var(--z-toppest);
-  overflow-y: auto; /* Enable scrolling inside the modal content */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 `;
 
 function Modal({ closeModal }) {
-  useEffect(() => {
-    // Set body overflow to 'hidden' when modal is opened
-    document.body.style.overflow = 'hidden';
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-    // Revert body overflow to 'auto' when modal is closed
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
     return () => {
-      document.body.style.overflow = 'auto';
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const handleOutsideClick = (event) => {
-    if (event.target === event.currentTarget) {
+  useEffect(() => {
+    if (scrollPosition !== 0) {
       closeModal();
     }
-  };
+  }, [scrollPosition, closeModal]);
 
   return (
-    <StyledModal onClick={handleOutsideClick}>
-      <ModalContent>
-        <Form closeModal={closeModal} />
-      </ModalContent>
+    <StyledModal>
+      <ModalContent>{/* Your modal content */}</ModalContent>
     </StyledModal>
   );
 }
