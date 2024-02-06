@@ -19,32 +19,32 @@ import LazyLoad from 'react-lazyload';
 // This section contains an array of objects. Our frequently asked questions with the provided answers
 const faqs = [
   {
-    title: 'What benefits do I get with a custom website?',
-    text: 'Having a unique brand that conveys the value you provide to customers is an important component of building a strong business. Custom web designs allow you to build your site in a way that will set up you up for success!',
+    title: 'What advantages come with a personalized website?',
+    text: 'Crafting a distinct brand that effectively communicates the value you offer to your audience is vital for establishing a robust business presence. Tailored website designs empower you to construct your online platform in a manner that lays the foundation for your success!',
   },
   {
-    title: 'What makes WorldHello unique?',
-    text: 'Our website development agency prioritises generating business results over completing tasks. Our belief stands in perfection requiring focus, which is why we specialise in only one service: web development!',
+    title: 'What sets WorldHello apart from the rest?',
+    text: 'Our website development agency prioritizes delivering tangible business outcomes rather than merely ticking off tasks. We firmly believe in the pursuit of perfection, emphasizing focused expertise, which is why we specialize exclusively in web development services!',
   },
   {
     title: 'What services do you offer?',
-    text: 'WorldHello stands in creating websites that target your ideal niche through strategic design, copywriting, and user experience. If you already have a website design, we can take care of the development while ensuring it aligns with your business goals.',
+    text: 'WorldHello specializes in crafting websites tailored to your specific niche by employing strategic design, compelling copywriting, and intuitive user experience. If you already have a design in mind, we can handle the development process, ensuring it reflects and supports your business objectives.',
   },
   {
-    title: 'How long does it take to build a website?',
-    text: 'The time to create a website varies based on the complexity and requirements of your project. Typically it takes our team between 5 and 9 weeks from the initial discovery session to launching your new website!',
+    title: 'What is the typical timeframe for website development?',
+    text: 'The duration for crafting a website fluctuates depending on the intricacy and specifications of your project. Generally, our team dedicates approximately 5 to 9 weeks, starting from the initial discovery session to the final launch of your new website.',
   },
   {
     title: 'Is there ongoing support once website is complete?',
-    text: 'At WorldHello, we are committed to building long-lasting relationships with our clients, rather than focusing on one-off transactions. We offer ongoing support and maintenance services to ensure your site stays up-to-date and performs optimally.',
+    text: 'At WorldHello, our dedication lies in nurturing enduring partnerships with our clients, prioritizing ongoing support and maintenance services over one-time transactions. We are here to ensure your website remains current and operates at its best.',
   },
   {
-    title: 'How is the web development process?',
-    text: 'To achieve the best results for your business goals we follow a very specific development process: We first identify the goal of your website, then we research your specific market, followed by creating a performance strategy to bring in new clients, then we craft a unique design optimised for conversions, we implement the design, and finally launch your new website. ',
+    title: 'What does the web development process entail?',
+    text: 'To optimize outcomes aligned with your business objectives, we adhere to a meticulous development process: We commence by defining your websites purpose, conduct thorough market research, devise a performance strategy to attract new clients, design a bespoke layout tailored for conversions, execute the design, and ultimately launch your new website. ',
   },
   {
     title: 'Where is WorldHello located?',
-    text: 'WorldHello is a Texas based Website Development Agency that serves clients all over the world! Whether you are located nearby or on the other side of the world, we are dedicated to deliver exceptional results for every online presence.',
+    text: 'WorldHello, a Texas-based Website Development Agency, extends its services globally! Whether you are in close proximity or across the globe, our commitment remains unwavering to deliver outstanding results for every online venture.',
   },
 ];
 

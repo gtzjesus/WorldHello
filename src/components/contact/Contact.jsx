@@ -130,7 +130,7 @@ function Contact({ isModalOpen, openModal, closeModal }) {
             <br />
             <br />
           </Description>
-          <TriggerButton openModal={openModal} />
+          <TriggerButton openModal={openModal} text={`Clicking here`} />
           {isModalOpen && <Modal closeModal={closeModal} />}
         </Information>
       </StyledContact>

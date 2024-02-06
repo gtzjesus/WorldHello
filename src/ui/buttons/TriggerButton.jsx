@@ -1,11 +1,11 @@
 import Button from './Button';
 
-function TriggerButton({ openModal }) {
+function TriggerButton({ openModal, text }) {
   const handleClick = () => {
     openModal();
   };
 
-  return <Button onClick={handleClick}>Open Modal</Button>;
+  return <Button onClick={handleClick}>{text}</Button>;
 }
 
 export default TriggerButton;

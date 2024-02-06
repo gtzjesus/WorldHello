@@ -132,18 +132,18 @@ function Craft({ isModalOpen, openModal, closeModal }) {
         {/* <!-- Information Container (need 2 for responsiveness) --> */}
         <Information>
           <Img src="/backgrounds/grow.jpg"></Img>
+          <Description>
+            Let&rsquo;s strive for greater success together.
+          </Description>
+          <br />
+          <br />
           <Description>Join us and grow!</Description>
           <MiniDescription>
             Expand your business by harnessing the full advantages of our
             combined resources and extensive experience.
           </MiniDescription>
           <br />
-          <Description>
-            Let&rsquo;s strive for greater success together.
-          </Description>
-          <br />
-          <TriggerButton openModal={openModal} />
-
+          <TriggerButton openModal={openModal} text={`send us a message`} />
           {isModalOpen && <Modal closeModal={closeModal} />}
         </Information>
       </StyledCraft>

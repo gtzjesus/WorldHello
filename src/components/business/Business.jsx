@@ -158,12 +158,13 @@ function Business({ isModalOpen, openModal, closeModal }) {
             <br />
             <br />
             <Closing>
-              Manage your website effectively with <Special>WorldHello</Special>
+              Boost sales, generate leads, or broaden your customer base with
+              <Special> WorldHello</Special>
               .
               <br />
               <br />
             </Closing>
-            <TriggerButton openModal={openModal} />
+            <TriggerButton openModal={openModal} text={`Click to begin`} />
             {isModalOpen && <Modal closeModal={closeModal} />}
           </Description>
         </Information>

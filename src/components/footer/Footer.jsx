@@ -168,7 +168,8 @@ function Footer({ isModalOpen, openModal, closeModal }) {
           <Label>Based in</Label>
           <Result>Texas, US</Result>
         </Contact>
-        <TriggerButton openModal={openModal} />
+        <TriggerButton openModal={openModal} text={`start now for free`} />
+
         {isModalOpen && <Modal closeModal={closeModal} />}
       </FooterInfo>
     </StyledFooter>
