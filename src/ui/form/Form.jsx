@@ -296,12 +296,10 @@ function Form({ closeModal }) {
       )}
 
       {isLoading ? (
-        // SPINNER MODAL
         <StyledForm>
           <Spinner />
         </StyledForm>
       ) : isSubmittionComplete ? (
-        // 2ND MODAL
         <>
           <StyledForm>
             <DeliveryContainer>
@@ -315,11 +313,9 @@ function Form({ closeModal }) {
               </DeliveredSmall>
             </DeliveryContainer>
           </StyledForm>
-          {/* Close the modal automatically */}
           {autoCloseModal()}
         </>
       ) : (
-        // 1ST MODAL
         <StyledForm action="http://localhost:3001/api/sendEmail" method="post">
           <FormGroup>
             <FormRow>
@@ -335,7 +331,6 @@ function Form({ closeModal }) {
                 onChange={handleInputChange}
               />
             </FormRow>
-            {/* Handle error validation */}
             {formErrors.fullName && (
               <ErrorMessage>{formErrors.fullName}</ErrorMessage>
             )}
@@ -355,7 +350,6 @@ function Form({ closeModal }) {
                   onChange={handleInputChange}
                 />
               </FormRow>
-              {/* Handle error validation */}
               {formErrors.email && (
                 <ErrorMessage>{formErrors.email}</ErrorMessage>
               )}
@@ -374,7 +368,6 @@ function Form({ closeModal }) {
                   onChange={handleInputChange}
                 />
               </FormRow>
-              {/* Handle error validation */}
               {formErrors.phoneNumber && (
                 <ErrorMessage>{formErrors.phoneNumber}</ErrorMessage>
               )}
