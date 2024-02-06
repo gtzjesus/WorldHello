@@ -245,7 +245,7 @@ function Form({ closeModal }) {
 
     if (validateForm()) {
       try {
-        const response = await fetch('https://worldhello.us/api/sendEmail', {
+        const response = await fetch('http://worldhello.us/api/sendEmail', {
           method: 'POST',
           body: JSON.stringify({ fullName, email, phoneNumber }),
           headers: {
@@ -301,7 +301,7 @@ function Form({ closeModal }) {
           {autoCloseModal()}
         </>
       ) : (
-        <StyledForm action="https://worldhello.us/api/sendEmail" method="post">
+        <StyledForm action="http://worldhello.us/api/sendEmail" method="post">
           <FormGroup>
             <FormRow>
               <Label htmlFor="name">
