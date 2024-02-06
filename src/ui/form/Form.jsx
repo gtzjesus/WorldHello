@@ -9,7 +9,7 @@
 // ------------------------------
 // This section has all necessary imports for this component.
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import Button from '../buttons/Button';
 import Spinner from '../spinners/Spinner';
@@ -90,11 +90,6 @@ const Input = styled.input`
   float: left;
 `;
 
-const Error = styled.p`
-  color: red;
-  margin-top: 4px;
-`;
-
 const Select = styled.select`
   max-width: 100%;
   padding: var(--padding-small);
@@ -139,6 +134,11 @@ const DeliveredSmall = styled.span`
   padding: var(--padding-small);
 `;
 
+const ErrorMessage = styled.div`
+  padding: var(--padding-xxsmall);
+  color: red;
+`;
+
 // ------------------------------
 // Component
 // ------------------------------
@@ -153,8 +153,15 @@ function Form({ closeModal }) {
   const [isSubmittionComplete, setSubmissionComplete] = useState(false);
   // Create variable to keep track of the loading state while submitting form
   const [isLoading, setLoading] = useState(false);
-  // Creating errors state (used for validation)
-  const [errors, setErrors] = useState({});
+
+  // Variables used for error handling
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [formErrors, setFormErrors] = useState('');
+
+  // State variable to track whether the form is valid
+  const [isFormValid, setIsFormValid] = useState(false);
 
   // Code logic for creating a state for our input data, an object
   const [formData, setFormData] = useState({
@@ -182,6 +189,49 @@ function Form({ closeModal }) {
     }, 12000); // 10000 milliseconds = 10 seconds
   };
 
+  // Function to check if form is valid
+  const checkFormValidity = () => {
+    setIsFormValid(
+      fullName.trim() !== '' && email.trim() !== '' && phoneNumber.trim() !== ''
+    );
+  };
+
+  // useEffect to update form validity whenver the input values change
+  useEffect(() => {
+    checkFormValidity();
+  }, [fullName, email, phoneNumber]);
+
+  // ------------------------------
+  // Validation of the FORM
+  // ------------------------------
+  // This section includes functions used to perform different tasks
+
+  const validateForm = () => {
+    const errors = {};
+    let isValid = true;
+
+    // ------------------------------
+    // Validate the form fields
+    // ------------------------------
+    if (!fullName.trim()) {
+      errors.fullName = 'Full name is required';
+      isValid = false;
+    }
+
+    if (!email.trim()) {
+      errors.email = 'Email is required';
+      isValid = false;
+    }
+
+    if (!phoneNumber.trim()) {
+      errors.phoneNumber = 'Phone number is required';
+      isValid = false;
+    }
+
+    setFormErrors(errors);
+    return isValid;
+  };
+
   // ------------------------------
   // Handler functions
   // ------------------------------
@@ -203,37 +253,34 @@ function Form({ closeModal }) {
     // Start the loading state
     setLoading(true);
 
-    // Simulate asynchronous form submission ()
-    setTimeout(() => {
-      // Code logic for submittion of form
+    // Validate the form
+    if (validateForm()) {
+      // Form is valid, proceed with submission logic
+      try {
+        // Code logic for submittion of form (e.g., using fetch)
+        const response = await fetch('http://localhost:3001/api/sendEmail', {
+          method: 'POST',
+          body: JSON.stringify({ fullName, email, phoneNumber }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        });
 
-      // Update the state to indicate that submission is complete
-      setSubmissionComplete(true);
-
-      // Stop the loading state
-      setLoading(false);
-    }, 2500);
-
-    try {
-      const response = await fetch('http://localhost:3001/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        // Update the state to indicate that submission is complete
-        setSubmissionComplete(true);
-        console.log('Email sent successfully');
-        // Optionally, reset the form or show a success message to the user
-      } else {
-        console.error('Error sending email');
-        // Handle the error (e.g., display an error message to the user)
+        if (response.ok) {
+          // Submission successful
+          setSubmissionComplete(true);
+        } else {
+          // Handle server errors or other issues
+          console.error('Submission failed:', response.statusText);
+        }
+      } catch (error) {
+        // Handle fetch errors or other exceptions
+        console.error('Error submitting form:', error);
       }
-    } catch (error) {
-      console.error('Error:', error.message);
+    } else {
+      // Form validation failed, stop loading state
+      setLoading(false);
+      console.log('Form validation failed');
     }
   };
 
@@ -288,7 +335,10 @@ function Form({ closeModal }) {
                 onChange={handleInputChange}
               />
             </FormRow>
-            {errors.name && <Error>{errors.name}</Error>}
+            {/* Handle error validation */}
+            {formErrors.fullName && (
+              <ErrorMessage>{formErrors.fullName}</ErrorMessage>
+            )}
           </FormGroup>
           <HorizontalGroup>
             <FormGroup>
@@ -305,7 +355,10 @@ function Form({ closeModal }) {
                   onChange={handleInputChange}
                 />
               </FormRow>
-              {errors.email && <Error>{errors.email}</Error>}
+              {/* Handle error validation */}
+              {formErrors.email && (
+                <ErrorMessage>{formErrors.email}</ErrorMessage>
+              )}
             </FormGroup>
             <FormGroup>
               <FormRow>
@@ -321,7 +374,10 @@ function Form({ closeModal }) {
                   onChange={handleInputChange}
                 />
               </FormRow>
-              {errors.phone && <Error>{errors.phone}</Error>}
+              {/* Handle error validation */}
+              {formErrors.phoneNumber && (
+                <ErrorMessage>{formErrors.phoneNumber}</ErrorMessage>
+              )}
             </FormGroup>
           </HorizontalGroup>
           <HorizontalGroup>
@@ -337,7 +393,6 @@ function Form({ closeModal }) {
                   onChange={handleInputChange}
                 />
               </FormRow>
-              {errors.companyName && <Error>{errors.companyName}</Error>}
             </FormGroup>
             <FormGroup>
               <FormRow>
@@ -351,7 +406,6 @@ function Form({ closeModal }) {
                   onChange={handleInputChange}
                 />
               </FormRow>
-              {errors.website && <Error>{errors.website}</Error>}
             </FormGroup>
           </HorizontalGroup>
           <FormGroup>
@@ -366,7 +420,6 @@ function Form({ closeModal }) {
                 onChange={handleInputChange}
               />
             </FormRow>
-            {errors.howCanWeHelp && <Error>{errors.howCanWeHelp}</Error>}
           </FormGroup>
 
           <FormGroup>
@@ -388,7 +441,11 @@ function Form({ closeModal }) {
           </FormGroup>
           <FormButton>
             <FormRow>
-              <Button type="submit" onClick={handleSubmit}>
+              <Button
+                type="submit"
+                onClick={handleSubmit}
+                disabled={!isFormValid}
+              >
                 Submit Message
               </Button>
             </FormRow>
