@@ -10,6 +10,7 @@ import Faqs from '../../components/faqs/Faqs';
 import Craft from '../../components/craft/Craft';
 import Contact from '../../components/contact/Contact';
 import Landing from '../../components/landing/Landing';
+import TriggerButton from '../../ui/buttons/TriggerButton';
 
 function Home() {
   // GRAB STATE for navigation scroll
@@ -39,7 +40,7 @@ function Home() {
 
   // Function TO change state on scroll
   const changeHeader = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 40) {
       setHeader(true);
     } else {
       setHeader(false);
@@ -55,6 +56,8 @@ function Home() {
         openModal={openModal}
         closeModal={closeModal}
       />
+      <TriggerButton openModal={openModal} />
+
       <Achievements />
       <Craft
         isModalOpen={isModalOpen}
