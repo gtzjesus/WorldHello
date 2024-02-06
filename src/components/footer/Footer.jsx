@@ -9,7 +9,7 @@
 // This section has all necessary imports for this component.
 
 import styled from 'styled-components';
-import Button from '../../ui/buttons/Button';
+import TriggerButton from '../../ui/buttons/TriggerButton';
 import Modal from '../../ui/modals/Modal';
 
 // ------------------------------
@@ -168,7 +168,7 @@ function Footer({ isModalOpen, openModal, closeModal }) {
           <Label>Based in</Label>
           <Result>Texas, US</Result>
         </Contact>
-        <Button onClick={openModal}>click to start today for free</Button>
+        <TriggerButton openModal={openModal} />
         {isModalOpen && <Modal closeModal={closeModal} />}
       </FooterInfo>
     </StyledFooter>

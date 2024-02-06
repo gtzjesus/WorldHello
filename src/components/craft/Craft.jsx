@@ -15,7 +15,7 @@
 // This section has all necessary imports for this component.
 
 import styled from 'styled-components';
-import Button from '../../ui/buttons/Button';
+import TriggerButton from '../../ui/buttons/TriggerButton';
 import LazyLoad from 'react-lazyload';
 import Modal from '../../ui/modals/Modal';
 
@@ -142,7 +142,8 @@ function Craft({ isModalOpen, openModal, closeModal }) {
             Let&rsquo;s strive for greater success together.
           </Description>
           <br />
-          <Button onClick={openModal}>click to begin your website</Button>
+          <TriggerButton openModal={openModal} />
+
           {isModalOpen && <Modal closeModal={closeModal} />}
         </Information>
       </StyledCraft>

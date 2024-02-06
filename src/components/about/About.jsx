@@ -9,9 +9,7 @@
 // This section has all necessary imports for this component.
 
 import styled from 'styled-components';
-import Button from '../../ui/buttons/Button';
 import LazyLoad from 'react-lazyload';
-import Modal from '../../ui/modals/Modal';
 
 // ------------------------------
 // Styled Componenets
@@ -152,7 +150,7 @@ const MiniDescription = styled.span`
   // ------------------------------
   // @Media Queries
   // ------------------------------
-  (min-width: 61.25em) {
+  @media (min-width: 61.25em) {
     font-size: var(--font-small);
   }
 
@@ -160,13 +158,13 @@ const MiniDescription = styled.span`
     font-size: var(--font-medium);
   }
 `;
-
+//
 // ------------------------------
 // Component
 // ------------------------------
 // This section has our React Component which handles the  data
 
-function About({ isModalOpen, openModal, closeModal }) {
+function About() {
   return (
     <LazyLoad>
       {/* <!-- Main Container --> */}
@@ -195,8 +193,6 @@ function About({ isModalOpen, openModal, closeModal }) {
             driven by our passion for delivering top-notch, high-performance
             websites.
           </MiniDescription>
-          <Button onClick={openModal}>click to get to know us</Button>
-          {isModalOpen && <Modal closeModal={closeModal} />}
         </Extra>
       </StyledAbout>
     </LazyLoad>

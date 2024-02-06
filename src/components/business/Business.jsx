@@ -9,7 +9,7 @@
 // This section has all necessary imports for this component.
 
 import styled from 'styled-components';
-import Button from '../../ui/buttons/Button';
+import TriggerButton from '../../ui/buttons/TriggerButton';
 import LazyLoad from 'react-lazyload';
 import Modal from '../../ui/modals/Modal';
 
@@ -163,7 +163,7 @@ function Business({ isModalOpen, openModal, closeModal }) {
               <br />
               <br />
             </Closing>
-            <Button onClick={openModal}>Start now for free</Button>
+            <TriggerButton openModal={openModal} />
             {isModalOpen && <Modal closeModal={closeModal} />}
           </Description>
         </Information>
