@@ -160,9 +160,6 @@ function Form({ closeModal }) {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [formErrors, setFormErrors] = useState('');
 
-  // State variable to track whether the form is valid
-  const [isFormValid, setIsFormValid] = useState(false);
-
   // Code logic for creating a state for our input data, an object
   const [formData, setFormData] = useState({
     name: '',
@@ -188,18 +185,6 @@ function Form({ closeModal }) {
       closeAllModals();
     }, 12000); // 10000 milliseconds = 10 seconds
   };
-
-  // Function to check if form is valid
-  const checkFormValidity = () => {
-    setIsFormValid(
-      fullName.trim() !== '' && email.trim() !== '' && phoneNumber.trim() !== ''
-    );
-  };
-
-  // useEffect to update form validity whenver the input values change
-  useEffect(() => {
-    checkFormValidity();
-  }, [fullName, email, phoneNumber]);
 
   // ------------------------------
   // Validation of the FORM
