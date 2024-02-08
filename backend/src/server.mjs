@@ -11,24 +11,6 @@ import bodyParser from 'body-parser';
 const app = express();
 const port = process.env.PORT || 3001; // Use the environment variable PORT if provided, otherwise use port 80
 
-// Code logic for the Middleware to parse JSON data sent in the POST request
-app.use(bodyParser.json());
-
-// Configure server to serve static files
-app.use(express.static('public'));
-
-// Handle root route
-app.get('/', (req, res) => {
-  res.send('WorldHello!');
-});
-
-// Allowed origins to access your server
-app.use(
-  cors({
-    origin: 'https://worldhello.us',
-  })
-);
-
 // Code logic endpoint to handle form submissions
 app.post('/api/sendEmail', async (req, res) => {
   try {
@@ -80,6 +62,24 @@ app.post('/api/sendEmail', async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+
+// Code logic for the Middleware to parse JSON data sent in the POST request
+app.use(bodyParser.json());
+
+// Configure server to serve static files
+app.use(express.static('public'));
+
+// Handle root route
+app.get('/', (req, res) => {
+  res.send('WorldHello!');
+});
+
+// Allowed origins to access your server
+app.use(
+  cors({
+    origin: 'https://worldhello.us',
+  })
+);
 
 // Start the server
 app.listen(port, () => {
