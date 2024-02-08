@@ -13,7 +13,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 // const nodemailer = require('nodemailer');
 // const bodyParser = require('body-parser');
 var app = (0, _express["default"])();
-var port = 3001;
+var port = 3001; // Use the environment variable PORT if provided, otherwise use port 80
 
 // Code logic for the Middleware to parse JSON data sent in the POST request
 app.use(_bodyParser["default"].json());
@@ -28,7 +28,7 @@ app.get('/', function (req, res) {
 
 // Allowed origins to access your server
 app.use((0, _cors["default"])({
-  origin: 'https://worldhello.us'
+  origin: '*'
 }));
 
 // Code logic endpoint to handle form submissions

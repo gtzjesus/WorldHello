@@ -9,7 +9,7 @@
 // ------------------------------
 // This section has all necessary imports for this component.
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import Button from '../buttons/Button';
 import Spinner from '../spinners/Spinner';
