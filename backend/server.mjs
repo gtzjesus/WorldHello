@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 // Allowed origins to access your server
 app.use(
   cors({
-    origin: 'https://worldhello.us',
+    origin: '*',
   })
 );
 
