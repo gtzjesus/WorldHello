@@ -9,7 +9,7 @@ import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 
 const app = express();
-const port = process.env.PORT; // Use the environment variable PORT if provided, otherwise use port 80
+const port = process.env.PORT || 3001; // Use the environment variable PORT if provided, otherwise use port 80
 
 // Code logic for the Middleware to parse JSON data sent in the POST request
 app.use(bodyParser.json());
