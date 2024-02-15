@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), eslint()],
   build: {
     rollupOptions: {
-      external: ['@tanstack/react-query'],
+      external: ['@tanstack/react-query', '@supabase/supabase-js'],
     },
   },
 });
