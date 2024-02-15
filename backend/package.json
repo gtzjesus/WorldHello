@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node server.js",
-    "build": "mkdir -p dist && babel src -d dist"
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
